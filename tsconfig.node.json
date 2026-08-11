@@ -20,6 +20,7 @@
     "playwright.review.config.ts",
     "eslint.config.js",
     "scripts/**/*.ts",
+    "tools/**/*.ts",
     "e2e/**/*.ts",
     "review-e2e/**/*.ts"
   ]

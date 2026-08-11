@@ -1,0 +1,46 @@
+Qwen3-TTS Serena narration rights record
+Reviewed: 2026-08-10
+
+The Mandarin and English scripts are project-authored. Both audio takes were
+generated offline with Qwen3-TTS-12Hz-0.6B-CustomVoice using its built-in
+Serena speaker, normalized to 48 kHz mono MP3s, and listened to and approved
+by the project owner.
+
+Qwen3-TTS code and the official 0.6B CustomVoice model card are Apache-2.0:
+https://github.com/QwenLM/Qwen3-TTS/blob/main/LICENSE
+https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice
+
+The official release identifies Serena among the open-sourced timbres:
+https://qwen.ai/blog/?id=qwen3tts-0115
+
+The owner approves public distribution of these reviewed MP3s. The public
+notice identifies the model, Serena speaker, AI synthesis, and model license.
+Recorded in approval-record.json: approved by zhostev on 2026-08-10.
+
+Chinese narration approval
+
+Locale: zh-CN
+Speaker: Serena
+Language: Chinese
+Generated: 2026-08-10
+Runtime bytes: 82412
+Runtime SHA-256: da2ee6a11f4e1787fa3b3f5675d47fcbd3e27b3590d34f47c6e9a75619db88fc
+Human listening review: approved
+Public distribution decision: approved
+Approved: project owner zhostev on 2026-08-10
+
+Script: 这是邓氏鱼，一种生活在晚泥盆世海洋里的肉食性盾皮鱼。看看它脑袋上那层硬硬的骨甲，像不像戴着一副坚固的头盔？
+
+English narration approval
+
+Locale: en
+Speaker: Serena
+Language: English
+Generated: 2026-08-10
+Runtime bytes: 118316
+Runtime SHA-256: 94610e02b98ab30c609ba1edb704a2c2d3078e69351be921b6d1fb9a18a147aa
+Human listening review: approved
+Public distribution decision: approved
+Approved: project owner zhostev on 2026-08-10
+
+Script: This is Dunkleosteus, a meat-eating armoured fish from the Late Devonian seas. Look at the hard bony armour covering its head. Does it look as though it is wearing a strong helmet?

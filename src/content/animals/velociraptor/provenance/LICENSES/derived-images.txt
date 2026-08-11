@@ -1,0 +1,18 @@
+Velociraptor poster and thumbnail derivation record
+=====================================================
+
+Generated: 2026-08-10
+
+The 1200 × 675 poster and the
+390 × 844 portrait poster are deterministic
+runtime captures of the normalized model without text, controls, logos, or
+watermarks. The 320 × 320 thumbnail was
+captured from the accepted desktop review presentation after hiding all
+interface chrome.
+
+Poster SHA-256: c22b4598704aba681a06394d41976fb6d3abf61377a04dfd2f63d1f58d541851 (14076 bytes)
+Portrait poster SHA-256: 4aa4281411a0039cd245ced64ce317ae0d3482704daa4c3d2060280706f96957 (4162 bytes)
+Thumbnail SHA-256: e7ebfd897085568b03e49186f7c001352b060d0da87b9bff2cff7c8a9c2daa1e (3350 bytes)
+
+The model attribution and CC0-1.0 terms in model-license.txt
+continue to apply. The background generation record is retained separately.

@@ -1,0 +1,18 @@
+Dunkleosteus poster and thumbnail derivation record
+=====================================================
+
+Generated: 2026-08-10
+
+The 1200 × 675 poster and the
+390 × 844 portrait poster are deterministic
+runtime captures of the normalized model without text, controls, logos, or
+watermarks. The 320 × 320 thumbnail was
+captured from the accepted desktop review presentation after hiding all
+interface chrome.
+
+Poster SHA-256: ca4cce0e5fb3e1d62b0c0571b208cf0ccb8f784b3faf56270017b968216bbe5f (12852 bytes)
+Portrait poster SHA-256: d2a3217d8431a0ca78ce85e09c101799dc8124e66fd836f850bcd5d577cca4af (3616 bytes)
+Thumbnail SHA-256: e2e1ffbd20b7b2cc8bd536c7624e1819a1533154bacb43ad83045e6f8b60e245 (2740 bytes)
+
+The model attribution and CC0-1.0 terms in model-license.txt
+continue to apply. The background generation record is retained separately.

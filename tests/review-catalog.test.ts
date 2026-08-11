@@ -47,8 +47,9 @@ describe('local collection review catalog', () => {
     )
   })
 
-  it('keeps all eighteen production animals in a habitat-balanced order', () => {
-    expect(localReviewAnimals.map(({ id }) => id)).toEqual([
+  it('keeps all twenty-one production animals in a habitat-balanced order', () => {
+    const productionSlice = localReviewAnimals.slice(0, 21)
+    expect(productionSlice.map(({ id }) => id)).toEqual([
       'stegosaurus',
       'pteranodon',
       'pachycephalosaurus',
@@ -67,17 +68,20 @@ describe('local collection review catalog', () => {
       'meganeura',
       'dilophosaurus',
       'mosasaurus',
+      'velociraptor',
+      'parasaurolophus',
+      'dunkleosteus',
     ])
     expect(
-      localReviewAnimals.every(({ status }) => status === 'published'),
+      productionSlice.every(({ status }) => status === 'published'),
     ).toBe(true)
     expect(
-      localReviewAnimals
+      productionSlice
         .map(({ habitat }, index) => habitat === 'water' ? index : -1)
         .filter((index) => index >= 0),
-    ).toEqual([3, 8, 12, 17])
+    ).toEqual([3, 8, 12, 17, 20])
     expect(
-      localReviewAnimals
+      productionSlice
         .map(({ habitat }, index) => habitat === 'air' ? index : -1)
         .filter((index) => index >= 0),
     ).toEqual([1, 5, 10, 15])
@@ -91,6 +95,9 @@ describe('local collection review catalog', () => {
       'rhamphorhynchus',
       'tupandactylus',
       'meganeura',
+      'velociraptor',
+      'parasaurolophus',
+      'dunkleosteus',
     ])
     for (const animal of localReviewAnimals) {
       if (promotedIds.has(animal.id)) {
@@ -197,6 +204,9 @@ describe('local collection review catalog', () => {
       ['meganeura', 'air'],
       ['dilophosaurus', 'plains'],
       ['mosasaurus', 'underwater'],
+      ['velociraptor', 'plains'],
+      ['parasaurolophus', 'plains'],
+      ['dunkleosteus', 'underwater'],
     ])
   })
 
@@ -580,8 +590,15 @@ describe('local collection review catalog', () => {
     }
   })
 
-  it('loads the three promoted onboarding animals from production packages', () => {
-    const promotedIds = ['sauropelta', 'dilophosaurus', 'mosasaurus']
+  it('loads the six promoted onboarding animals from production packages', () => {
+    const promotedIds = [
+      'sauropelta',
+      'dilophosaurus',
+      'mosasaurus',
+      'velociraptor',
+      'parasaurolophus',
+      'dunkleosteus',
+    ]
     const promoted: readonly DisplayableAnimalPackage[] =
       localReviewAnimals.filter(({ id }) => promotedIds.includes(id))
 

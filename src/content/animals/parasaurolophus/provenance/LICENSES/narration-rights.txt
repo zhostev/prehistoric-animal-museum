@@ -1,0 +1,46 @@
+Qwen3-TTS Serena narration rights record
+Reviewed: 2026-08-10
+
+The Mandarin and English scripts are project-authored. Both audio takes were
+generated offline with Qwen3-TTS-12Hz-0.6B-CustomVoice using its built-in
+Serena speaker, normalized to 48 kHz mono MP3s, and listened to and approved
+by the project owner.
+
+Qwen3-TTS code and the official 0.6B CustomVoice model card are Apache-2.0:
+https://github.com/QwenLM/Qwen3-TTS/blob/main/LICENSE
+https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice
+
+The official release identifies Serena among the open-sourced timbres:
+https://qwen.ai/blog/?id=qwen3tts-0115
+
+The owner approves public distribution of these reviewed MP3s. The public
+notice identifies the model, Serena speaker, AI synthesis, and model license.
+Recorded in approval-record.json: approved by zhostev on 2026-08-10.
+
+Chinese narration approval
+
+Locale: zh-CN
+Speaker: Serena
+Language: Chinese
+Generated: 2026-08-10
+Runtime bytes: 97772
+Runtime SHA-256: 747ab960e305011d044823d894edae994e1dbc5e360fc88dd087a83c50f7cb76
+Human listening review: approved
+Public distribution decision: approved
+Approved: project owner zhostev on 2026-08-10
+
+Script: 这是副栉龙，一种生活在晚白垩世北美洲的植食性鸭嘴龙类恐龙。看看它脑袋后面那根长长的空心头冠，像不像一根弯曲的长管子？
+
+English narration approval
+
+Locale: en
+Speaker: Serena
+Language: English
+Generated: 2026-08-10
+Runtime bytes: 118892
+Runtime SHA-256: 705b630c1da5fe9b98a72afad5802624caf91dae8d7be4df7b287c2af85e7564
+Human listening review: approved
+Public distribution decision: approved
+Approved: project owner zhostev on 2026-08-10
+
+Script: This is Parasaurolophus, a plant-eating duck-billed dinosaur from Late Cretaceous North America. Look at the long hollow crest behind its head. Does it look like a long curved tube?

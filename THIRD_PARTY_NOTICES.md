@@ -197,6 +197,96 @@ content, contributions, and Brand Assets follow the separate scopes in
   - Export one traceable, closed-loop, in-place project Idle. Operation: replace-runtime-animation.
   - Authored and validator-checked one closed eight-second land-breathe-tail Idle for the shared museum viewer.
   - Included the human-reviewed curated-components partial mouth relaxation in the same Idle loop.
+## 邓氏鱼 (`dunkleosteus`)
+
+### `audio/narration.en.mp3`
+
+- Asset type: narration
+- Source: Dunkleosteus English narration, generated with Qwen3-TTS CustomVoice on 2026-08-10
+- License: [CC BY-NC-SA 4.0 project-owned Qwen3-TTS output](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated English narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).
+- Runtime SHA-256: `94610e02b98ab30c609ba1edb704a2c2d3078e69351be921b6d1fb9a18a147aa`
+- Modifications:
+  - Generated offline from the exact reviewed two-sentence script.
+  - Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis.
+### `audio/narration.zh-CN.mp3`
+
+- Asset type: narration
+- Source: Dunkleosteus Mandarin narration, generated with Qwen3-TTS CustomVoice on 2026-08-10
+- License: [CC BY-NC-SA 4.0 project-owned Qwen3-TTS output](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Mandarin narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).
+- Runtime SHA-256: `da2ee6a11f4e1787fa3b3f5675d47fcbd3e27b3590d34f47c6e9a75619db88fc`
+- Modifications:
+  - Generated offline from the exact reviewed two-sentence script.
+  - Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis.
+### `backgrounds/landscape.webp`
+
+- Asset type: background
+- Source: Dunkleosteus habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-10
+- License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Dunkleosteus landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
+- Runtime SHA-256: `8fdd996a57745f2ca773e6ef52c22b3b6a738524ee219e03c1dfb27377793fa0`
+- Modifications:
+  - Rendered the landscape pass deterministically from the project-authored habitat scene spec with EEVEE Next.
+  - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
+### `backgrounds/portrait.webp`
+
+- Asset type: background
+- Source: Dunkleosteus habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-10
+- License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Dunkleosteus portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
+- Runtime SHA-256: `0e1066cfd447146a9a9bda40a2f4371b5952edb79874b7a228c0a60b6523cc72`
+- Modifications:
+  - Rendered the portrait pass deterministically from the project-authored habitat scene spec with EEVEE Next.
+  - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
+### `images/poster-portrait.webp`
+
+- Asset type: poster
+- Source: Dunkleosteus transparent portrait model still, derived on 2026-08-10
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Dunkleosteus” by EvolutionIncarnate, CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `d2a3217d8431a0ca78ce85e09c101799dc8124e66fd836f850bcd5d577cca4af`
+- Modifications:
+  - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
+  - Encoded as exact lossless WebP without text, controls, labels, logos, or watermarks.
+### `images/poster.webp`
+
+- Asset type: poster
+- Source: Dunkleosteus transparent model still, derived on 2026-08-10
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Dunkleosteus” by EvolutionIncarnate, CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `ca4cce0e5fb3e1d62b0c0571b208cf0ccb8f784b3faf56270017b968216bbe5f`
+- Modifications:
+  - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
+  - Encoded as lossless WebP without text, controls, labels, logos, or watermarks.
+### `images/thumbnail.webp`
+
+- Asset type: thumbnail
+- Source: Dunkleosteus collection thumbnail, derived on 2026-08-10
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Dunkleosteus” by EvolutionIncarnate, CC0-1.0; modified for the Prehistoric Animal Museum. Scene art generated for this project.
+- Runtime SHA-256: `e2e1ffbd20b7b2cc8bd536c7624e1819a1533154bacb43ad83045e6f8b60e245`
+- Modifications:
+  - Selected a card-size crop that keeps the animal readable.
+  - Exported without embedded text, controls, labels, logos, or watermarks.
+### `model/model.glb`
+
+- Asset type: model
+- Source: [Dunkleosteus](https://commons.wikimedia.org/wiki/File:Dunkliferecon.stl) by EvolutionIncarnate
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Dunkleosteus” by EvolutionIncarnate, CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `3f210c1c481b2d6979f47b3190cba6d698cc148c38d6f8eba9c329f13894b7c6`
+- Modifications:
+  - pipeline: unrigged static STL -> decimate, author materials, synthesize 5-bone spine chain + 8 s swim Idle
+  - dunkleosteus: source faces Blender -Y; rotated 180 deg about Z, applied to mesh data -> head now toward +Y (glTF -Z)
+  - decimate: ratio 0.2162 (416332 -> 90000 tris, 44990 verts); over-ceiling source reduced to <=100k target
+  - shading: smooth (source STL was flat-shaded)
+  - materials authored (source had none): 'Body' muted slate blue (0.38,0.47,0.55) + 'HeadPlates' muted warm grey (0.52,0.49,0.43), roughness 0.8/0.85; head plates assigned to faces with local centre y > -1.379 (front 30%, the armoured head): 65769/90000 faces; choices remain human-reviewable (humanApprovals.materials stays false)
+  - scale: source body length 4.1131 Blender units -> 6.0 m; uniform factor 1.458754 applied to mesh data
+  - centring (water): shifted by [-0.23914, 3.21208, -1.57498] m so the bounding-box centre sits at the origin (x/y centred, centred vertically in the water column)
+  - armature synthesized: 5-bone spine chain Spine1..Spine5 along -Y (head end y=0.90 m to tail tip y=-3.00 m), roll 0
+  - Idle synthesized: frames 0..192 at 24 fps = 8.0 s, one LINEAR key per frame; lateral wave amplitudes [1.5, 3.0, 5.0, 7.0, 9.0] deg (Spine1->Spine5, travelling phase -0.55 rad/bone), vertical bob +/-0.05 m on the armature object, no root travel; frame 192 repeats frame 0 exactly (seamless loop)
+  - mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
 ## 巨盗龙 (`gigantoraptor`)
 
 ### `audio/narration.en.mp3`
@@ -881,6 +971,93 @@ content, contributions, and Brand Assets follow the separate scopes in
   - Converted legacy material data to metallic/roughness.
   - Cleared zero-weight joint indices and retained the presentation-safe Idle clip.
   - Deduplicated, pruned, repacked, validated, and reviewed the derivative.
+## 副栉龙 (`parasaurolophus`)
+
+### `audio/narration.en.mp3`
+
+- Asset type: narration
+- Source: Parasaurolophus English narration, generated with Qwen3-TTS CustomVoice on 2026-08-10
+- License: [CC BY-NC-SA 4.0 project-owned Qwen3-TTS output](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated English narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).
+- Runtime SHA-256: `705b630c1da5fe9b98a72afad5802624caf91dae8d7be4df7b287c2af85e7564`
+- Modifications:
+  - Generated offline from the exact reviewed two-sentence script.
+  - Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis.
+### `audio/narration.zh-CN.mp3`
+
+- Asset type: narration
+- Source: Parasaurolophus Mandarin narration, generated with Qwen3-TTS CustomVoice on 2026-08-10
+- License: [CC BY-NC-SA 4.0 project-owned Qwen3-TTS output](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Mandarin narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).
+- Runtime SHA-256: `747ab960e305011d044823d894edae994e1dbc5e360fc88dd087a83c50f7cb76`
+- Modifications:
+  - Generated offline from the exact reviewed two-sentence script.
+  - Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis.
+### `backgrounds/landscape.webp`
+
+- Asset type: background
+- Source: Parasaurolophus habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-10
+- License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Parasaurolophus landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
+- Runtime SHA-256: `76ad698cc7a1dcbb3a7538f9056bfd6e941f8f1b55f37a0d68ab4174720392cf`
+- Modifications:
+  - Rendered the landscape pass deterministically from the project-authored habitat scene spec with EEVEE Next.
+  - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
+### `backgrounds/portrait.webp`
+
+- Asset type: background
+- Source: Parasaurolophus habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-10
+- License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Parasaurolophus portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
+- Runtime SHA-256: `17af207a2f7a1601b975076664339cb0f7d0ab456bc0be9883dddb2e3e1c3e41`
+- Modifications:
+  - Rendered the portrait pass deterministically from the project-authored habitat scene spec with EEVEE Next.
+  - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
+### `images/poster-portrait.webp`
+
+- Asset type: poster
+- Source: Parasaurolophus transparent portrait model still, derived on 2026-08-10
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Parasaurolophus” by Quaternius, CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `9158502e5c316a647b6eb50175f7269844a29d2ee8e6f0d42ff9b0f0be605f88`
+- Modifications:
+  - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
+  - Encoded as exact lossless WebP without text, controls, labels, logos, or watermarks.
+### `images/poster.webp`
+
+- Asset type: poster
+- Source: Parasaurolophus transparent model still, derived on 2026-08-10
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Parasaurolophus” by Quaternius, CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `9fc8aa2b000151a10105981f077ed628062645b5a5272557b014ad3d8aebf389`
+- Modifications:
+  - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
+  - Encoded as lossless WebP without text, controls, labels, logos, or watermarks.
+### `images/thumbnail.webp`
+
+- Asset type: thumbnail
+- Source: Parasaurolophus collection thumbnail, derived on 2026-08-10
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Parasaurolophus” by Quaternius, CC0-1.0; modified for the Prehistoric Animal Museum. Scene art generated for this project.
+- Runtime SHA-256: `44d33b526f7bb1e3e285c9c0f31a24f6041daac5e3dce821a93f65120d27c61c`
+- Modifications:
+  - Selected a card-size crop that keeps the animal readable.
+  - Exported without embedded text, controls, labels, logos, or watermarks.
+### `model/model.glb`
+
+- Asset type: model
+- Source: [Parasaurolophus](https://quaternius.com/packs/animateddinosaurs.html) by Quaternius
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Parasaurolophus” by Quaternius, CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `5ac601b040884c6fcfd9aff491db46d084f35d356c6f0444d4666474ef7515fc`
+- Modifications:
+  - pipeline: rigged .blend source, keeping only 'Parasaurolophus_Idle' retimed to 8 s
+  - action 'Parasaurolophus_Idle' (0..60 f, BEZIER) resampled to 'Idle': frames 0..192 at 24 fps = 8.0 s, one LINEAR key per frame, 102 fcurves; frame 192 resamples frame 0 exactly (seamless loop); pose location channels scaled by 1.000000 (1.0 = armature-space units kept, metres come from the object node scale)
+  - parasaurolophus: source faces Blender -Y; 180 deg Z rotation kept on object node(s) ['Armature'] (rigged source: applying to armature data would break bone-local pose fcurves; child meshes inherit the node transform; matches the production maiasaura package) -> head now toward +Y (glTF -Z)
+  - scale: source body length 12.4811 Blender units -> 9.0 m; uniform factor 0.721089 kept on object node(s) ['Armature'] (armature-space pose fcurves stay in source units)
+  - grounding (land): shifted z by +0.00680 m so the lowest vertex rests at z=0 (object node translation)
+  - mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
+  - Removed 6 unused source clips after retiming the Idle take.
 ## 蛇颈龙类 (`plesiosaurus`)
 
 ### `audio/narration.en.mp3`
@@ -1570,3 +1747,90 @@ content, contributions, and Brand Assets follow the separate scopes in
   - Reweighted the integrated outer lower-jaw skin and split the shared mouth lining between head and jaw, with smooth hinge and mouth-edge transitions so the skin, lower teeth, and tongue remain together throughout both opening-and-closing pulses.
   - Matched both 33-vertex hip seam rings to the torso spine weights, then blended each upper leg back to its stationary leg bone over 0.16 model units so the hips remain closed while both feet stay planted.
   - Normalized the Blender export to one closed-loop Idle clip with ten rotation-only channels, then validator-checked and reviewed the derivative in the shared museum viewer.
+## 伶盗龙 (`velociraptor`)
+
+### `audio/narration.en.mp3`
+
+- Asset type: narration
+- Source: Velociraptor English narration, generated with Qwen3-TTS CustomVoice on 2026-08-10
+- License: [CC BY-NC-SA 4.0 project-owned Qwen3-TTS output](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated English narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).
+- Runtime SHA-256: `44d756de9c40cf7f78c53766d53bad48cfb0fcec7f6de5a669f05f78276998ba`
+- Modifications:
+  - Generated offline from the exact reviewed two-sentence script.
+  - Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis.
+### `audio/narration.zh-CN.mp3`
+
+- Asset type: narration
+- Source: Velociraptor Mandarin narration, generated with Qwen3-TTS CustomVoice on 2026-08-10
+- License: [CC BY-NC-SA 4.0 project-owned Qwen3-TTS output](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Mandarin narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).
+- Runtime SHA-256: `c4f2949e066f5b2bdc1336762a042146c8eeb3cf52f97cd7102a68f96c30bca3`
+- Modifications:
+  - Generated offline from the exact reviewed two-sentence script.
+  - Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis.
+### `backgrounds/landscape.webp`
+
+- Asset type: background
+- Source: Velociraptor habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-10
+- License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Velociraptor landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
+- Runtime SHA-256: `cce0ded7b2043d5d6f8acf286389057a10fb090538fd3ccbfa1418cd52aad6e8`
+- Modifications:
+  - Rendered the landscape pass deterministically from the project-authored habitat scene spec with EEVEE Next.
+  - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
+### `backgrounds/portrait.webp`
+
+- Asset type: background
+- Source: Velociraptor habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-10
+- License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Velociraptor portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
+- Runtime SHA-256: `d23a25e8aa44e6f2ff5be2cb4dcefdc83fda60521228a95a0be322a6c848bed4`
+- Modifications:
+  - Rendered the portrait pass deterministically from the project-authored habitat scene spec with EEVEE Next.
+  - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
+### `images/poster-portrait.webp`
+
+- Asset type: poster
+- Source: Velociraptor transparent portrait model still, derived on 2026-08-10
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Velociraptor” by Quaternius, CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `4aa4281411a0039cd245ced64ce317ae0d3482704daa4c3d2060280706f96957`
+- Modifications:
+  - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
+  - Encoded as exact lossless WebP without text, controls, labels, logos, or watermarks.
+### `images/poster.webp`
+
+- Asset type: poster
+- Source: Velociraptor transparent model still, derived on 2026-08-10
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Velociraptor” by Quaternius, CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `c22b4598704aba681a06394d41976fb6d3abf61377a04dfd2f63d1f58d541851`
+- Modifications:
+  - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
+  - Encoded as lossless WebP without text, controls, labels, logos, or watermarks.
+### `images/thumbnail.webp`
+
+- Asset type: thumbnail
+- Source: Velociraptor collection thumbnail, derived on 2026-08-10
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Velociraptor” by Quaternius, CC0-1.0; modified for the Prehistoric Animal Museum. Scene art generated for this project.
+- Runtime SHA-256: `e7ebfd897085568b03e49186f7c001352b060d0da87b9bff2cff7c8a9c2daa1e`
+- Modifications:
+  - Selected a card-size crop that keeps the animal readable.
+  - Exported without embedded text, controls, labels, logos, or watermarks.
+### `model/model.glb`
+
+- Asset type: model
+- Source: [Velociraptor](https://quaternius.com/packs/animateddinosaurs.html) by Quaternius
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Velociraptor” by Quaternius, CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `145932c78e2f7edf37929d9b3a1ee6a2aa800cd67612fb97beee4ce63b2216d2`
+- Modifications:
+  - pipeline: rigged .blend source, keeping only 'Velociraptor_Idle' retimed to 8 s
+  - action 'Velociraptor_Idle' (0..60 f, BEZIER) resampled to 'Idle': frames 0..192 at 24 fps = 8.0 s, one LINEAR key per frame, 102 fcurves; frame 192 resamples frame 0 exactly (seamless loop); pose location channels scaled by 1.000000 (1.0 = armature-space units kept, metres come from the object node scale)
+  - velociraptor: source faces Blender -Y; 180 deg Z rotation kept on object node(s) ['Armature'] (rigged source: applying to armature data would break bone-local pose fcurves; child meshes inherit the node transform; matches the production maiasaura package) -> head now toward +Y (glTF -Z)
+  - scale: source body length 13.2763 Blender units -> 2.0 m; uniform factor 0.150644 kept on object node(s) ['Armature'] (armature-space pose fcurves stay in source units)
+  - grounding (land): shifted z by +0.00797 m so the lowest vertex rests at z=0 (object node translation)
+  - mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
+  - Removed 6 unused source clips after retiming the Idle take.

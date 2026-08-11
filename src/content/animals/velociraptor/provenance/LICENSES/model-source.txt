@@ -1,0 +1,24 @@
+Velociraptor model source and modifications
+===========================================
+
+Direct source:
+https://quaternius.com/packs/animateddinosaurs.html
+
+Creator: Quaternius
+License: CC0-1.0
+Original downloaded source: 1078640 bytes (archive/Velociraptor.blend)
+Original SHA-256:
+addfa06b9851b61f8e53b0cd1468e45c43ca0f4f2d2c6b756f1c8c0efa5fffc1
+
+Modifications for the Prehistoric Animal Museum:
+- pipeline: rigged .blend source, keeping only 'Velociraptor_Idle' retimed to 8 s
+- action 'Velociraptor_Idle' (0..60 f, BEZIER) resampled to 'Idle': frames 0..192 at 24 fps = 8.0 s, one LINEAR key per frame, 102 fcurves; frame 192 resamples frame 0 exactly (seamless loop); pose location channels scaled by 1.000000 (1.0 = armature-space units kept, metres come from the object node scale)
+- velociraptor: source faces Blender -Y; 180 deg Z rotation kept on object node(s) ['Armature'] (rigged source: applying to armature data would break bone-local pose fcurves; child meshes inherit the node transform; matches the production maiasaura package) -> head now toward +Y (glTF -Z)
+- scale: source body length 13.2763 Blender units -> 2.0 m; uniform factor 0.150644 kept on object node(s) ['Armature'] (armature-space pose fcurves stay in source units)
+- grounding (land): shifted z by +0.00797 m so the lowest vertex rests at z=0 (object node translation)
+- mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
+- Removed 6 unused source clips after retiming the Idle take.
+
+Published runtime GLB: 204040 bytes
+Published SHA-256:
+145932c78e2f7edf37929d9b3a1ee6a2aa800cd67612fb97beee4ce63b2216d2

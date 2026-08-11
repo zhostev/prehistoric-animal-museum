@@ -22,6 +22,9 @@ export type LocalReviewAnimalId =
   | 'rhamphorhynchus'
   | 'tupandactylus'
   | 'meganeura'
+  | 'velociraptor'
+  | 'parasaurolophus'
+  | 'dunkleosteus'
 
 export function reviewAssetUrl(
   animalId: LocalReviewAnimalId,

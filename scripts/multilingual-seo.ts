@@ -9,6 +9,7 @@ import type { Plugin } from 'vite'
 import { animalSeoDescription } from '../src/content/animal-seo'
 import { animalDefinition as apatosaurusDefinition } from '../src/content/animals/apatosaurus/package'
 import { animalDefinition as dilophosaurusDefinition } from '../src/content/animals/dilophosaurus/package'
+import { animalDefinition as dunkleosteusDefinition } from '../src/content/animals/dunkleosteus/package'
 import { animalDefinition as gigantoraptorDefinition } from '../src/content/animals/gigantoraptor/package'
 import { animalDefinition as ichthyosaurDefinition } from '../src/content/animals/ichthyosaur/package'
 import { animalDefinition as maiasauraDefinition } from '../src/content/animals/maiasaura/package'
@@ -17,6 +18,7 @@ import { animalDefinition as megalodonDefinition } from '../src/content/animals/
 import { animalDefinition as meganeuraDefinition } from '../src/content/animals/meganeura/package'
 import { animalDefinition as mosasaurusDefinition } from '../src/content/animals/mosasaurus/package'
 import { animalDefinition as pachycephalosaurusDefinition } from '../src/content/animals/pachycephalosaurus/package'
+import { animalDefinition as parasaurolophusDefinition } from '../src/content/animals/parasaurolophus/package'
 import { animalDefinition as plesiosaurusDefinition } from '../src/content/animals/plesiosaurus/package'
 import { animalDefinition as pteranodonDefinition } from '../src/content/animals/pteranodon/package'
 import { animalDefinition as rhamphorhynchusDefinition } from '../src/content/animals/rhamphorhynchus/package'
@@ -25,6 +27,7 @@ import { animalDefinition as stegosaurusDefinition } from '../src/content/animal
 import { animalDefinition as triceratopsDefinition } from '../src/content/animals/triceratops/package'
 import { animalDefinition as tupandactylusDefinition } from '../src/content/animals/tupandactylus/package'
 import { animalDefinition as tyrannosaurusRexDefinition } from '../src/content/animals/tyrannosaurus-rex/package'
+import { animalDefinition as velociraptorDefinition } from '../src/content/animals/velociraptor/package'
 import { mainCollection } from '../src/content/collections/main'
 import { staticAnimalDetailIds } from '../src/content/static-animal-details'
 import type {
@@ -102,6 +105,7 @@ const defaultOptions = {
 const canonicalAnimalDefinitions = [
   apatosaurusDefinition,
   dilophosaurusDefinition,
+  dunkleosteusDefinition,
   gigantoraptorDefinition,
   ichthyosaurDefinition,
   maiasauraDefinition,
@@ -110,6 +114,7 @@ const canonicalAnimalDefinitions = [
   meganeuraDefinition,
   mosasaurusDefinition,
   pachycephalosaurusDefinition,
+  parasaurolophusDefinition,
   plesiosaurusDefinition,
   pteranodonDefinition,
   rhamphorhynchusDefinition,
@@ -118,6 +123,7 @@ const canonicalAnimalDefinitions = [
   triceratopsDefinition,
   tupandactylusDefinition,
   tyrannosaurusRexDefinition,
+  velociraptorDefinition,
 ] as const satisfies readonly PublishedAnimalDefinition[]
 
 const canonicalAnimalDefinitionsById = new Map(

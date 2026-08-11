@@ -1,0 +1,46 @@
+Qwen3-TTS Serena narration rights record
+Reviewed: 2026-08-10
+
+The Mandarin and English scripts are project-authored. Both audio takes were
+generated offline with Qwen3-TTS-12Hz-0.6B-CustomVoice using its built-in
+Serena speaker, normalized to 48 kHz mono MP3s, and listened to and approved
+by the project owner.
+
+Qwen3-TTS code and the official 0.6B CustomVoice model card are Apache-2.0:
+https://github.com/QwenLM/Qwen3-TTS/blob/main/LICENSE
+https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice
+
+The official release identifies Serena among the open-sourced timbres:
+https://qwen.ai/blog/?id=qwen3tts-0115
+
+The owner approves public distribution of these reviewed MP3s. The public
+notice identifies the model, Serena speaker, AI synthesis, and model license.
+Recorded in approval-record.json: approved by zhostev on 2026-08-10.
+
+Chinese narration approval
+
+Locale: zh-CN
+Speaker: Serena
+Language: Chinese
+Generated: 2026-08-10
+Runtime bytes: 99116
+Runtime SHA-256: c4f2949e066f5b2bdc1336762a042146c8eeb3cf52f97cd7102a68f96c30bca3
+Human listening review: approved
+Public distribution decision: approved
+Approved: project owner zhostev on 2026-08-10
+
+Script: 这是伶盗龙，一种生活在晚白垩世蒙古的带羽毛肉食性恐龙。看看它每只后脚上那枚翘起的弯弯大爪子，像不像一把锋利的小镰刀？
+
+English narration approval
+
+Locale: en
+Speaker: Serena
+Language: English
+Generated: 2026-08-10
+Runtime bytes: 115052
+Runtime SHA-256: 44d756de9c40cf7f78c53766d53bad48cfb0fcec7f6de5a669f05f78276998ba
+Human listening review: approved
+Public distribution decision: approved
+Approved: project owner zhostev on 2026-08-10
+
+Script: This is Velociraptor, a feathered meat-eating dinosaur from Late Cretaceous Mongolia. Look at the big curved claw held up on each of its feet. Does it look like a sharp little sickle?

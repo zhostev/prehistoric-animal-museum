@@ -27,7 +27,7 @@ describe('runtime locale metadata', () => {
       documentTitle: 'Prehistoric Animal Museum | A 3D Family Adventure',
       museumTitle: 'Prehistoric Animal Museum',
       creatorBrand: 'Leon Made This',
-      description: 'Explore 18 prehistoric animals.',
+      description: 'Explore 21 prehistoric animals.',
       socialImageAlt: 'Prehistoric Animal Museum by Leon Made This',
     })
 
@@ -40,7 +40,7 @@ describe('runtime locale metadata', () => {
     expect(
       document.querySelector<HTMLMetaElement>('meta[name="description"]')
         ?.content,
-    ).toBe('Explore 18 prehistoric animals.')
+    ).toBe('Explore 21 prehistoric animals.')
     expect(
       document.querySelector<HTMLMetaElement>('meta[property="og:url"]')
         ?.content,
@@ -262,7 +262,7 @@ describe('runtime locale metadata', () => {
       documentTitle: 'Prehistoric Animal Museum | A 3D Family Adventure',
       museumTitle: 'Prehistoric Animal Museum',
       creatorBrand: 'Leon Made This',
-      description: 'Explore 18 prehistoric animals.',
+      description: 'Explore 21 prehistoric animals.',
       socialImageAlt: 'Museum card',
     })
 

@@ -34,6 +34,7 @@ interface ReviewAnimalFiles {
   readonly backgroundLandscape: string
   readonly backgroundPortrait: string
   readonly narration?: string
+  readonly posterPortrait?: string
   readonly poster: string
   readonly thumbnail: string
 }
@@ -396,6 +397,75 @@ const reviewAnimalFiles: Readonly<
       'assets/candidates/animal-onboarding-2026-08-01/meganeura/output/thumbnail.webp',
     ),
   },
+  velociraptor: {
+    model: repositoryFile(
+      'assets/candidates/animal-onboarding-2026-08-10/velociraptor/output/model/model.glb',
+    ),
+    backgroundLandscape: repositoryFile(
+      'assets/candidates/animal-onboarding-2026-08-10/velociraptor/output/background-landscape.webp',
+    ),
+    backgroundPortrait: repositoryFile(
+      'assets/candidates/animal-onboarding-2026-08-10/velociraptor/output/background-portrait.webp',
+    ),
+    narration: repositoryFile(
+      'assets/candidates/animal-onboarding-2026-08-10/velociraptor/output/audio/narration.zh-CN.mp3',
+    ),
+    poster: repositoryFile(
+      'assets/candidates/animal-onboarding-2026-08-10/velociraptor/output/poster.webp',
+    ),
+    posterPortrait: repositoryFile(
+      'assets/candidates/animal-onboarding-2026-08-10/velociraptor/output/images/poster-portrait.webp',
+    ),
+    thumbnail: repositoryFile(
+      'assets/candidates/animal-onboarding-2026-08-10/velociraptor/output/thumbnail.webp',
+    ),
+  },
+  parasaurolophus: {
+    model: repositoryFile(
+      'assets/candidates/animal-onboarding-2026-08-10/parasaurolophus/output/model/model.glb',
+    ),
+    backgroundLandscape: repositoryFile(
+      'assets/candidates/animal-onboarding-2026-08-10/parasaurolophus/output/background-landscape.webp',
+    ),
+    backgroundPortrait: repositoryFile(
+      'assets/candidates/animal-onboarding-2026-08-10/parasaurolophus/output/background-portrait.webp',
+    ),
+    narration: repositoryFile(
+      'assets/candidates/animal-onboarding-2026-08-10/parasaurolophus/output/audio/narration.zh-CN.mp3',
+    ),
+    poster: repositoryFile(
+      'assets/candidates/animal-onboarding-2026-08-10/parasaurolophus/output/poster.webp',
+    ),
+    posterPortrait: repositoryFile(
+      'assets/candidates/animal-onboarding-2026-08-10/parasaurolophus/output/images/poster-portrait.webp',
+    ),
+    thumbnail: repositoryFile(
+      'assets/candidates/animal-onboarding-2026-08-10/parasaurolophus/output/thumbnail.webp',
+    ),
+  },
+  dunkleosteus: {
+    model: repositoryFile(
+      'assets/candidates/animal-onboarding-2026-08-10/dunkleosteus/output/model/model.glb',
+    ),
+    backgroundLandscape: repositoryFile(
+      'assets/candidates/animal-onboarding-2026-08-10/dunkleosteus/output/background-landscape.webp',
+    ),
+    backgroundPortrait: repositoryFile(
+      'assets/candidates/animal-onboarding-2026-08-10/dunkleosteus/output/background-portrait.webp',
+    ),
+    narration: repositoryFile(
+      'assets/candidates/animal-onboarding-2026-08-10/dunkleosteus/output/audio/narration.zh-CN.mp3',
+    ),
+    poster: repositoryFile(
+      'assets/candidates/animal-onboarding-2026-08-10/dunkleosteus/output/poster.webp',
+    ),
+    posterPortrait: repositoryFile(
+      'assets/candidates/animal-onboarding-2026-08-10/dunkleosteus/output/images/poster-portrait.webp',
+    ),
+    thumbnail: repositoryFile(
+      'assets/candidates/animal-onboarding-2026-08-10/dunkleosteus/output/thumbnail.webp',
+    ),
+  },
 }
 
 const routeFilePairs = Object.entries(reviewAnimalFiles).flatMap(
@@ -403,10 +473,12 @@ const routeFilePairs = Object.entries(reviewAnimalFiles).flatMap(
     const modelPreviewDirectory = repositoryFile(
       `assets/review-generated/model-previews/${animalId}`,
     )
-    const posterPortrait = productionAnimalAsset(
-      animalId as LocalReviewAnimalId,
-      'images/poster-portrait.webp',
-    )
+    const posterPortrait =
+      files.posterPortrait ??
+      productionAnimalAsset(
+        animalId as LocalReviewAnimalId,
+        'images/poster-portrait.webp',
+      )
     const modelPreviewFiles = [
       ...modelPreviewProfiles.map(
         ({ fileName }) =>

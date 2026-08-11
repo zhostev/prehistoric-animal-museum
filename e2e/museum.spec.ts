@@ -215,7 +215,7 @@ async function expectEnglishAnimalRailNamesContained(page: Page): Promise<void> 
       }
     })
   )()`)
-  expect(animalNameLayouts).toHaveLength(18)
+  expect(animalNameLayouts).toHaveLength(21)
   const railFailures = animalNameLayouts.flatMap((layout) => {
     const failures: string[] = []
     if (layout.lineCount < 1 || layout.lineCount > 2) {
@@ -1695,7 +1695,7 @@ test('all English animal titles stay whole at every required viewport', async ({
   const englishNames = await page
     .locator('.animal-card:not([data-animal-id^="fixture-"]) strong')
     .allTextContents()
-  expect(englishNames).toHaveLength(18)
+  expect(englishNames).toHaveLength(21)
 
   for (const viewport of requiredViewports) {
     await page.setViewportSize(viewport)

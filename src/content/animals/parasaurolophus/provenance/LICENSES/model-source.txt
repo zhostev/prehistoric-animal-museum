@@ -1,0 +1,24 @@
+Parasaurolophus model source and modifications
+==============================================
+
+Direct source:
+https://quaternius.com/packs/animateddinosaurs.html
+
+Creator: Quaternius
+License: CC0-1.0
+Original downloaded source: 1101040 bytes (archive/Parasaurolophus.blend)
+Original SHA-256:
+d1e050432fdc3ca21da1c562cde1e47a043e753c44a4d531afb289acc34c6e8d
+
+Modifications for the Prehistoric Animal Museum:
+- pipeline: rigged .blend source, keeping only 'Parasaurolophus_Idle' retimed to 8 s
+- action 'Parasaurolophus_Idle' (0..60 f, BEZIER) resampled to 'Idle': frames 0..192 at 24 fps = 8.0 s, one LINEAR key per frame, 102 fcurves; frame 192 resamples frame 0 exactly (seamless loop); pose location channels scaled by 1.000000 (1.0 = armature-space units kept, metres come from the object node scale)
+- parasaurolophus: source faces Blender -Y; 180 deg Z rotation kept on object node(s) ['Armature'] (rigged source: applying to armature data would break bone-local pose fcurves; child meshes inherit the node transform; matches the production maiasaura package) -> head now toward +Y (glTF -Z)
+- scale: source body length 12.4811 Blender units -> 9.0 m; uniform factor 0.721089 kept on object node(s) ['Armature'] (armature-space pose fcurves stay in source units)
+- grounding (land): shifted z by +0.00680 m so the lowest vertex rests at z=0 (object node translation)
+- mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
+- Removed 6 unused source clips after retiming the Idle take.
+
+Published runtime GLB: 221636 bytes
+Published SHA-256:
+5ac601b040884c6fcfd9aff491db46d084f35d356c6f0444d4666474ef7515fc

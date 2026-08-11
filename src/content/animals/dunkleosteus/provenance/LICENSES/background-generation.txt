@@ -1,0 +1,22 @@
+Dunkleosteus background generation record
+=========================================
+
+Tool: Blender 4.5.12 (project-authored habitat scene, deterministic seed)
+Seed: 3504070383
+Generated: 2026-08-10
+Use: project-specific responsive museum backgrounds
+
+The landscape and portrait were rendered as separate deterministic EEVEE Next
+passes from the project-authored habitat scene spec
+qa/derivatives-scene-spec.json (SHA-256 f9da775c9426b9fe1e4c0ce37c04920792f04f4df0c5391d29361cc38e45cb69).
+No animal, person, text, UI, logo, or watermark appears in the renders.
+
+Landscape runtime WebP: 27270 bytes (1920 × 1080)
+SHA-256: 8fdd996a57745f2ca773e6ef52c22b3b6a738524ee219e03c1dfb27377793fa0
+
+Portrait runtime WebP: 12126 bytes (1080 × 1920)
+SHA-256: 0e1066cfd447146a9a9bda40a2f4371b5952edb79874b7a228c0a60b6523cc72
+
+The reviewed renders were encoded as lossy WebP at quality 82.
+The project owner approved public distribution on 2026-08-10.
+Recorded in approval-record.json: approved by zhostev on 2026-08-10.
