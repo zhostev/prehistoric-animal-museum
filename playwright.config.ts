@@ -3,6 +3,23 @@ import { defineConfig, devices } from '@playwright/test'
 const nestedBase = '/prehistoric-animal-museum/'
 const port = 4187
 
+// Opt-in real-GPU rendering for machines with a usable GPU (e.g. /dev/dri +
+// NVIDIA). CI and default local runs stay on the bundled software renderer.
+// Requires the full Chromium build: npx playwright install chromium
+const useGpu = Boolean(process.env.MUSEUM_E2E_GPU)
+const gpuLaunch = {
+  channel: 'chromium' as const,
+  launchOptions: {
+    args: [
+      '--use-gl=angle',
+      '--use-angle=vulkan',
+      '--enable-features=Vulkan',
+      '--enable-gpu',
+      '--ignore-gpu-blocklist',
+    ],
+  },
+}
+
 export default defineConfig({
   testDir: './e2e',
   fullyParallel: true,
@@ -15,6 +32,7 @@ export default defineConfig({
     locale: 'zh-CN',
     trace: 'retain-on-failure',
     screenshot: 'only-on-failure',
+    ...(useGpu ? gpuLaunch : {}),
   },
   projects: [
     {
