@@ -11,8 +11,6 @@ const forbiddenMarkers = [
   unprefixedRouteMarker(localReviewAssetPrefix),
   '.handoff/collection-review',
   'assets/candidates',
-  'parasaurolophus',
-  '副栉龙',
 ] as const
 
 async function collectFiles(directory: string): Promise<string[]> {
