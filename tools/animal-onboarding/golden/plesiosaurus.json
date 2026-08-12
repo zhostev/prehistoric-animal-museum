@@ -1,0 +1,106 @@
+{
+  "id": "plesiosaurus",
+  "capturedAt": "2026-08-10T08:10:04.795Z",
+  "files": {
+    "animal.ts": {
+      "sha256": "e8667faef59af3f7fb320034bbaa66009b47e72fbd5fae4b78437ef579367015",
+      "bytes": 855
+    },
+    "audio/narration.en.mp3": {
+      "sha256": "8bd7a297842516bd023982ec6a2ac7d0836e346e0cbea8f28b87fb6296784c18",
+      "bytes": 174285
+    },
+    "audio/narration.zh-CN.mp3": {
+      "sha256": "7f09a3074e675a5e0b5c30b7880af8e2b80acb20308e32356998169630dc9557",
+      "bytes": 137325
+    },
+    "backgrounds/landscape.webp": {
+      "sha256": "36cc7edcf6f34366420c7fe98ed064656cd265377fb18829e385124d53c3db9f",
+      "bytes": 42220
+    },
+    "backgrounds/portrait.webp": {
+      "sha256": "a36bdf51a3f4ccb72f6c9f97bf13fef2de1c62af6ebd531b0567667fc001986e",
+      "bytes": 62060
+    },
+    "content.en.ts": {
+      "sha256": "47562bd59eb6e5fbb4da5f9d162560f63e3b84fd1bdaba27f7418d635663c219",
+      "bytes": 2756
+    },
+    "content.zh-CN.ts": {
+      "sha256": "829015f495613c669b095e87b4950d6a57721e223c4cc1214155626f3b1e78da",
+      "bytes": 2606
+    },
+    "images/model-preview.manifest.json": {
+      "sha256": "ab032afc22be6aab0b5de3776d54f0a0d90bd7640299fdaab78936c4d80376d5",
+      "bytes": 2747
+    },
+    "images/poster-portrait.webp": {
+      "sha256": "e1a5604b3ebe56f005ee4c4fa92041639667850a6a42f940442732b48d578d66",
+      "bytes": 17824
+    },
+    "images/poster.webp": {
+      "sha256": "33fa574cf2f476706dd77137dcff9edac0b1e816f6f075241bd02e4dc2b1f529",
+      "bytes": 57298
+    },
+    "images/preview-desktop-standard.webp": {
+      "sha256": "c56b2d15595746916203c6cb83bbca2c0eb70ea5c61b830d2a945e9e59197737",
+      "bytes": 140424
+    },
+    "images/preview-desktop-wide.webp": {
+      "sha256": "5929b72519e7fa9a155188c20880917cdc42086de4ea0419ad602362e4289c25",
+      "bytes": 134426
+    },
+    "images/preview-landscape-compact.webp": {
+      "sha256": "91f466c86ab40a05bef0d691939e86a45065961759ccddcc06188098f9dde4c8",
+      "bytes": 107204
+    },
+    "images/preview-phone-compact.webp": {
+      "sha256": "ab5990395825210e1bda407c8b74cfaeb21a093ca14c941fdac582ec073f2f38",
+      "bytes": 77286
+    },
+    "images/preview-phone-tall.webp": {
+      "sha256": "092d54db79d1cbe666c90c828fe4271a38d8932478a9f4bcd8785df1efeec9a7",
+      "bytes": 52248
+    },
+    "images/preview-tablet-portrait.webp": {
+      "sha256": "4379c993cf4bbe447fa34f6d833af6333c9e5771788fb90a088b556b17c02848",
+      "bytes": 90106
+    },
+    "images/thumbnail.webp": {
+      "sha256": "d3a8a78427341bd74fd0957aa98704f9b0c12d1a994c54e039a688f2fb67b32e",
+      "bytes": 10240
+    },
+    "model/model.glb": {
+      "sha256": "4edc54ab21f61eb7b5e38c3b5d87a1816621547a9e7fde33cfdf3efd93b788a8",
+      "bytes": 2519664
+    },
+    "package.ts": {
+      "sha256": "b01c461568aea59cedbea41eadca3b283b2bb08dc4ce96a2e9270954e9c55ede",
+      "bytes": 1232
+    },
+    "provenance.ts": {
+      "sha256": "588a4535100430382e2c264c728d55e126b65953c6e0128037c4674e7e2919ce",
+      "bytes": 2926
+    },
+    "provenance/LICENSES/background-generation.txt": {
+      "sha256": "f46ca1ac42823ab4624144f820646f188e2d3adfb02b94ef5bcf1e379540fe74",
+      "bytes": 908
+    },
+    "provenance/LICENSES/derived-images.txt": {
+      "sha256": "23675d14c2ab00f75976c5b0997bca75134fe77b9d1f464a06be17fcc99c1bd8",
+      "bytes": 562
+    },
+    "provenance/LICENSES/model-license.txt": {
+      "sha256": "a58ec196943da1ed8bda5a6946dacc5d5a8b20f67289acfa1cb9e418e511db37",
+      "bytes": 422
+    },
+    "provenance/LICENSES/model-source.txt": {
+      "sha256": "f86111538f1ee3934cc877cd5dfcc7721d5f30c06ffc7c840f4198cd944617a0",
+      "bytes": 997
+    },
+    "provenance/LICENSES/narration-rights.txt": {
+      "sha256": "0fd9153fa48831872c35ca714a4e82c8ef1f47a551af98145ec2ce4255318e75",
+      "bytes": 1357
+    }
+  }
+}

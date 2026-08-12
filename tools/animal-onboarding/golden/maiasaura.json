@@ -1,0 +1,106 @@
+{
+  "id": "maiasaura",
+  "capturedAt": "2026-08-10T08:10:04.768Z",
+  "files": {
+    "animal.ts": {
+      "sha256": "e8667faef59af3f7fb320034bbaa66009b47e72fbd5fae4b78437ef579367015",
+      "bytes": 855
+    },
+    "audio/narration.en.mp3": {
+      "sha256": "baeba1370388b5299cd7e7dd28ec4830e89ce9f77aeb9c66920738ecd9bb4bc1",
+      "bytes": 146925
+    },
+    "audio/narration.zh-CN.mp3": {
+      "sha256": "c5d2a33d9dab17e968e5e87e40b4f2ff7d0d2e82ee0da3b8d46091da0c1dc970",
+      "bytes": 120525
+    },
+    "backgrounds/landscape.webp": {
+      "sha256": "57da28e0040da8a8dcc53779a1fa1d43f68a76930ef75cdb6ea57a07b013b4d3",
+      "bytes": 336442
+    },
+    "backgrounds/portrait.webp": {
+      "sha256": "d615b288525fc0d144b5a3a0bb17a17439fa81f68323861e9378fd206105fd58",
+      "bytes": 265958
+    },
+    "content.en.ts": {
+      "sha256": "753c3f7fbe8238edd4b68400afeeed4cb540c8d9f9fdbfa723e24790f0b3f16a",
+      "bytes": 2742
+    },
+    "content.zh-CN.ts": {
+      "sha256": "89cf739bc61786c79e1074adedb19d23f9f0dab68f431235de3508d7fcaa6e03",
+      "bytes": 2588
+    },
+    "images/model-preview.manifest.json": {
+      "sha256": "dc527eb8f10c31a4cdbba97782943426de4c7d40bd2b2aa5dfadb541303ac5e1",
+      "bytes": 2754
+    },
+    "images/poster-portrait.webp": {
+      "sha256": "6e98b0707b8d4760a1f905f944469ea8511d7c8b8f881c449544e36e09447411",
+      "bytes": 14376
+    },
+    "images/poster.webp": {
+      "sha256": "e1299d0ff814fa351a168766d85603c0d826f12ffd67d992ed43af12c309b727",
+      "bytes": 44594
+    },
+    "images/preview-desktop-standard.webp": {
+      "sha256": "a4dfbd186fe74b3044465f96657edd0fbbc5ccde89abf7912544595cc926ac8f",
+      "bytes": 112288
+    },
+    "images/preview-desktop-wide.webp": {
+      "sha256": "3a86e56c3624ecce28eea15ba5483e3c63f37f4e5b5bdd7433a94b9bcc6643b8",
+      "bytes": 111284
+    },
+    "images/preview-landscape-compact.webp": {
+      "sha256": "24b87416910c6031ecb1aa2128a29c07ace3734100d4ac6dcfd8a76d550ea9be",
+      "bytes": 101676
+    },
+    "images/preview-phone-compact.webp": {
+      "sha256": "8c94d49ee248fdb7a4d16bbadf3d981c4f7dcc663ba21a01676234ac9f590ccb",
+      "bytes": 63632
+    },
+    "images/preview-phone-tall.webp": {
+      "sha256": "9bf8ff84f0d1bf77b7e81341c7eb1c5ae80a3b75f87f083c817cc868ef9f11a9",
+      "bytes": 44662
+    },
+    "images/preview-tablet-portrait.webp": {
+      "sha256": "46e689c85f39cbf73f3c49ed44f2fecfaa1fe05913c5d9cca39629c4aa5d6a8d",
+      "bytes": 76522
+    },
+    "images/thumbnail.webp": {
+      "sha256": "25668d76310ee5f0b437c9029f6b2d469aff5b809303ea9fea93b6b54986c7d3",
+      "bytes": 17338
+    },
+    "model/model.glb": {
+      "sha256": "31dca5fff3c4c361153385ac6e603c8f6916c26576bb4b8bae4db4f735b6fd27",
+      "bytes": 1454384
+    },
+    "package.ts": {
+      "sha256": "9c117bde07e19d92db104496a7e03136e6632c366f815905bec133df8156ff86",
+      "bytes": 1311
+    },
+    "provenance.ts": {
+      "sha256": "37e17106bcbdeca41908f24ae562dde722f817e1f9b7e5c80d74fda361ee4a83",
+      "bytes": 2824
+    },
+    "provenance/LICENSES/background-generation.txt": {
+      "sha256": "3164f7b73085f3a991210a83f22e74a538f5a00788b6d0e24e110cce2bf45a2a",
+      "bytes": 883
+    },
+    "provenance/LICENSES/derived-images.txt": {
+      "sha256": "eb9e1133f2b1baa1c6a9f5bfda3886482f68222bb520ba9d5242290d1fd51ee5",
+      "bytes": 907
+    },
+    "provenance/LICENSES/model-license.txt": {
+      "sha256": "cb836b8c5ac534a5a82bffbad5852c91043ebfdd7e47ae42c5a07abc4c36a025",
+      "bytes": 437
+    },
+    "provenance/LICENSES/model-source.txt": {
+      "sha256": "6358ca2500c8080e786b3f2d360f62287f57e5e80ab98937ab82ad61da529144",
+      "bytes": 822
+    },
+    "provenance/LICENSES/narration-rights.txt": {
+      "sha256": "2cde2395ba3788d109ee5ed50a67372c6a001be16536a35b08110489aa3597e2",
+      "bytes": 1340
+    }
+  }
+}

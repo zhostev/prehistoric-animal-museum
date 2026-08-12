@@ -28,7 +28,15 @@ docs/research/
 docs/specification/
 prototypes/
 spikes/
-tools/
+tools/*
+
+# The deterministic animal-onboarding toolchain is required by CI and by the
+# production baseline/golden verifiers. Candidate runs and review evidence
+# remain private under assets/candidates/.
+!tools/animal-onboarding/
+!tools/animal-onboarding/**
+tools/animal-onboarding/**/__pycache__/
+tools/animal-onboarding/**/*.py[cod]
 
 # Local environment files.
 .env
