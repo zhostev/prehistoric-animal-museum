@@ -53,6 +53,10 @@ from refine_materials import (  # noqa: E402
     author_smilodon_materials,
     refine_quaternius_materials,
 )
+from texture_materials import (  # noqa: E402
+    bake_procedural_textures,
+    texture_bake_config,
+)
 
 # Real-world body lengths (meters) from published sizes; the profile schema
 # has no size field, so the per-run values are pinned here and logged.
@@ -202,6 +206,11 @@ def finish(profile_path, profile, profile_dir, armature, habitat, log, landmarks
     bpy.context.scene.frame_set(0)
     landmarks = landmarks or measure_landmarks(habitat, log)
     update_profile_landmarks(profile_path, profile, landmarks, log)
+    texture_config = texture_bake_config(profile)
+    if texture_config is not None:
+        log.add("texture bake: model.textureBake present in the profile; running "
+                "the deterministic procedural texture stage before evidence renders")
+        bake_procedural_textures(scene_meshes(), texture_config, log)
     verts = all_world_vertices()
     render_views(blender_dir, verts, log)
     paths = render_motion_frames(blender_dir, log)

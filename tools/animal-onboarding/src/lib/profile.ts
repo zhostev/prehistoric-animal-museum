@@ -13,6 +13,14 @@ export interface ArchivedFile {
   readonly bytes: number
 }
 
+export type TextureBakeKind = 'scales' | 'stripes' | 'mottle'
+
+export interface TextureBake {
+  readonly patterns: Readonly<Record<string, TextureBakeKind>>
+  readonly mainMaterial?: string | null
+  readonly resolution?: 256 | 512 | 1024 | 2048
+}
+
 export interface MouthMotion {
   readonly mode: MouthMotionMode
   readonly reason: string | null
@@ -83,6 +91,7 @@ export interface CandidateProfile {
     readonly animated: boolean
     readonly sourceClip?: string | null
     readonly mouthMotion: MouthMotion
+    readonly textureBake?: TextureBake
   }
   readonly presentation: ProfilePresentation
   readonly landmarks: ProfileLandmarks
@@ -165,6 +174,29 @@ export function validateProfileDocument(document: unknown): string[] {
     problems.push('model.mouthMotion missing')
   } else if (!['disabled', 'source-rig', 'curated-components'].includes(String(mouth.mode))) {
     problems.push('model.mouthMotion.mode must be disabled | source-rig | curated-components')
+  }
+
+  const textureBake = isRecord(document.model) ? document.model.textureBake : undefined
+  if (textureBake !== undefined) {
+    if (!isRecord(textureBake)) {
+      problems.push('model.textureBake must be an object')
+    } else {
+      if (!isRecord(textureBake.patterns)) {
+        problems.push('model.textureBake.patterns must be an object')
+      } else {
+        for (const [slot, kind] of Object.entries(textureBake.patterns)) {
+          if (!['scales', 'stripes', 'mottle'].includes(String(kind))) {
+            problems.push(`model.textureBake.patterns.${slot} must be scales | stripes | mottle`)
+          }
+        }
+      }
+      if (
+        textureBake.resolution !== undefined &&
+        ![256, 512, 1024, 2048].includes(Number(textureBake.resolution))
+      ) {
+        problems.push('model.textureBake.resolution must be 256 | 512 | 1024 | 2048')
+      }
+    }
   }
 
   const approvals = document.humanApprovals

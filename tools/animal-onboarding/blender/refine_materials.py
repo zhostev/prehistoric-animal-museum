@@ -5,6 +5,10 @@ either no material at all or only broad flat colours.  These helpers author
 small, bounded PBR palettes and assign them from stable mesh-space regions.
 They deliberately avoid random noise, guessed mouth regions, external texture
 files and geometry-dependent UV unwraps so a rerun produces the same GLB.
+When real texture detail is wanted on top of such a flat palette, the opt-in
+`model.textureBake` stage (texture_materials.py, invoked from
+normalize_animal.finish) bakes deterministic procedural textures afterwards;
+this module stays the always-on default.
 
 Material quality and the biological plausibility of every palette remain
 human-review-only even when the deterministic pipeline passes.
