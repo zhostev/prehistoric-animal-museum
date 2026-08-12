@@ -1,0 +1,17 @@
+Jaekelopterus model license record
+===================================
+
+Asset: Jaekelopterus
+Creator: chris mckenzie (dinoking27)
+License: Creative Commons Attribution 4.0 International (CC-BY-4.0)
+License URL: https://creativecommons.org/licenses/by/4.0/
+Source URL: https://archive.org/details/thingiverse-4702654
+Accessed: 2026-08-11
+
+Attribution:
+“Jaekelopterus” by chris mckenzie (dinoking27), CC-BY-4.0; modified for the Prehistoric Animal Museum.
+
+License evidence: IA item metadata licenseurl https://creativecommons.org/licenses/by/4.0/; in-zip LICENSE.txt 'created by Thingiverse user dinoking27, licensed under cc'
+
+Archived license file: archive/LICENSE.txt
+SHA-256: d8e1ebf2bb21630e169ec7578a1d56c40a75b3338ef67ceba31e47ad8d7112f4

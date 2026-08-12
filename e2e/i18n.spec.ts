@@ -648,11 +648,19 @@ test('switches language with the radio menu without reloading the page or model'
       }
     ).__museumAudioProbe,
   )
-  expect(audioProbe.instances).toHaveLength(1)
-  expect(audioProbe.instances[0]?.playCalls).toBe(1)
-  expect(audioProbe.instances[0]?.pauseCalls).toBeGreaterThanOrEqual(1)
-  expect(audioProbe.instances[0]?.currentTime).toBe(0)
-  expect(audioProbe.instances[0]?.rewinds).toContain(0)
+  const playedInstances = audioProbe.instances.filter(
+    (instance) => instance.playCalls > 0,
+  )
+  expect(playedInstances).toHaveLength(1)
+  expect(playedInstances[0]?.playCalls).toBe(1)
+  expect(playedInstances[0]?.pauseCalls).toBeGreaterThanOrEqual(1)
+  expect(playedInstances[0]?.currentTime).toBe(0)
+  expect(playedInstances[0]?.rewinds).toContain(0)
+  expect(
+    audioProbe.instances.every(
+      (instance) => instance === playedInstances[0] || instance.playCalls === 0,
+    ),
+  ).toBe(true)
   await expect(narration).toHaveAccessibleName('Listen to its introduction')
   await expect(narration).toHaveAttribute('data-playback', 'stopped')
 

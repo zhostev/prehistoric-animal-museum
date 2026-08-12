@@ -1,0 +1,17 @@
+Ammonite model license record
+==============================
+
+Asset: Ammonite
+Creator: Steph Piper (sjpiper145)
+License: CC0 1.0 Universal Public Domain Dedication (CC0-1.0)
+License URL: https://creativecommons.org/publicdomain/zero/1.0/
+Source URL: https://archive.org/details/thingiverse-2246008
+Accessed: 2026-08-11
+
+Attribution:
+“Ammonite” by Steph Piper (sjpiper145), CC0-1.0; modified for the Prehistoric Animal Museum.
+
+License evidence: In-zip LICENSE.txt: 'licensed under the Creative Commons - Public Domain Dedication license. http://creativecommons.org/publicdomain/zero/1.0/'; IA metadata licenseurl https://creativecommons.org/publicdomain/zero/1.0/
+
+Archived license file: archive/LICENSE.txt
+SHA-256: 18b45973fe1e0794ef85d0878b5a3e097ec77896bbe1104cfe0428fb8f6275bd

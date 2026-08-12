@@ -1,0 +1,18 @@
+Jaekelopterus poster and thumbnail derivation record
+======================================================
+
+Generated: 2026-08-11
+
+The 1200 × 675 poster and the
+390 × 844 portrait poster are deterministic
+runtime captures of the normalized model without text, controls, logos, or
+watermarks. The 320 × 320 thumbnail was
+captured from the accepted desktop review presentation after hiding all
+interface chrome.
+
+Poster SHA-256: c13a25c74bbdccbc0824d7b6a896e0bf77adc404ad8b36ef0c3d7c1d80a2621e (16410 bytes)
+Portrait poster SHA-256: d36d281e7371015a2607657632012f78ad5f05d7b42112e75731afb86cc63584 (4384 bytes)
+Thumbnail SHA-256: 2e693ec56c21b76a7918ea9db97f8696a5eb2d417cf33b41c735c4ce75e68f85 (3150 bytes)
+
+The model attribution and CC-BY-4.0 terms in model-license.txt
+continue to apply. The background generation record is retained separately.

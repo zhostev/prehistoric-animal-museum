@@ -24,6 +24,10 @@ const reviewAnimals = [
   { id: 'velociraptor', name: '伶盗龙', narrationReady: true },
   { id: 'parasaurolophus', name: '副栉龙', narrationReady: true },
   { id: 'dunkleosteus', name: '邓氏鱼', narrationReady: true },
+  { id: 'ammonite', name: '菊石壳扫描', narrationReady: true },
+  { id: 'jaekelopterus', name: '耶克尔鲎', narrationReady: true },
+  { id: 'smilodon', name: '剑齿虎', narrationReady: true },
+  { id: 'spinosaurus', name: '棘龙', narrationReady: true },
 ] as const
 
 const firstFrameViewports = modelPreviewProfiles.map((profile) => ({

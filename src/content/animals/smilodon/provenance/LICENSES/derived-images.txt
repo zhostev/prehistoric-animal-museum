@@ -1,0 +1,18 @@
+Smilodon poster and thumbnail derivation record
+=================================================
+
+Generated: 2026-08-11
+
+The 1200 × 675 poster and the
+390 × 844 portrait poster are deterministic
+runtime captures of the normalized model without text, controls, logos, or
+watermarks. The 320 × 320 thumbnail was
+captured from the accepted desktop review presentation after hiding all
+interface chrome.
+
+Poster SHA-256: 9b80510935b23b88e6eadbf16ceac92f44f4f583e761adc3efb363572853e807 (12754 bytes)
+Portrait poster SHA-256: a945b1fb0de6b746d04eab9dfb2bb39fbd6a322bfef225333034cd1b2eda1723 (4240 bytes)
+Thumbnail SHA-256: ec29cf3217ebe7ec4eb0aeb0bee94e3ee651a354ab5c6d14b4aaa80306cd85a8 (3076 bytes)
+
+The model attribution and CC-BY-4.0 terms in model-license.txt
+continue to apply. The background generation record is retained separately.

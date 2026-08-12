@@ -1154,6 +1154,10 @@ export class ViewerController {
     if (transition.cameraSwitched) {
       return
     }
+    // Animation frames can step across the exact mathematical switch point.
+    // Force the shared canvas fully transparent before refitting the camera so
+    // differently sized animals cannot produce a one-frame scale jump.
+    this.setTransitionOpacity(0)
     transition.outgoing.group.visible = false
     transition.incoming.group.visible = true
     transition.cameraSwitched = true
@@ -1172,8 +1176,14 @@ export class ViewerController {
       1,
     )
     const frame = computeModelTransitionFrame(linearProgress)
-    if (frame.phase === 'incoming') {
+    const switchesCameraThisFrame =
+      frame.phase === 'incoming' && !transition.cameraSwitched
+    if (switchesCameraThisFrame) {
       this.switchTransitionCamera(transition)
+      // Keep the switch frame at the exact zero opacity set above. Applying
+      // the incoming interpolation immediately would overwrite it before the
+      // browser can paint, reintroducing the one-frame scale jump.
+      return
     }
     this.setTransitionOpacity(frame.modelOpacity)
     if (linearProgress >= 1) {

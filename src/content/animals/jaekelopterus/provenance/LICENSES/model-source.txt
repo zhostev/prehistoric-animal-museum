@@ -1,0 +1,26 @@
+Jaekelopterus model source and modifications
+============================================
+
+Direct source:
+https://archive.org/details/thingiverse-4702654
+
+Creator: chris mckenzie (dinoking27)
+License: CC-BY-4.0
+Original downloaded source: 3014284 bytes (archive/Jaekelopterus.stl)
+Original SHA-256:
+1344b4843ecbde4321f2fffc903442a4cda5d13ebf87b138c0e136d9ea6281ac
+
+Modifications for the Prehistoric Animal Museum:
+- pipeline: unrigged static STL (jaekelopterus) -> topology-budget check/decimate, author materials, synthesize 5-bone articulated spine chain + 8 s swim Idle
+- jaekelopterus: source faces Blender -Y; rotated 180 deg about Z, applied to mesh data -> head now toward +Y (glTF -Z)
+- shading: smooth (source STL was flat-shaded)
+- materials authored (source had none): eurypterid body/segments; 'Body' (0.36, 0.31, 0.22) + 'HeadPlates' (0.5, 0.43, 0.27), roughness 0.8/0.85; head plates assigned to faces with local centre y > 33.788 (front 30%, the armoured head): 20092/60284 faces; choices remain human-reviewable (humanApprovals.materials stays false)
+- scale: source body length 168.7734 Blender units -> 2.5 m; uniform factor 0.014813 applied to mesh data
+- centring (water): shifted by [-0.00038, -0.0005, -0.72229] m so the bounding-box centre sits at the origin (x/y centred, centred vertically in the water column)
+- armature synthesized: 5-bone spine chain Spine1..Spine5 along -Y (head end y=0.38 m to tail tip y=-1.25 m), roll 0
+- Idle synthesized: frames 0..192 at 24 fps = 8.0 s, one LINEAR key per frame; lateral wave amplitudes [2.0, 4.0, 7.0, 10.0, 13.0] deg (Spine1->Spine5, travelling phase -0.55 rad/bone), vertical bob +/-0.035 m on the armature object, no root travel; frame 192 repeats frame 0 exactly (seamless loop)
+- mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
+
+Published runtime GLB: 1720884 bytes
+Published SHA-256:
+1a92a0225bbb0f170afbc97122782cda794b84781097376f24596ed19bcb5fb7

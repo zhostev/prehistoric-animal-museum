@@ -196,7 +196,7 @@ describe('localized museum prerender document', () => {
         })),
       )
 
-      expect(localizedDetails).toHaveLength(42)
+      expect(localizedDetails).toHaveLength(detailPages.length)
       for (const { animalId, locale, source } of localizedDetails) {
         const animal = animalsById.get(animalId)
         if (!animal) {
@@ -279,5 +279,5 @@ describe('localized museum prerender document', () => {
     } finally {
       await rm(outputDirectory, { recursive: true })
     }
-  })
+  }, 15_000)
 })

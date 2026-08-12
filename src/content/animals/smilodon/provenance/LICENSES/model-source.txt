@@ -1,0 +1,25 @@
+Smilodon model source and modifications
+=======================================
+
+Direct source:
+https://archive.org/details/thingiverse-4759291
+
+Creator: Eric (Tepuitrouble)
+License: CC-BY-4.0
+Original downloaded source: 11642584 bytes (archive/smilodon-body.stl)
+Original SHA-256:
+6692fab97423b64a7d32e43bb31cb89375ba45b82b952b930aad883c0101e98d
+
+Modifications for the Prehistoric Animal Museum:
+- pipeline: unrigged Smilodon STL -> exact pedestal/component check, decimate to the web target, grounded two-bone deformation rig, 8 s breathing + head-sway Idle
+- smilodon: source faces Blender -Y; rotated 180 deg about Z, applied to mesh data -> head now toward +Y (glTF -Z)
+- decimate: ratio 0.386515 (232850 -> 90000 tris, 45002 verts); <= 90000 target
+- scale: source body length 51.8764 Blender units -> 2.1 m; uniform factor 0.040481 applied to mesh data
+- grounding (land): shifted z by +0.52114 m so the lowest vertex rests at z=0
+- armature synthesized: 2 bones ['Body', 'Head']
+- Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys; grounded Body breathes +/-1.8% width, +/-1.2% height and +/-0.4% length about a z=0 bone origin while Head sways +/-2.4 deg; frame 192 repeats frame 0 exactly
+- mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
+
+Published runtime GLB: 2529904 bytes
+Published SHA-256:
+77f01c3b4f0928db07a3acd9cb52fcc91fee7ba74e799843956f5fbd1e3ccee4

@@ -28,7 +28,7 @@ function option(name, fallback) {
 
 const root = resolve(process.cwd(), rootArgument)
 const port = Number(option('--port', process.env.PORT ?? '4173'))
-const host = option('--host', process.env.HOST ?? '127.0.0.1')
+const host = option('--host', process.env.MUSEUM_HOST ?? '127.0.0.1')
 const rawBase = option('--base', '/')
 const base = `/${rawBase.split('/').filter(Boolean).join('/')}${rawBase === '/' ? '' : '/'}`
 const fixtureModelDelayMs = Number(option('--fixture-model-delay', '0'))

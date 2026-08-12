@@ -1,0 +1,22 @@
+Spinosaurus background generation record
+========================================
+
+Tool: Blender 4.5.12 (project-authored habitat scene, deterministic seed)
+Seed: 1181698365
+Generated: 2026-08-11
+Use: project-specific responsive museum backgrounds
+
+The landscape and portrait were rendered as separate deterministic EEVEE Next
+passes from the project-authored habitat scene spec
+qa/derivatives-scene-spec.json (SHA-256 440d1f99b42e344615e67171ab97400faa07f2ceca988e458dfa8ceae8b572e7).
+No animal, person, text, UI, logo, or watermark appears in the renders.
+
+Landscape runtime WebP: 14852 bytes (1920 × 1080)
+SHA-256: d0bd0a9b979e06e2e55a6d4551e1935c094653afce6343b18b73fae1ab46780e
+
+Portrait runtime WebP: 8868 bytes (1080 × 1920)
+SHA-256: b311d84c39e5c6ce6773d8d5a739a08a5fc740d09990a81685de361147774b17
+
+The reviewed renders were encoded as lossy WebP at quality 82.
+The project owner approved public distribution on 2026-08-11.
+Recorded in approval-record.json: approved by museum-owner on 2026-08-11.

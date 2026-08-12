@@ -1,0 +1,46 @@
+Qwen3-TTS Serena narration rights record
+Reviewed: 2026-08-11
+
+The Mandarin and English scripts are project-authored. Both audio takes were
+generated offline with Qwen3-TTS-12Hz-0.6B-CustomVoice using its built-in
+Serena speaker, normalized to 48 kHz mono MP3s, and listened to and approved
+by the project owner.
+
+Qwen3-TTS code and the official 0.6B CustomVoice model card are Apache-2.0:
+https://github.com/QwenLM/Qwen3-TTS/blob/main/LICENSE
+https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice
+
+The official release identifies Serena among the open-sourced timbres:
+https://qwen.ai/blog/?id=qwen3tts-0115
+
+The owner approves public distribution of these reviewed MP3s. The public
+notice identifies the model, Serena speaker, AI synthesis, and model license.
+Recorded in approval-record.json: approved by museum-owner on 2026-08-11.
+
+Chinese narration approval
+
+Locale: zh-CN
+Speaker: Serena
+Language: Chinese
+Generated: 2026-08-11
+Runtime bytes: 120812
+Runtime SHA-256: 573c0deade449fbc7db3d59e649357bb8f679002e9fc03f084fdc4187465564c
+Human listening review: approved
+Public distribution decision: approved
+Approved: project owner museum-owner on 2026-08-11
+
+Script: 模型包内文件名把它标作耶克尔鲎，但来源条目标题写的是巨型鲎属，身份还需要核对。看看它身体前端那对带刺的大附肢，像不像两把用来抓住猎物的钳子？
+
+English narration approval
+
+Locale: en
+Speaker: Serena
+Language: English
+Generated: 2026-08-11
+Runtime bytes: 147692
+Runtime SHA-256: 534c0c72e6df12dd699f9e1fa927cbcf7851076638bb8cb1987a24c7b5a2f4ba
+Human listening review: approved
+Public distribution decision: approved
+Approved: project owner museum-owner on 2026-08-11
+
+Script: The file inside this model package is labelled Jaekelopterus, but the source item is titled Megalograptus, so its identity still needs checking. Look at the big spiny appendages at the front of its body. Do they look like two pincers for holding prey?

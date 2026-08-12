@@ -22,6 +22,10 @@ import { animal as meganeuraDraft } from './animals/meganeura/package'
 import { animal as velociraptorDraft } from './animals/velociraptor/package'
 import { animal as parasaurolophusDraft } from './animals/parasaurolophus/package'
 import { animal as dunkleosteusDraft } from './animals/dunkleosteus/package'
+import { animal as ammoniteDraft } from './animals/ammonite/package'
+import { animal as jaekelopterusDraft } from './animals/jaekelopterus/package'
+import { animal as smilodonDraft } from './animals/smilodon/package'
+import { animal as spinosaurusDraft } from './animals/spinosaurus/package'
 import type {
   CompleteDraftAnimalPackage,
   DisplayableAnimalPackage,
@@ -145,6 +149,10 @@ const onboardingDrafts: readonly CompleteDraftAnimalPackage[] = [
   velociraptorDraft,
   parasaurolophusDraft,
   dunkleosteusDraft,
+  ammoniteDraft,
+  jaekelopterusDraft,
+  smilodonDraft,
+  spinosaurusDraft,
 ]
 
 // The production collection is authoritative. A local draft automatically

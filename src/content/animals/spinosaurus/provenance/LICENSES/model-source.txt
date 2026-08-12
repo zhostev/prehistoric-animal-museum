@@ -1,0 +1,18 @@
+Spinosaurus model source and modifications
+==========================================
+
+Direct source:
+project-authored (no upstream)
+
+Creator: Prehistoric Animal Museum (project-authored)
+License: CC-BY-NC-SA-4.0
+Original downloaded source: 24325 bytes (blender/build_spinosaurus.py)
+Original SHA-256:
+376527519bb886be5e06edf40c6c0bcf32482e2779281979b908bc98e0456202
+
+Modifications for the Prehistoric Animal Museum:
+- Normalized orientation, scale and grounding; retimed to one closed eight-second LINEAR Idle.
+
+Published runtime GLB: 119792 bytes
+Published SHA-256:
+d9668d9716109acec18363565377a136c38c018013f5133a6e8c1495c8f49590

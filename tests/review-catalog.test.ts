@@ -47,8 +47,8 @@ describe('local collection review catalog', () => {
     )
   })
 
-  it('keeps all twenty-one production animals in a habitat-balanced order', () => {
-    const productionSlice = localReviewAnimals.slice(0, 21)
+  it('keeps all production animals in the explicit collection order', () => {
+    const productionSlice = localReviewAnimals.slice(0, mainAnimals.length)
     expect(productionSlice.map(({ id }) => id)).toEqual([
       'stegosaurus',
       'pteranodon',
@@ -71,6 +71,10 @@ describe('local collection review catalog', () => {
       'velociraptor',
       'parasaurolophus',
       'dunkleosteus',
+      'ammonite',
+      'jaekelopterus',
+      'smilodon',
+      'spinosaurus',
     ])
     expect(
       productionSlice.every(({ status }) => status === 'published'),
@@ -79,7 +83,7 @@ describe('local collection review catalog', () => {
       productionSlice
         .map(({ habitat }, index) => habitat === 'water' ? index : -1)
         .filter((index) => index >= 0),
-    ).toEqual([3, 8, 12, 17, 20])
+    ).toEqual([3, 8, 12, 17, 20, 21, 22])
     expect(
       productionSlice
         .map(({ habitat }, index) => habitat === 'air' ? index : -1)
@@ -98,6 +102,10 @@ describe('local collection review catalog', () => {
       'velociraptor',
       'parasaurolophus',
       'dunkleosteus',
+      'ammonite',
+      'jaekelopterus',
+      'smilodon',
+      'spinosaurus',
     ])
     for (const animal of localReviewAnimals) {
       if (promotedIds.has(animal.id)) {
@@ -207,6 +215,10 @@ describe('local collection review catalog', () => {
       ['velociraptor', 'plains'],
       ['parasaurolophus', 'plains'],
       ['dunkleosteus', 'underwater'],
+      ['ammonite', 'underwater'],
+      ['jaekelopterus', 'underwater'],
+      ['smilodon', 'plains'],
+      ['spinosaurus', 'plains'],
     ])
   })
 

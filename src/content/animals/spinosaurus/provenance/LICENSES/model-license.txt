@@ -1,0 +1,14 @@
+Spinosaurus model license record
+=================================
+
+Asset: Spinosaurus
+Creator: Prehistoric Animal Museum (project-authored)
+License: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC-BY-NC-SA-4.0)
+License URL: https://creativecommons.org/licenses/by-nc-sa/4.0/
+Source URL: project-authored (no upstream)
+Accessed: 2026-08-11
+
+Attribution:
+“Spinosaurus” by Prehistoric Animal Museum (project-authored), CC-BY-NC-SA-4.0; modified for the Prehistoric Animal Museum.
+
+License evidence: Project-authored procedural model; rights retained by the project and published under the site's generated-content license pattern

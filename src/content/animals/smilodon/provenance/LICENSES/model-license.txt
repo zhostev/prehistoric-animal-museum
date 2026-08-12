@@ -1,0 +1,17 @@
+Smilodon model license record
+==============================
+
+Asset: Smilodon
+Creator: Eric (Tepuitrouble)
+License: Creative Commons Attribution 4.0 International (CC-BY-4.0)
+License URL: https://creativecommons.org/licenses/by/4.0/
+Source URL: https://archive.org/details/thingiverse-4759291
+Accessed: 2026-08-11
+
+Attribution:
+“Smilodon” by Eric (Tepuitrouble), CC-BY-4.0; modified for the Prehistoric Animal Museum.
+
+License evidence: IA item metadata licenseurl https://creativecommons.org/licenses/by/4.0/; in-zip LICENSE.txt 'created by Thingiverse user Tepuitrouble, licensed under cc'
+
+Archived license file: archive/LICENSE.txt
+SHA-256: 709788a498675ab210659f8690fb14c63acbc5d51da6f1a9e5d9f0339f2a763d

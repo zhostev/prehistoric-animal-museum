@@ -2,6 +2,7 @@ import { expect, test, type Locator, type Page } from '@playwright/test'
 import sharp from 'sharp'
 import { GITHUB_STAR_PROMPT_STORAGE_KEY } from '../src/github'
 import { MODEL_DATA_REMINDER_STORAGE_KEY } from '../src/model-policy'
+import { mainCollection } from '../src/content/collections/main'
 
 const nestedPath = '/prehistoric-animal-museum/'
 
@@ -215,7 +216,7 @@ async function expectEnglishAnimalRailNamesContained(page: Page): Promise<void> 
       }
     })
   )()`)
-  expect(animalNameLayouts).toHaveLength(21)
+  expect(animalNameLayouts).toHaveLength(mainCollection.animalIds.length)
   const railFailures = animalNameLayouts.flatMap((layout) => {
     const failures: string[] = []
     if (layout.lineCount < 1 || layout.lineCount > 2) {
@@ -242,63 +243,6 @@ async function expectEnglishAnimalRailNamesContained(page: Page): Promise<void> 
     railFailures,
     'every English animal name should stay inside its card',
   ).toEqual([])
-}
-
-async function expectEnglishTitleContained(
-  page: Page,
-  name: string,
-): Promise<void> {
-  const title = page.getByRole('heading', { level: 2, name })
-  await expect(title).toBeVisible()
-  await page.evaluate(() => document.fonts.ready.then(() => undefined))
-  const layout = await title.evaluate((element) => {
-    const titleBox = element.getBoundingClientRect()
-    const storyCardBox = element.closest('.story-card')?.getBoundingClientRect()
-    const range = document.createRange()
-    range.selectNodeContents(element)
-    const textRects = Array.from(range.getClientRects())
-    const lineTops = new Set(textRects.map((rect) => Math.round(rect.top)))
-    const style = getComputedStyle(element)
-    return {
-      clientWidth: element.clientWidth,
-      hyphens: style.hyphens,
-      lineCount: lineTops.size,
-      overflowWrap: style.overflowWrap,
-      scrollWidth: element.scrollWidth,
-      storyCardLeft: storyCardBox?.left ?? Number.POSITIVE_INFINITY,
-      storyCardRight: storyCardBox?.right ?? Number.NEGATIVE_INFINITY,
-      textLeft: Math.min(...textRects.map((rect) => rect.left)),
-      textRight: Math.max(...textRects.map((rect) => rect.right)),
-      titleLeft: titleBox.left,
-      titleRight: titleBox.right,
-      wordBreak: style.wordBreak,
-    }
-  })
-  expect(layout.lineCount).toBe(1)
-  expect(layout.scrollWidth).toBeLessThanOrEqual(layout.clientWidth + 1)
-  expect(layout.textLeft).toBeGreaterThanOrEqual(layout.titleLeft - 1)
-  expect(layout.textRight).toBeLessThanOrEqual(layout.titleRight + 1)
-  expect(layout.textLeft).toBeGreaterThanOrEqual(layout.storyCardLeft - 1)
-  expect(layout.textRight).toBeLessThanOrEqual(layout.storyCardRight + 1)
-  expect(layout.wordBreak).toBe('normal')
-  expect(layout.overflowWrap).toBe('normal')
-  expect(layout.hyphens).toBe('none')
-}
-
-async function setEnglishTitleForLayoutProbe(
-  page: Page,
-  name: string,
-): Promise<void> {
-  await page.locator('.animal-title').evaluate((title, nextName) => {
-    title.textContent = nextName
-    window.dispatchEvent(new Event('resize'))
-  }, name)
-  await page.evaluate(
-    () =>
-      new Promise<void>((resolve) => {
-        requestAnimationFrame(() => requestAnimationFrame(() => resolve()))
-      }),
-  )
 }
 
 async function expectEnglishResponsiveLayout(
@@ -1686,7 +1630,7 @@ test('English animal rail contains long names at every required viewport', async
 test('all English animal titles stay whole at every required viewport', async ({
   page,
 }) => {
-  test.setTimeout(90_000)
+  test.setTimeout(180_000)
   await page.setViewportSize(requiredViewports[0])
   const response = await page.goto('./zh-CN/')
   expect(response?.ok()).toBe(true)
@@ -1695,14 +1639,82 @@ test('all English animal titles stay whole at every required viewport', async ({
   const englishNames = await page
     .locator('.animal-card:not([data-animal-id^="fixture-"]) strong')
     .allTextContents()
-  expect(englishNames).toHaveLength(21)
+  expect(englishNames).toHaveLength(mainCollection.animalIds.length)
 
   for (const viewport of requiredViewports) {
     await page.setViewportSize(viewport)
-    for (const name of englishNames) {
-      await setEnglishTitleForLayoutProbe(page, name)
-      await expectEnglishTitleContained(page, name)
-      await expectNoHorizontalOverflow(page)
+    await page.evaluate(() => document.fonts.ready.then(() => undefined))
+    const layouts = await page.locator('.animal-title').evaluate(
+      async (element, names) => {
+        const measured = []
+        for (const name of names) {
+          element.textContent = name
+          window.dispatchEvent(new Event('resize'))
+          await new Promise<void>((resolve) => {
+            requestAnimationFrame(() => requestAnimationFrame(() => resolve()))
+          })
+          const titleBox = element.getBoundingClientRect()
+          const storyCardBox = element
+            .closest('.story-card')
+            ?.getBoundingClientRect()
+          const range = document.createRange()
+          range.selectNodeContents(element)
+          const textRects = Array.from(range.getClientRects())
+          const lineTops = new Set(
+            textRects.map((rect) => Math.round(rect.top)),
+          )
+          const style = getComputedStyle(element)
+          measured.push({
+            clientHeight: element.clientHeight,
+            clientWidth: element.clientWidth,
+            documentClientWidth: document.documentElement.clientWidth,
+            documentScrollWidth: document.documentElement.scrollWidth,
+            hyphens: style.hyphens,
+            lineCount: lineTops.size,
+            name: element.textContent,
+            overflowWrap: style.overflowWrap,
+            scrollWidth: element.scrollWidth,
+            storyCardLeft:
+              storyCardBox?.left ?? Number.POSITIVE_INFINITY,
+            storyCardRight:
+              storyCardBox?.right ?? Number.NEGATIVE_INFINITY,
+            textLeft: Math.min(...textRects.map((rect) => rect.left)),
+            textRight: Math.max(...textRects.map((rect) => rect.right)),
+            titleLeft: titleBox.left,
+            titleRight: titleBox.right,
+            wordBreak: style.wordBreak,
+          })
+        }
+        return measured
+      },
+      englishNames,
+    )
+
+    for (const layout of layouts) {
+      expect(layout.clientHeight, layout.name ?? undefined).toBeGreaterThan(0)
+      expect(layout.clientWidth, layout.name ?? undefined).toBeGreaterThan(0)
+      expect(layout.lineCount, layout.name ?? undefined).toBe(1)
+      expect(layout.scrollWidth, layout.name ?? undefined).toBeLessThanOrEqual(
+        layout.clientWidth + 1,
+      )
+      expect(layout.textLeft, layout.name ?? undefined).toBeGreaterThanOrEqual(
+        layout.titleLeft - 1,
+      )
+      expect(layout.textRight, layout.name ?? undefined).toBeLessThanOrEqual(
+        layout.titleRight + 1,
+      )
+      expect(layout.textLeft, layout.name ?? undefined).toBeGreaterThanOrEqual(
+        layout.storyCardLeft - 1,
+      )
+      expect(layout.textRight, layout.name ?? undefined).toBeLessThanOrEqual(
+        layout.storyCardRight + 1,
+      )
+      expect(layout.documentScrollWidth, layout.name ?? undefined).toBeLessThanOrEqual(
+        layout.documentClientWidth + 1,
+      )
+      expect(layout.wordBreak, layout.name ?? undefined).toBe('normal')
+      expect(layout.overflowWrap, layout.name ?? undefined).toBe('normal')
+      expect(layout.hyphens, layout.name ?? undefined).toBe('none')
     }
   }
 })

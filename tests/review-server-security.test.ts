@@ -90,7 +90,7 @@ describe('local review server boundary', () => {
     ).toBe(true)
     expect(
       localReviewAssetFiles.has(
-        `${localReviewAssetPrefix}/mammoth/narration.mp3`,
+        `${localReviewAssetPrefix}/spinosaurus/narration.mp3`,
       ),
     ).toBe(true)
   })
@@ -184,7 +184,7 @@ describe('local review server boundary', () => {
 
       const reviewNarration = dispatchHead(
         server,
-        `${localReviewAssetPrefix}/mammoth/narration.mp3`,
+        `${localReviewAssetPrefix}/spinosaurus/narration.mp3`,
       )
       expect(reviewNarration.nextCalled).toBe(false)
       expect(reviewNarration.response.statusCode).toBe(200)

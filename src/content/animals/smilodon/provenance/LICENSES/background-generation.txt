@@ -1,0 +1,22 @@
+Smilodon background generation record
+=====================================
+
+Tool: Blender 4.5.12 (project-authored habitat scene, deterministic seed)
+Seed: 851121318
+Generated: 2026-08-11
+Use: project-specific responsive museum backgrounds
+
+The landscape and portrait were rendered as separate deterministic EEVEE Next
+passes from the project-authored habitat scene spec
+qa/derivatives-scene-spec.json (SHA-256 b72adc6b41812b0b1622fbb6b5fa84fdbf86e34dcab65a458c1409273dc6eb10).
+No animal, person, text, UI, logo, or watermark appears in the renders.
+
+Landscape runtime WebP: 15598 bytes (1920 × 1080)
+SHA-256: 868374d7b189c89daa45f3228049931cba715c5c94cd9424e5e24207bfb3b38f
+
+Portrait runtime WebP: 9920 bytes (1080 × 1920)
+SHA-256: b904f2556d2df36f295971b9c669b63ecb91e4c7aa32e1392d0795641a40e58d
+
+The reviewed renders were encoded as lossy WebP at quality 82.
+The project owner approved public distribution on 2026-08-11.
+Recorded in approval-record.json: approved by museum-owner on 2026-08-11.

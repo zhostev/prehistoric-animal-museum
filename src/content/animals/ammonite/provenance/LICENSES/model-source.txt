@@ -1,0 +1,21 @@
+Ammonite model source and modifications
+=======================================
+
+Direct source:
+https://archive.org/details/thingiverse-2246008
+
+Creator: Steph Piper (sjpiper145)
+License: CC0-1.0
+Original downloaded source: 3429332 bytes (archive/Ammonite_Fossil.ply)
+Original SHA-256:
+6269c2922a397bc321535a88596dd42703073c41dc6759c8397bd9de1ae2611f
+
+Modifications for the Prehistoric Animal Museum:
+- pipeline: one-piece fossil-shell PLY scan (not a living-animal reconstruction) -> topology check, stone material, single-bone floating display Idle
+- armature synthesized: 1 bones ['Shell']
+- Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys; fossil shell display drifts +/-0.018 m and rocks +/-3.2/+/-1.8 deg; frame 192 repeats frame 0 exactly
+- mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
+
+Published runtime GLB: 1702452 bytes
+Published SHA-256:
+24601fcaf1d86079d42926cea84f230dca184a2182c97ff120ebe171b34c3546

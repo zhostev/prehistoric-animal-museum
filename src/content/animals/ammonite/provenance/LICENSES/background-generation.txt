@@ -1,0 +1,22 @@
+Ammonite background generation record
+=====================================
+
+Tool: Blender 4.5.12 (project-authored habitat scene, deterministic seed)
+Seed: 2871074609
+Generated: 2026-08-11
+Use: project-specific responsive museum backgrounds
+
+The landscape and portrait were rendered as separate deterministic EEVEE Next
+passes from the project-authored habitat scene spec
+qa/derivatives-scene-spec.json (SHA-256 b22a81bf5023520776eb4b68c1ab7432543440151d1dc039764b27501d9b0ea0).
+No animal, person, text, UI, logo, or watermark appears in the renders.
+
+Landscape runtime WebP: 24596 bytes (1920 × 1080)
+SHA-256: b9ee44f47e88719a14865e60a3b23b08dca5a055715f4c2a998a7322dc898df8
+
+Portrait runtime WebP: 17352 bytes (1080 × 1920)
+SHA-256: cc0e6283a2631d94061e58b07fd17e0fa3525668c04f1a8f0a75bc136deb24cf
+
+The reviewed renders were encoded as lossy WebP at quality 82.
+The project owner approved public distribution on 2026-08-11.
+Recorded in approval-record.json: approved by museum-owner on 2026-08-11.

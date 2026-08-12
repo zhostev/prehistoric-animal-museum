@@ -1,0 +1,22 @@
+Jaekelopterus background generation record
+==========================================
+
+Tool: Blender 4.5.12 (project-authored habitat scene, deterministic seed)
+Seed: 2082533189
+Generated: 2026-08-11
+Use: project-specific responsive museum backgrounds
+
+The landscape and portrait were rendered as separate deterministic EEVEE Next
+passes from the project-authored habitat scene spec
+qa/derivatives-scene-spec.json (SHA-256 6649b7a3e202cfc961d25b66c29daf56b738a994fb0fd940bc7f8a9529b124b1).
+No animal, person, text, UI, logo, or watermark appears in the renders.
+
+Landscape runtime WebP: 28744 bytes (1920 × 1080)
+SHA-256: c5b1ae3a9fdcffb2e3cafde6c9ce13250272cd67759d8ef331296891343a4202
+
+Portrait runtime WebP: 18928 bytes (1080 × 1920)
+SHA-256: cbd1992bed622cf83262939e4018b7b3e455effc058116cd9dcbeb1f4f87a198
+
+The reviewed renders were encoded as lossy WebP at quality 82.
+The project owner approved public distribution on 2026-08-11.
+Recorded in approval-record.json: approved by museum-owner on 2026-08-11.

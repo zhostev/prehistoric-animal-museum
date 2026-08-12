@@ -1,0 +1,18 @@
+Ammonite poster and thumbnail derivation record
+=================================================
+
+Generated: 2026-08-11
+
+The 1200 × 675 poster and the
+390 × 844 portrait poster are deterministic
+runtime captures of the normalized model without text, controls, logos, or
+watermarks. The 320 × 320 thumbnail was
+captured from the accepted desktop review presentation after hiding all
+interface chrome.
+
+Poster SHA-256: a6d6257375e6566583e552fb2f46bd1f94ad3988236b686fb1cfed1002c63283 (11232 bytes)
+Portrait poster SHA-256: 6e058ef68440eebb20f6947e310be06beb237f07c0421c1276c6fa1caf2b3233 (4778 bytes)
+Thumbnail SHA-256: bcc2471d50db9a41aa5a6e16d9b997e65b294a084990cfd9fc53bc97c44d5a2e (2314 bytes)
+
+The model attribution and CC0-1.0 terms in model-license.txt
+continue to apply. The background generation record is retained separately.

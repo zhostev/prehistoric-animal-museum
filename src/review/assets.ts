@@ -25,6 +25,10 @@ export type LocalReviewAnimalId =
   | 'velociraptor'
   | 'parasaurolophus'
   | 'dunkleosteus'
+  | 'ammonite'
+  | 'jaekelopterus'
+  | 'smilodon'
+  | 'spinosaurus'
 
 export function reviewAssetUrl(
   animalId: LocalReviewAnimalId,
