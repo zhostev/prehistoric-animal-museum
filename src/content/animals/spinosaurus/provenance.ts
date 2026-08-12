@@ -19,10 +19,11 @@ export const provenance = [
       url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
     },
     runtime: {
-      sha256: 'd9668d9716109acec18363565377a136c38c018013f5133a6e8c1495c8f49590',
-      bytes: 119792,
+      sha256: 'fe6862179e5d0acb9c2a1a9f948f5588f6b6fe40e2bb6dcc28369194e4fcdf11',
+      bytes: 496640,
     },
     modifications: [
+      'Added deterministic project-authored procedural baked textures (Smart UV unwrap + Cycles diffuse bake, texture_materials.py); geometry, rig and Idle animation unchanged.',
       'Normalized orientation, scale and grounding; retimed to one closed eight-second LINEAR Idle.',
     ],
     attribution: '“Spinosaurus” by Prehistoric Animal Museum (project-authored), CC-BY-NC-SA-4.0; modified for the Prehistoric Animal Museum.',

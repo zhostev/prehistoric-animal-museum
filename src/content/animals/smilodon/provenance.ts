@@ -19,10 +19,11 @@ export const provenance = [
       url: 'https://creativecommons.org/licenses/by/4.0/',
     },
     runtime: {
-      sha256: '77f01c3b4f0928db07a3acd9cb52fcc91fee7ba74e799843956f5fbd1e3ccee4',
-      bytes: 2529904,
+      sha256: 'c0009b06bbda4bd3714b9f3c6c2dcaa289cd9732c9ec0cfdd0e36f484083af1c',
+      bytes: 3983988,
     },
     modifications: [
+      'Added deterministic project-authored procedural baked textures (Smart UV unwrap + Cycles diffuse bake, texture_materials.py); geometry, rig and Idle animation unchanged.',
       'pipeline: unrigged Smilodon STL -> exact pedestal/component check, decimate to the web target, grounded two-bone deformation rig, 8 s breathing + head-sway Idle',
       'smilodon: source faces Blender -Y; rotated 180 deg about Z, applied to mesh data -> head now toward +Y (glTF -Z)',
       'decimate: ratio 0.386515 (232850 -> 90000 tris, 45002 verts); <= 90000 target',

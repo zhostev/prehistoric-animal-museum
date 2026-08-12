@@ -19,10 +19,11 @@ export const provenance = [
       url: 'https://creativecommons.org/publicdomain/zero/1.0/',
     },
     runtime: {
-      sha256: '24601fcaf1d86079d42926cea84f230dca184a2182c97ff120ebe171b34c3546',
-      bytes: 1702452,
+      sha256: '9793f7cffa29d46c4da8852f5f2389559aba4a1b22a0c8d4ae8b4d5966d37e5d',
+      bytes: 3158140,
     },
     modifications: [
+      'Added deterministic project-authored procedural baked textures (Smart UV unwrap + Cycles diffuse bake, texture_materials.py); geometry, rig and Idle animation unchanged.',
       'pipeline: one-piece fossil-shell PLY scan (not a living-animal reconstruction) -> topology check, stone material, single-bone floating display Idle',
       'armature synthesized: 1 bones [\'Shell\']',
       'Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys; fossil shell display drifts +/-0.018 m and rocks +/-3.2/+/-1.8 deg; frame 192 repeats frame 0 exactly',

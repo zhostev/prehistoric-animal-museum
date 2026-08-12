@@ -19,10 +19,11 @@ export const provenance = [
       url: 'https://creativecommons.org/publicdomain/zero/1.0/',
     },
     runtime: {
-      sha256: '3f210c1c481b2d6979f47b3190cba6d698cc148c38d6f8eba9c329f13894b7c6',
-      bytes: 2557476,
+      sha256: '39e12696ffbec1c5579aa70d06af1f243888dfe44e7ff33ab627bc6d3a070afe',
+      bytes: 3713332,
     },
     modifications: [
+      'Added deterministic project-authored procedural baked textures (Smart UV unwrap + Cycles diffuse bake, texture_materials.py); geometry, rig and Idle animation unchanged.',
       'pipeline: unrigged static STL -> decimate, author materials, synthesize 5-bone spine chain + 8 s swim Idle',
       'dunkleosteus: source faces Blender -Y; rotated 180 deg about Z, applied to mesh data -> head now toward +Y (glTF -Z)',
       'decimate: ratio 0.2162 (416332 -> 90000 tris, 44990 verts); over-ceiling source reduced to <=100k target',

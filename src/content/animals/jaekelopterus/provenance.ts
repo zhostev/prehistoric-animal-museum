@@ -19,10 +19,11 @@ export const provenance = [
       url: 'https://creativecommons.org/licenses/by/4.0/',
     },
     runtime: {
-      sha256: '1a92a0225bbb0f170afbc97122782cda794b84781097376f24596ed19bcb5fb7',
-      bytes: 1720884,
+      sha256: 'c90667b959ee191f5ef32b2441b6a72fbac53f18740471935290f254c446c0b7',
+      bytes: 3333064,
     },
     modifications: [
+      'Added deterministic project-authored procedural baked textures (Smart UV unwrap + Cycles diffuse bake, texture_materials.py); geometry, rig and Idle animation unchanged.',
       'pipeline: unrigged static STL (jaekelopterus) -> topology-budget check/decimate, author materials, synthesize 5-bone articulated spine chain + 8 s swim Idle',
       'jaekelopterus: source faces Blender -Y; rotated 180 deg about Z, applied to mesh data -> head now toward +Y (glTF -Z)',
       'shading: smooth (source STL was flat-shaded)',

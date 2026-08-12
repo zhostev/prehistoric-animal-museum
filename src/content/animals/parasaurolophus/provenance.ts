@@ -19,10 +19,11 @@ export const provenance = [
       url: 'https://creativecommons.org/publicdomain/zero/1.0/',
     },
     runtime: {
-      sha256: '5ac601b040884c6fcfd9aff491db46d084f35d356c6f0444d4666474ef7515fc',
-      bytes: 221636,
+      sha256: '1e638121c380c3c468961c6fce4eeb3be8a58a606a24d02fb1cd3399c5fb78c2',
+      bytes: 675256,
     },
     modifications: [
+      'Added deterministic project-authored procedural baked textures (Smart UV unwrap + Cycles diffuse bake, texture_materials.py); geometry, rig and Idle animation unchanged.',
       'pipeline: rigged .blend source, keeping only \'Parasaurolophus_Idle\' retimed to 8 s',
       'action \'Parasaurolophus_Idle\' (0..60 f, BEZIER) resampled to \'Idle\': frames 0..192 at 24 fps = 8.0 s, one LINEAR key per frame, 102 fcurves; frame 192 resamples frame 0 exactly (seamless loop); pose location channels scaled by 1.000000 (1.0 = armature-space units kept, metres come from the object node scale)',
       'parasaurolophus: source faces Blender -Y; 180 deg Z rotation kept on object node(s) [\'Armature\'] (rigged source: applying to armature data would break bone-local pose fcurves; child meshes inherit the node transform; matches the production maiasaura package) -> head now toward +Y (glTF -Z)',

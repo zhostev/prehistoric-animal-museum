@@ -119,6 +119,7 @@ export const credits = [
     "sourceUrl": "https://archive.org/details/thingiverse-2246008",
     "attribution": "“Ammonite” by Steph Piper (sjpiper145), CC0-1.0; modified for the Prehistoric Animal Museum.",
     "modifications": [
+      "Added deterministic project-authored procedural baked textures (Smart UV unwrap + Cycles diffuse bake, texture_materials.py); geometry, rig and Idle animation unchanged.",
       "pipeline: one-piece fossil-shell PLY scan (not a living-animal reconstruction) -> topology check, stone material, single-bone floating display Idle",
       "armature synthesized: 1 bones ['Shell']",
       "Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys; fossil shell display drifts +/-0.018 m and rocks +/-3.2/+/-1.8 deg; frame 192 repeats frame 0 exactly",
@@ -492,6 +493,7 @@ export const credits = [
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dunkliferecon.stl",
     "attribution": "“Dunkleosteus” by EvolutionIncarnate, CC0-1.0; modified for the Prehistoric Animal Museum.",
     "modifications": [
+      "Added deterministic project-authored procedural baked textures (Smart UV unwrap + Cycles diffuse bake, texture_materials.py); geometry, rig and Idle animation unchanged.",
       "pipeline: unrigged static STL -> decimate, author materials, synthesize 5-bone spine chain + 8 s swim Idle",
       "dunkleosteus: source faces Blender -Y; rotated 180 deg about Z, applied to mesh data -> head now toward +Y (glTF -Z)",
       "decimate: ratio 0.2162 (416332 -> 90000 tris, 44990 verts); over-ceiling source reduced to <=100k target",
@@ -871,6 +873,7 @@ export const credits = [
     "sourceUrl": "https://archive.org/details/thingiverse-4702654",
     "attribution": "“Jaekelopterus” by chris mckenzie (dinoking27), CC-BY-4.0; modified for the Prehistoric Animal Museum.",
     "modifications": [
+      "Added deterministic project-authored procedural baked textures (Smart UV unwrap + Cycles diffuse bake, texture_materials.py); geometry, rig and Idle animation unchanged.",
       "pipeline: unrigged static STL (jaekelopterus) -> topology-budget check/decimate, author materials, synthesize 5-bone articulated spine chain + 8 s swim Idle",
       "jaekelopterus: source faces Blender -Y; rotated 180 deg about Z, applied to mesh data -> head now toward +Y (glTF -Z)",
       "shading: smooth (source STL was flat-shaded)",
@@ -1745,6 +1748,7 @@ export const credits = [
     "sourceUrl": "https://quaternius.com/packs/animateddinosaurs.html",
     "attribution": "“Parasaurolophus” by Quaternius, CC0-1.0; modified for the Prehistoric Animal Museum.",
     "modifications": [
+      "Added deterministic project-authored procedural baked textures (Smart UV unwrap + Cycles diffuse bake, texture_materials.py); geometry, rig and Idle animation unchanged.",
       "pipeline: rigged .blend source, keeping only 'Parasaurolophus_Idle' retimed to 8 s",
       "action 'Parasaurolophus_Idle' (0..60 f, BEZIER) resampled to 'Idle': frames 0..192 at 24 fps = 8.0 s, one LINEAR key per frame, 102 fcurves; frame 192 resamples frame 0 exactly (seamless loop); pose location channels scaled by 1.000000 (1.0 = armature-space units kept, metres come from the object node scale)",
       "parasaurolophus: source faces Blender -Y; 180 deg Z rotation kept on object node(s) ['Armature'] (rigged source: applying to armature data would break bone-local pose fcurves; child meshes inherit the node transform; matches the production maiasaura package) -> head now toward +Y (glTF -Z)",
@@ -2368,6 +2372,7 @@ export const credits = [
     "sourceUrl": "https://archive.org/details/thingiverse-4759291",
     "attribution": "“Smilodon” by Eric (Tepuitrouble), CC-BY-4.0; modified for the Prehistoric Animal Museum.",
     "modifications": [
+      "Added deterministic project-authored procedural baked textures (Smart UV unwrap + Cycles diffuse bake, texture_materials.py); geometry, rig and Idle animation unchanged.",
       "pipeline: unrigged Smilodon STL -> exact pedestal/component check, decimate to the web target, grounded two-bone deformation rig, 8 s breathing + head-sway Idle",
       "smilodon: source faces Blender -Y; rotated 180 deg about Z, applied to mesh data -> head now toward +Y (glTF -Z)",
       "decimate: ratio 0.386515 (232850 -> 90000 tris, 45002 verts); <= 90000 target",
@@ -2494,6 +2499,7 @@ export const credits = [
     "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
     "attribution": "“Spinosaurus” by Prehistoric Animal Museum (project-authored), CC-BY-NC-SA-4.0; modified for the Prehistoric Animal Museum.",
     "modifications": [
+      "Added deterministic project-authored procedural baked textures (Smart UV unwrap + Cycles diffuse bake, texture_materials.py); geometry, rig and Idle animation unchanged.",
       "Normalized orientation, scale and grounding; retimed to one closed eight-second LINEAR Idle."
     ]
   },
@@ -3118,6 +3124,7 @@ export const credits = [
     "sourceUrl": "https://quaternius.com/packs/animateddinosaurs.html",
     "attribution": "“Velociraptor” by Quaternius, CC0-1.0; modified for the Prehistoric Animal Museum.",
     "modifications": [
+      "Added deterministic project-authored procedural baked textures (Smart UV unwrap + Cycles diffuse bake, texture_materials.py); geometry, rig and Idle animation unchanged.",
       "pipeline: rigged .blend source, keeping only 'Velociraptor_Idle' retimed to 8 s",
       "action 'Velociraptor_Idle' (0..60 f, BEZIER) resampled to 'Idle': frames 0..192 at 24 fps = 8.0 s, one LINEAR key per frame, 102 fcurves; frame 192 resamples frame 0 exactly (seamless loop); pose location channels scaled by 1.000000 (1.0 = armature-space units kept, metres come from the object node scale)",
       "velociraptor: source faces Blender -Y; 180 deg Z rotation kept on object node(s) ['Armature'] (rigged source: applying to armature data would break bone-local pose fcurves; child meshes inherit the node transform; matches the production maiasaura package) -> head now toward +Y (glTF -Z)",

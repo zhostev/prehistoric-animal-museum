@@ -19,10 +19,11 @@ export const provenance = [
       url: 'https://creativecommons.org/publicdomain/zero/1.0/',
     },
     runtime: {
-      sha256: '145932c78e2f7edf37929d9b3a1ee6a2aa800cd67612fb97beee4ce63b2216d2',
-      bytes: 204040,
+      sha256: '5e7e4dbddeb3e2b6d86d6baea161d429331b7075290ecae7698773404bc4b6aa',
+      bytes: 639740,
     },
     modifications: [
+      'Added deterministic project-authored procedural baked textures (Smart UV unwrap + Cycles diffuse bake, texture_materials.py); geometry, rig and Idle animation unchanged.',
       'pipeline: rigged .blend source, keeping only \'Velociraptor_Idle\' retimed to 8 s',
       'action \'Velociraptor_Idle\' (0..60 f, BEZIER) resampled to \'Idle\': frames 0..192 at 24 fps = 8.0 s, one LINEAR key per frame, 102 fcurves; frame 192 resamples frame 0 exactly (seamless loop); pose location channels scaled by 1.000000 (1.0 = armature-space units kept, metres come from the object node scale)',
       'velociraptor: source faces Blender -Y; 180 deg Z rotation kept on object node(s) [\'Armature\'] (rigged source: applying to armature data would break bone-local pose fcurves; child meshes inherit the node transform; matches the production maiasaura package) -> head now toward +Y (glTF -Z)',
