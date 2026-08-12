@@ -2493,14 +2493,22 @@ export const credits = [
     "animalId": "spinosaurus",
     "assetPath": "model/model.glb",
     "assetKind": "model",
-    "sourceTitle": "Spinosaurus deterministic procedural model source",
-    "author": "Blender Python generator authored by the Prehistoric Animal Museum",
-    "licenseName": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International",
-    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "attribution": "“Spinosaurus” by Prehistoric Animal Museum (project-authored), CC-BY-NC-SA-4.0; modified for the Prehistoric Animal Museum.",
+    "sourceTitle": "Spinosaurus",
+    "author": "Julian Johnson-Mortimer (@FreddyFoxFreddy)",
+    "licenseName": "Creative Commons Attribution 4.0 International",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "sourceUrl": "https://sketchfab.com/3d-models/spinosaurus-4f2332ee93874d59a55fb60ed2873ec2",
+    "attribution": "“Spinosaurus” by Julian Johnson-Mortimer, CC-BY-4.0; modified for the Prehistoric Animal Museum.",
     "modifications": [
-      "Added deterministic project-authored procedural baked textures (Smart UV unwrap + Cycles diffuse bake, texture_materials.py); geometry, rig and Idle animation unchanged.",
-      "Normalized orientation, scale and grounding; retimed to one closed eight-second LINEAR Idle."
+      "Model replaced with the ‘Spinosaurus’ sculpt by Julian Johnson-Mortimer, CC-BY-4.0, via the static-sculpt pipeline track (run_static_sculpt).",
+      "source object transforms applied into mesh data (FBX import scale/rotation normalized)",
+      "normal bake: ‘high’ (320790 verts) -> ‘low’ (20048 verts), tangent space, 2048px, packed and wired via Normal Map node",
+      "scale: source body length 39.2302 Blender units -> 13.0 m; uniform factor 0.331378 applied to mesh data",
+      "grounding (land): shifted z by +0.02750 m so the lowest vertex rests at z=0",
+      "skinning: deterministic 20-step Body/Head/Tail blends by local +Y; teeth meshes fully weighted to Head",
+      "Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys; Body breathes, Head sways +/-2.4 deg, Tail sways +/-3.5 deg; frame 192 repeats frame 0 exactly (seamless loop)",
+      "texture bake: deterministic Cycles diffuse bake on the author UVs (scales/mottle patterns), 1024px Body + 512px accents (texture_materials.py)",
+      "mouth motion stays DISABLED (teeth are static separate components, no declared jaw path); inspection recorded as evidence only"
     ]
   },
   {
@@ -3117,21 +3125,21 @@ export const credits = [
     "animalId": "velociraptor",
     "assetPath": "model/model.glb",
     "assetKind": "model",
-    "sourceTitle": "Velociraptor",
-    "author": "Quaternius",
-    "licenseName": "CC0 1.0 Universal Public Domain Dedication",
-    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "sourceUrl": "https://quaternius.com/packs/animateddinosaurs.html",
-    "attribution": "“Velociraptor” by Quaternius, CC0-1.0; modified for the Prehistoric Animal Museum.",
+    "sourceTitle": "Raptor Pack (Raptor_Standing_Final)",
+    "author": "Greg Criddle (Noximous)",
+    "licenseName": "Creative Commons Attribution 4.0 International",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "sourceUrl": "https://archive.org/details/thingiverse-3784576",
+    "attribution": "“Raptor Pack” by Greg Criddle (Noximous), CC-BY-4.0; modified for the Prehistoric Animal Museum.",
     "modifications": [
-      "Added deterministic project-authored procedural baked textures (Smart UV unwrap + Cycles diffuse bake, texture_materials.py); geometry, rig and Idle animation unchanged.",
-      "pipeline: rigged .blend source, keeping only 'Velociraptor_Idle' retimed to 8 s",
-      "action 'Velociraptor_Idle' (0..60 f, BEZIER) resampled to 'Idle': frames 0..192 at 24 fps = 8.0 s, one LINEAR key per frame, 102 fcurves; frame 192 resamples frame 0 exactly (seamless loop); pose location channels scaled by 1.000000 (1.0 = armature-space units kept, metres come from the object node scale)",
-      "velociraptor: source faces Blender -Y; 180 deg Z rotation kept on object node(s) ['Armature'] (rigged source: applying to armature data would break bone-local pose fcurves; child meshes inherit the node transform; matches the production maiasaura package) -> head now toward +Y (glTF -Z)",
-      "scale: source body length 13.2763 Blender units -> 2.0 m; uniform factor 0.150644 kept on object node(s) ['Armature'] (armature-space pose fcurves stay in source units)",
-      "grounding (land): shifted z by +0.00797 m so the lowest vertex rests at z=0 (object node translation)",
-      "mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only",
-      "Removed 6 unused source clips after retiming the Idle take."
+      "Model replaced with the ‘Raptor Pack’ (Standing pose) sculpt by Greg Criddle (Noximous), CC-BY-4.0, via the static-sculpt pipeline track (run_static_sculpt).",
+      "decimate: ratio 0.163699 (549788 -> 90000 tris, 44741 verts); <= 90000 target",
+      "scale: source body length 39.4398 Blender units -> 2.0 m; uniform factor 0.050710 applied to mesh data",
+      "grounding (land): shifted z by +0.00000 m so the lowest vertex rests at z=0",
+      "skinning: deterministic 20-step Body/Head/Tail blends by local +Y; head zone y>=0.3800 m, tail zone y<=-0.4000 m",
+      "Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys; Body breathes, Head sways +/-2.4 deg, Tail sways +/-3.5 deg with a 2.2 rad phase lag; frame 192 repeats frame 0 exactly (seamless loop)",
+      "texture bake: deterministic Smart UV unwrap + Cycles diffuse bake (scales pattern), 1024px Body (texture_materials.py)",
+      "mouth motion stays DISABLED (static sculpt, no declared jaw path); inspection recorded as evidence only"
     ]
   }
 ] as const satisfies readonly CreditEntry[]

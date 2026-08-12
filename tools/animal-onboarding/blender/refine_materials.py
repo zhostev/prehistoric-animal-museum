@@ -307,3 +307,25 @@ def author_ammonite_materials(mesh, log):
         "this remains a coloured fossil shell, not an invented living soft-body "
         "reconstruction; human material review required",
     )
+
+
+def author_sculpt_materials(assignments, log):
+    """Flat PBR slots for static sculpt sources (STL/FBX) by object name.
+
+    assignments: {object_name: (material_name, color, roughness)}. Sources
+    carry either no material or one shared placeholder; each kept object gets
+    its configured slot. Colours are deliberately mid-tone because the
+    textureBake stage derives its pattern from them; material and surface
+    quality remain human-reviewable."""
+    for obj_name, (mat_name, color, roughness) in assignments.items():
+        obj = bpy.data.objects.get(obj_name)
+        if obj is None:
+            continue
+        material = _pbr_material(mat_name, color, roughness)
+        obj.data.materials.clear()
+        obj.data.materials.append(material)
+        for poly in obj.data.polygons:
+            poly.use_smooth = True
+        log.add(f"sculpt material: '{obj.name}' -> '{mat_name}' "
+                f"RGB={tuple(round(c, 3) for c in color)}, roughness={roughness}; "
+                "smooth shading; human material review required")

@@ -2,17 +2,33 @@ Spinosaurus model source and modifications
 ==========================================
 
 Direct source:
-project-authored (no upstream)
+https://sketchfab.com/3d-models/spinosaurus-4f2332ee93874d59a55fb60ed2873ec2
+(author's Google Drive mirror used for the no-login download)
 
-Creator: Prehistoric Animal Museum (project-authored)
-License: CC-BY-NC-SA-4.0
-Original downloaded source: 24325 bytes (blender/build_spinosaurus.py)
-Original SHA-256:
-376527519bb886be5e06edf40c6c0bcf32482e2779281979b908bc98e0456202
+Creator: Julian Johnson-Mortimer (@FreddyFoxFreddy)
+License: CC-BY-4.0
+Original downloaded source: 17763760 bytes (archive/spineBind.fbx)
 
 Modifications for the Prehistoric Animal Museum:
-- Normalized orientation, scale and grounding; retimed to one closed eight-second LINEAR Idle.
+- Model replaced with this sculpt via the static-sculpt pipeline track
+  (run_static_sculpt).
+- Kept meshes: low (game-res body), teethtop1, teethbot1, claws; eye empties
+  removed; source object transforms applied into mesh data (FBX import
+  scale/rotation normalized).
+- normal bake: 'high' (320790 verts) -> 'low' (20048 verts), tangent space,
+  2048px, packed and wired via Normal Map node
+- scale: source body length 39.2302 Blender units -> 13.0 m; factor 0.331378
+  applied to mesh data
+- grounding (land): shifted z by +0.02750 m so the lowest vertex rests at z=0
+- skinning: deterministic 20-step Body/Head/Tail blends by local +Y; teeth
+  meshes fully weighted to Head
+- Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys;
+  Body breathes, Head sways +/-2.4 deg, Tail sways +/-3.5 deg; frame 192
+  repeats frame 0 exactly (seamless loop)
+- texture bake: deterministic Cycles diffuse bake on the author UVs
+  (scales/mottle patterns), 1024px Body + 512px accents (texture_materials.py)
+- mouth motion stays DISABLED (teeth are static separate components, no
+  declared jaw path)
 
-Published runtime GLB: 119792 bytes
-Published SHA-256:
-d9668d9716109acec18363565377a136c38c018013f5133a6e8c1495c8f49590
+This record supersedes the earlier project-authored procedural low-poly
+Spinosaurus (recorded in git history before 2026-08-12).

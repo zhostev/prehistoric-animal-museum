@@ -50,10 +50,12 @@ from normalize_lib import (  # noqa: E402
 from refine_materials import (  # noqa: E402
     author_ammonite_materials,
     author_aquatic_scan_materials,
+    author_sculpt_materials,
     author_smilodon_materials,
     refine_quaternius_materials,
 )
 from texture_materials import (  # noqa: E402
+    bake_normal_from_highpoly,
     bake_procedural_textures,
     texture_bake_config,
 )
@@ -66,6 +68,7 @@ BODY_LENGTHS_M = {
     "dunkleosteus": 6.0,   # Dunkleosteus terrelli ~6 m
     "jaekelopterus": 2.5,  # upper-end Jaekelopterus estimate; identity remains human-reviewable
     "smilodon": 2.1,       # compact adult body length including the short tail
+    "spinosaurus": 13.0,   # Spinosaurus aegyptiacus ~13 m (matches the published content copy)
 }
 
 CONVENTION_NOTE = (
@@ -667,6 +670,209 @@ def run_ammonite(profile_path, profile, profile_dir, source_path, log):
     return armature, habitat, landmarks
 
 
+# Static-sculpt track (run_static_sculpt): detailed unrigged sculpts that ship
+# both display meshes and (optionally) a high-poly source for normal baking.
+# headSign is measured from the source (teeth/skull end), not guessed.
+SCULPT_CONFIGS = {
+    "spinosaurus": {
+        # Julian Johnson-Mortimer CC-BY-4.0 FBX: game-res 'low' + sculpt 'high'
+        # + separate teeth/claws; teeth centroid measured at world -Y (after
+        # the FBX import rotation), so the source is rotated 180 deg about Z.
+        "keep": {
+            "low": ("Body", (0.36, 0.49, 0.42), 0.82),
+            "teethtop1": ("Teeth", (0.82, 0.78, 0.66), 0.55),
+            "teethbot1": ("Teeth", (0.82, 0.78, 0.66), 0.55),
+            "claws": ("Claws", (0.42, 0.38, 0.33), 0.60),
+        },
+        "normalFrom": "high",
+        "normalResolution": 2048,
+        "headSign": -1,
+        "headBones": ("teethtop1", "teethbot1"),
+        "decimateTris": None,  # 20k-vert low mesh is already within budget
+    },
+    "velociraptor": {
+        # Noximous CC-BY-4.0 STL (Raptor_Standing pose); broad skull end
+        # measured at -Y, so the source is rotated 180 deg about Z.
+        "keep": None,
+        "headSign": -1,
+        "headBones": (),
+        "decimateTris": 90_000,
+    },
+}
+
+
+def run_static_sculpt(profile_path, profile, profile_dir, source_path, log):
+    """Detailed unrigged sculpt (STL/FBX) -> optional high-to-low normal bake,
+    authored materials, grounded three-bone (Body/Head/Tail) deformation rig,
+    8 s breathing + sway Idle. Used for the realistic model-upgrade track."""
+    animal_id = profile["id"]
+    cfg = SCULPT_CONFIGS[animal_id]
+    habitat = profile["presentation"]["habitat"]
+    body_length = BODY_LENGTHS_M[animal_id]
+    log.add(f"pipeline: static sculpt ({animal_id}) -> keep configured meshes, "
+            "author materials, optional normal bake, synthesize Body/Head/Tail "
+            "rig + 8 s Idle")
+
+    lower = source_path.lower()
+    if lower.endswith(".fbx"):
+        bpy.ops.import_scene.fbx(filepath=source_path)
+    elif lower.endswith(".stl"):
+        bpy.ops.wm.stl_import(filepath=source_path)
+    elif lower.endswith(".ply"):
+        bpy.ops.wm.ply_import(filepath=source_path)
+    else:
+        raise HardFail(f"unsupported sculpt source type: {source_path}")
+    setup_scene_defaults()
+
+    keep = cfg["keep"]
+    normal_from = cfg.get("normalFrom")
+    for ob in list(bpy.context.scene.objects):
+        if ob.type == "MESH" and (keep is None or ob.name in keep):
+            continue
+        if ob.type == "MESH" and normal_from is not None and ob.name == normal_from:
+            continue  # deleted after the normal bake
+        log.add(f"removed non-animal source object '{ob.name}' ({ob.type})")
+        bpy.data.objects.remove(ob, do_unlink=True)
+    meshes = scene_meshes()
+    if keep is None and len(meshes) != 1:
+        raise HardFail(f"expected 1 sculpt mesh, found {len(meshes)}")
+    missing = [name for name in (keep or {}) if bpy.data.objects.get(name) is None]
+    if missing:
+        raise HardFail(f"configured meshes missing from source: {missing}")
+    log.add(f"source objects kept: {[(m.name, len(m.data.vertices)) for m in meshes]}")
+
+    if cfg["headSign"] < 0:
+        rotate_to_production_forward(meshes, log, animal_id, apply=True)
+    else:
+        log.add(f"{animal_id}: measured head end (teeth/skull) already toward "
+                "Blender +Y (glTF -Z); no orientation change")
+
+    # FBX imports carry object-level scale/rotation (typically 0.01 / -90 deg
+    # X); scale_to_body_length SETS the object scale, so bake the import
+    # transform into the mesh data first or the body-length factor multiplies
+    # the stale local units.
+    apply_transform(list(scene_meshes()), location=True, rotation=True, scale=True)
+    log.add("source object transforms applied into mesh data (import "
+            "scale/rotation normalized; data now matches world space)")
+
+    if keep is not None:
+        author_sculpt_materials(keep, log)
+    else:
+        author_sculpt_materials(
+            {meshes[0].name: ("Body", (0.38, 0.30, 0.22), 0.85)}, log)
+
+    if normal_from is not None:
+        high = bpy.data.objects.get(normal_from)
+        if high is None:
+            raise HardFail(f"normal-bake source mesh '{normal_from}' not found")
+        low_name = next(name for name, spec in (keep or {}).items()
+                        if spec[0] == "Body")
+        low = bpy.data.objects[low_name]
+        bake_normal_from_highpoly(low, high, cfg["normalResolution"], log)
+        bpy.data.objects.remove(high, do_unlink=True)
+        meshes = scene_meshes()
+        log.add(f"normal-bake source '{normal_from}' removed after baking")
+
+    if cfg["decimateTris"] is not None:
+        decimate_if_needed(meshes[0], cfg["decimateTris"], log)
+
+    scale_to_body_length(meshes, body_length, log, apply=True)
+    coords = all_world_vertices()
+    centre = (coords.min(axis=0) + coords.max(axis=0)) / 2.0
+    for mesh in meshes:
+        mesh.location.x -= float(centre[0])
+        mesh.location.y -= float(centre[1])
+    apply_transform(meshes, location=True, rotation=False, scale=False)
+    ground_or_centre(meshes, habitat, log, apply=True)
+
+    coords = all_world_vertices()
+    lo, hi = coords.min(axis=0), coords.max(axis=0)
+    span_y = float(hi[1] - lo[1])
+    head_blend_start = float(hi[1] - 0.31 * span_y)
+    head_full_start = float(hi[1] - 0.20 * span_y)
+    tail_blend_start = float(lo[1] + 0.30 * span_y)
+    tail_full_start = float(lo[1] + 0.18 * span_y)
+    body_height = float(hi[2] - lo[2])
+    specs = [
+        ("Body", (0.0, 0.0, 0.0), (0.0, 0.0, max(0.2, body_height * 0.72)), None, False),
+        ("Head", (0.0, head_blend_start, body_height * 0.55),
+         (0.0, float(hi[1]), body_height * 0.60), "Body", False),
+        ("Tail", (0.0, tail_blend_start, body_height * 0.45),
+         (0.0, float(lo[1]), body_height * 0.40), "Body", False),
+    ]
+    armature = create_armature_bones(specs, log)
+
+    head_mesh_names = set(cfg["headBones"])
+    for mesh in meshes:
+        modifier = mesh.modifiers.new("Armature", "ARMATURE")
+        modifier.object = armature
+        mesh.parent = armature
+        body_group = mesh.vertex_groups.new(name="Body")
+        head_group = mesh.vertex_groups.new(name="Head")
+        tail_group = mesh.vertex_groups.new(name="Tail")
+        if mesh.name in head_mesh_names:
+            head_group.add(list(range(len(mesh.data.vertices))), 1.0, "REPLACE")
+            log.add(f"skinning: '{mesh.name}' fully weighted to Head "
+                    f"({len(mesh.data.vertices)} verts; teeth follow the head sway)")
+            continue
+        buckets = {}
+        for vertex in mesh.data.vertices:
+            y = vertex.co.y
+            if y >= head_blend_start:
+                blend = (y - head_blend_start) / max(head_full_start - head_blend_start, 1e-6)
+                bone = 1  # Head
+            elif y <= tail_blend_start:
+                blend = (tail_blend_start - y) / max(tail_blend_start - tail_full_start, 1e-6)
+                bone = 2  # Tail
+            else:
+                blend, bone = 0.0, 0
+            bucket = (bone, int(round(max(0.0, min(1.0, blend)) * 20.0)))
+            buckets.setdefault(bucket, []).append(vertex.index)
+        for (bone, bucket), indices in buckets.items():
+            weight = bucket / 20.0
+            if bone == 1:
+                head_group.add(indices, weight, "REPLACE")
+                if weight < 1.0:
+                    body_group.add(indices, 1.0 - weight, "REPLACE")
+            elif bone == 2:
+                tail_group.add(indices, weight, "REPLACE")
+                if weight < 1.0:
+                    body_group.add(indices, 1.0 - weight, "REPLACE")
+            else:
+                body_group.add(indices, 1.0, "REPLACE")
+        log.add(f"skinning: '{mesh.name}' deterministic 20-step blends by local +Y; "
+                f"head zone y>={head_blend_start:.4f} m, tail zone "
+                f"y<={tail_blend_start:.4f} m, torso stays on grounded Body bone")
+
+    action = bpy.data.actions.new("Idle")
+    frames = IDLE_END_FRAME + 1
+    for channel, amplitude in ((0, 0.018), (1, 0.004), (2, 0.012)):
+        curve = action.fcurves.new('pose.bones["Body"].scale', index=channel)
+        curve.keyframe_points.add(frames)
+        co = np.empty(frames * 2)
+        co[0::2] = np.arange(frames)
+        for frame in range(frames):
+            t = 2.0 * math.pi * frame / IDLE_END_FRAME
+            co[2 * frame + 1] = 1.0 + amplitude * math.sin(t + 0.42)
+        curve.keyframe_points.foreach_set("co", co)
+        for point in curve.keyframe_points:
+            point.interpolation = "LINEAR"
+        curve.update()
+    for bone_name, amplitude_deg, phase in (("Head", 2.4, 0.85), ("Tail", 3.5, 2.20)):
+        rest = armature.data.bones[bone_name].matrix_local.to_3x3()
+        local_z = rest.inverted() @ Vector((0.0, 0.0, 1.0))
+        sampled_quaternion_fcurve(
+            action, f'pose.bones["{bone_name}"].rotation_quaternion',
+            local_z, amplitude_deg, phase)
+    assign_action(armature, action)
+    log.add(f"Idle synthesized: frames 0..{IDLE_END_FRAME} at {FPS} fps = 8.0 s, "
+            "LINEAR per-frame keys; Body breathes +/-1.8% width, +/-1.2% height, "
+            "+/-0.4% length about a z=0 bone origin; Head sways +/-2.4 deg, Tail "
+            "sways +/-3.5 deg with a 2.2 rad phase lag; frame 192 repeats frame 0 "
+            "exactly (seamless loop)")
+    return armature, habitat
+
+
 def main():
     profile_path = parse_args()
     profile_dir = os.path.dirname(profile_path)
@@ -685,6 +891,8 @@ def main():
         landmarks = None
         if source_path.lower().endswith(".blend"):
             armature, habitat = run_quaternius(profile_path, profile, profile_dir, source_path, log)
+        elif animal_id in SCULPT_CONFIGS and source_path.lower().endswith((".stl", ".fbx", ".ply")):
+            armature, habitat = run_static_sculpt(profile_path, profile, profile_dir, source_path, log)
         elif animal_id == "smilodon" and source_path.lower().endswith(".stl"):
             armature, habitat = run_smilodon(profile_path, profile, profile_dir, source_path, log)
         elif animal_id == "ammonite" and source_path.lower().endswith(".ply"):

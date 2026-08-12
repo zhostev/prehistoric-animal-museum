@@ -2,23 +2,27 @@ Velociraptor model source and modifications
 ===========================================
 
 Direct source:
-https://quaternius.com/packs/animateddinosaurs.html
+https://archive.org/details/thingiverse-3784576 (Thingiverse 3784576 mirror)
 
-Creator: Quaternius
-License: CC0-1.0
-Original downloaded source: 1078640 bytes (archive/Velociraptor.blend)
-Original SHA-256:
-addfa06b9851b61f8e53b0cd1468e45c43ca0f4f2d2c6b756f1c8c0efa5fffc1
+Creator: Greg Criddle (Noximous)
+License: CC-BY-4.0
+Original downloaded source: 27489484 bytes (archive/Raptor_Standing_Final.stl,
+from the 59511624-byte Raptor_Pack_3784576.zip)
 
 Modifications for the Prehistoric Animal Museum:
-- pipeline: rigged .blend source, keeping only 'Velociraptor_Idle' retimed to 8 s
-- action 'Velociraptor_Idle' (0..60 f, BEZIER) resampled to 'Idle': frames 0..192 at 24 fps = 8.0 s, one LINEAR key per frame, 102 fcurves; frame 192 resamples frame 0 exactly (seamless loop); pose location channels scaled by 1.000000 (1.0 = armature-space units kept, metres come from the object node scale)
-- velociraptor: source faces Blender -Y; 180 deg Z rotation kept on object node(s) ['Armature'] (rigged source: applying to armature data would break bone-local pose fcurves; child meshes inherit the node transform; matches the production maiasaura package) -> head now toward +Y (glTF -Z)
-- scale: source body length 13.2763 Blender units -> 2.0 m; uniform factor 0.150644 kept on object node(s) ['Armature'] (armature-space pose fcurves stay in source units)
-- grounding (land): shifted z by +0.00797 m so the lowest vertex rests at z=0 (object node translation)
-- mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
-- Removed 6 unused source clips after retiming the Idle take.
+- Model replaced with the 'Raptor Pack' (Standing pose) sculpt via the
+  static-sculpt pipeline track (run_static_sculpt).
+- decimate: ratio 0.163699 (549788 -> 90000 tris, 44741 verts)
+- scale: source body length 39.4398 Blender units -> 2.0 m; factor 0.050710
+  applied to mesh data
+- grounding (land): lowest vertex rests at z=0
+- skinning: deterministic 20-step Body/Head/Tail blends by local +Y
+- Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys;
+  Body breathes, Head sways +/-2.4 deg, Tail sways +/-3.5 deg with a 2.2 rad
+  phase lag; frame 192 repeats frame 0 exactly (seamless loop)
+- texture bake: deterministic Smart UV unwrap + Cycles diffuse bake (scales
+  pattern), 1024px Body (texture_materials.py)
+- mouth motion stays DISABLED (static sculpt, no declared jaw path)
 
-Published runtime GLB: 204040 bytes
-Published SHA-256:
-145932c78e2f7edf37929d9b3a1ee6a2aa800cd67612fb97beee4ce63b2216d2
+This record supersedes the earlier Quaternius CC0 low-poly Velociraptor
+(recorded in git history before 2026-08-12).

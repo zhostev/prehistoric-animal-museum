@@ -38,6 +38,7 @@ Pattern kinds:
 import math
 
 import bpy
+from mathutils import Vector
 
 KINDS = ("scales", "stripes", "mottle")
 MAIN_RESOLUTION = 1024
@@ -82,7 +83,12 @@ def _slot_materials(meshes):
 
 
 def smart_unwrap(meshes, log):
+    unwrapped = 0
     for obj in meshes:
+        if len(obj.data.uv_layers) > 0:
+            log.add(f"texture bake: mesh '{obj.name}' already has a UV layer; "
+                    "kept as-is (author UVs take precedence)")
+            continue
         bpy.context.view_layer.objects.active = obj
         obj.select_set(True)
         bpy.ops.object.mode_set(mode="EDIT")
@@ -90,9 +96,11 @@ def smart_unwrap(meshes, log):
         bpy.ops.uv.smart_project(angle_limit=math.radians(66), island_margin=0.03)
         bpy.ops.object.mode_set(mode="OBJECT")
         obj.select_set(False)
+        unwrapped += 1
     log.add("texture bake: Smart UV Project (angle limit 66 deg, island margin "
-            f"0.03) on {len(meshes)} mesh(es); geometry is fixed at this point, "
-            "so the unwrap is deterministic")
+            f"0.03) on {unwrapped} mesh(es) ({len(meshes) - unwrapped} kept their "
+            "own UVs); geometry is fixed at this point, so the unwrap is "
+            "deterministic")
 
 
 def _ramp_mix(nodes, dark, light):
@@ -232,3 +240,45 @@ def bake_procedural_textures(meshes, config, log):
     _rewire_to_baked(materials, baked, log)
     log.add("texture bake: automated pass; baked material quality and biological "
             "plausibility remain human-review-only (approval category 'materials')")
+
+
+def bake_normal_from_highpoly(low_obj, high_obj, resolution, log):
+    """Bake tangent-space normals from a high-poly sculpt onto a game-res mesh.
+
+    Both objects must share the same transform (aligned source import). The low
+    mesh keeps its own UVs; the baked image is packed and wired through a
+    Normal Map node so the glTF exporter picks it up. Deterministic: fixed
+    ray distance derived from the measured bounding box, fixed sample count."""
+    scene = bpy.context.scene
+    previous_engine = scene.render.engine
+    scene.render.engine = "CYCLES"
+    scene.cycles.samples = 8
+    material = low_obj.material_slots[0].material
+    image = bpy.data.images.new(f"normal_{low_obj.name}",
+                                width=resolution, height=resolution)
+    image.colorspace_settings.name = "Non-Color"
+    node = material.node_tree.nodes.new("ShaderNodeTexImage")
+    node.image = image
+    material.node_tree.nodes.active = node
+    corners = [low_obj.matrix_world @ Vector(c) for c in low_obj.bound_box]
+    lo = [min(c[i] for c in corners) for i in range(3)]
+    hi = [max(c[i] for c in corners) for i in range(3)]
+    size = max(hi[i] - lo[i] for i in range(3))
+    bpy.ops.object.select_all(action="DESELECT")
+    high_obj.select_set(True)
+    low_obj.select_set(True)
+    bpy.context.view_layer.objects.active = low_obj
+    bpy.ops.object.bake(type="NORMAL", use_selected_to_active=True,
+                        max_ray_distance=size * 0.01, margin=16)
+    low_obj.select_set(False)
+    high_obj.select_set(False)
+    scene.render.engine = previous_engine
+    image.pack()
+    normal_map = material.node_tree.nodes.new("ShaderNodeNormalMap")
+    material.node_tree.links.new(node.outputs["Color"], normal_map.inputs["Color"])
+    bsdf = _principled_of(material)
+    material.node_tree.links.new(normal_map.outputs["Normal"], bsdf.inputs["Normal"])
+    log.add(f"normal bake: '{high_obj.name}' "
+            f"({len(high_obj.data.vertices)} verts) -> '{low_obj.name}' "
+            f"({len(low_obj.data.vertices)} verts), tangent space, {resolution}px, "
+            f"ray distance {size * 0.01:.4f}, packed and wired via Normal Map node")
