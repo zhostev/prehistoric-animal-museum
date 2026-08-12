@@ -17,6 +17,16 @@ import {
 } from '../src/review/types'
 
 describe('local collection review catalog', () => {
+  const pendingRevisionIds = new Set([
+    'velociraptor',
+    'parasaurolophus',
+    'dunkleosteus',
+    'ammonite',
+    'jaekelopterus',
+    'smilodon',
+    'spinosaurus',
+  ])
+
   it('switches an allowlisted draft to production assets without a catalog edit', () => {
     const beforePromotion = buildLocalReviewCatalog(
       mainAnimals.filter(({ id }) => id !== 'sauropelta'),
@@ -45,6 +55,25 @@ describe('local collection review catalog', () => {
     expect(promoted?.assets.model).toContain(
       '/src/content/animals/sauropelta/model/model.glb',
     )
+  })
+
+  it('serves a pending production revision from candidate assets without changing order', () => {
+    const revision = {
+      ...sauropeltaDraft,
+      reviewRevision: true,
+    } as const
+    const catalog = buildLocalReviewCatalog(mainAnimals, [], [revision])
+    const productionIndex = mainAnimals.findIndex(({ id }) => id === 'sauropelta')
+
+    expect(catalog[productionIndex]).toMatchObject({
+      id: 'sauropelta',
+      status: 'draft',
+      reviewRevision: true,
+    })
+    expect(catalog[productionIndex]?.assets.model).toContain(
+      '/__museum-review-assets/sauropelta/model.glb',
+    )
+    expect(catalog.filter(({ id }) => id === 'sauropelta')).toHaveLength(1)
   })
 
   it('keeps all production animals in the explicit collection order', () => {
@@ -77,7 +106,14 @@ describe('local collection review catalog', () => {
       'spinosaurus',
     ])
     expect(
-      productionSlice.every(({ status }) => status === 'published'),
+      productionSlice
+        .filter(({ id }) => !pendingRevisionIds.has(id))
+        .every(({ status }) => status === 'published'),
+    ).toBe(true)
+    expect(
+      productionSlice
+        .filter(({ id }) => pendingRevisionIds.has(id))
+        .every(({ status }) => status === 'draft'),
     ).toBe(true)
     expect(
       productionSlice
@@ -92,23 +128,16 @@ describe('local collection review catalog', () => {
   })
 
   it('provides complete visual assets and locally reviewable narration', () => {
-    const promotedIds = new Set([
+    const productionReviewIds = new Set([
       'sauropelta',
       'dilophosaurus',
       'mosasaurus',
       'rhamphorhynchus',
       'tupandactylus',
       'meganeura',
-      'velociraptor',
-      'parasaurolophus',
-      'dunkleosteus',
-      'ammonite',
-      'jaekelopterus',
-      'smilodon',
-      'spinosaurus',
     ])
     for (const animal of localReviewAnimals) {
-      if (promotedIds.has(animal.id)) {
+      if (productionReviewIds.has(animal.id)) {
         expect(animal.assets.model).toContain(
           `/src/content/animals/${animal.id}/model/model.glb`,
         )
@@ -119,7 +148,7 @@ describe('local collection review catalog', () => {
       }
       expect(animal.assets.poster).toMatch(/poster\.webp$/)
       expect(animal.assets.thumbnail).toMatch(/thumbnail\.webp$/)
-      if (promotedIds.has(animal.id)) {
+      if (productionReviewIds.has(animal.id)) {
         expect(animal.assets.backgrounds.landscape).toContain(
           `/src/content/animals/${animal.id}/backgrounds/landscape.webp`,
         )
@@ -147,7 +176,7 @@ describe('local collection review catalog', () => {
       if (zhNarrationAsset?.status !== 'ready') {
         throw new Error(`Expected ready narration for ${animal.id}`)
       }
-      if (promotedIds.has(animal.id)) {
+      if (productionReviewIds.has(animal.id)) {
         expect(zhNarrationAsset.url).toContain(
           `/src/content/animals/${animal.id}/audio/narration.zh-CN.mp3`,
         )
@@ -164,7 +193,7 @@ describe('local collection review catalog', () => {
       if (animal.review) {
         expect(animal.review.checks.length).toBeGreaterThanOrEqual(2)
       } else {
-        expect(promotedIds.has(animal.id)).toBe(true)
+        expect(productionReviewIds.has(animal.id)).toBe(true)
       }
     }
   })
@@ -602,7 +631,7 @@ describe('local collection review catalog', () => {
     }
   })
 
-  it('loads the six promoted onboarding animals from production packages', () => {
+  it('loads accepted onboarding animals from production and pending revisions from review assets', () => {
     const promotedIds = [
       'sauropelta',
       'dilophosaurus',
@@ -616,8 +645,16 @@ describe('local collection review catalog', () => {
 
     expect(promoted.map(({ id }) => id)).toEqual(promotedIds)
     for (const animal of promoted) {
-      expect(animal.status).toBe('published')
-      expect(animal.provenance).toHaveLength(8)
+      const pendingRevision = pendingRevisionIds.has(animal.id)
+      expect(animal.status).toBe(pendingRevision ? 'draft' : 'published')
+      expect(animal.provenance).toHaveLength(pendingRevision ? 0 : 8)
+      if (pendingRevision) {
+        expect(animal.assets.model).toContain(
+          `/__museum-review-assets/${animal.id}/model.glb`,
+        )
+        expect('draftNotes' in animal).toBe(true)
+        continue
+      }
       expect(
         animal.provenance.find(({ assetPath }) => assetPath === 'model/model.glb')
           ?.source,

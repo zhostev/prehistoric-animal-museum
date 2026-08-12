@@ -47,6 +47,12 @@ from normalize_lib import (  # noqa: E402
     verify_motion_pixels,
     verify_source,
 )
+from refine_materials import (  # noqa: E402
+    author_ammonite_materials,
+    author_aquatic_scan_materials,
+    author_smilodon_materials,
+    refine_quaternius_materials,
+)
 
 # Real-world body lengths (meters) from published sizes; the profile schema
 # has no size field, so the per-run values are pinned here and logged.
@@ -235,6 +241,7 @@ def run_quaternius(profile_path, profile, profile_dir, source_path, log):
             ob.animation_data_clear()
 
     objects = [armature] + meshes
+    refine_quaternius_materials(meshes[0], animal_id, log)
     rotate_to_production_forward(objects, log, animal_id)
     scale_to_body_length(objects, body_length, log)
     ground_or_centre(objects, habitat, log)
@@ -367,48 +374,9 @@ def run_dunkleosteus(profile_path, profile, profile_dir, source_path, log):
     bpy.ops.object.shade_smooth()
     log.add("shading: smooth (source STL was flat-shaded)")
 
-    # simple, muted, child-friendly materials (source has none; CC0 allows
-    # authoring; choices stay human-reviewable per the mouth/material policy)
-    if animal_id == "jaekelopterus":
-        body_color = (0.36, 0.31, 0.22)
-        plate_color = (0.50, 0.43, 0.27)
-        material_label = "eurypterid body/segments"
-    else:
-        body_color = (0.38, 0.47, 0.55)
-        plate_color = (0.52, 0.49, 0.43)
-        material_label = "placoderm body/head plates"
-    body_mat = bpy.data.materials.new("Body")
-    body_mat.diffuse_color = (*body_color, 1.0)
-    body_mat.use_nodes = True
-    bsdf = body_mat.node_tree.nodes["Principled BSDF"]
-    bsdf.inputs["Base Color"].default_value = (*body_color, 1.0)
-    bsdf.inputs["Roughness"].default_value = 0.8
-    head_mat = bpy.data.materials.new("HeadPlates")
-    head_mat.diffuse_color = (*plate_color, 1.0)
-    head_mat.use_nodes = True
-    hbsdf = head_mat.node_tree.nodes["Principled BSDF"]
-    hbsdf.inputs["Base Color"].default_value = (*plate_color, 1.0)
-    hbsdf.inputs["Roughness"].default_value = 0.85
-    mesh.data.materials.append(body_mat)
-    mesh.data.materials.append(head_mat)
-    verts = all_world_vertices()
-    y_max = float(verts[:, 1].max())
-    y_min = float(verts[:, 1].min())
-    head_threshold = y_max - 0.30 * (y_max - y_min)
-    head_faces = 0
-    centers = np.empty(len(mesh.data.polygons) * 3)
-    mesh.data.polygons.foreach_get("center", centers)
-    centers = centers.reshape(-1, 3)
-    for poly, center in zip(mesh.data.polygons, centers):
-        if center[1] > head_threshold:
-            poly.material_index = 1
-            head_faces += 1
-    log.add(f"materials authored (source had none): {material_label}; 'Body' "
-            f"{body_color} + 'HeadPlates' {plate_color}, "
-            f"roughness 0.8/0.85; head plates assigned to faces with local "
-            f"centre y > {head_threshold:.3f} (front 30%, the armoured head): "
-            f"{head_faces}/{len(mesh.data.polygons)} faces; choices remain "
-            f"human-reviewable (humanApprovals.materials stays false)")
+    # Source STL files carry no colour.  The deterministic refinement helper
+    # authors bounded PBR regions without inventing UV maps or external images.
+    author_aquatic_scan_materials(mesh, animal_id, log)
 
     scale_to_body_length([mesh], body_length, log, apply=True)
     # centre horizontally and vertically (water animal, no ground plane)
@@ -527,7 +495,7 @@ def run_smilodon(profile_path, profile, profile_dir, source_path, log):
 
     rotate_to_production_forward([mesh], log, animal_id, apply=True)
     decimate_if_needed(mesh, 90_000, log)
-    author_single_material(mesh, "WarmFur", (0.48, 0.35, 0.22), 0.92, log)
+    author_smilodon_materials(mesh, log)
     scale_to_body_length([mesh], BODY_LENGTHS_M[animal_id], log, apply=True)
     coords = all_world_vertices()
     centre = (coords.min(axis=0) + coords.max(axis=0)) / 2.0
@@ -616,7 +584,7 @@ def run_ammonite(profile_path, profile, profile_dir, source_path, log):
             f"{triangle_count()} triangles, {len(components)} connected component(s), "
             f"component vertex counts {components[:20]}")
     decimate_if_needed(mesh, 90_000, log)
-    author_single_material(mesh, "FossilStone", (0.46, 0.39, 0.29), 0.96, log)
+    author_ammonite_materials(mesh, log)
     coords = all_world_vertices()
     span = float((coords.max(axis=0) - coords.min(axis=0)).max())
     factor = 0.40 / span

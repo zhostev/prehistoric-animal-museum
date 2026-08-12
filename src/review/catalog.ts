@@ -157,8 +157,9 @@ const onboardingDrafts: readonly CompleteDraftAnimalPackage[] = [
 
 // The production collection is authoritative. A local draft automatically
 // switches to its generated production assets as soon as an approved promotion
-// appends the same ID; future drafts not yet promoted stay at the end of the
-// explicit local-only allowlist.
+// appends the same ID. An explicitly generated review revision keeps the
+// production order but serves candidate assets until that revision is approved;
+// it does not alter the production collection or maintain a second promoted list.
 export function buildLocalReviewCatalog(
   productionAnimals: readonly PublishedAnimalPackage[],
   publishedReviews: readonly DisplayableAnimalPackage[],
@@ -176,6 +177,9 @@ export function buildLocalReviewCatalog(
         return mergePublishedReviewAnimal(animal, publishedReview)
       }
       const draft = draftById.get(animal.id)
+      if (draft?.reviewRevision) {
+        return draft
+      }
       return draft ? acceptedOnboardingAnimal(animal, draft) : animal
     }),
     ...drafts.filter(({ id }) => !productionIds.has(id)),

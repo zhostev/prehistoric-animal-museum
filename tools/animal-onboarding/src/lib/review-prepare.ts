@@ -162,6 +162,7 @@ function packageSource(
   hasEnglishContent: boolean,
   modelBytes: number,
   background: BackgroundPlan,
+  reviewRevision: boolean,
 ): string {
   const { profile } = loaded
   const id = profile.id
@@ -217,7 +218,7 @@ ${hasEnglishContent ? `import { en } from './content.en'\n` : ''}
 export const animal = {
   id: '${id}',
   status: 'draft',
-  kind: '${kindFor(habitat)}',
+${reviewRevision ? "  reviewRevision: true,\n" : ''}  kind: '${kindFor(habitat)}',
   habitat: '${habitat}',
   atmosphere: '${atmosphereFor(habitat)}',
   content: {
@@ -279,7 +280,7 @@ ${narrationAsset('en', narration.en)}
     },
   },
   draftNotes: [
-    '仅加入显式本地 review allowlist；没有进入 src/content/animals 或生产集合。',
+    '${reviewRevision ? '这是已有生产动物的待审修订；本地 review 使用候选资产，线上生产集合和资产保持不变。' : '仅加入显式本地 review allowlist；没有进入 src/content/animals 或生产集合。'}',
     '自动 hard gates 已通过，但科学身份、解剖、材质、动作自然度、背景、中文内容、完整听审和公开分发决定仍是 human-only。',
     '只有产品负责人明确批准后才能记录 approval 并执行生产晋升。',${background.placeholder ? "\n    '当前背景是自动化占位渐变，不是 art direction；背景人工验收前不得晋升。'," : ''}
   ],
@@ -391,6 +392,9 @@ export async function prepareReviewDraft(loaded: LoadedProfile): Promise<ReviewM
   }
 
   const modelStat = await stat(join(candidateDir, 'output/model/model.glb'))
+  const reviewRevision =
+    !profile.humanApprovals.production &&
+    (await pathExists(join(repositoryRoot, 'src/content/animals', profile.id, 'animal.ts')))
 
   // 1. The draft package itself.
   const packageDir = join(repositoryRoot, 'src/review/animals', profile.id)
@@ -410,6 +414,7 @@ export async function prepareReviewDraft(loaded: LoadedProfile): Promise<ReviewM
       en !== null,
       modelStat.size,
       background,
+      reviewRevision,
     ),
   )
 

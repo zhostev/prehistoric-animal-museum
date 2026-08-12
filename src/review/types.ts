@@ -55,6 +55,11 @@ export type CompleteDraftAnimalPackage = Omit<
   'assets' | 'content' | 'narration' | 'status'
 > & {
   readonly status: AnimalStatus
+  /**
+   * Local-review-only signal that this draft replaces the review assets for
+   * an already published animal. It never changes the production catalog.
+   */
+  readonly reviewRevision?: boolean
   readonly content: LocalReviewContent
   readonly narration: ReviewNarrationPlans
   readonly assets: ReviewAnimalAssets

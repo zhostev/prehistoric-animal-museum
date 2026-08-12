@@ -6,6 +6,7 @@ import { en } from './content.en'
 export const animal = {
   id: 'ammonite',
   status: 'draft',
+  reviewRevision: true,
   kind: 'other-prehistoric-animal',
   habitat: 'water',
   atmosphere: 'underwater',
@@ -39,7 +40,7 @@ export const animal = {
   provenance: [],
   assets: {
     model: reviewAssetUrl('ammonite', 'model.glb'),
-    modelBytes: 1702452,
+    modelBytes: 2105960,
     poster: reviewAssetUrl('ammonite', 'poster.webp'),
     posterPortrait: reviewAssetUrl('ammonite', 'poster-portrait.webp'),
     thumbnail: reviewAssetUrl('ammonite', 'thumbnail.webp'),
@@ -87,7 +88,7 @@ export const animal = {
     },
   },
   draftNotes: [
-    '仅加入显式本地 review allowlist；没有进入 src/content/animals 或生产集合。',
+    '这是已有生产动物的待审修订；本地 review 使用候选资产，线上生产集合和资产保持不变。',
     '自动 hard gates 已通过，但科学身份、解剖、材质、动作自然度、背景、中文内容、完整听审和公开分发决定仍是 human-only。',
     '只有产品负责人明确批准后才能记录 approval 并执行生产晋升。',
   ],
