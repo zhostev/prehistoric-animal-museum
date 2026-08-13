@@ -52,7 +52,7 @@ export const en = {
       'Body colour, sail-edge colour, posture and Idle naturalness are display choices rather than direct fossil evidence.',
     ],
     editedBy: 'Codex',
-    reviewedBy: 'museum-owner',
-    reviewedOn: '2026-08-11',
+    reviewedBy: 'zho',
+    reviewedOn: '2026-08-13',
   },
 } satisfies AnimalContentEn

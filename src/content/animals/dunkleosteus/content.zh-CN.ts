@@ -53,7 +53,7 @@ export const zhCN = {
       "摩洛哥的邓氏鱼材料归属尚有讨论；模型的体色与软组织细节均无直接化石证据。"
     ],
     "editedBy": "kimi-code (draft)",
-    "reviewedBy": "zhostev (owner)",
-    "reviewedOn": "2026-08-10"
+    "reviewedBy": "zho",
+    "reviewedOn": "2026-08-13"
   }
 } satisfies AnimalContentZhCN

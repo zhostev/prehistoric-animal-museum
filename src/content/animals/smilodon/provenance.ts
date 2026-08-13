@@ -19,18 +19,17 @@ export const provenance = [
       url: 'https://creativecommons.org/licenses/by/4.0/',
     },
     runtime: {
-      sha256: 'c0009b06bbda4bd3714b9f3c6c2dcaa289cd9732c9ec0cfdd0e36f484083af1c',
-      bytes: 3983988,
+      sha256: 'cf1025e69e0f3112ba4443d8cedb877df567f0bc450494bedf9c85f315ce2bc9',
+      bytes: 2621804,
     },
     modifications: [
-      'Added deterministic project-authored procedural baked textures (Smart UV unwrap + Cycles diffuse bake, texture_materials.py); geometry, rig and Idle animation unchanged.',
       'pipeline: unrigged Smilodon STL -> exact pedestal/component check, decimate to the web target, grounded two-bone deformation rig, 8 s breathing + head-sway Idle',
       'smilodon: source faces Blender -Y; rotated 180 deg about Z, applied to mesh data -> head now toward +Y (glTF -Z)',
       'decimate: ratio 0.386515 (232850 -> 90000 tris, 45002 verts); <= 90000 target',
       'scale: source body length 51.8764 Blender units -> 2.1 m; uniform factor 0.040481 applied to mesh data',
       'grounding (land): shifted z by +0.52114 m so the lowest vertex rests at z=0',
       'armature synthesized: 2 bones [\'Body\', \'Head\']',
-      'Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys; grounded Body breathes +/-1.8% width, +/-1.2% height and +/-0.4% length about a z=0 bone origin while Head sways +/-2.4 deg; frame 192 repeats frame 0 exactly',
+      'Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys; grounded Body breathes for two cycles at +/-1.8% width, +/-1.2% height and +/-0.4% length about a z=0 bone origin while Head combines a slow +/-5.5 deg look with a two-cycle +/-2.0 deg nod; frame 192 repeats frame 0 exactly',
       'mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only',
     ],
     attribution: '“Smilodon” by Eric (Tepuitrouble), CC-BY-4.0; modified for the Prehistoric Animal Museum.',
@@ -47,9 +46,9 @@ export const provenance = [
       type: 'generated',
       title: 'Smilodon habitat scene — landscape',
       tool: 'Blender 4.5.12 (project-authored habitat scene, deterministic seed)',
-      generatedOn: '2026-08-11',
-      prompt: 'Deterministic project-authored Blender habitat scene; scene spec qa/derivatives-scene-spec.json (SHA-256 b72adc6b41812b0b1622fbb6b5fa84fdbf86e34dcab65a458c1409273dc6eb10) rendered with seed 851121318 for the land habitat.',
-      sha256: 'b72adc6b41812b0b1622fbb6b5fa84fdbf86e34dcab65a458c1409273dc6eb10',
+      generatedOn: '2026-08-13',
+      prompt: 'Deterministic project-authored Blender habitat scene; scene spec qa/derivatives-scene-spec.json (SHA-256 3eb15f5d6a5300d1901a19806d01fc3893f7bcc8786627d20e0651b6248b1973) rendered with seed 851121318 for the land habitat.',
+      sha256: '3eb15f5d6a5300d1901a19806d01fc3893f7bcc8786627d20e0651b6248b1973',
       bytes: 13311,
     },
     license: {
@@ -78,9 +77,9 @@ export const provenance = [
       type: 'generated',
       title: 'Smilodon habitat scene — portrait',
       tool: 'Blender 4.5.12 (project-authored habitat scene, deterministic seed)',
-      generatedOn: '2026-08-11',
-      prompt: 'Deterministic project-authored Blender habitat scene; scene spec qa/derivatives-scene-spec.json (SHA-256 b72adc6b41812b0b1622fbb6b5fa84fdbf86e34dcab65a458c1409273dc6eb10) rendered with seed 851121318 for the land habitat.',
-      sha256: 'b72adc6b41812b0b1622fbb6b5fa84fdbf86e34dcab65a458c1409273dc6eb10',
+      generatedOn: '2026-08-13',
+      prompt: 'Deterministic project-authored Blender habitat scene; scene spec qa/derivatives-scene-spec.json (SHA-256 3eb15f5d6a5300d1901a19806d01fc3893f7bcc8786627d20e0651b6248b1973) rendered with seed 851121318 for the land habitat.',
+      sha256: '3eb15f5d6a5300d1901a19806d01fc3893f7bcc8786627d20e0651b6248b1973',
       bytes: 13311,
     },
     license: {
@@ -108,7 +107,7 @@ export const provenance = [
     source: {
       type: 'derived',
       title: 'Smilodon transparent model still',
-      generatedOn: '2026-08-11',
+      generatedOn: '2026-08-13',
       inputAssetPaths: [
         'model/model.glb',
       ],
@@ -120,8 +119,8 @@ export const provenance = [
       url: 'https://creativecommons.org/licenses/by/4.0/',
     },
     runtime: {
-      sha256: '9b80510935b23b88e6eadbf16ceac92f44f4f583e761adc3efb363572853e807',
-      bytes: 12754,
+      sha256: '427488c1305e17fa7b2123a16266da055708881bf0bd5f057a5de05a58b2d00d',
+      bytes: 16180,
     },
     modifications: [
       'Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.',
@@ -141,7 +140,7 @@ export const provenance = [
     source: {
       type: 'derived',
       title: 'Smilodon transparent portrait model still',
-      generatedOn: '2026-08-11',
+      generatedOn: '2026-08-13',
       inputAssetPaths: [
         'model/model.glb',
       ],
@@ -153,8 +152,8 @@ export const provenance = [
       url: 'https://creativecommons.org/licenses/by/4.0/',
     },
     runtime: {
-      sha256: 'a945b1fb0de6b746d04eab9dfb2bb39fbd6a322bfef225333034cd1b2eda1723',
-      bytes: 4240,
+      sha256: 'd9030d640e5c142cc50171c4a7015ca7f196e25e6f922a9c55dc9b5ea217f1d1',
+      bytes: 5498,
     },
     modifications: [
       'Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.',
@@ -174,7 +173,7 @@ export const provenance = [
     source: {
       type: 'derived',
       title: 'Smilodon collection thumbnail',
-      generatedOn: '2026-08-11',
+      generatedOn: '2026-08-13',
       inputAssetPaths: [
         'model/model.glb',
         'backgrounds/landscape.webp',
@@ -187,8 +186,8 @@ export const provenance = [
       url: 'https://creativecommons.org/licenses/by/4.0/',
     },
     runtime: {
-      sha256: 'ec29cf3217ebe7ec4eb0aeb0bee94e3ee651a354ab5c6d14b4aaa80306cd85a8',
-      bytes: 3076,
+      sha256: 'e293052835b8da7ce400c5db4f67c81a60835838142937a5c2b010458d025991',
+      bytes: 4248,
     },
     modifications: [
       'Selected a card-size crop that keeps the animal readable.',

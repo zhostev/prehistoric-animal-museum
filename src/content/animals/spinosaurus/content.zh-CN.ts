@@ -51,7 +51,7 @@ export const zhCN = {
       '体色、帆缘颜色、姿态和 Idle 自然度属于展示设计，不是化石直接证据。',
     ],
     editedBy: 'Codex',
-    reviewedBy: 'museum-owner',
-    reviewedOn: '2026-08-11',
+    reviewedBy: 'zho',
+    reviewedOn: '2026-08-13',
   },
 } satisfies AnimalContentZhCN

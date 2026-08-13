@@ -1,5 +1,5 @@
 Spinosaurus model license record
-==================================
+=================================
 
 Asset: Spinosaurus
 Creator: Julian Johnson-Mortimer (@FreddyFoxFreddy)
@@ -9,13 +9,9 @@ Source URL: https://sketchfab.com/3d-models/spinosaurus-4f2332ee93874d59a55fb60e
 Accessed: 2026-08-12
 
 Attribution:
-“Spinosaurus” by Julian Johnson-Mortimer, CC-BY-4.0; modified for the Prehistoric Animal Museum.
+“Spinosaurus” by Julian Johnson-Mortimer (@FreddyFoxFreddy), CC-BY-4.0; modified for the Prehistoric Animal Museum.
 
-License evidence: model page shows 'License: CC Attribution' and the
-description states 'your welcome to use it for anything'; the Sketchfab
-public API returns license slug 'by' ->
-http://creativecommons.org/licenses/by/4.0/ (verified 2026-08-12).
+License evidence: Model page 'License: CC Attribution'; Sketchfab API license slug 'by' -> http://creativecommons.org/licenses/by/4.0/; description: 'your welcome to use it for anything' (verified 2026-08-12)
 
-Archived source package: author's Google Drive mirror (linked from the model
-page, no login): spineBind.fbx + displacement TIFFs
-Chosen model file: archive/spineBind.fbx
+Archived license file: archive/LICENSE-evidence.txt
+SHA-256: 7734f7dd09914d19b761e251f9a580009e82622a7e24db34cdd9adbb5f61e884

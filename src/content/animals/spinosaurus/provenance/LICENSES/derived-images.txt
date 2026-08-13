@@ -1,7 +1,7 @@
 Spinosaurus poster and thumbnail derivation record
 ====================================================
 
-Generated: 2026-08-11
+Generated: 2026-08-13
 
 The 1200 × 675 poster and the
 390 × 844 portrait poster are deterministic
@@ -10,9 +10,9 @@ watermarks. The 320 × 320 thumbnail was
 captured from the accepted desktop review presentation after hiding all
 interface chrome.
 
-Poster SHA-256: 5be2572debe4f2b6fce79d2af69f12c3d1cdf15ca5fa233347c3397a62a9bcdd (10408 bytes)
-Portrait poster SHA-256: 6bacf9995aa1cd77f91d7f81ee688a89d0962e520a68b7bdc4699625bee957b3 (3206 bytes)
-Thumbnail SHA-256: c3180c87f989a9d9dbf4eb55e3d7fcdc0e89223b80d59d1e58e23b677433eaff (2194 bytes)
+Poster SHA-256: 19cc697670c44284bae3342af90164a8eaa7c1e0ca04c47331c1a5f45091ef23 (18472 bytes)
+Portrait poster SHA-256: 6a064fed70fd303a09b6474c13c743ca8d28f1a4e79a988aff0a45ce41e57241 (5024 bytes)
+Thumbnail SHA-256: 8729f6fc1e6c1c2282b40eadea40fa7e264bd6a318d2937f2074ab24962527c9 (4256 bytes)
 
-The model attribution and CC-BY-NC-SA-4.0 terms in model-license.txt
+The model attribution and CC-BY-4.0 terms in model-license.txt
 continue to apply. The background generation record is retained separately.

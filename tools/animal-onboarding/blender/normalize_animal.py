@@ -245,7 +245,11 @@ def run_quaternius(profile_path, profile, profile_dir, source_path, log):
     action = bpy.data.actions.get(source_clip)
     if action is None:
         raise HardFail(f"declared sourceClip '{source_clip}' not found in source")
-    idle = retime_action_linear(action, "Idle", 1.0, log)
+    # The Quaternius Idle is authored as a short source loop (60 frames for
+    # Parasaurolophus). Repeating that loop preserves its intended cadence;
+    # stretching one copy across eight seconds reads as slow motion.
+    source_cycles = 3 if animal_id == "parasaurolophus" else 1
+    idle = retime_action_linear(action, "Idle", 1.0, log, cycles=source_cycles)
     assign_action(armature, idle)
     delete_other_actions("Idle", log)
     for ob in meshes:
@@ -340,12 +344,28 @@ def create_armature_bones(specs, log):
     return armature
 
 
-def sampled_quaternion_fcurve(action, data_path, axis, amplitude_deg, phase=0.0):
+def loop_phase(frame, cycles=1, phase=0.0):
+    """Seam-safe periodic phase for an eight-second Idle."""
+    base = 0.0 if frame == IDLE_END_FRAME else 2.0 * math.pi * frame / IDLE_END_FRAME
+    return cycles * base + phase
+
+
+def sampled_composite_quaternion_fcurve(action, data_path, components):
+    """Key a quaternion composed from periodic axis/angle components.
+
+    Each component is ``(axis, amplitude_degrees, cycles, phase)``. Combining
+    a slow look with a quicker nod produces an organic Idle without moving the
+    grounded body or guessing at mouth anatomy.
+    """
     frames = IDLE_END_FRAME + 1
     samples = []
     for frame in range(frames):
-        t = 2.0 * math.pi * frame / IDLE_END_FRAME
-        samples.append(Quaternion(axis, math.radians(amplitude_deg) * math.sin(t + phase)))
+        sample = Quaternion()
+        for axis, amplitude_deg, cycles, phase in components:
+            angle = math.radians(amplitude_deg) * math.sin(
+                loop_phase(frame, cycles, phase))
+            sample = sample @ Quaternion(axis, angle)
+        samples.append(sample)
     for channel in range(4):
         curve = action.fcurves.new(data_path, index=channel)
         curve.keyframe_points.add(frames)
@@ -356,6 +376,12 @@ def sampled_quaternion_fcurve(action, data_path, axis, amplitude_deg, phase=0.0)
         for point in curve.keyframe_points:
             point.interpolation = "LINEAR"
         curve.update()
+
+
+def sampled_quaternion_fcurve(
+        action, data_path, axis, amplitude_deg, phase=0.0, cycles=1):
+    sampled_composite_quaternion_fcurve(
+        action, data_path, [(axis, amplitude_deg, cycles, phase)])
 
 
 def run_dunkleosteus(profile_path, profile, profile_dir, source_path, log):
@@ -439,16 +465,16 @@ def run_dunkleosteus(profile_path, profile, profile_dir, source_path, log):
             f"{[round(v, 4) for v in local_z]} (lateral side-to-side bend)")
 
     idle = bpy.data.actions.new("Idle")
-    amplitudes_deg = ([2.0, 4.0, 7.0, 10.0, 13.0]
+    amplitudes_deg = ([2.0, 4.5, 8.0, 12.0, 16.0]
                       if animal_id == "jaekelopterus"
-                      else [1.5, 3.0, 5.0, 7.0, 9.0])
-    phases = [-0.55 * i for i in range(5)]  # travelling wave toward the tail
+                      else [1.5, 3.5, 6.0, 9.0, 12.0])
+    phases = [-0.68 * i for i in range(5)]  # travelling wave toward the tail
     frames = IDLE_END_FRAME + 1
     bob_amplitude = 0.035 if animal_id == "jaekelopterus" else 0.05
+    swim_cycles = 3
 
-    def loop_value(f, phase):
-        t = 0.0 if f == IDLE_END_FRAME else 2.0 * math.pi * f / IDLE_END_FRAME
-        return math.sin(t + phase)
+    def loop_value(f, phase, cycles=1):
+        return math.sin(loop_phase(f, cycles, phase))
 
     for bone_i in range(5):
         amp = math.radians(amplitudes_deg[bone_i])
@@ -458,7 +484,8 @@ def run_dunkleosteus(profile_path, profile, profile_dir, source_path, log):
             fc.keyframe_points.add(frames)
             co = np.empty(frames * 2)
             for f in range(frames):
-                q = Quaternion(local_z, amp * loop_value(f, phases[bone_i]))
+                q = Quaternion(
+                    local_z, amp * loop_value(f, phases[bone_i], swim_cycles))
                 co[2 * f] = f
                 co[2 * f + 1] = q[axis]
             fc.keyframe_points.foreach_set("co", co)
@@ -470,16 +497,26 @@ def run_dunkleosteus(profile_path, profile, profile_dir, source_path, log):
     co = np.empty(frames * 2)
     for f in range(frames):
         co[2 * f] = f
-        co[2 * f + 1] = bob_amplitude * loop_value(f, 0.0)
+        co[2 * f + 1] = bob_amplitude * loop_value(f, 0.25, 2)
     fc.keyframe_points.foreach_set("co", co)
     for kp in fc.keyframe_points:
         kp.interpolation = "LINEAR"
     fc.update()
+    armature.rotation_mode = "QUATERNION"
+    sampled_composite_quaternion_fcurve(
+        idle,
+        "rotation_quaternion",
+        [
+            ((1.0, 0.0, 0.0), 1.8, 1, 0.45),
+            ((0.0, 1.0, 0.0), 1.0, 2, 1.10),
+        ],
+    )
     assign_action(armature, idle)
     log.add(f"Idle synthesized: frames 0..{IDLE_END_FRAME} at {FPS} fps = 8.0 s, "
-            f"one LINEAR key per frame; lateral wave amplitudes {amplitudes_deg} deg "
-            f"(Spine1->Spine5, travelling phase -0.55 rad/bone), vertical bob "
-            f"+/-{bob_amplitude} m on the armature object, no root travel; "
+            f"one LINEAR key per frame; {swim_cycles} travelling-wave cycles with "
+            f"lateral amplitudes {amplitudes_deg} deg (Spine1->Spine5, phase "
+            f"-0.68 rad/bone), two-cycle vertical bob +/-{bob_amplitude} m plus "
+            "gentle whole-body pitch/roll, no forward root travel; "
             f"frame {IDLE_END_FRAME} repeats frame 0 exactly (seamless loop)")
     return armature, habitat
 
@@ -562,21 +599,31 @@ def run_smilodon(profile_path, profile, profile_dir, source_path, log):
         co = np.empty(frames * 2)
         co[0::2] = np.arange(frames)
         for frame in range(frames):
-            t = 2.0 * math.pi * frame / IDLE_END_FRAME
-            co[2 * frame + 1] = 1.0 + amplitude * math.sin(t + 0.42)
+            co[2 * frame + 1] = 1.0 + amplitude * math.sin(
+                loop_phase(frame, 2, 0.42))
         curve.keyframe_points.foreach_set("co", co)
         for point in curve.keyframe_points:
             point.interpolation = "LINEAR"
         curve.update()
     rest = armature.data.bones["Head"].matrix_local.to_3x3()
     local_z = rest.inverted() @ Vector((0.0, 0.0, 1.0))
-    sampled_quaternion_fcurve(
-        action, 'pose.bones["Head"].rotation_quaternion', local_z, 2.4, 0.85)
+    rest_x = armature.data.bones["Head"].matrix_local.to_3x3()
+    local_x = rest_x.inverted() @ Vector((1.0, 0.0, 0.0))
+    sampled_composite_quaternion_fcurve(
+        action,
+        'pose.bones["Head"].rotation_quaternion',
+        [
+            (local_z, 5.5, 1, 0.85),
+            (local_x, 2.0, 2, 1.35),
+        ],
+    )
     assign_action(armature, action)
     log.add(f"Idle synthesized: frames 0..{IDLE_END_FRAME} at {FPS} fps = 8.0 s, "
-            "LINEAR per-frame keys; grounded Body breathes +/-1.8% width, "
+            "LINEAR per-frame keys; grounded Body breathes for two cycles at "
+            "+/-1.8% width, "
             "+/-1.2% height and +/-0.4% length about a z=0 bone origin while "
-            "Head sways +/-2.4 deg; frame 192 repeats frame 0 exactly")
+            "Head combines a slow +/-5.5 deg look with a two-cycle +/-2.0 deg "
+            "nod; frame 192 repeats frame 0 exactly")
     return armature, habitat
 
 
@@ -621,9 +668,14 @@ def run_ammonite(profile_path, profile, profile_dir, source_path, log):
     frames = IDLE_END_FRAME + 1
     samples = []
     for frame in range(frames):
-        t = 2.0 * math.pi * frame / IDLE_END_FRAME
-        qz = Quaternion((0.0, 0.0, 1.0), math.radians(3.2) * math.sin(t + 0.55))
-        qx = Quaternion((1.0, 0.0, 0.0), math.radians(1.8) * math.sin(t + 1.10))
+        qz = Quaternion(
+            (0.0, 0.0, 1.0),
+            math.radians(7.0) * math.sin(loop_phase(frame, 1, 0.55)),
+        )
+        qx = Quaternion(
+            (1.0, 0.0, 0.0),
+            math.radians(3.0) * math.sin(loop_phase(frame, 2, 1.10)),
+        )
         samples.append(qz @ qx)
     for channel in range(4):
         curve = action.fcurves.new("rotation_quaternion", index=channel)
@@ -635,22 +687,28 @@ def run_ammonite(profile_path, profile, profile_dir, source_path, log):
         for point in curve.keyframe_points:
             point.interpolation = "LINEAR"
         curve.update()
-    curve = action.fcurves.new("location", index=2)
-    curve.keyframe_points.add(frames)
-    co = np.empty(frames * 2)
-    co[0::2] = np.arange(frames)
-    for frame in range(frames):
-        t = 2.0 * math.pi * frame / IDLE_END_FRAME
-        co[2 * frame + 1] = 0.018 * math.sin(t + 0.30)
-    curve.keyframe_points.foreach_set("co", co)
-    for point in curve.keyframe_points:
-        point.interpolation = "LINEAR"
-    curve.update()
+    for channel, amplitude, cycles, phase in (
+            (0, 0.012, 1, 1.15),
+            (1, 0.006, 2, 2.20),
+            (2, 0.022, 2, 0.30)):
+        curve = action.fcurves.new("location", index=channel)
+        curve.keyframe_points.add(frames)
+        co = np.empty(frames * 2)
+        co[0::2] = np.arange(frames)
+        for frame in range(frames):
+            co[2 * frame + 1] = amplitude * math.sin(
+                loop_phase(frame, cycles, phase))
+        curve.keyframe_points.foreach_set("co", co)
+        for point in curve.keyframe_points:
+            point.interpolation = "LINEAR"
+        curve.update()
     armature.rotation_mode = "QUATERNION"
     assign_action(armature, action)
     log.add(f"Idle synthesized: frames 0..{IDLE_END_FRAME} at {FPS} fps = 8.0 s, "
-            "LINEAR per-frame keys; fossil shell display drifts +/-0.018 m and "
-            "rocks +/-3.2/+/-1.8 deg; frame 192 repeats frame 0 exactly")
+            "LINEAR per-frame keys; fossil-shell exhibit follows a bounded "
+            "three-axis drift (+/-0.012/+/-0.006/+/-0.022 m) and layered "
+            "one-/two-cycle rocking (+/-7.0/+/-3.0 deg); this is display motion, "
+            "not invented living anatomy; frame 192 repeats frame 0 exactly")
 
     bpy.context.scene.frame_set(0)
     posed = all_world_vertices()
@@ -852,23 +910,32 @@ def run_static_sculpt(profile_path, profile, profile_dir, source_path, log):
         co = np.empty(frames * 2)
         co[0::2] = np.arange(frames)
         for frame in range(frames):
-            t = 2.0 * math.pi * frame / IDLE_END_FRAME
-            co[2 * frame + 1] = 1.0 + amplitude * math.sin(t + 0.42)
+            co[2 * frame + 1] = 1.0 + amplitude * math.sin(
+                loop_phase(frame, 2, 0.42))
         curve.keyframe_points.foreach_set("co", co)
         for point in curve.keyframe_points:
             point.interpolation = "LINEAR"
         curve.update()
-    for bone_name, amplitude_deg, phase in (("Head", 2.4, 0.85), ("Tail", 3.5, 2.20)):
+    for bone_name, components in (
+            ("Head", (("z", 5.5, 1, 0.85), ("x", 2.0, 2, 1.35))),
+            ("Tail", (("z", 7.0, 3, 2.20), ("x", 1.5, 1, 0.35)))):
         rest = armature.data.bones[bone_name].matrix_local.to_3x3()
         local_z = rest.inverted() @ Vector((0.0, 0.0, 1.0))
-        sampled_quaternion_fcurve(
-            action, f'pose.bones["{bone_name}"].rotation_quaternion',
-            local_z, amplitude_deg, phase)
+        local_x = rest.inverted() @ Vector((1.0, 0.0, 0.0))
+        axes = {"z": local_z, "x": local_x}
+        sampled_composite_quaternion_fcurve(
+            action,
+            f'pose.bones["{bone_name}"].rotation_quaternion',
+            [(axes[axis], amplitude, cycles, phase)
+             for axis, amplitude, cycles, phase in components],
+        )
     assign_action(armature, action)
     log.add(f"Idle synthesized: frames 0..{IDLE_END_FRAME} at {FPS} fps = 8.0 s, "
-            "LINEAR per-frame keys; Body breathes +/-1.8% width, +/-1.2% height, "
-            "+/-0.4% length about a z=0 bone origin; Head sways +/-2.4 deg, Tail "
-            "sways +/-3.5 deg with a 2.2 rad phase lag; frame 192 repeats frame 0 "
+            "LINEAR per-frame keys; Body breathes for two cycles at +/-1.8% width, "
+            "+/-1.2% height, +/-0.4% length about a z=0 bone origin; Head combines "
+            "a slow +/-5.5 deg look and two-cycle +/-2.0 deg nod; Tail combines a "
+            "three-cycle +/-7.0 deg sway with a slow +/-1.5 deg lift; frame 192 "
+            "repeats frame 0 "
             "exactly (seamless loop)")
     return armature, habitat
 

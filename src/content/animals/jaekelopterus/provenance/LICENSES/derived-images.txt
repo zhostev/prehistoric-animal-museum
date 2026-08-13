@@ -1,7 +1,7 @@
 Jaekelopterus poster and thumbnail derivation record
 ======================================================
 
-Generated: 2026-08-11
+Generated: 2026-08-13
 
 The 1200 × 675 poster and the
 390 × 844 portrait poster are deterministic
@@ -10,9 +10,9 @@ watermarks. The 320 × 320 thumbnail was
 captured from the accepted desktop review presentation after hiding all
 interface chrome.
 
-Poster SHA-256: c13a25c74bbdccbc0824d7b6a896e0bf77adc404ad8b36ef0c3d7c1d80a2621e (16410 bytes)
-Portrait poster SHA-256: d36d281e7371015a2607657632012f78ad5f05d7b42112e75731afb86cc63584 (4384 bytes)
-Thumbnail SHA-256: 2e693ec56c21b76a7918ea9db97f8696a5eb2d417cf33b41c735c4ce75e68f85 (3150 bytes)
+Poster SHA-256: 30522751062a87734c74fa01ba8bff865847ab3fffabddeac3fa27cd5dfbf60c (15650 bytes)
+Portrait poster SHA-256: 84e6cdaa7ee99ef992e71b45f167959ec18132fd113e8366f482e7e6f7b3023d (3930 bytes)
+Thumbnail SHA-256: 7d5397ab7237fdca81b4156cc11f026d7fb75d89225b643948cf0efb40e4e888 (2888 bytes)
 
 The model attribution and CC-BY-4.0 terms in model-license.txt
 continue to apply. The background generation record is retained separately.

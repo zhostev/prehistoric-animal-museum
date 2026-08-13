@@ -1,7 +1,7 @@
-Velociraptor model license record
-==================================
+Raptor Pack (Standing pose) model license record
+=================================================
 
-Asset: Raptor Pack (Raptor_Standing_Final pose)
+Asset: Raptor Pack (Standing pose)
 Creator: Greg Criddle (Noximous)
 License: Creative Commons Attribution 4.0 International (CC-BY-4.0)
 License URL: https://creativecommons.org/licenses/by/4.0/
@@ -9,12 +9,9 @@ Source URL: https://archive.org/details/thingiverse-3784576
 Accessed: 2026-08-12
 
 Attribution:
-“Raptor Pack” by Greg Criddle (Noximous), CC-BY-4.0; modified for the Prehistoric Animal Museum.
+“Raptor Pack (Standing pose)” by Greg Criddle (Noximous), CC-BY-4.0; modified for the Prehistoric Animal Museum.
 
-License evidence: Internet Archive item metadata licenseurl
-https://creativecommons.org/licenses/by/4.0/
-(https://archive.org/metadata/thingiverse-3784576); in-zip LICENSE.txt
-carried in the source package.
+License evidence: IA item metadata licenseurl https://creativecommons.org/licenses/by/4.0/; in-zip LICENSE.txt (verified 2026-08-12)
 
-Archived source package: archive/Raptor_Pack_3784576.zip (Thingiverse mirror)
-Chosen pose file: archive/Raptor_Standing_Final.stl
+Archived license file: archive/LICENSE.txt
+SHA-256: 60a0418600b30e53e6b98919cd34603fe685dae64d6707069854a8a31130eb31

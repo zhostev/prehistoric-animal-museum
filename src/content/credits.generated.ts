@@ -119,10 +119,9 @@ export const credits = [
     "sourceUrl": "https://archive.org/details/thingiverse-2246008",
     "attribution": "“Ammonite” by Steph Piper (sjpiper145), CC0-1.0; modified for the Prehistoric Animal Museum.",
     "modifications": [
-      "Added deterministic project-authored procedural baked textures (Smart UV unwrap + Cycles diffuse bake, texture_materials.py); geometry, rig and Idle animation unchanged.",
       "pipeline: one-piece fossil-shell PLY scan (not a living-animal reconstruction) -> topology check, stone material, single-bone floating display Idle",
       "armature synthesized: 1 bones ['Shell']",
-      "Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys; fossil shell display drifts +/-0.018 m and rocks +/-3.2/+/-1.8 deg; frame 192 repeats frame 0 exactly",
+      "Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys; fossil-shell exhibit follows a bounded three-axis drift (+/-0.012/+/-0.006/+/-0.022 m) and layered one-/two-cycle rocking (+/-7.0/+/-3.0 deg); this is display motion, not invented living anatomy; frame 192 repeats frame 0 exactly",
       "mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only"
     ]
   },
@@ -493,16 +492,14 @@ export const credits = [
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dunkliferecon.stl",
     "attribution": "“Dunkleosteus” by EvolutionIncarnate, CC0-1.0; modified for the Prehistoric Animal Museum.",
     "modifications": [
-      "Added deterministic project-authored procedural baked textures (Smart UV unwrap + Cycles diffuse bake, texture_materials.py); geometry, rig and Idle animation unchanged.",
-      "pipeline: unrigged static STL -> decimate, author materials, synthesize 5-bone spine chain + 8 s swim Idle",
+      "pipeline: unrigged static STL (dunkleosteus) -> topology-budget check/decimate, author materials, synthesize 5-bone articulated spine chain + 8 s swim Idle",
       "dunkleosteus: source faces Blender -Y; rotated 180 deg about Z, applied to mesh data -> head now toward +Y (glTF -Z)",
-      "decimate: ratio 0.2162 (416332 -> 90000 tris, 44990 verts); over-ceiling source reduced to <=100k target",
+      "decimate: ratio 0.216174 (416332 -> 90000 tris, 44990 verts); <= 90000 target",
       "shading: smooth (source STL was flat-shaded)",
-      "materials authored (source had none): 'Body' muted slate blue (0.38,0.47,0.55) + 'HeadPlates' muted warm grey (0.52,0.49,0.43), roughness 0.8/0.85; head plates assigned to faces with local centre y > -1.379 (front 30%, the armoured head): 65769/90000 faces; choices remain human-reviewable (humanApprovals.materials stays false)",
       "scale: source body length 4.1131 Blender units -> 6.0 m; uniform factor 1.458754 applied to mesh data",
       "centring (water): shifted by [-0.23914, 3.21208, -1.57498] m so the bounding-box centre sits at the origin (x/y centred, centred vertically in the water column)",
       "armature synthesized: 5-bone spine chain Spine1..Spine5 along -Y (head end y=0.90 m to tail tip y=-3.00 m), roll 0",
-      "Idle synthesized: frames 0..192 at 24 fps = 8.0 s, one LINEAR key per frame; lateral wave amplitudes [1.5, 3.0, 5.0, 7.0, 9.0] deg (Spine1->Spine5, travelling phase -0.55 rad/bone), vertical bob +/-0.05 m on the armature object, no root travel; frame 192 repeats frame 0 exactly (seamless loop)",
+      "Idle synthesized: frames 0..192 at 24 fps = 8.0 s, one LINEAR key per frame; 3 travelling-wave cycles with lateral amplitudes [1.5, 3.5, 6.0, 9.0, 12.0] deg (Spine1->Spine5, phase -0.68 rad/bone), two-cycle vertical bob +/-0.05 m plus gentle whole-body pitch/roll, no forward root travel; frame 192 repeats frame 0 exactly (seamless loop)",
       "mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only"
     ]
   },
@@ -873,15 +870,13 @@ export const credits = [
     "sourceUrl": "https://archive.org/details/thingiverse-4702654",
     "attribution": "“Jaekelopterus” by chris mckenzie (dinoking27), CC-BY-4.0; modified for the Prehistoric Animal Museum.",
     "modifications": [
-      "Added deterministic project-authored procedural baked textures (Smart UV unwrap + Cycles diffuse bake, texture_materials.py); geometry, rig and Idle animation unchanged.",
       "pipeline: unrigged static STL (jaekelopterus) -> topology-budget check/decimate, author materials, synthesize 5-bone articulated spine chain + 8 s swim Idle",
       "jaekelopterus: source faces Blender -Y; rotated 180 deg about Z, applied to mesh data -> head now toward +Y (glTF -Z)",
       "shading: smooth (source STL was flat-shaded)",
-      "materials authored (source had none): eurypterid body/segments; 'Body' (0.36, 0.31, 0.22) + 'HeadPlates' (0.5, 0.43, 0.27), roughness 0.8/0.85; head plates assigned to faces with local centre y > 33.788 (front 30%, the armoured head): 20092/60284 faces; choices remain human-reviewable (humanApprovals.materials stays false)",
       "scale: source body length 168.7734 Blender units -> 2.5 m; uniform factor 0.014813 applied to mesh data",
       "centring (water): shifted by [-0.00038, -0.0005, -0.72229] m so the bounding-box centre sits at the origin (x/y centred, centred vertically in the water column)",
       "armature synthesized: 5-bone spine chain Spine1..Spine5 along -Y (head end y=0.38 m to tail tip y=-1.25 m), roll 0",
-      "Idle synthesized: frames 0..192 at 24 fps = 8.0 s, one LINEAR key per frame; lateral wave amplitudes [2.0, 4.0, 7.0, 10.0, 13.0] deg (Spine1->Spine5, travelling phase -0.55 rad/bone), vertical bob +/-0.035 m on the armature object, no root travel; frame 192 repeats frame 0 exactly (seamless loop)",
+      "Idle synthesized: frames 0..192 at 24 fps = 8.0 s, one LINEAR key per frame; 3 travelling-wave cycles with lateral amplitudes [2.0, 4.5, 8.0, 12.0, 16.0] deg (Spine1->Spine5, phase -0.68 rad/bone), two-cycle vertical bob +/-0.035 m plus gentle whole-body pitch/roll, no forward root travel; frame 192 repeats frame 0 exactly (seamless loop)",
       "mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only"
     ]
   },
@@ -1748,9 +1743,8 @@ export const credits = [
     "sourceUrl": "https://quaternius.com/packs/animateddinosaurs.html",
     "attribution": "“Parasaurolophus” by Quaternius, CC0-1.0; modified for the Prehistoric Animal Museum.",
     "modifications": [
-      "Added deterministic project-authored procedural baked textures (Smart UV unwrap + Cycles diffuse bake, texture_materials.py); geometry, rig and Idle animation unchanged.",
       "pipeline: rigged .blend source, keeping only 'Parasaurolophus_Idle' retimed to 8 s",
-      "action 'Parasaurolophus_Idle' (0..60 f, BEZIER) resampled to 'Idle': frames 0..192 at 24 fps = 8.0 s, one LINEAR key per frame, 102 fcurves; frame 192 resamples frame 0 exactly (seamless loop); pose location channels scaled by 1.000000 (1.0 = armature-space units kept, metres come from the object node scale)",
+      "action 'Parasaurolophus_Idle' (0..60 f, BEZIER) resampled to 'Idle': frames 0..192 at 24 fps = 8.0 s with 3 source cycle(s), one LINEAR key per frame, 102 fcurves; frame 192 resamples frame 0 exactly (seamless loop); pose location channels scaled by 1.000000 (1.0 = armature-space units kept, metres come from the object node scale)",
       "parasaurolophus: source faces Blender -Y; 180 deg Z rotation kept on object node(s) ['Armature'] (rigged source: applying to armature data would break bone-local pose fcurves; child meshes inherit the node transform; matches the production maiasaura package) -> head now toward +Y (glTF -Z)",
       "scale: source body length 12.4811 Blender units -> 9.0 m; uniform factor 0.721089 kept on object node(s) ['Armature'] (armature-space pose fcurves stay in source units)",
       "grounding (land): shifted z by +0.00680 m so the lowest vertex rests at z=0 (object node translation)",
@@ -2372,14 +2366,13 @@ export const credits = [
     "sourceUrl": "https://archive.org/details/thingiverse-4759291",
     "attribution": "“Smilodon” by Eric (Tepuitrouble), CC-BY-4.0; modified for the Prehistoric Animal Museum.",
     "modifications": [
-      "Added deterministic project-authored procedural baked textures (Smart UV unwrap + Cycles diffuse bake, texture_materials.py); geometry, rig and Idle animation unchanged.",
       "pipeline: unrigged Smilodon STL -> exact pedestal/component check, decimate to the web target, grounded two-bone deformation rig, 8 s breathing + head-sway Idle",
       "smilodon: source faces Blender -Y; rotated 180 deg about Z, applied to mesh data -> head now toward +Y (glTF -Z)",
       "decimate: ratio 0.386515 (232850 -> 90000 tris, 45002 verts); <= 90000 target",
       "scale: source body length 51.8764 Blender units -> 2.1 m; uniform factor 0.040481 applied to mesh data",
       "grounding (land): shifted z by +0.52114 m so the lowest vertex rests at z=0",
       "armature synthesized: 2 bones ['Body', 'Head']",
-      "Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys; grounded Body breathes +/-1.8% width, +/-1.2% height and +/-0.4% length about a z=0 bone origin while Head sways +/-2.4 deg; frame 192 repeats frame 0 exactly",
+      "Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys; grounded Body breathes for two cycles at +/-1.8% width, +/-1.2% height and +/-0.4% length about a z=0 bone origin while Head combines a slow +/-5.5 deg look with a two-cycle +/-2.0 deg nod; frame 192 repeats frame 0 exactly",
       "mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only"
     ]
   },
@@ -2450,9 +2443,9 @@ export const credits = [
     "assetKind": "poster",
     "sourceTitle": "Spinosaurus transparent portrait model still",
     "author": "Prehistoric Animal Museum",
-    "licenseName": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International",
-    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "attribution": "“Spinosaurus” by Prehistoric Animal Museum (project-authored), CC-BY-NC-SA-4.0; modified for the Prehistoric Animal Museum.",
+    "licenseName": "Creative Commons Attribution 4.0 International",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "“Spinosaurus” by Julian Johnson-Mortimer (@FreddyFoxFreddy), CC-BY-4.0; modified for the Prehistoric Animal Museum.",
     "modifications": [
       "Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.",
       "Encoded as exact lossless WebP without text, controls, labels, logos, or watermarks."
@@ -2465,9 +2458,9 @@ export const credits = [
     "assetKind": "poster",
     "sourceTitle": "Spinosaurus transparent model still",
     "author": "Prehistoric Animal Museum",
-    "licenseName": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International",
-    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "attribution": "“Spinosaurus” by Prehistoric Animal Museum (project-authored), CC-BY-NC-SA-4.0; modified for the Prehistoric Animal Museum.",
+    "licenseName": "Creative Commons Attribution 4.0 International",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "“Spinosaurus” by Julian Johnson-Mortimer (@FreddyFoxFreddy), CC-BY-4.0; modified for the Prehistoric Animal Museum.",
     "modifications": [
       "Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.",
       "Encoded as lossless WebP without text, controls, labels, logos, or watermarks."
@@ -2480,9 +2473,9 @@ export const credits = [
     "assetKind": "thumbnail",
     "sourceTitle": "Spinosaurus collection thumbnail",
     "author": "Prehistoric Animal Museum",
-    "licenseName": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International",
-    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "attribution": "“Spinosaurus” by Prehistoric Animal Museum (project-authored), CC-BY-NC-SA-4.0; modified for the Prehistoric Animal Museum. Scene art generated for this project.",
+    "licenseName": "Creative Commons Attribution 4.0 International",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "“Spinosaurus” by Julian Johnson-Mortimer (@FreddyFoxFreddy), CC-BY-4.0; modified for the Prehistoric Animal Museum. Scene art generated for this project.",
     "modifications": [
       "Selected a card-size crop that keeps the animal readable.",
       "Exported without embedded text, controls, labels, logos, or watermarks."
@@ -2498,17 +2491,15 @@ export const credits = [
     "licenseName": "Creative Commons Attribution 4.0 International",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
     "sourceUrl": "https://sketchfab.com/3d-models/spinosaurus-4f2332ee93874d59a55fb60ed2873ec2",
-    "attribution": "“Spinosaurus” by Julian Johnson-Mortimer, CC-BY-4.0; modified for the Prehistoric Animal Museum.",
+    "attribution": "“Spinosaurus” by Julian Johnson-Mortimer (@FreddyFoxFreddy), CC-BY-4.0; modified for the Prehistoric Animal Museum.",
     "modifications": [
-      "Model replaced with the ‘Spinosaurus’ sculpt by Julian Johnson-Mortimer, CC-BY-4.0, via the static-sculpt pipeline track (run_static_sculpt).",
-      "source object transforms applied into mesh data (FBX import scale/rotation normalized)",
-      "normal bake: ‘high’ (320790 verts) -> ‘low’ (20048 verts), tangent space, 2048px, packed and wired via Normal Map node",
+      "pipeline: static sculpt (spinosaurus) -> keep configured meshes, author materials, optional normal bake, synthesize Body/Head/Tail rig + 8 s Idle",
+      "spinosaurus: source faces Blender -Y; rotated 180 deg about Z, applied to mesh data -> head now toward +Y (glTF -Z)",
       "scale: source body length 39.2302 Blender units -> 13.0 m; uniform factor 0.331378 applied to mesh data",
       "grounding (land): shifted z by +0.02750 m so the lowest vertex rests at z=0",
-      "skinning: deterministic 20-step Body/Head/Tail blends by local +Y; teeth meshes fully weighted to Head",
-      "Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys; Body breathes, Head sways +/-2.4 deg, Tail sways +/-3.5 deg; frame 192 repeats frame 0 exactly (seamless loop)",
-      "texture bake: deterministic Cycles diffuse bake on the author UVs (scales/mottle patterns), 1024px Body + 512px accents (texture_materials.py)",
-      "mouth motion stays DISABLED (teeth are static separate components, no declared jaw path); inspection recorded as evidence only"
+      "armature synthesized: 3 bones ['Body', 'Head', 'Tail']",
+      "Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys; Body breathes for two cycles at +/-1.8% width, +/-1.2% height, +/-0.4% length about a z=0 bone origin; Head combines a slow +/-5.5 deg look and two-cycle +/-2.0 deg nod; Tail combines a three-cycle +/-7.0 deg sway with a slow +/-1.5 deg lift; frame 192 repeats frame 0 exactly (seamless loop)",
+      "mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only"
     ]
   },
   {
@@ -3020,7 +3011,7 @@ export const credits = [
     "animalId": "velociraptor",
     "assetPath": "audio/narration.en.mp3",
     "assetKind": "narration",
-    "sourceTitle": "Velociraptor English narration",
+    "sourceTitle": "Raptor Pack (Standing pose) English narration",
     "author": "Qwen3-TTS CustomVoice",
     "licenseName": "CC BY-NC-SA 4.0 project-owned Qwen3-TTS output",
     "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
@@ -3035,7 +3026,7 @@ export const credits = [
     "animalId": "velociraptor",
     "assetPath": "audio/narration.zh-CN.mp3",
     "assetKind": "narration",
-    "sourceTitle": "Velociraptor Mandarin narration",
+    "sourceTitle": "Raptor Pack (Standing pose) Mandarin narration",
     "author": "Qwen3-TTS CustomVoice",
     "licenseName": "CC BY-NC-SA 4.0 project-owned Qwen3-TTS output",
     "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
@@ -3050,11 +3041,11 @@ export const credits = [
     "animalId": "velociraptor",
     "assetPath": "backgrounds/landscape.webp",
     "assetKind": "background",
-    "sourceTitle": "Velociraptor habitat scene — landscape",
+    "sourceTitle": "Raptor Pack (Standing pose) habitat scene — landscape",
     "author": "Blender 4.5.12 (project-authored habitat scene, deterministic seed)",
     "licenseName": "CC BY-NC-SA 4.0 project-owned Blender habitat render",
     "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "attribution": "Project-generated Velociraptor landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.",
+    "attribution": "Project-generated Raptor Pack (Standing pose) landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.",
     "modifications": [
       "Rendered the landscape pass deterministically from the project-authored habitat scene spec with EEVEE Next.",
       "Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks."
@@ -3065,11 +3056,11 @@ export const credits = [
     "animalId": "velociraptor",
     "assetPath": "backgrounds/portrait.webp",
     "assetKind": "background",
-    "sourceTitle": "Velociraptor habitat scene — portrait",
+    "sourceTitle": "Raptor Pack (Standing pose) habitat scene — portrait",
     "author": "Blender 4.5.12 (project-authored habitat scene, deterministic seed)",
     "licenseName": "CC BY-NC-SA 4.0 project-owned Blender habitat render",
     "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "attribution": "Project-generated Velociraptor portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.",
+    "attribution": "Project-generated Raptor Pack (Standing pose) portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.",
     "modifications": [
       "Rendered the portrait pass deterministically from the project-authored habitat scene spec with EEVEE Next.",
       "Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks."
@@ -3080,11 +3071,11 @@ export const credits = [
     "animalId": "velociraptor",
     "assetPath": "images/poster-portrait.webp",
     "assetKind": "poster",
-    "sourceTitle": "Velociraptor transparent portrait model still",
+    "sourceTitle": "Raptor Pack (Standing pose) transparent portrait model still",
     "author": "Prehistoric Animal Museum",
-    "licenseName": "CC0 1.0 Universal Public Domain Dedication",
-    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "attribution": "“Velociraptor” by Quaternius, CC0-1.0; modified for the Prehistoric Animal Museum.",
+    "licenseName": "Creative Commons Attribution 4.0 International",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "“Raptor Pack (Standing pose)” by Greg Criddle (Noximous), CC-BY-4.0; modified for the Prehistoric Animal Museum.",
     "modifications": [
       "Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.",
       "Encoded as exact lossless WebP without text, controls, labels, logos, or watermarks."
@@ -3095,11 +3086,11 @@ export const credits = [
     "animalId": "velociraptor",
     "assetPath": "images/poster.webp",
     "assetKind": "poster",
-    "sourceTitle": "Velociraptor transparent model still",
+    "sourceTitle": "Raptor Pack (Standing pose) transparent model still",
     "author": "Prehistoric Animal Museum",
-    "licenseName": "CC0 1.0 Universal Public Domain Dedication",
-    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "attribution": "“Velociraptor” by Quaternius, CC0-1.0; modified for the Prehistoric Animal Museum.",
+    "licenseName": "Creative Commons Attribution 4.0 International",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "“Raptor Pack (Standing pose)” by Greg Criddle (Noximous), CC-BY-4.0; modified for the Prehistoric Animal Museum.",
     "modifications": [
       "Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.",
       "Encoded as lossless WebP without text, controls, labels, logos, or watermarks."
@@ -3110,11 +3101,11 @@ export const credits = [
     "animalId": "velociraptor",
     "assetPath": "images/thumbnail.webp",
     "assetKind": "thumbnail",
-    "sourceTitle": "Velociraptor collection thumbnail",
+    "sourceTitle": "Raptor Pack (Standing pose) collection thumbnail",
     "author": "Prehistoric Animal Museum",
-    "licenseName": "CC0 1.0 Universal Public Domain Dedication",
-    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "attribution": "“Velociraptor” by Quaternius, CC0-1.0; modified for the Prehistoric Animal Museum. Scene art generated for this project.",
+    "licenseName": "Creative Commons Attribution 4.0 International",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "“Raptor Pack (Standing pose)” by Greg Criddle (Noximous), CC-BY-4.0; modified for the Prehistoric Animal Museum. Scene art generated for this project.",
     "modifications": [
       "Selected a card-size crop that keeps the animal readable.",
       "Exported without embedded text, controls, labels, logos, or watermarks."
@@ -3125,21 +3116,21 @@ export const credits = [
     "animalId": "velociraptor",
     "assetPath": "model/model.glb",
     "assetKind": "model",
-    "sourceTitle": "Raptor Pack (Raptor_Standing_Final)",
+    "sourceTitle": "Raptor Pack (Standing pose)",
     "author": "Greg Criddle (Noximous)",
     "licenseName": "Creative Commons Attribution 4.0 International",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
     "sourceUrl": "https://archive.org/details/thingiverse-3784576",
-    "attribution": "“Raptor Pack” by Greg Criddle (Noximous), CC-BY-4.0; modified for the Prehistoric Animal Museum.",
+    "attribution": "“Raptor Pack (Standing pose)” by Greg Criddle (Noximous), CC-BY-4.0; modified for the Prehistoric Animal Museum.",
     "modifications": [
-      "Model replaced with the ‘Raptor Pack’ (Standing pose) sculpt by Greg Criddle (Noximous), CC-BY-4.0, via the static-sculpt pipeline track (run_static_sculpt).",
+      "pipeline: static sculpt (velociraptor) -> keep configured meshes, author materials, optional normal bake, synthesize Body/Head/Tail rig + 8 s Idle",
+      "velociraptor: source faces Blender -Y; rotated 180 deg about Z, applied to mesh data -> head now toward +Y (glTF -Z)",
       "decimate: ratio 0.163699 (549788 -> 90000 tris, 44741 verts); <= 90000 target",
       "scale: source body length 39.4398 Blender units -> 2.0 m; uniform factor 0.050710 applied to mesh data",
       "grounding (land): shifted z by +0.00000 m so the lowest vertex rests at z=0",
-      "skinning: deterministic 20-step Body/Head/Tail blends by local +Y; head zone y>=0.3800 m, tail zone y<=-0.4000 m",
-      "Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys; Body breathes, Head sways +/-2.4 deg, Tail sways +/-3.5 deg with a 2.2 rad phase lag; frame 192 repeats frame 0 exactly (seamless loop)",
-      "texture bake: deterministic Smart UV unwrap + Cycles diffuse bake (scales pattern), 1024px Body (texture_materials.py)",
-      "mouth motion stays DISABLED (static sculpt, no declared jaw path); inspection recorded as evidence only"
+      "armature synthesized: 3 bones ['Body', 'Head', 'Tail']",
+      "Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys; Body breathes for two cycles at +/-1.8% width, +/-1.2% height, +/-0.4% length about a z=0 bone origin; Head combines a slow +/-5.5 deg look and two-cycle +/-2.0 deg nod; Tail combines a three-cycle +/-7.0 deg sway with a slow +/-1.5 deg lift; frame 192 repeats frame 0 exactly (seamless loop)",
+      "mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only"
     ]
   }
 ] as const satisfies readonly CreditEntry[]

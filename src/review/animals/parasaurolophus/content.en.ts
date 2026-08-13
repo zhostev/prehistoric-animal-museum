@@ -53,7 +53,7 @@ export const en = {
       'The crest shape and colour of the current low-poly stylised model are cautious artistic reconstructions.',
     ],
     editedBy: 'kimi-code (draft)',
-    reviewedBy: 'zhostev (owner)',
-    reviewedOn: '2026-08-10',
+    reviewedBy: 'zho',
+    reviewedOn: '2026-08-13',
   },
 } satisfies AnimalContentEn

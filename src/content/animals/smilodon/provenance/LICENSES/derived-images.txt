@@ -1,7 +1,7 @@
 Smilodon poster and thumbnail derivation record
 =================================================
 
-Generated: 2026-08-11
+Generated: 2026-08-13
 
 The 1200 × 675 poster and the
 390 × 844 portrait poster are deterministic
@@ -10,9 +10,9 @@ watermarks. The 320 × 320 thumbnail was
 captured from the accepted desktop review presentation after hiding all
 interface chrome.
 
-Poster SHA-256: 9b80510935b23b88e6eadbf16ceac92f44f4f583e761adc3efb363572853e807 (12754 bytes)
-Portrait poster SHA-256: a945b1fb0de6b746d04eab9dfb2bb39fbd6a322bfef225333034cd1b2eda1723 (4240 bytes)
-Thumbnail SHA-256: ec29cf3217ebe7ec4eb0aeb0bee94e3ee651a354ab5c6d14b4aaa80306cd85a8 (3076 bytes)
+Poster SHA-256: 427488c1305e17fa7b2123a16266da055708881bf0bd5f057a5de05a58b2d00d (16180 bytes)
+Portrait poster SHA-256: d9030d640e5c142cc50171c4a7015ca7f196e25e6f922a9c55dc9b5ea217f1d1 (5498 bytes)
+Thumbnail SHA-256: e293052835b8da7ce400c5db4f67c81a60835838142937a5c2b010458d025991 (4248 bytes)
 
 The model attribution and CC-BY-4.0 terms in model-license.txt
 continue to apply. The background generation record is retained separately.

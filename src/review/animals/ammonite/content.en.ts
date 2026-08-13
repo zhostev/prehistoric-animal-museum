@@ -48,7 +48,7 @@ export const en = {
       'The owner reviewed the copy and fossil-shell material treatment; the specimen identity remains unresolved because the source supplies too little information.',
     ],
     editedBy: 'Codex',
-    reviewedBy: 'museum-owner',
-    reviewedOn: '2026-08-11',
+    reviewedBy: 'zho',
+    reviewedOn: '2026-08-13',
   },
 } satisfies AnimalContentEn

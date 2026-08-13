@@ -54,7 +54,7 @@ export const zhCN = {
       "展签采用属级“伶盗龙”，参考种为蒙古伶盗龙；中文名称与镰爪形态已按本次展陈范围完成核对。"
     ],
     "editedBy": "kimi-code (draft)",
-    "reviewedBy": "zhostev (owner)",
-    "reviewedOn": "2026-08-10"
+    "reviewedBy": "zho",
+    "reviewedOn": "2026-08-13"
   }
 } satisfies AnimalContentZhCN

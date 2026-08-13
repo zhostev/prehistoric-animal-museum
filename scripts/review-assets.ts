@@ -399,163 +399,163 @@ const reviewAnimalFiles: Readonly<
   },
   velociraptor: {
     model: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/velociraptor/output/model/model.glb',
+      'assets/candidates/animal-onboarding-2026-08-13/velociraptor/output/model/model.glb',
     ),
     backgroundLandscape: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/velociraptor/output/background-landscape.webp',
+      'assets/candidates/animal-onboarding-2026-08-13/velociraptor/output/background-landscape.webp',
     ),
     backgroundPortrait: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/velociraptor/output/background-portrait.webp',
+      'assets/candidates/animal-onboarding-2026-08-13/velociraptor/output/background-portrait.webp',
     ),
     narration: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/velociraptor/output/audio/narration.zh-CN.mp3',
+      'assets/candidates/animal-onboarding-2026-08-13/velociraptor/output/audio/narration.zh-CN.mp3',
     ),
     poster: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/velociraptor/output/poster.webp',
+      'assets/candidates/animal-onboarding-2026-08-13/velociraptor/output/poster.webp',
     ),
     posterPortrait: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/velociraptor/output/images/poster-portrait.webp',
+      'assets/candidates/animal-onboarding-2026-08-13/velociraptor/output/images/poster-portrait.webp',
     ),
     thumbnail: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/velociraptor/output/thumbnail.webp',
+      'assets/candidates/animal-onboarding-2026-08-13/velociraptor/output/thumbnail.webp',
     ),
   },
   parasaurolophus: {
     model: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/parasaurolophus/output/model/model.glb',
+      'assets/candidates/animal-onboarding-2026-08-13/parasaurolophus/output/model/model.glb',
     ),
     backgroundLandscape: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/parasaurolophus/output/background-landscape.webp',
+      'assets/candidates/animal-onboarding-2026-08-13/parasaurolophus/output/background-landscape.webp',
     ),
     backgroundPortrait: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/parasaurolophus/output/background-portrait.webp',
+      'assets/candidates/animal-onboarding-2026-08-13/parasaurolophus/output/background-portrait.webp',
     ),
     narration: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/parasaurolophus/output/audio/narration.zh-CN.mp3',
+      'assets/candidates/animal-onboarding-2026-08-13/parasaurolophus/output/audio/narration.zh-CN.mp3',
     ),
     poster: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/parasaurolophus/output/poster.webp',
+      'assets/candidates/animal-onboarding-2026-08-13/parasaurolophus/output/poster.webp',
     ),
     posterPortrait: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/parasaurolophus/output/images/poster-portrait.webp',
+      'assets/candidates/animal-onboarding-2026-08-13/parasaurolophus/output/images/poster-portrait.webp',
     ),
     thumbnail: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/parasaurolophus/output/thumbnail.webp',
+      'assets/candidates/animal-onboarding-2026-08-13/parasaurolophus/output/thumbnail.webp',
     ),
   },
   dunkleosteus: {
     model: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/dunkleosteus/output/model/model.glb',
+      'assets/candidates/animal-onboarding-2026-08-13/dunkleosteus/output/model/model.glb',
     ),
     backgroundLandscape: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/dunkleosteus/output/background-landscape.webp',
+      'assets/candidates/animal-onboarding-2026-08-13/dunkleosteus/output/background-landscape.webp',
     ),
     backgroundPortrait: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/dunkleosteus/output/background-portrait.webp',
+      'assets/candidates/animal-onboarding-2026-08-13/dunkleosteus/output/background-portrait.webp',
     ),
     narration: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/dunkleosteus/output/audio/narration.zh-CN.mp3',
+      'assets/candidates/animal-onboarding-2026-08-13/dunkleosteus/output/audio/narration.zh-CN.mp3',
     ),
     poster: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/dunkleosteus/output/poster.webp',
+      'assets/candidates/animal-onboarding-2026-08-13/dunkleosteus/output/poster.webp',
     ),
     posterPortrait: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/dunkleosteus/output/images/poster-portrait.webp',
+      'assets/candidates/animal-onboarding-2026-08-13/dunkleosteus/output/images/poster-portrait.webp',
     ),
     thumbnail: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/dunkleosteus/output/thumbnail.webp',
+      'assets/candidates/animal-onboarding-2026-08-13/dunkleosteus/output/thumbnail.webp',
     ),
   },
   ammonite: {
     model: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/ammonite/output/model/model.glb',
+      'assets/candidates/animal-onboarding-2026-08-13/ammonite/output/model/model.glb',
     ),
     backgroundLandscape: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/ammonite/output/background-landscape.webp',
+      'assets/candidates/animal-onboarding-2026-08-13/ammonite/output/background-landscape.webp',
     ),
     backgroundPortrait: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/ammonite/output/background-portrait.webp',
+      'assets/candidates/animal-onboarding-2026-08-13/ammonite/output/background-portrait.webp',
     ),
     narration: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/ammonite/output/audio/narration.zh-CN.mp3',
+      'assets/candidates/animal-onboarding-2026-08-13/ammonite/output/audio/narration.zh-CN.mp3',
     ),
     poster: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/ammonite/output/poster.webp',
+      'assets/candidates/animal-onboarding-2026-08-13/ammonite/output/poster.webp',
     ),
     posterPortrait: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/ammonite/output/images/poster-portrait.webp',
+      'assets/candidates/animal-onboarding-2026-08-13/ammonite/output/images/poster-portrait.webp',
     ),
     thumbnail: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/ammonite/output/thumbnail.webp',
+      'assets/candidates/animal-onboarding-2026-08-13/ammonite/output/thumbnail.webp',
     ),
   },
   jaekelopterus: {
     model: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/jaekelopterus/output/model/model.glb',
+      'assets/candidates/animal-onboarding-2026-08-13/jaekelopterus/output/model/model.glb',
     ),
     backgroundLandscape: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/jaekelopterus/output/background-landscape.webp',
+      'assets/candidates/animal-onboarding-2026-08-13/jaekelopterus/output/background-landscape.webp',
     ),
     backgroundPortrait: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/jaekelopterus/output/background-portrait.webp',
+      'assets/candidates/animal-onboarding-2026-08-13/jaekelopterus/output/background-portrait.webp',
     ),
     narration: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/jaekelopterus/output/audio/narration.zh-CN.mp3',
+      'assets/candidates/animal-onboarding-2026-08-13/jaekelopterus/output/audio/narration.zh-CN.mp3',
     ),
     poster: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/jaekelopterus/output/poster.webp',
+      'assets/candidates/animal-onboarding-2026-08-13/jaekelopterus/output/poster.webp',
     ),
     posterPortrait: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/jaekelopterus/output/images/poster-portrait.webp',
+      'assets/candidates/animal-onboarding-2026-08-13/jaekelopterus/output/images/poster-portrait.webp',
     ),
     thumbnail: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/jaekelopterus/output/thumbnail.webp',
+      'assets/candidates/animal-onboarding-2026-08-13/jaekelopterus/output/thumbnail.webp',
     ),
   },
   smilodon: {
     model: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/smilodon/output/model/model.glb',
+      'assets/candidates/animal-onboarding-2026-08-13/smilodon/output/model/model.glb',
     ),
     backgroundLandscape: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/smilodon/output/background-landscape.webp',
+      'assets/candidates/animal-onboarding-2026-08-13/smilodon/output/background-landscape.webp',
     ),
     backgroundPortrait: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/smilodon/output/background-portrait.webp',
+      'assets/candidates/animal-onboarding-2026-08-13/smilodon/output/background-portrait.webp',
     ),
     narration: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/smilodon/output/audio/narration.zh-CN.mp3',
+      'assets/candidates/animal-onboarding-2026-08-13/smilodon/output/audio/narration.zh-CN.mp3',
     ),
     poster: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/smilodon/output/poster.webp',
+      'assets/candidates/animal-onboarding-2026-08-13/smilodon/output/poster.webp',
     ),
     posterPortrait: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/smilodon/output/images/poster-portrait.webp',
+      'assets/candidates/animal-onboarding-2026-08-13/smilodon/output/images/poster-portrait.webp',
     ),
     thumbnail: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/smilodon/output/thumbnail.webp',
+      'assets/candidates/animal-onboarding-2026-08-13/smilodon/output/thumbnail.webp',
     ),
   },
   spinosaurus: {
     model: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/spinosaurus/output/model/model.glb',
+      'assets/candidates/animal-onboarding-2026-08-13/spinosaurus/output/model/model.glb',
     ),
     backgroundLandscape: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/spinosaurus/output/background-landscape.webp',
+      'assets/candidates/animal-onboarding-2026-08-13/spinosaurus/output/background-landscape.webp',
     ),
     backgroundPortrait: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/spinosaurus/output/background-portrait.webp',
+      'assets/candidates/animal-onboarding-2026-08-13/spinosaurus/output/background-portrait.webp',
     ),
     narration: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/spinosaurus/output/audio/narration.zh-CN.mp3',
+      'assets/candidates/animal-onboarding-2026-08-13/spinosaurus/output/audio/narration.zh-CN.mp3',
     ),
     poster: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/spinosaurus/output/poster.webp',
+      'assets/candidates/animal-onboarding-2026-08-13/spinosaurus/output/poster.webp',
     ),
     posterPortrait: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/spinosaurus/output/images/poster-portrait.webp',
+      'assets/candidates/animal-onboarding-2026-08-13/spinosaurus/output/images/poster-portrait.webp',
     ),
     thumbnail: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-10/spinosaurus/output/thumbnail.webp',
+      'assets/candidates/animal-onboarding-2026-08-13/spinosaurus/output/thumbnail.webp',
     ),
   },
 }

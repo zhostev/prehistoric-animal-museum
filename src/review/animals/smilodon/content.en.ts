@@ -52,7 +52,7 @@ export const en = {
       'The source mesh has exactly one connected body component and no separate pedestal. The owner reviewed the added breathing and head-sway display motions.',
     ],
     editedBy: 'Codex',
-    reviewedBy: 'museum-owner',
-    reviewedOn: '2026-08-11',
+    reviewedBy: 'zho',
+    reviewedOn: '2026-08-13',
   },
 } satisfies AnimalContentEn

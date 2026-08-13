@@ -47,7 +47,7 @@ export const en = {
       'Colour, soft tissue, swimming pose and segmented motion are owner-reviewed cautious display choices; they do not resolve the source identity conflict.',
     ],
     editedBy: 'Codex',
-    reviewedBy: 'museum-owner',
-    reviewedOn: '2026-08-11',
+    reviewedBy: 'zho',
+    reviewedOn: '2026-08-13',
   },
 } satisfies AnimalContentEn

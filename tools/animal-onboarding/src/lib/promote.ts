@@ -3,6 +3,7 @@ import {
   copyFile,
   mkdir,
   readFile,
+  rename,
   rm,
   writeFile,
 } from 'node:fs/promises'
@@ -14,7 +15,7 @@ import type {
   AssetSource,
 } from '../../../../src/content/types'
 import { APPROVAL_RECORD_FILE, type ApprovalRecord } from './approvals'
-import { captureBaseline } from './baseline'
+import { captureBaseline, ORIGINAL_12_IDS } from './baseline'
 import { COMPOSITION_REPORT_PATH } from './composition'
 import {
   hashFile,
@@ -43,6 +44,7 @@ const COLLECTION_PATH = join(repositoryRoot, 'src/content/collections/main.ts')
 const POST_STEP_SNAPSHOT_PATHS = [
   'src/content/credits.generated.ts',
   'THIRD_PARTY_NOTICES.md',
+  'tools/animal-onboarding/baseline.json',
 ] as const
 
 export interface PromotionFileOp {
@@ -1051,7 +1053,7 @@ export interface BatchResult {
   readonly collection: string
   readonly animals: ReadonlyArray<{
     readonly id: string
-    readonly status: 'planned' | 'installed' | 'identical' | 'blocked'
+    readonly status: 'planned' | 'installed' | 'updated' | 'identical' | 'blocked'
     readonly deterministicProblems: readonly string[]
     readonly pendingHuman: readonly string[]
     readonly ops: readonly PromotionFileOp[]
@@ -1074,7 +1076,7 @@ export async function stageAndInstall(
   )
   const results: Array<{
     id: string
-    status: 'installed' | 'identical'
+    status: 'installed' | 'updated' | 'identical'
     deterministicProblems: readonly string[]
     pendingHuman: readonly string[]
     ops: readonly PromotionFileOp[]
@@ -1082,6 +1084,9 @@ export async function stageAndInstall(
 
   const originalCollection = await readFile(COLLECTION_PATH, 'utf8')
   const installedDirs: string[] = []
+  const rollbackRoot = join(stagingRoot, '.rollback')
+  const replacedDirs: Array<{ targetDir: string; backupDir: string }> = []
+  await rm(rollbackRoot, { recursive: true, force: true })
   const postStepSnapshots: Array<{ path: string; content: string | null }> = []
   for (const relativePath of POST_STEP_SNAPSHOT_PATHS) {
     const path = join(repositoryRoot, relativePath)
@@ -1183,14 +1188,40 @@ export async function stageAndInstall(
             current[target]?.sha256 !== fingerprint.sha256 ||
             current[target]?.bytes !== fingerprint.bytes,
         )
-        if (drift.length > 0) {
+        if (drift.length === 0) {
+          results.push({
+            id: profile.id,
+            status: 'identical',
+            deterministicProblems: [],
+            pendingHuman: [],
+            ops: [],
+          })
+          continue
+        }
+
+        if ((ORIGINAL_12_IDS as readonly string[]).includes(profile.id)) {
           throw new Error(
-            `promotion target changed for ${profile.id}: ${drift.map(([target]) => target).join(', ')}`,
+            `promotion target changed for protected original animal ${profile.id}: ${drift.map(([target]) => target).join(', ')}`,
           )
+        }
+
+        // An existing, approved animal may be promoted as a production
+        // revision. Move the complete old package aside before exposing any
+        // replacement file so rollback can restore it byte-for-byte. The
+        // caller has already validated the current review manifest and the
+        // hashed owner approval record for this exact profile.
+        const backupDir = join(rollbackRoot, profile.id)
+        await mkdir(dirname(backupDir), { recursive: true })
+        await rename(targetDir, backupDir)
+        replacedDirs.push({ targetDir, backupDir })
+        for (const target of ordered) {
+          const destination = join(targetDir, ...target.split('/'))
+          await mkdir(dirname(destination), { recursive: true })
+          await copyFile(join(stagingDir, ...target.split('/')), destination)
         }
         results.push({
           id: profile.id,
-          status: 'identical',
+          status: 'updated',
           deterministicProblems: [],
           pendingHuman: [],
           ops: [],
@@ -1231,11 +1262,18 @@ export async function stageAndInstall(
     await runNpmScript('generate:credits')
     await runNpmScript('validate:content')
     await captureBaseline()
+    await rm(rollbackRoot, { recursive: true, force: true })
   } catch (error) {
     // Roll the whole batch back: remove installed package dirs and restore
     // the collection file plus everything the post-steps regenerated.
     for (const dir of installedDirs) {
       await rm(dir, { recursive: true, force: true })
+    }
+    for (const { targetDir, backupDir } of [...replacedDirs].reverse()) {
+      await rm(targetDir, { recursive: true, force: true })
+      if (await pathExists(backupDir)) {
+        await rename(backupDir, targetDir)
+      }
     }
     await writeFile(COLLECTION_PATH, originalCollection, 'utf8')
     for (const snapshot of postStepSnapshots) {

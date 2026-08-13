@@ -3,12 +3,12 @@ Parasaurolophus background generation record
 
 Tool: Blender 4.5.12 (project-authored habitat scene, deterministic seed)
 Seed: 3991224688
-Generated: 2026-08-10
+Generated: 2026-08-13
 Use: project-specific responsive museum backgrounds
 
 The landscape and portrait were rendered as separate deterministic EEVEE Next
 passes from the project-authored habitat scene spec
-qa/derivatives-scene-spec.json (SHA-256 31bcd04b05080796d8624c12ce34641301e39a4c1527b780b2b02d0e00acd1a0).
+qa/derivatives-scene-spec.json (SHA-256 08bb9762a9d8be3f847fc9e01a06bbe198f05b80e83f567047ffb8e20b148197).
 No animal, person, text, UI, logo, or watermark appears in the renders.
 
 Landscape runtime WebP: 15810 bytes (1920 × 1080)
@@ -18,5 +18,5 @@ Portrait runtime WebP: 9800 bytes (1080 × 1920)
 SHA-256: 17af207a2f7a1601b975076664339cb0f7d0ab456bc0be9883dddb2e3e1c3e41
 
 The reviewed renders were encoded as lossy WebP at quality 82.
-The project owner approved public distribution on 2026-08-10.
-Recorded in approval-record.json: approved by zhostev on 2026-08-10.
+The project owner approved public distribution on 2026-08-13.
+Recorded in approval-record.json: approved by zho on 2026-08-13.

@@ -19,14 +19,13 @@ export const provenance = [
       url: 'https://creativecommons.org/publicdomain/zero/1.0/',
     },
     runtime: {
-      sha256: '9793f7cffa29d46c4da8852f5f2389559aba4a1b22a0c8d4ae8b4d5966d37e5d',
-      bytes: 3158140,
+      sha256: 'eb708299a0a08cd3ed9d11c9b54105c5769b376877a5fb28e4e888324cd6ed41',
+      bytes: 2105996,
     },
     modifications: [
-      'Added deterministic project-authored procedural baked textures (Smart UV unwrap + Cycles diffuse bake, texture_materials.py); geometry, rig and Idle animation unchanged.',
       'pipeline: one-piece fossil-shell PLY scan (not a living-animal reconstruction) -> topology check, stone material, single-bone floating display Idle',
       'armature synthesized: 1 bones [\'Shell\']',
-      'Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys; fossil shell display drifts +/-0.018 m and rocks +/-3.2/+/-1.8 deg; frame 192 repeats frame 0 exactly',
+      'Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys; fossil-shell exhibit follows a bounded three-axis drift (+/-0.012/+/-0.006/+/-0.022 m) and layered one-/two-cycle rocking (+/-7.0/+/-3.0 deg); this is display motion, not invented living anatomy; frame 192 repeats frame 0 exactly',
       'mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only',
     ],
     attribution: '“Ammonite” by Steph Piper (sjpiper145), CC0-1.0; modified for the Prehistoric Animal Museum.',
@@ -43,9 +42,9 @@ export const provenance = [
       type: 'generated',
       title: 'Ammonite habitat scene — landscape',
       tool: 'Blender 4.5.12 (project-authored habitat scene, deterministic seed)',
-      generatedOn: '2026-08-11',
-      prompt: 'Deterministic project-authored Blender habitat scene; scene spec qa/derivatives-scene-spec.json (SHA-256 b22a81bf5023520776eb4b68c1ab7432543440151d1dc039764b27501d9b0ea0) rendered with seed 2871074609 for the water habitat.',
-      sha256: 'b22a81bf5023520776eb4b68c1ab7432543440151d1dc039764b27501d9b0ea0',
+      generatedOn: '2026-08-13',
+      prompt: 'Deterministic project-authored Blender habitat scene; scene spec qa/derivatives-scene-spec.json (SHA-256 a070ef3e0d05c6dfdf62cf4fa6523a3671dddb4a50f438eb0fc1f97e445f0884) rendered with seed 2871074609 for the water habitat.',
+      sha256: 'a070ef3e0d05c6dfdf62cf4fa6523a3671dddb4a50f438eb0fc1f97e445f0884',
       bytes: 18936,
     },
     license: {
@@ -74,9 +73,9 @@ export const provenance = [
       type: 'generated',
       title: 'Ammonite habitat scene — portrait',
       tool: 'Blender 4.5.12 (project-authored habitat scene, deterministic seed)',
-      generatedOn: '2026-08-11',
-      prompt: 'Deterministic project-authored Blender habitat scene; scene spec qa/derivatives-scene-spec.json (SHA-256 b22a81bf5023520776eb4b68c1ab7432543440151d1dc039764b27501d9b0ea0) rendered with seed 2871074609 for the water habitat.',
-      sha256: 'b22a81bf5023520776eb4b68c1ab7432543440151d1dc039764b27501d9b0ea0',
+      generatedOn: '2026-08-13',
+      prompt: 'Deterministic project-authored Blender habitat scene; scene spec qa/derivatives-scene-spec.json (SHA-256 a070ef3e0d05c6dfdf62cf4fa6523a3671dddb4a50f438eb0fc1f97e445f0884) rendered with seed 2871074609 for the water habitat.',
+      sha256: 'a070ef3e0d05c6dfdf62cf4fa6523a3671dddb4a50f438eb0fc1f97e445f0884',
       bytes: 18936,
     },
     license: {
@@ -104,7 +103,7 @@ export const provenance = [
     source: {
       type: 'derived',
       title: 'Ammonite transparent model still',
-      generatedOn: '2026-08-11',
+      generatedOn: '2026-08-13',
       inputAssetPaths: [
         'model/model.glb',
       ],
@@ -116,8 +115,8 @@ export const provenance = [
       url: 'https://creativecommons.org/publicdomain/zero/1.0/',
     },
     runtime: {
-      sha256: 'a6d6257375e6566583e552fb2f46bd1f94ad3988236b686fb1cfed1002c63283',
-      bytes: 11232,
+      sha256: 'a52ecff4e5a2317e16d766d412ac8e66f7d95a70f5c746c3ae4f124385460a38',
+      bytes: 17336,
     },
     modifications: [
       'Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.',
@@ -137,7 +136,7 @@ export const provenance = [
     source: {
       type: 'derived',
       title: 'Ammonite transparent portrait model still',
-      generatedOn: '2026-08-11',
+      generatedOn: '2026-08-13',
       inputAssetPaths: [
         'model/model.glb',
       ],
@@ -149,8 +148,8 @@ export const provenance = [
       url: 'https://creativecommons.org/publicdomain/zero/1.0/',
     },
     runtime: {
-      sha256: '6e058ef68440eebb20f6947e310be06beb237f07c0421c1276c6fa1caf2b3233',
-      bytes: 4778,
+      sha256: 'ecc537f6ea5840600985c2baf5fa66f8ba9925be06eb2af3c9f2363faaa4f16d',
+      bytes: 8224,
     },
     modifications: [
       'Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.',
@@ -170,7 +169,7 @@ export const provenance = [
     source: {
       type: 'derived',
       title: 'Ammonite collection thumbnail',
-      generatedOn: '2026-08-11',
+      generatedOn: '2026-08-13',
       inputAssetPaths: [
         'model/model.glb',
         'backgrounds/landscape.webp',
@@ -183,8 +182,8 @@ export const provenance = [
       url: 'https://creativecommons.org/publicdomain/zero/1.0/',
     },
     runtime: {
-      sha256: 'bcc2471d50db9a41aa5a6e16d9b997e65b294a084990cfd9fc53bc97c44d5a2e',
-      bytes: 2314,
+      sha256: 'b919676c5812bf88be51634dfa8b4aa7038500a2901c04172598b1abe59f8713',
+      bytes: 4118,
     },
     modifications: [
       'Selected a card-size crop that keeps the animal readable.',

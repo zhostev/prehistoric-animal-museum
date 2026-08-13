@@ -180,6 +180,20 @@ function packageSource(
   const backgroundNote = background.placeholder
     ? ' 背景是自动化占位渐变，等待背景阶段与人工确认。'
     : ''
+  const ownerApproved = Object.values(profile.humanApprovals).every(Boolean)
+  const reviewBadge = ownerApproved ? '已验收' : '自动 QA 通过'
+  const reviewStatus = ownerApproved
+    ? `${zhName}已完成人工验收，等待或已完成生产晋升`
+    : `${zhName}完整本地草稿，等待科学、视觉、动作与听审`
+  const reviewNote = ownerApproved
+    ? `${profile.candidate.author} 发布的 ${profile.candidate.license} 模型，源档案、许可证据、自包含 GLB、预算、八秒 Idle、landmarks 投影与五视口证据均通过自动化核对；科学、解剖、材质、动作、背景、双语文案、双语听审、公开分发与生产决定已由产品负责人明确验收。`
+    : `${profile.candidate.author} 发布的 ${profile.candidate.license} 模型，源档案、许可证据、自包含 GLB、预算、八秒 Idle、landmarks 投影与五视口证据由自动化核对。${pendingNote}${backgroundNote} 科学身份、解剖、材质、动作自然度、背景、文案、听审与公开分发决定全部仍是 human-only。`
+  const draftNotes = ownerApproved
+    ? `    '全部 human-only 类别已由产品负责人明确验收并写入哈希审批记录。',
+    '本包可以通过受保护的原子生产事务晋升；生产集合始终是运行时权威。',`
+    : `    '${reviewRevision ? '这是已有生产动物的待审修订；本地 review 使用候选资产，线上生产集合和资产保持不变。' : '仅加入显式本地 review allowlist；没有进入 src/content/animals 或生产集合。'}',
+    '自动 hard gates 已通过，但科学身份、解剖、材质、动作自然度、背景、中文内容、完整听审和公开分发决定仍是 human-only。',
+    '只有产品负责人明确批准后才能记录 approval 并执行生产晋升。',`
 
   const narrationPlan = (locale: 'zh-CN' | 'en', ready: boolean): string => {
     const key = locale === 'en' ? 'en' : `'${locale}'`
@@ -256,10 +270,10 @@ ${narrationAsset('en', narration.en)}
     },
   },
   review: {
-    badge: '自动 QA 通过',
-    status: '${zhName}完整本地草稿，等待科学、视觉、动作与听审',
+    badge: '${reviewBadge}',
+    status: '${reviewStatus}',
     note:
-      '${profile.candidate.author} 发布的 ${profile.candidate.license} 模型，源档案、许可证据、自包含 GLB、预算、八秒 Idle、landmarks 投影与五视口证据由自动化核对。${pendingNote}${backgroundNote} 科学身份、解剖、材质、动作自然度、背景、文案、听审与公开分发决定全部仍是 human-only。',
+      '${reviewNote}',
     checks: [
       '恢复初始视角，确认头部清楚位于画面左侧；再 360° 核对轮廓与附件结构。',
       '完整观看两个八秒循环，确认 Idle 可读、无断裂或穿插。',
@@ -280,9 +294,7 @@ ${narrationAsset('en', narration.en)}
     },
   },
   draftNotes: [
-    '${reviewRevision ? '这是已有生产动物的待审修订；本地 review 使用候选资产，线上生产集合和资产保持不变。' : '仅加入显式本地 review allowlist；没有进入 src/content/animals 或生产集合。'}',
-    '自动 hard gates 已通过，但科学身份、解剖、材质、动作自然度、背景、中文内容、完整听审和公开分发决定仍是 human-only。',
-    '只有产品负责人明确批准后才能记录 approval 并执行生产晋升。',${background.placeholder ? "\n    '当前背景是自动化占位渐变，不是 art direction；背景人工验收前不得晋升。'," : ''}
+${draftNotes}${!ownerApproved && background.placeholder ? "\n    '当前背景是自动化占位渐变，不是 art direction；背景人工验收前不得晋升。'," : ''}
   ],
 } satisfies CompleteDraftAnimalPackage
 `

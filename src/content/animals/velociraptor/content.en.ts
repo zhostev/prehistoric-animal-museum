@@ -52,7 +52,7 @@ export const en = {
       'The label stays at the genus level, Velociraptor, with V. mongoliensis as the reference species. The display name and sickle claw have been checked for this exhibition.',
     ],
     editedBy: 'kimi-code (draft)',
-    reviewedBy: 'zhostev (owner)',
-    reviewedOn: '2026-08-10',
+    reviewedBy: 'zho',
+    reviewedOn: '2026-08-13',
   },
 } satisfies AnimalContentEn

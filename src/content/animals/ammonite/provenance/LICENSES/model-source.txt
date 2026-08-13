@@ -13,9 +13,9 @@ Original SHA-256:
 Modifications for the Prehistoric Animal Museum:
 - pipeline: one-piece fossil-shell PLY scan (not a living-animal reconstruction) -> topology check, stone material, single-bone floating display Idle
 - armature synthesized: 1 bones ['Shell']
-- Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys; fossil shell display drifts +/-0.018 m and rocks +/-3.2/+/-1.8 deg; frame 192 repeats frame 0 exactly
+- Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys; fossil-shell exhibit follows a bounded three-axis drift (+/-0.012/+/-0.006/+/-0.022 m) and layered one-/two-cycle rocking (+/-7.0/+/-3.0 deg); this is display motion, not invented living anatomy; frame 192 repeats frame 0 exactly
 - mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
 
-Published runtime GLB: 1702452 bytes
+Published runtime GLB: 2105996 bytes
 Published SHA-256:
-24601fcaf1d86079d42926cea84f230dca184a2182c97ff120ebe171b34c3546
+eb708299a0a08cd3ed9d11c9b54105c5769b376877a5fb28e4e888324cd6ed41

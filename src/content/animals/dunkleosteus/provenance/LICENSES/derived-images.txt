@@ -1,7 +1,7 @@
 Dunkleosteus poster and thumbnail derivation record
 =====================================================
 
-Generated: 2026-08-10
+Generated: 2026-08-13
 
 The 1200 × 675 poster and the
 390 × 844 portrait poster are deterministic
@@ -10,9 +10,9 @@ watermarks. The 320 × 320 thumbnail was
 captured from the accepted desktop review presentation after hiding all
 interface chrome.
 
-Poster SHA-256: ca4cce0e5fb3e1d62b0c0571b208cf0ccb8f784b3faf56270017b968216bbe5f (12852 bytes)
-Portrait poster SHA-256: d2a3217d8431a0ca78ce85e09c101799dc8124e66fd836f850bcd5d577cca4af (3616 bytes)
-Thumbnail SHA-256: e2e1ffbd20b7b2cc8bd536c7624e1819a1533154bacb43ad83045e6f8b60e245 (2740 bytes)
+Poster SHA-256: 2b7c87303d85a9cbedf0539ca70b2bed37d46bbcf2e7f6835da6d5233a314610 (13356 bytes)
+Portrait poster SHA-256: b974284656a7d0b9989be6f337fb12a68fb9b362ba5d92fdac67ac3f3cf6f3e8 (3636 bytes)
+Thumbnail SHA-256: 867cb4a074d1af3a23cbc025a854d05c7aff72a25622e7d250e6d1b9c72fb7de (2848 bytes)
 
 The model attribution and CC0-1.0 terms in model-license.txt
 continue to apply. The background generation record is retained separately.

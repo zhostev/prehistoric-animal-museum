@@ -1,14 +1,14 @@
-Velociraptor background generation record
-=========================================
+Raptor Pack (Standing pose) background generation record
+========================================================
 
 Tool: Blender 4.5.12 (project-authored habitat scene, deterministic seed)
 Seed: 4036161673
-Generated: 2026-08-10
+Generated: 2026-08-13
 Use: project-specific responsive museum backgrounds
 
 The landscape and portrait were rendered as separate deterministic EEVEE Next
 passes from the project-authored habitat scene spec
-qa/derivatives-scene-spec.json (SHA-256 f948685af967784cebb803dc7a06c0d39f62f23fc6cd51a703d0e0230b055aa6).
+qa/derivatives-scene-spec.json (SHA-256 ccacef4a64ef146bb951bda5c02f57e40c6634872027b92387bb133bb1e3125c).
 No animal, person, text, UI, logo, or watermark appears in the renders.
 
 Landscape runtime WebP: 16184 bytes (1920 × 1080)
@@ -18,5 +18,5 @@ Portrait runtime WebP: 10138 bytes (1080 × 1920)
 SHA-256: d23a25e8aa44e6f2ff5be2cb4dcefdc83fda60521228a95a0be322a6c848bed4
 
 The reviewed renders were encoded as lossy WebP at quality 82.
-The project owner approved public distribution on 2026-08-10.
-Recorded in approval-record.json: approved by zhostev on 2026-08-10.
+The project owner approved public distribution on 2026-08-13.
+Recorded in approval-record.json: approved by zho on 2026-08-13.

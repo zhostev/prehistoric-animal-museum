@@ -163,12 +163,16 @@ def measure_landmarks(habitat, log):
     }
 
 
-def retime_action_linear(src_action, new_name, location_scale, log):
+def retime_action_linear(src_action, new_name, location_scale, log, cycles=1):
     """Resample src_action (frames 0..src_end, BEZIER source) into a new action
-    spanning frames 0..192 with one LINEAR key per frame. Frame 192 samples
-    source frame 0 exactly so the loop closes seamlessly. Pose-bone location
-    channels are multiplied by location_scale (the armature data is scaled by
-    the same factor afterwards, keeping root motion in meters)."""
+    spanning frames 0..192 with one LINEAR key per frame. ``cycles`` repeats
+    the complete source action inside the eight-second museum Idle without
+    stretching a short source clip into slow motion. Frame 192 samples source
+    frame 0 exactly so the loop closes seamlessly. Pose-bone location channels
+    are multiplied by location_scale (the armature data is scaled by the same
+    factor afterwards, keeping root motion in meters)."""
+    if not isinstance(cycles, int) or cycles < 1:
+        raise HardFail(f"retime cycles must be a positive integer, got {cycles!r}")
     src_start, src_end = src_action.frame_range
     groups = {}
     for fc in src_action.fcurves:
@@ -180,7 +184,11 @@ def retime_action_linear(src_action, new_name, location_scale, log):
         indices = sorted(channels)
         samples = {i: [] for i in indices}
         for f in range(frames):
-            t = float(src_start) if f == IDLE_END_FRAME else f * (src_end - src_start) / IDLE_END_FRAME + src_start
+            if f == IDLE_END_FRAME:
+                t = float(src_start)
+            else:
+                cycle_fraction = (f * cycles / IDLE_END_FRAME) % 1.0
+                t = cycle_fraction * (src_end - src_start) + src_start
             for i in indices:
                 samples[i].append(channels[i].evaluate(t))
         if data_path.endswith("rotation_quaternion") and len(indices) == 4:
@@ -205,7 +213,8 @@ def retime_action_linear(src_action, new_name, location_scale, log):
             fc.update()
     log.add(f"action '{src_action.name}' ({src_start:.0f}..{src_end:.0f} f, BEZIER) "
             f"resampled to '{new_name}': frames 0..{IDLE_END_FRAME} at {FPS} fps = "
-            f"{IDLE_SECONDS:.1f} s, one LINEAR key per frame, {len(new_action.fcurves)} fcurves; "
+            f"{IDLE_SECONDS:.1f} s with {cycles} source cycle(s), one LINEAR key per "
+            f"frame, {len(new_action.fcurves)} fcurves; "
             f"frame {IDLE_END_FRAME} resamples frame {src_start:.0f} exactly (seamless loop); "
             f"pose location channels scaled by {location_scale:.6f} (1.0 = armature-space "
             f"units kept, metres come from the object node scale)")

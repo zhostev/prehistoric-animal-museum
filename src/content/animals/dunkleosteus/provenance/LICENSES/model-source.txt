@@ -11,17 +11,16 @@ Original SHA-256:
 b1623f849000b6466af14189d131af26984b8dc0dae8f09e73ca2ed25d984803
 
 Modifications for the Prehistoric Animal Museum:
-- pipeline: unrigged static STL -> decimate, author materials, synthesize 5-bone spine chain + 8 s swim Idle
+- pipeline: unrigged static STL (dunkleosteus) -> topology-budget check/decimate, author materials, synthesize 5-bone articulated spine chain + 8 s swim Idle
 - dunkleosteus: source faces Blender -Y; rotated 180 deg about Z, applied to mesh data -> head now toward +Y (glTF -Z)
-- decimate: ratio 0.2162 (416332 -> 90000 tris, 44990 verts); over-ceiling source reduced to <=100k target
+- decimate: ratio 0.216174 (416332 -> 90000 tris, 44990 verts); <= 90000 target
 - shading: smooth (source STL was flat-shaded)
-- materials authored (source had none): 'Body' muted slate blue (0.38,0.47,0.55) + 'HeadPlates' muted warm grey (0.52,0.49,0.43), roughness 0.8/0.85; head plates assigned to faces with local centre y > -1.379 (front 30%, the armoured head): 65769/90000 faces; choices remain human-reviewable (humanApprovals.materials stays false)
 - scale: source body length 4.1131 Blender units -> 6.0 m; uniform factor 1.458754 applied to mesh data
 - centring (water): shifted by [-0.23914, 3.21208, -1.57498] m so the bounding-box centre sits at the origin (x/y centred, centred vertically in the water column)
 - armature synthesized: 5-bone spine chain Spine1..Spine5 along -Y (head end y=0.90 m to tail tip y=-3.00 m), roll 0
-- Idle synthesized: frames 0..192 at 24 fps = 8.0 s, one LINEAR key per frame; lateral wave amplitudes [1.5, 3.0, 5.0, 7.0, 9.0] deg (Spine1->Spine5, travelling phase -0.55 rad/bone), vertical bob +/-0.05 m on the armature object, no root travel; frame 192 repeats frame 0 exactly (seamless loop)
+- Idle synthesized: frames 0..192 at 24 fps = 8.0 s, one LINEAR key per frame; 3 travelling-wave cycles with lateral amplitudes [1.5, 3.5, 6.0, 9.0, 12.0] deg (Spine1->Spine5, phase -0.68 rad/bone), two-cycle vertical bob +/-0.05 m plus gentle whole-body pitch/roll, no forward root travel; frame 192 repeats frame 0 exactly (seamless loop)
 - mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
 
-Published runtime GLB: 2557476 bytes
+Published runtime GLB: 2633476 bytes
 Published SHA-256:
-3f210c1c481b2d6979f47b3190cba6d698cc148c38d6f8eba9c329f13894b7c6
+23a4543f81450a3890899c945b02bd46c9657feeec08a6e9d53a6e283ad96b8b

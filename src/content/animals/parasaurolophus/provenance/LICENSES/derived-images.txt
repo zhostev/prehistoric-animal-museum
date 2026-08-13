@@ -1,7 +1,7 @@
 Parasaurolophus poster and thumbnail derivation record
 ========================================================
 
-Generated: 2026-08-10
+Generated: 2026-08-13
 
 The 1200 × 675 poster and the
 390 × 844 portrait poster are deterministic
@@ -10,9 +10,9 @@ watermarks. The 320 × 320 thumbnail was
 captured from the accepted desktop review presentation after hiding all
 interface chrome.
 
-Poster SHA-256: 9fc8aa2b000151a10105981f077ed628062645b5a5272557b014ad3d8aebf389 (12838 bytes)
-Portrait poster SHA-256: 9158502e5c316a647b6eb50175f7269844a29d2ee8e6f0d42ff9b0f0be605f88 (3926 bytes)
-Thumbnail SHA-256: 44d33b526f7bb1e3e285c9c0f31a24f6041daac5e3dce821a93f65120d27c61c (3134 bytes)
+Poster SHA-256: 65d1161e203e52660ae666f219802daf13645ec6a84d37f612a3fd477c5f072e (13562 bytes)
+Portrait poster SHA-256: 4e0df83bf4dd942dab86d6d199d7b3721b2bf46c3f89f214a6218b70c95b1a6b (4220 bytes)
+Thumbnail SHA-256: 98cc23c8398d211917b74fe8ddf8d40ac4e9230196fbf3389f72f03798168f9e (3422 bytes)
 
 The model attribution and CC0-1.0 terms in model-license.txt
 continue to apply. The background generation record is retained separately.

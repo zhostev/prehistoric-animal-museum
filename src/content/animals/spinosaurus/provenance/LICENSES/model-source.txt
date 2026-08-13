@@ -3,32 +3,22 @@ Spinosaurus model source and modifications
 
 Direct source:
 https://sketchfab.com/3d-models/spinosaurus-4f2332ee93874d59a55fb60ed2873ec2
-(author's Google Drive mirror used for the no-login download)
 
 Creator: Julian Johnson-Mortimer (@FreddyFoxFreddy)
 License: CC-BY-4.0
 Original downloaded source: 17763760 bytes (archive/spineBind.fbx)
+Original SHA-256:
+4d45b180ca0ced73e18b7998d38fcf1ec4b6e5e65b421afd004330081fff8832
 
 Modifications for the Prehistoric Animal Museum:
-- Model replaced with this sculpt via the static-sculpt pipeline track
-  (run_static_sculpt).
-- Kept meshes: low (game-res body), teethtop1, teethbot1, claws; eye empties
-  removed; source object transforms applied into mesh data (FBX import
-  scale/rotation normalized).
-- normal bake: 'high' (320790 verts) -> 'low' (20048 verts), tangent space,
-  2048px, packed and wired via Normal Map node
-- scale: source body length 39.2302 Blender units -> 13.0 m; factor 0.331378
-  applied to mesh data
+- pipeline: static sculpt (spinosaurus) -> keep configured meshes, author materials, optional normal bake, synthesize Body/Head/Tail rig + 8 s Idle
+- spinosaurus: source faces Blender -Y; rotated 180 deg about Z, applied to mesh data -> head now toward +Y (glTF -Z)
+- scale: source body length 39.2302 Blender units -> 13.0 m; uniform factor 0.331378 applied to mesh data
 - grounding (land): shifted z by +0.02750 m so the lowest vertex rests at z=0
-- skinning: deterministic 20-step Body/Head/Tail blends by local +Y; teeth
-  meshes fully weighted to Head
-- Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys;
-  Body breathes, Head sways +/-2.4 deg, Tail sways +/-3.5 deg; frame 192
-  repeats frame 0 exactly (seamless loop)
-- texture bake: deterministic Cycles diffuse bake on the author UVs
-  (scales/mottle patterns), 1024px Body + 512px accents (texture_materials.py)
-- mouth motion stays DISABLED (teeth are static separate components, no
-  declared jaw path)
+- armature synthesized: 3 bones ['Body', 'Head', 'Tail']
+- Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys; Body breathes for two cycles at +/-1.8% width, +/-1.2% height, +/-0.4% length about a z=0 bone origin; Head combines a slow +/-5.5 deg look and two-cycle +/-2.0 deg nod; Tail combines a three-cycle +/-7.0 deg sway with a slow +/-1.5 deg lift; frame 192 repeats frame 0 exactly (seamless loop)
+- mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
 
-This record supersedes the earlier project-authored procedural low-poly
-Spinosaurus (recorded in git history before 2026-08-12).
+Published runtime GLB: 8432628 bytes
+Published SHA-256:
+61ffb70077690bbc2623504a06b685ed3c2ab4763e861f1c69abf413f64d80a7

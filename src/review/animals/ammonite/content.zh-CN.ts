@@ -47,7 +47,7 @@ export const zhCN = {
       '馆主已复核文案与化石壳材料表现；标本科学身份依然因来源信息不足而无法细定。',
     ],
     editedBy: 'Codex',
-    reviewedBy: 'museum-owner',
-    reviewedOn: '2026-08-11',
+    reviewedBy: 'zho',
+    reviewedOn: '2026-08-13',
   },
 } satisfies AnimalContentZhCN

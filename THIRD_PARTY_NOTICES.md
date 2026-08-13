@@ -50,7 +50,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 ### `backgrounds/landscape.webp`
 
 - Asset type: background
-- Source: Ammonite habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-11
+- Source: Ammonite habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-13
 - License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated Ammonite landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
 - Runtime SHA-256: `b9ee44f47e88719a14865e60a3b23b08dca5a055715f4c2a998a7322dc898df8`
@@ -60,7 +60,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 ### `backgrounds/portrait.webp`
 
 - Asset type: background
-- Source: Ammonite habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-11
+- Source: Ammonite habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-13
 - License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated Ammonite portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
 - Runtime SHA-256: `cc0e6283a2631d94061e58b07fd17e0fa3525668c04f1a8f0a75bc136deb24cf`
@@ -70,30 +70,30 @@ content, contributions, and Brand Assets follow the separate scopes in
 ### `images/poster-portrait.webp`
 
 - Asset type: poster
-- Source: Ammonite transparent portrait model still, derived on 2026-08-11
+- Source: Ammonite transparent portrait model still, derived on 2026-08-13
 - License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - Attribution: “Ammonite” by Steph Piper (sjpiper145), CC0-1.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `6e058ef68440eebb20f6947e310be06beb237f07c0421c1276c6fa1caf2b3233`
+- Runtime SHA-256: `ecc537f6ea5840600985c2baf5fa66f8ba9925be06eb2af3c9f2363faaa4f16d`
 - Modifications:
   - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
   - Encoded as exact lossless WebP without text, controls, labels, logos, or watermarks.
 ### `images/poster.webp`
 
 - Asset type: poster
-- Source: Ammonite transparent model still, derived on 2026-08-11
+- Source: Ammonite transparent model still, derived on 2026-08-13
 - License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - Attribution: “Ammonite” by Steph Piper (sjpiper145), CC0-1.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `a6d6257375e6566583e552fb2f46bd1f94ad3988236b686fb1cfed1002c63283`
+- Runtime SHA-256: `a52ecff4e5a2317e16d766d412ac8e66f7d95a70f5c746c3ae4f124385460a38`
 - Modifications:
   - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
   - Encoded as lossless WebP without text, controls, labels, logos, or watermarks.
 ### `images/thumbnail.webp`
 
 - Asset type: thumbnail
-- Source: Ammonite collection thumbnail, derived on 2026-08-11
+- Source: Ammonite collection thumbnail, derived on 2026-08-13
 - License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - Attribution: “Ammonite” by Steph Piper (sjpiper145), CC0-1.0; modified for the Prehistoric Animal Museum. Scene art generated for this project.
-- Runtime SHA-256: `bcc2471d50db9a41aa5a6e16d9b997e65b294a084990cfd9fc53bc97c44d5a2e`
+- Runtime SHA-256: `b919676c5812bf88be51634dfa8b4aa7038500a2901c04172598b1abe59f8713`
 - Modifications:
   - Selected a card-size crop that keeps the animal readable.
   - Exported without embedded text, controls, labels, logos, or watermarks.
@@ -103,12 +103,11 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: [Ammonite](https://archive.org/details/thingiverse-2246008) by Steph Piper (sjpiper145)
 - License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - Attribution: “Ammonite” by Steph Piper (sjpiper145), CC0-1.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `9793f7cffa29d46c4da8852f5f2389559aba4a1b22a0c8d4ae8b4d5966d37e5d`
+- Runtime SHA-256: `eb708299a0a08cd3ed9d11c9b54105c5769b376877a5fb28e4e888324cd6ed41`
 - Modifications:
-  - Added deterministic project-authored procedural baked textures (Smart UV unwrap + Cycles diffuse bake, texture_materials.py); geometry, rig and Idle animation unchanged.
   - pipeline: one-piece fossil-shell PLY scan (not a living-animal reconstruction) -> topology check, stone material, single-bone floating display Idle
   - armature synthesized: 1 bones ['Shell']
-  - Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys; fossil shell display drifts +/-0.018 m and rocks +/-3.2/+/-1.8 deg; frame 192 repeats frame 0 exactly
+  - Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys; fossil-shell exhibit follows a bounded three-axis drift (+/-0.012/+/-0.006/+/-0.022 m) and layered one-/two-cycle rocking (+/-7.0/+/-3.0 deg); this is display motion, not invented living anatomy; frame 192 repeats frame 0 exactly
   - mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
 ## 迷惑龙 (`apatosaurus`)
 
@@ -307,7 +306,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 ### `backgrounds/landscape.webp`
 
 - Asset type: background
-- Source: Dunkleosteus habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-10
+- Source: Dunkleosteus habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-13
 - License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated Dunkleosteus landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
 - Runtime SHA-256: `8fdd996a57745f2ca773e6ef52c22b3b6a738524ee219e03c1dfb27377793fa0`
@@ -317,7 +316,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 ### `backgrounds/portrait.webp`
 
 - Asset type: background
-- Source: Dunkleosteus habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-10
+- Source: Dunkleosteus habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-13
 - License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated Dunkleosteus portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
 - Runtime SHA-256: `0e1066cfd447146a9a9bda40a2f4371b5952edb79874b7a228c0a60b6523cc72`
@@ -327,30 +326,30 @@ content, contributions, and Brand Assets follow the separate scopes in
 ### `images/poster-portrait.webp`
 
 - Asset type: poster
-- Source: Dunkleosteus transparent portrait model still, derived on 2026-08-10
+- Source: Dunkleosteus transparent portrait model still, derived on 2026-08-13
 - License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - Attribution: “Dunkleosteus” by EvolutionIncarnate, CC0-1.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `d2a3217d8431a0ca78ce85e09c101799dc8124e66fd836f850bcd5d577cca4af`
+- Runtime SHA-256: `b974284656a7d0b9989be6f337fb12a68fb9b362ba5d92fdac67ac3f3cf6f3e8`
 - Modifications:
   - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
   - Encoded as exact lossless WebP without text, controls, labels, logos, or watermarks.
 ### `images/poster.webp`
 
 - Asset type: poster
-- Source: Dunkleosteus transparent model still, derived on 2026-08-10
+- Source: Dunkleosteus transparent model still, derived on 2026-08-13
 - License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - Attribution: “Dunkleosteus” by EvolutionIncarnate, CC0-1.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `ca4cce0e5fb3e1d62b0c0571b208cf0ccb8f784b3faf56270017b968216bbe5f`
+- Runtime SHA-256: `2b7c87303d85a9cbedf0539ca70b2bed37d46bbcf2e7f6835da6d5233a314610`
 - Modifications:
   - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
   - Encoded as lossless WebP without text, controls, labels, logos, or watermarks.
 ### `images/thumbnail.webp`
 
 - Asset type: thumbnail
-- Source: Dunkleosteus collection thumbnail, derived on 2026-08-10
+- Source: Dunkleosteus collection thumbnail, derived on 2026-08-13
 - License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - Attribution: “Dunkleosteus” by EvolutionIncarnate, CC0-1.0; modified for the Prehistoric Animal Museum. Scene art generated for this project.
-- Runtime SHA-256: `e2e1ffbd20b7b2cc8bd536c7624e1819a1533154bacb43ad83045e6f8b60e245`
+- Runtime SHA-256: `867cb4a074d1af3a23cbc025a854d05c7aff72a25622e7d250e6d1b9c72fb7de`
 - Modifications:
   - Selected a card-size crop that keeps the animal readable.
   - Exported without embedded text, controls, labels, logos, or watermarks.
@@ -360,18 +359,16 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: [Dunkleosteus](https://commons.wikimedia.org/wiki/File:Dunkliferecon.stl) by EvolutionIncarnate
 - License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - Attribution: “Dunkleosteus” by EvolutionIncarnate, CC0-1.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `39e12696ffbec1c5579aa70d06af1f243888dfe44e7ff33ab627bc6d3a070afe`
+- Runtime SHA-256: `23a4543f81450a3890899c945b02bd46c9657feeec08a6e9d53a6e283ad96b8b`
 - Modifications:
-  - Added deterministic project-authored procedural baked textures (Smart UV unwrap + Cycles diffuse bake, texture_materials.py); geometry, rig and Idle animation unchanged.
-  - pipeline: unrigged static STL -> decimate, author materials, synthesize 5-bone spine chain + 8 s swim Idle
+  - pipeline: unrigged static STL (dunkleosteus) -> topology-budget check/decimate, author materials, synthesize 5-bone articulated spine chain + 8 s swim Idle
   - dunkleosteus: source faces Blender -Y; rotated 180 deg about Z, applied to mesh data -> head now toward +Y (glTF -Z)
-  - decimate: ratio 0.2162 (416332 -> 90000 tris, 44990 verts); over-ceiling source reduced to <=100k target
+  - decimate: ratio 0.216174 (416332 -> 90000 tris, 44990 verts); <= 90000 target
   - shading: smooth (source STL was flat-shaded)
-  - materials authored (source had none): 'Body' muted slate blue (0.38,0.47,0.55) + 'HeadPlates' muted warm grey (0.52,0.49,0.43), roughness 0.8/0.85; head plates assigned to faces with local centre y > -1.379 (front 30%, the armoured head): 65769/90000 faces; choices remain human-reviewable (humanApprovals.materials stays false)
   - scale: source body length 4.1131 Blender units -> 6.0 m; uniform factor 1.458754 applied to mesh data
   - centring (water): shifted by [-0.23914, 3.21208, -1.57498] m so the bounding-box centre sits at the origin (x/y centred, centred vertically in the water column)
   - armature synthesized: 5-bone spine chain Spine1..Spine5 along -Y (head end y=0.90 m to tail tip y=-3.00 m), roll 0
-  - Idle synthesized: frames 0..192 at 24 fps = 8.0 s, one LINEAR key per frame; lateral wave amplitudes [1.5, 3.0, 5.0, 7.0, 9.0] deg (Spine1->Spine5, travelling phase -0.55 rad/bone), vertical bob +/-0.05 m on the armature object, no root travel; frame 192 repeats frame 0 exactly (seamless loop)
+  - Idle synthesized: frames 0..192 at 24 fps = 8.0 s, one LINEAR key per frame; 3 travelling-wave cycles with lateral amplitudes [1.5, 3.5, 6.0, 9.0, 12.0] deg (Spine1->Spine5, phase -0.68 rad/bone), two-cycle vertical bob +/-0.05 m plus gentle whole-body pitch/roll, no forward root travel; frame 192 repeats frame 0 exactly (seamless loop)
   - mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
 ## 巨盗龙 (`gigantoraptor`)
 
@@ -570,7 +567,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 ### `backgrounds/landscape.webp`
 
 - Asset type: background
-- Source: Jaekelopterus habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-11
+- Source: Jaekelopterus habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-13
 - License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated Jaekelopterus landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
 - Runtime SHA-256: `c5b1ae3a9fdcffb2e3cafde6c9ce13250272cd67759d8ef331296891343a4202`
@@ -580,7 +577,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 ### `backgrounds/portrait.webp`
 
 - Asset type: background
-- Source: Jaekelopterus habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-11
+- Source: Jaekelopterus habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-13
 - License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated Jaekelopterus portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
 - Runtime SHA-256: `cbd1992bed622cf83262939e4018b7b3e455effc058116cd9dcbeb1f4f87a198`
@@ -590,30 +587,30 @@ content, contributions, and Brand Assets follow the separate scopes in
 ### `images/poster-portrait.webp`
 
 - Asset type: poster
-- Source: Jaekelopterus transparent portrait model still, derived on 2026-08-11
+- Source: Jaekelopterus transparent portrait model still, derived on 2026-08-13
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 - Attribution: “Jaekelopterus” by chris mckenzie (dinoking27), CC-BY-4.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `d36d281e7371015a2607657632012f78ad5f05d7b42112e75731afb86cc63584`
+- Runtime SHA-256: `84e6cdaa7ee99ef992e71b45f167959ec18132fd113e8366f482e7e6f7b3023d`
 - Modifications:
   - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
   - Encoded as exact lossless WebP without text, controls, labels, logos, or watermarks.
 ### `images/poster.webp`
 
 - Asset type: poster
-- Source: Jaekelopterus transparent model still, derived on 2026-08-11
+- Source: Jaekelopterus transparent model still, derived on 2026-08-13
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 - Attribution: “Jaekelopterus” by chris mckenzie (dinoking27), CC-BY-4.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `c13a25c74bbdccbc0824d7b6a896e0bf77adc404ad8b36ef0c3d7c1d80a2621e`
+- Runtime SHA-256: `30522751062a87734c74fa01ba8bff865847ab3fffabddeac3fa27cd5dfbf60c`
 - Modifications:
   - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
   - Encoded as lossless WebP without text, controls, labels, logos, or watermarks.
 ### `images/thumbnail.webp`
 
 - Asset type: thumbnail
-- Source: Jaekelopterus collection thumbnail, derived on 2026-08-11
+- Source: Jaekelopterus collection thumbnail, derived on 2026-08-13
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 - Attribution: “Jaekelopterus” by chris mckenzie (dinoking27), CC-BY-4.0; modified for the Prehistoric Animal Museum. Scene art generated for this project.
-- Runtime SHA-256: `2e693ec56c21b76a7918ea9db97f8696a5eb2d417cf33b41c735c4ce75e68f85`
+- Runtime SHA-256: `7d5397ab7237fdca81b4156cc11f026d7fb75d89225b643948cf0efb40e4e888`
 - Modifications:
   - Selected a card-size crop that keeps the animal readable.
   - Exported without embedded text, controls, labels, logos, or watermarks.
@@ -623,17 +620,15 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: [Jaekelopterus](https://archive.org/details/thingiverse-4702654) by chris mckenzie (dinoking27)
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 - Attribution: “Jaekelopterus” by chris mckenzie (dinoking27), CC-BY-4.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `c90667b959ee191f5ef32b2441b6a72fbac53f18740471935290f254c446c0b7`
+- Runtime SHA-256: `8478d22354707d2594c98c39e5c456d563a8693e2717b0e282225c548f26bab5`
 - Modifications:
-  - Added deterministic project-authored procedural baked textures (Smart UV unwrap + Cycles diffuse bake, texture_materials.py); geometry, rig and Idle animation unchanged.
   - pipeline: unrigged static STL (jaekelopterus) -> topology-budget check/decimate, author materials, synthesize 5-bone articulated spine chain + 8 s swim Idle
   - jaekelopterus: source faces Blender -Y; rotated 180 deg about Z, applied to mesh data -> head now toward +Y (glTF -Z)
   - shading: smooth (source STL was flat-shaded)
-  - materials authored (source had none): eurypterid body/segments; 'Body' (0.36, 0.31, 0.22) + 'HeadPlates' (0.5, 0.43, 0.27), roughness 0.8/0.85; head plates assigned to faces with local centre y > 33.788 (front 30%, the armoured head): 20092/60284 faces; choices remain human-reviewable (humanApprovals.materials stays false)
   - scale: source body length 168.7734 Blender units -> 2.5 m; uniform factor 0.014813 applied to mesh data
   - centring (water): shifted by [-0.00038, -0.0005, -0.72229] m so the bounding-box centre sits at the origin (x/y centred, centred vertically in the water column)
   - armature synthesized: 5-bone spine chain Spine1..Spine5 along -Y (head end y=0.38 m to tail tip y=-1.25 m), roll 0
-  - Idle synthesized: frames 0..192 at 24 fps = 8.0 s, one LINEAR key per frame; lateral wave amplitudes [2.0, 4.0, 7.0, 10.0, 13.0] deg (Spine1->Spine5, travelling phase -0.55 rad/bone), vertical bob +/-0.035 m on the armature object, no root travel; frame 192 repeats frame 0 exactly (seamless loop)
+  - Idle synthesized: frames 0..192 at 24 fps = 8.0 s, one LINEAR key per frame; 3 travelling-wave cycles with lateral amplitudes [2.0, 4.5, 8.0, 12.0, 16.0] deg (Spine1->Spine5, phase -0.68 rad/bone), two-cycle vertical bob +/-0.035 m plus gentle whole-body pitch/roll, no forward root travel; frame 192 repeats frame 0 exactly (seamless loop)
   - mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
 ## 慈母龙 (`maiasaura`)
 
@@ -1172,7 +1167,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 ### `backgrounds/landscape.webp`
 
 - Asset type: background
-- Source: Parasaurolophus habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-10
+- Source: Parasaurolophus habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-13
 - License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated Parasaurolophus landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
 - Runtime SHA-256: `76ad698cc7a1dcbb3a7538f9056bfd6e941f8f1b55f37a0d68ab4174720392cf`
@@ -1182,7 +1177,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 ### `backgrounds/portrait.webp`
 
 - Asset type: background
-- Source: Parasaurolophus habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-10
+- Source: Parasaurolophus habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-13
 - License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated Parasaurolophus portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
 - Runtime SHA-256: `17af207a2f7a1601b975076664339cb0f7d0ab456bc0be9883dddb2e3e1c3e41`
@@ -1192,30 +1187,30 @@ content, contributions, and Brand Assets follow the separate scopes in
 ### `images/poster-portrait.webp`
 
 - Asset type: poster
-- Source: Parasaurolophus transparent portrait model still, derived on 2026-08-10
+- Source: Parasaurolophus transparent portrait model still, derived on 2026-08-13
 - License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - Attribution: “Parasaurolophus” by Quaternius, CC0-1.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `9158502e5c316a647b6eb50175f7269844a29d2ee8e6f0d42ff9b0f0be605f88`
+- Runtime SHA-256: `4e0df83bf4dd942dab86d6d199d7b3721b2bf46c3f89f214a6218b70c95b1a6b`
 - Modifications:
   - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
   - Encoded as exact lossless WebP without text, controls, labels, logos, or watermarks.
 ### `images/poster.webp`
 
 - Asset type: poster
-- Source: Parasaurolophus transparent model still, derived on 2026-08-10
+- Source: Parasaurolophus transparent model still, derived on 2026-08-13
 - License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - Attribution: “Parasaurolophus” by Quaternius, CC0-1.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `9fc8aa2b000151a10105981f077ed628062645b5a5272557b014ad3d8aebf389`
+- Runtime SHA-256: `65d1161e203e52660ae666f219802daf13645ec6a84d37f612a3fd477c5f072e`
 - Modifications:
   - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
   - Encoded as lossless WebP without text, controls, labels, logos, or watermarks.
 ### `images/thumbnail.webp`
 
 - Asset type: thumbnail
-- Source: Parasaurolophus collection thumbnail, derived on 2026-08-10
+- Source: Parasaurolophus collection thumbnail, derived on 2026-08-13
 - License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - Attribution: “Parasaurolophus” by Quaternius, CC0-1.0; modified for the Prehistoric Animal Museum. Scene art generated for this project.
-- Runtime SHA-256: `44d33b526f7bb1e3e285c9c0f31a24f6041daac5e3dce821a93f65120d27c61c`
+- Runtime SHA-256: `98cc23c8398d211917b74fe8ddf8d40ac4e9230196fbf3389f72f03798168f9e`
 - Modifications:
   - Selected a card-size crop that keeps the animal readable.
   - Exported without embedded text, controls, labels, logos, or watermarks.
@@ -1225,11 +1220,10 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: [Parasaurolophus](https://quaternius.com/packs/animateddinosaurs.html) by Quaternius
 - License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - Attribution: “Parasaurolophus” by Quaternius, CC0-1.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `1e638121c380c3c468961c6fce4eeb3be8a58a606a24d02fb1cd3399c5fb78c2`
+- Runtime SHA-256: `670414698050432d29af10158ea53845132b1823bf06dfab6b890430254ac2f4`
 - Modifications:
-  - Added deterministic project-authored procedural baked textures (Smart UV unwrap + Cycles diffuse bake, texture_materials.py); geometry, rig and Idle animation unchanged.
   - pipeline: rigged .blend source, keeping only 'Parasaurolophus_Idle' retimed to 8 s
-  - action 'Parasaurolophus_Idle' (0..60 f, BEZIER) resampled to 'Idle': frames 0..192 at 24 fps = 8.0 s, one LINEAR key per frame, 102 fcurves; frame 192 resamples frame 0 exactly (seamless loop); pose location channels scaled by 1.000000 (1.0 = armature-space units kept, metres come from the object node scale)
+  - action 'Parasaurolophus_Idle' (0..60 f, BEZIER) resampled to 'Idle': frames 0..192 at 24 fps = 8.0 s with 3 source cycle(s), one LINEAR key per frame, 102 fcurves; frame 192 resamples frame 0 exactly (seamless loop); pose location channels scaled by 1.000000 (1.0 = armature-space units kept, metres come from the object node scale)
   - parasaurolophus: source faces Blender -Y; 180 deg Z rotation kept on object node(s) ['Armature'] (rigged source: applying to armature data would break bone-local pose fcurves; child meshes inherit the node transform; matches the production maiasaura package) -> head now toward +Y (glTF -Z)
   - scale: source body length 12.4811 Blender units -> 9.0 m; uniform factor 0.721089 kept on object node(s) ['Armature'] (armature-space pose fcurves stay in source units)
   - grounding (land): shifted z by +0.00680 m so the lowest vertex rests at z=0 (object node translation)
@@ -1601,7 +1595,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 ### `backgrounds/landscape.webp`
 
 - Asset type: background
-- Source: Smilodon habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-11
+- Source: Smilodon habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-13
 - License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated Smilodon landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
 - Runtime SHA-256: `868374d7b189c89daa45f3228049931cba715c5c94cd9424e5e24207bfb3b38f`
@@ -1611,7 +1605,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 ### `backgrounds/portrait.webp`
 
 - Asset type: background
-- Source: Smilodon habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-11
+- Source: Smilodon habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-13
 - License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated Smilodon portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
 - Runtime SHA-256: `b904f2556d2df36f295971b9c669b63ecb91e4c7aa32e1392d0795641a40e58d`
@@ -1621,30 +1615,30 @@ content, contributions, and Brand Assets follow the separate scopes in
 ### `images/poster-portrait.webp`
 
 - Asset type: poster
-- Source: Smilodon transparent portrait model still, derived on 2026-08-11
+- Source: Smilodon transparent portrait model still, derived on 2026-08-13
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 - Attribution: “Smilodon” by Eric (Tepuitrouble), CC-BY-4.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `a945b1fb0de6b746d04eab9dfb2bb39fbd6a322bfef225333034cd1b2eda1723`
+- Runtime SHA-256: `d9030d640e5c142cc50171c4a7015ca7f196e25e6f922a9c55dc9b5ea217f1d1`
 - Modifications:
   - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
   - Encoded as exact lossless WebP without text, controls, labels, logos, or watermarks.
 ### `images/poster.webp`
 
 - Asset type: poster
-- Source: Smilodon transparent model still, derived on 2026-08-11
+- Source: Smilodon transparent model still, derived on 2026-08-13
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 - Attribution: “Smilodon” by Eric (Tepuitrouble), CC-BY-4.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `9b80510935b23b88e6eadbf16ceac92f44f4f583e761adc3efb363572853e807`
+- Runtime SHA-256: `427488c1305e17fa7b2123a16266da055708881bf0bd5f057a5de05a58b2d00d`
 - Modifications:
   - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
   - Encoded as lossless WebP without text, controls, labels, logos, or watermarks.
 ### `images/thumbnail.webp`
 
 - Asset type: thumbnail
-- Source: Smilodon collection thumbnail, derived on 2026-08-11
+- Source: Smilodon collection thumbnail, derived on 2026-08-13
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 - Attribution: “Smilodon” by Eric (Tepuitrouble), CC-BY-4.0; modified for the Prehistoric Animal Museum. Scene art generated for this project.
-- Runtime SHA-256: `ec29cf3217ebe7ec4eb0aeb0bee94e3ee651a354ab5c6d14b4aaa80306cd85a8`
+- Runtime SHA-256: `e293052835b8da7ce400c5db4f67c81a60835838142937a5c2b010458d025991`
 - Modifications:
   - Selected a card-size crop that keeps the animal readable.
   - Exported without embedded text, controls, labels, logos, or watermarks.
@@ -1654,16 +1648,15 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: [Smilodon](https://archive.org/details/thingiverse-4759291) by Eric (Tepuitrouble)
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 - Attribution: “Smilodon” by Eric (Tepuitrouble), CC-BY-4.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `c0009b06bbda4bd3714b9f3c6c2dcaa289cd9732c9ec0cfdd0e36f484083af1c`
+- Runtime SHA-256: `cf1025e69e0f3112ba4443d8cedb877df567f0bc450494bedf9c85f315ce2bc9`
 - Modifications:
-  - Added deterministic project-authored procedural baked textures (Smart UV unwrap + Cycles diffuse bake, texture_materials.py); geometry, rig and Idle animation unchanged.
   - pipeline: unrigged Smilodon STL -> exact pedestal/component check, decimate to the web target, grounded two-bone deformation rig, 8 s breathing + head-sway Idle
   - smilodon: source faces Blender -Y; rotated 180 deg about Z, applied to mesh data -> head now toward +Y (glTF -Z)
   - decimate: ratio 0.386515 (232850 -> 90000 tris, 45002 verts); <= 90000 target
   - scale: source body length 51.8764 Blender units -> 2.1 m; uniform factor 0.040481 applied to mesh data
   - grounding (land): shifted z by +0.52114 m so the lowest vertex rests at z=0
   - armature synthesized: 2 bones ['Body', 'Head']
-  - Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys; grounded Body breathes +/-1.8% width, +/-1.2% height and +/-0.4% length about a z=0 bone origin while Head sways +/-2.4 deg; frame 192 repeats frame 0 exactly
+  - Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys; grounded Body breathes for two cycles at +/-1.8% width, +/-1.2% height and +/-0.4% length about a z=0 bone origin while Head combines a slow +/-5.5 deg look with a two-cycle +/-2.0 deg nod; frame 192 repeats frame 0 exactly
   - mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
 ## 棘龙 (`spinosaurus`)
 
@@ -1690,7 +1683,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 ### `backgrounds/landscape.webp`
 
 - Asset type: background
-- Source: Spinosaurus habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-11
+- Source: Spinosaurus habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-13
 - License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated Spinosaurus landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
 - Runtime SHA-256: `d0bd0a9b979e06e2e55a6d4551e1935c094653afce6343b18b73fae1ab46780e`
@@ -1700,7 +1693,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 ### `backgrounds/portrait.webp`
 
 - Asset type: background
-- Source: Spinosaurus habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-11
+- Source: Spinosaurus habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-13
 - License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated Spinosaurus portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
 - Runtime SHA-256: `b311d84c39e5c6ce6773d8d5a739a08a5fc740d09990a81685de361147774b17`
@@ -1710,30 +1703,30 @@ content, contributions, and Brand Assets follow the separate scopes in
 ### `images/poster-portrait.webp`
 
 - Asset type: poster
-- Source: Spinosaurus transparent portrait model still, derived on 2026-08-11
-- License: [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-- Attribution: “Spinosaurus” by Prehistoric Animal Museum (project-authored), CC-BY-NC-SA-4.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `6bacf9995aa1cd77f91d7f81ee688a89d0962e520a68b7bdc4699625bee957b3`
+- Source: Spinosaurus transparent portrait model still, derived on 2026-08-13
+- License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
+- Attribution: “Spinosaurus” by Julian Johnson-Mortimer (@FreddyFoxFreddy), CC-BY-4.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `6a064fed70fd303a09b6474c13c743ca8d28f1a4e79a988aff0a45ce41e57241`
 - Modifications:
   - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
   - Encoded as exact lossless WebP without text, controls, labels, logos, or watermarks.
 ### `images/poster.webp`
 
 - Asset type: poster
-- Source: Spinosaurus transparent model still, derived on 2026-08-11
-- License: [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-- Attribution: “Spinosaurus” by Prehistoric Animal Museum (project-authored), CC-BY-NC-SA-4.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `5be2572debe4f2b6fce79d2af69f12c3d1cdf15ca5fa233347c3397a62a9bcdd`
+- Source: Spinosaurus transparent model still, derived on 2026-08-13
+- License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
+- Attribution: “Spinosaurus” by Julian Johnson-Mortimer (@FreddyFoxFreddy), CC-BY-4.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `19cc697670c44284bae3342af90164a8eaa7c1e0ca04c47331c1a5f45091ef23`
 - Modifications:
   - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
   - Encoded as lossless WebP without text, controls, labels, logos, or watermarks.
 ### `images/thumbnail.webp`
 
 - Asset type: thumbnail
-- Source: Spinosaurus collection thumbnail, derived on 2026-08-11
-- License: [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-- Attribution: “Spinosaurus” by Prehistoric Animal Museum (project-authored), CC-BY-NC-SA-4.0; modified for the Prehistoric Animal Museum. Scene art generated for this project.
-- Runtime SHA-256: `c3180c87f989a9d9dbf4eb55e3d7fcdc0e89223b80d59d1e58e23b677433eaff`
+- Source: Spinosaurus collection thumbnail, derived on 2026-08-13
+- License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
+- Attribution: “Spinosaurus” by Julian Johnson-Mortimer (@FreddyFoxFreddy), CC-BY-4.0; modified for the Prehistoric Animal Museum. Scene art generated for this project.
+- Runtime SHA-256: `8729f6fc1e6c1c2282b40eadea40fa7e264bd6a318d2937f2074ab24962527c9`
 - Modifications:
   - Selected a card-size crop that keeps the animal readable.
   - Exported without embedded text, controls, labels, logos, or watermarks.
@@ -1742,18 +1735,16 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Asset type: model
 - Source: [Spinosaurus](https://sketchfab.com/3d-models/spinosaurus-4f2332ee93874d59a55fb60ed2873ec2) by Julian Johnson-Mortimer (@FreddyFoxFreddy)
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
-- Attribution: “Spinosaurus” by Julian Johnson-Mortimer, CC-BY-4.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `fe5fd30e1d6b5c10d8f9a1a32e954bac48bedb0946a7dfba70db0333f488cb3a`
+- Attribution: “Spinosaurus” by Julian Johnson-Mortimer (@FreddyFoxFreddy), CC-BY-4.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `61ffb70077690bbc2623504a06b685ed3c2ab4763e861f1c69abf413f64d80a7`
 - Modifications:
-  - Model replaced with the ‘Spinosaurus’ sculpt by Julian Johnson-Mortimer, CC-BY-4.0, via the static-sculpt pipeline track (run_static_sculpt).
-  - source object transforms applied into mesh data (FBX import scale/rotation normalized)
-  - normal bake: ‘high’ (320790 verts) -> ‘low’ (20048 verts), tangent space, 2048px, packed and wired via Normal Map node
+  - pipeline: static sculpt (spinosaurus) -> keep configured meshes, author materials, optional normal bake, synthesize Body/Head/Tail rig + 8 s Idle
+  - spinosaurus: source faces Blender -Y; rotated 180 deg about Z, applied to mesh data -> head now toward +Y (glTF -Z)
   - scale: source body length 39.2302 Blender units -> 13.0 m; uniform factor 0.331378 applied to mesh data
   - grounding (land): shifted z by +0.02750 m so the lowest vertex rests at z=0
-  - skinning: deterministic 20-step Body/Head/Tail blends by local +Y; teeth meshes fully weighted to Head
-  - Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys; Body breathes, Head sways +/-2.4 deg, Tail sways +/-3.5 deg; frame 192 repeats frame 0 exactly (seamless loop)
-  - texture bake: deterministic Cycles diffuse bake on the author UVs (scales/mottle patterns), 1024px Body + 512px accents (texture_materials.py)
-  - mouth motion stays DISABLED (teeth are static separate components, no declared jaw path); inspection recorded as evidence only
+  - armature synthesized: 3 bones ['Body', 'Head', 'Tail']
+  - Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys; Body breathes for two cycles at +/-1.8% width, +/-1.2% height, +/-0.4% length about a z=0 bone origin; Head combines a slow +/-5.5 deg look and two-cycle +/-2.0 deg nod; Tail combines a three-cycle +/-7.0 deg sway with a slow +/-1.5 deg lift; frame 192 repeats frame 0 exactly (seamless loop)
+  - mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
 ## 剑龙 (`stegosaurus`)
 
 ### `audio/narration.en.mp3`
@@ -2107,7 +2098,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 ### `audio/narration.en.mp3`
 
 - Asset type: narration
-- Source: Velociraptor English narration, generated with Qwen3-TTS CustomVoice on 2026-08-10
+- Source: Raptor Pack (Standing pose) English narration, generated with Qwen3-TTS CustomVoice on 2026-08-10
 - License: [CC BY-NC-SA 4.0 project-owned Qwen3-TTS output](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated English narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).
 - Runtime SHA-256: `44d756de9c40cf7f78c53766d53bad48cfb0fcec7f6de5a669f05f78276998ba`
@@ -2117,7 +2108,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 ### `audio/narration.zh-CN.mp3`
 
 - Asset type: narration
-- Source: Velociraptor Mandarin narration, generated with Qwen3-TTS CustomVoice on 2026-08-10
+- Source: Raptor Pack (Standing pose) Mandarin narration, generated with Qwen3-TTS CustomVoice on 2026-08-10
 - License: [CC BY-NC-SA 4.0 project-owned Qwen3-TTS output](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated Mandarin narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).
 - Runtime SHA-256: `c4f2949e066f5b2bdc1336762a042146c8eeb3cf52f97cd7102a68f96c30bca3`
@@ -2127,9 +2118,9 @@ content, contributions, and Brand Assets follow the separate scopes in
 ### `backgrounds/landscape.webp`
 
 - Asset type: background
-- Source: Velociraptor habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-10
+- Source: Raptor Pack (Standing pose) habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-13
 - License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-- Attribution: Project-generated Velociraptor landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
+- Attribution: Project-generated Raptor Pack (Standing pose) landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
 - Runtime SHA-256: `cce0ded7b2043d5d6f8acf286389057a10fb090538fd3ccbfa1418cd52aad6e8`
 - Modifications:
   - Rendered the landscape pass deterministically from the project-authored habitat scene spec with EEVEE Next.
@@ -2137,9 +2128,9 @@ content, contributions, and Brand Assets follow the separate scopes in
 ### `backgrounds/portrait.webp`
 
 - Asset type: background
-- Source: Velociraptor habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-10
+- Source: Raptor Pack (Standing pose) habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-13
 - License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-- Attribution: Project-generated Velociraptor portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
+- Attribution: Project-generated Raptor Pack (Standing pose) portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
 - Runtime SHA-256: `d23a25e8aa44e6f2ff5be2cb4dcefdc83fda60521228a95a0be322a6c848bed4`
 - Modifications:
   - Rendered the portrait pass deterministically from the project-authored habitat scene spec with EEVEE Next.
@@ -2147,46 +2138,46 @@ content, contributions, and Brand Assets follow the separate scopes in
 ### `images/poster-portrait.webp`
 
 - Asset type: poster
-- Source: Velociraptor transparent portrait model still, derived on 2026-08-10
-- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
-- Attribution: “Velociraptor” by Quaternius, CC0-1.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `4aa4281411a0039cd245ced64ce317ae0d3482704daa4c3d2060280706f96957`
+- Source: Raptor Pack (Standing pose) transparent portrait model still, derived on 2026-08-13
+- License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
+- Attribution: “Raptor Pack (Standing pose)” by Greg Criddle (Noximous), CC-BY-4.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `0712ebdcdcb64a1fbe0dc39942a87d7a5d0a9ea3f6a98a8b0bcad575dc1d90e3`
 - Modifications:
   - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
   - Encoded as exact lossless WebP without text, controls, labels, logos, or watermarks.
 ### `images/poster.webp`
 
 - Asset type: poster
-- Source: Velociraptor transparent model still, derived on 2026-08-10
-- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
-- Attribution: “Velociraptor” by Quaternius, CC0-1.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `c22b4598704aba681a06394d41976fb6d3abf61377a04dfd2f63d1f58d541851`
+- Source: Raptor Pack (Standing pose) transparent model still, derived on 2026-08-13
+- License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
+- Attribution: “Raptor Pack (Standing pose)” by Greg Criddle (Noximous), CC-BY-4.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `87c85ebab54daae36f97712c4bc782dac6d761d5093dfa6dc20a1ee375e9ddbd`
 - Modifications:
   - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
   - Encoded as lossless WebP without text, controls, labels, logos, or watermarks.
 ### `images/thumbnail.webp`
 
 - Asset type: thumbnail
-- Source: Velociraptor collection thumbnail, derived on 2026-08-10
-- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
-- Attribution: “Velociraptor” by Quaternius, CC0-1.0; modified for the Prehistoric Animal Museum. Scene art generated for this project.
-- Runtime SHA-256: `e7ebfd897085568b03e49186f7c001352b060d0da87b9bff2cff7c8a9c2daa1e`
+- Source: Raptor Pack (Standing pose) collection thumbnail, derived on 2026-08-13
+- License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
+- Attribution: “Raptor Pack (Standing pose)” by Greg Criddle (Noximous), CC-BY-4.0; modified for the Prehistoric Animal Museum. Scene art generated for this project.
+- Runtime SHA-256: `0bcfa38ae5d58cccdd7e81b4f6d0e65266ebe6ea2152134690f8fb4b4880ab9f`
 - Modifications:
   - Selected a card-size crop that keeps the animal readable.
   - Exported without embedded text, controls, labels, logos, or watermarks.
 ### `model/model.glb`
 
 - Asset type: model
-- Source: [Raptor Pack (Raptor_Standing_Final)](https://archive.org/details/thingiverse-3784576) by Greg Criddle (Noximous)
+- Source: [Raptor Pack (Standing pose)](https://archive.org/details/thingiverse-3784576) by Greg Criddle (Noximous)
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
-- Attribution: “Raptor Pack” by Greg Criddle (Noximous), CC-BY-4.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `a18213180e9c21af50d96a51929341e3a7aceafedd08f26d9c2ca842c2cc915b`
+- Attribution: “Raptor Pack (Standing pose)” by Greg Criddle (Noximous), CC-BY-4.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `8004180e66e6eea54ea7d9f96e02bbaabaad2cdd7c243e25d2e732a3f6777e9b`
 - Modifications:
-  - Model replaced with the ‘Raptor Pack’ (Standing pose) sculpt by Greg Criddle (Noximous), CC-BY-4.0, via the static-sculpt pipeline track (run_static_sculpt).
+  - pipeline: static sculpt (velociraptor) -> keep configured meshes, author materials, optional normal bake, synthesize Body/Head/Tail rig + 8 s Idle
+  - velociraptor: source faces Blender -Y; rotated 180 deg about Z, applied to mesh data -> head now toward +Y (glTF -Z)
   - decimate: ratio 0.163699 (549788 -> 90000 tris, 44741 verts); <= 90000 target
   - scale: source body length 39.4398 Blender units -> 2.0 m; uniform factor 0.050710 applied to mesh data
   - grounding (land): shifted z by +0.00000 m so the lowest vertex rests at z=0
-  - skinning: deterministic 20-step Body/Head/Tail blends by local +Y; head zone y>=0.3800 m, tail zone y<=-0.4000 m
-  - Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys; Body breathes, Head sways +/-2.4 deg, Tail sways +/-3.5 deg with a 2.2 rad phase lag; frame 192 repeats frame 0 exactly (seamless loop)
-  - texture bake: deterministic Smart UV unwrap + Cycles diffuse bake (scales pattern), 1024px Body (texture_materials.py)
-  - mouth motion stays DISABLED (static sculpt, no declared jaw path); inspection recorded as evidence only
+  - armature synthesized: 3 bones ['Body', 'Head', 'Tail']
+  - Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys; Body breathes for two cycles at +/-1.8% width, +/-1.2% height, +/-0.4% length about a z=0 bone origin; Head combines a slow +/-5.5 deg look and two-cycle +/-2.0 deg nod; Tail combines a three-cycle +/-7.0 deg sway with a slow +/-1.5 deg lift; frame 192 repeats frame 0 exactly (seamless loop)
+  - mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only

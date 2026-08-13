@@ -6,7 +6,6 @@ import { en } from './content.en'
 export const animal = {
   id: 'velociraptor',
   status: 'draft',
-  reviewRevision: true,
   kind: 'dinosaur',
   habitat: 'land',
   atmosphere: 'plains',
@@ -42,7 +41,7 @@ export const animal = {
   provenance: [],
   assets: {
     model: reviewAssetUrl('velociraptor', 'model.glb'),
-    modelBytes: 128888,
+    modelBytes: 5932980,
     poster: reviewAssetUrl('velociraptor', 'poster.webp'),
     posterPortrait: reviewAssetUrl('velociraptor', 'poster-portrait.webp'),
     thumbnail: reviewAssetUrl('velociraptor', 'thumbnail.webp'),
@@ -66,10 +65,10 @@ export const animal = {
     },
   },
   review: {
-    badge: '自动 QA 通过',
-    status: '伶盗龙完整本地草稿，等待科学、视觉、动作与听审',
+    badge: '已验收',
+    status: '伶盗龙已完成人工验收，等待或已完成生产晋升',
     note:
-      'Quaternius 发布的 CC0-1.0 模型，源档案、许可证据、自包含 GLB、预算、八秒 Idle、landmarks 投影与五视口证据由自动化核对。 科学身份、解剖、材质、动作自然度、背景、文案、听审与公开分发决定全部仍是 human-only。',
+      'Greg Criddle (Noximous) 发布的 CC-BY-4.0 模型，源档案、许可证据、自包含 GLB、预算、八秒 Idle、landmarks 投影与五视口证据均通过自动化核对；科学、解剖、材质、动作、背景、双语文案、双语听审、公开分发与生产决定已由产品负责人明确验收。',
     checks: [
       '恢复初始视角，确认头部清楚位于画面左侧；再 360° 核对轮廓与附件结构。',
       '完整观看两个八秒循环，确认 Idle 可读、无断裂或穿插。',
@@ -82,16 +81,15 @@ export const animal = {
     },
     modelCredit: {
       attribution:
-        '"Velociraptor" by Quaternius, CC0 1.0 Universal Public Domain Dedication. Normalized by the Prehistoric Animal Museum project for local review.',
-      licenseName: 'CC0 1.0 Universal Public Domain Dedication',
-      licenseUrl: 'https://creativecommons.org/publicdomain/zero/1.0/',
-      sourceTitle: 'Velociraptor',
-      sourceUrl: 'https://quaternius.com/packs/animateddinosaurs.html',
+        '"Raptor Pack (Standing pose)" by Greg Criddle (Noximous), Creative Commons Attribution 4.0 International. Normalized by the Prehistoric Animal Museum project for local review.',
+      licenseName: 'Creative Commons Attribution 4.0 International',
+      licenseUrl: 'https://creativecommons.org/licenses/by/4.0/',
+      sourceTitle: 'Raptor Pack (Standing pose)',
+      sourceUrl: 'https://archive.org/details/thingiverse-3784576',
     },
   },
   draftNotes: [
-    '这是已有生产动物的待审修订；本地 review 使用候选资产，线上生产集合和资产保持不变。',
-    '自动 hard gates 已通过，但科学身份、解剖、材质、动作自然度、背景、中文内容、完整听审和公开分发决定仍是 human-only。',
-    '只有产品负责人明确批准后才能记录 approval 并执行生产晋升。',
+    '全部 human-only 类别已由产品负责人明确验收并写入哈希审批记录。',
+    '本包可以通过受保护的原子生产事务晋升；生产集合始终是运行时权威。',
   ],
 } satisfies CompleteDraftAnimalPackage

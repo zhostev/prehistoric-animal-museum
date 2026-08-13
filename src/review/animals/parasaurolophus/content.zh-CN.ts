@@ -52,7 +52,7 @@ export const zhCN = {
       "当前低多边形风格化模型的头冠形状与体色属于审慎艺术复原。"
     ],
     "editedBy": "kimi-code (draft)",
-    "reviewedBy": "zhostev (owner)",
-    "reviewedOn": "2026-08-10"
+    "reviewedBy": "zho",
+    "reviewedOn": "2026-08-13"
   }
 } satisfies AnimalContentZhCN

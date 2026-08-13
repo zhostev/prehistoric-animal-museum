@@ -17,16 +17,6 @@ import {
 } from '../src/review/types'
 
 describe('local collection review catalog', () => {
-  const pendingRevisionIds = new Set([
-    'velociraptor',
-    'parasaurolophus',
-    'dunkleosteus',
-    'ammonite',
-    'jaekelopterus',
-    'smilodon',
-    'spinosaurus',
-  ])
-
   it('switches an allowlisted draft to production assets without a catalog edit', () => {
     const beforePromotion = buildLocalReviewCatalog(
       mainAnimals.filter(({ id }) => id !== 'sauropelta'),
@@ -107,13 +97,7 @@ describe('local collection review catalog', () => {
     ])
     expect(
       productionSlice
-        .filter(({ id }) => !pendingRevisionIds.has(id))
         .every(({ status }) => status === 'published'),
-    ).toBe(true)
-    expect(
-      productionSlice
-        .filter(({ id }) => pendingRevisionIds.has(id))
-        .every(({ status }) => status === 'draft'),
     ).toBe(true)
     expect(
       productionSlice
@@ -135,6 +119,13 @@ describe('local collection review catalog', () => {
       'rhamphorhynchus',
       'tupandactylus',
       'meganeura',
+      'velociraptor',
+      'parasaurolophus',
+      'dunkleosteus',
+      'ammonite',
+      'jaekelopterus',
+      'smilodon',
+      'spinosaurus',
     ])
     for (const animal of localReviewAnimals) {
       if (productionReviewIds.has(animal.id)) {
@@ -631,7 +622,7 @@ describe('local collection review catalog', () => {
     }
   })
 
-  it('loads accepted onboarding animals from production and pending revisions from review assets', () => {
+  it('loads accepted onboarding animals from production assets', () => {
     const promotedIds = [
       'sauropelta',
       'dilophosaurus',
@@ -645,16 +636,8 @@ describe('local collection review catalog', () => {
 
     expect(promoted.map(({ id }) => id)).toEqual(promotedIds)
     for (const animal of promoted) {
-      const pendingRevision = pendingRevisionIds.has(animal.id)
-      expect(animal.status).toBe(pendingRevision ? 'draft' : 'published')
-      expect(animal.provenance).toHaveLength(pendingRevision ? 0 : 8)
-      if (pendingRevision) {
-        expect(animal.assets.model).toContain(
-          `/__museum-review-assets/${animal.id}/model.glb`,
-        )
-        expect('draftNotes' in animal).toBe(true)
-        continue
-      }
+      expect(animal.status).toBe('published')
+      expect(animal.provenance).toHaveLength(8)
       expect(
         animal.provenance.find(({ assetPath }) => assetPath === 'model/model.glb')
           ?.source,

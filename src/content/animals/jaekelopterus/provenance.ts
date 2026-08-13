@@ -19,19 +19,17 @@ export const provenance = [
       url: 'https://creativecommons.org/licenses/by/4.0/',
     },
     runtime: {
-      sha256: 'c90667b959ee191f5ef32b2441b6a72fbac53f18740471935290f254c446c0b7',
-      bytes: 3333064,
+      sha256: '8478d22354707d2594c98c39e5c456d563a8693e2717b0e282225c548f26bab5',
+      bytes: 1778868,
     },
     modifications: [
-      'Added deterministic project-authored procedural baked textures (Smart UV unwrap + Cycles diffuse bake, texture_materials.py); geometry, rig and Idle animation unchanged.',
       'pipeline: unrigged static STL (jaekelopterus) -> topology-budget check/decimate, author materials, synthesize 5-bone articulated spine chain + 8 s swim Idle',
       'jaekelopterus: source faces Blender -Y; rotated 180 deg about Z, applied to mesh data -> head now toward +Y (glTF -Z)',
       'shading: smooth (source STL was flat-shaded)',
-      'materials authored (source had none): eurypterid body/segments; \'Body\' (0.36, 0.31, 0.22) + \'HeadPlates\' (0.5, 0.43, 0.27), roughness 0.8/0.85; head plates assigned to faces with local centre y > 33.788 (front 30%, the armoured head): 20092/60284 faces; choices remain human-reviewable (humanApprovals.materials stays false)',
       'scale: source body length 168.7734 Blender units -> 2.5 m; uniform factor 0.014813 applied to mesh data',
       'centring (water): shifted by [-0.00038, -0.0005, -0.72229] m so the bounding-box centre sits at the origin (x/y centred, centred vertically in the water column)',
       'armature synthesized: 5-bone spine chain Spine1..Spine5 along -Y (head end y=0.38 m to tail tip y=-1.25 m), roll 0',
-      'Idle synthesized: frames 0..192 at 24 fps = 8.0 s, one LINEAR key per frame; lateral wave amplitudes [2.0, 4.0, 7.0, 10.0, 13.0] deg (Spine1->Spine5, travelling phase -0.55 rad/bone), vertical bob +/-0.035 m on the armature object, no root travel; frame 192 repeats frame 0 exactly (seamless loop)',
+      'Idle synthesized: frames 0..192 at 24 fps = 8.0 s, one LINEAR key per frame; 3 travelling-wave cycles with lateral amplitudes [2.0, 4.5, 8.0, 12.0, 16.0] deg (Spine1->Spine5, phase -0.68 rad/bone), two-cycle vertical bob +/-0.035 m plus gentle whole-body pitch/roll, no forward root travel; frame 192 repeats frame 0 exactly (seamless loop)',
       'mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only',
     ],
     attribution: '“Jaekelopterus” by chris mckenzie (dinoking27), CC-BY-4.0; modified for the Prehistoric Animal Museum.',
@@ -48,9 +46,9 @@ export const provenance = [
       type: 'generated',
       title: 'Jaekelopterus habitat scene — landscape',
       tool: 'Blender 4.5.12 (project-authored habitat scene, deterministic seed)',
-      generatedOn: '2026-08-11',
-      prompt: 'Deterministic project-authored Blender habitat scene; scene spec qa/derivatives-scene-spec.json (SHA-256 6649b7a3e202cfc961d25b66c29daf56b738a994fb0fd940bc7f8a9529b124b1) rendered with seed 2082533189 for the water habitat.',
-      sha256: '6649b7a3e202cfc961d25b66c29daf56b738a994fb0fd940bc7f8a9529b124b1',
+      generatedOn: '2026-08-13',
+      prompt: 'Deterministic project-authored Blender habitat scene; scene spec qa/derivatives-scene-spec.json (SHA-256 0d5e2d4da31d4494fa262dba435d7897ecd7ad1949f012849bbd4aef43941e8e) rendered with seed 2082533189 for the water habitat.',
+      sha256: '0d5e2d4da31d4494fa262dba435d7897ecd7ad1949f012849bbd4aef43941e8e',
       bytes: 18967,
     },
     license: {
@@ -79,9 +77,9 @@ export const provenance = [
       type: 'generated',
       title: 'Jaekelopterus habitat scene — portrait',
       tool: 'Blender 4.5.12 (project-authored habitat scene, deterministic seed)',
-      generatedOn: '2026-08-11',
-      prompt: 'Deterministic project-authored Blender habitat scene; scene spec qa/derivatives-scene-spec.json (SHA-256 6649b7a3e202cfc961d25b66c29daf56b738a994fb0fd940bc7f8a9529b124b1) rendered with seed 2082533189 for the water habitat.',
-      sha256: '6649b7a3e202cfc961d25b66c29daf56b738a994fb0fd940bc7f8a9529b124b1',
+      generatedOn: '2026-08-13',
+      prompt: 'Deterministic project-authored Blender habitat scene; scene spec qa/derivatives-scene-spec.json (SHA-256 0d5e2d4da31d4494fa262dba435d7897ecd7ad1949f012849bbd4aef43941e8e) rendered with seed 2082533189 for the water habitat.',
+      sha256: '0d5e2d4da31d4494fa262dba435d7897ecd7ad1949f012849bbd4aef43941e8e',
       bytes: 18967,
     },
     license: {
@@ -109,7 +107,7 @@ export const provenance = [
     source: {
       type: 'derived',
       title: 'Jaekelopterus transparent model still',
-      generatedOn: '2026-08-11',
+      generatedOn: '2026-08-13',
       inputAssetPaths: [
         'model/model.glb',
       ],
@@ -121,8 +119,8 @@ export const provenance = [
       url: 'https://creativecommons.org/licenses/by/4.0/',
     },
     runtime: {
-      sha256: 'c13a25c74bbdccbc0824d7b6a896e0bf77adc404ad8b36ef0c3d7c1d80a2621e',
-      bytes: 16410,
+      sha256: '30522751062a87734c74fa01ba8bff865847ab3fffabddeac3fa27cd5dfbf60c',
+      bytes: 15650,
     },
     modifications: [
       'Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.',
@@ -142,7 +140,7 @@ export const provenance = [
     source: {
       type: 'derived',
       title: 'Jaekelopterus transparent portrait model still',
-      generatedOn: '2026-08-11',
+      generatedOn: '2026-08-13',
       inputAssetPaths: [
         'model/model.glb',
       ],
@@ -154,8 +152,8 @@ export const provenance = [
       url: 'https://creativecommons.org/licenses/by/4.0/',
     },
     runtime: {
-      sha256: 'd36d281e7371015a2607657632012f78ad5f05d7b42112e75731afb86cc63584',
-      bytes: 4384,
+      sha256: '84e6cdaa7ee99ef992e71b45f167959ec18132fd113e8366f482e7e6f7b3023d',
+      bytes: 3930,
     },
     modifications: [
       'Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.',
@@ -175,7 +173,7 @@ export const provenance = [
     source: {
       type: 'derived',
       title: 'Jaekelopterus collection thumbnail',
-      generatedOn: '2026-08-11',
+      generatedOn: '2026-08-13',
       inputAssetPaths: [
         'model/model.glb',
         'backgrounds/landscape.webp',
@@ -188,8 +186,8 @@ export const provenance = [
       url: 'https://creativecommons.org/licenses/by/4.0/',
     },
     runtime: {
-      sha256: '2e693ec56c21b76a7918ea9db97f8696a5eb2d417cf33b41c735c4ce75e68f85',
-      bytes: 3150,
+      sha256: '7d5397ab7237fdca81b4156cc11f026d7fb75d89225b643948cf0efb40e4e888',
+      bytes: 2888,
     },
     modifications: [
       'Selected a card-size crop that keeps the animal readable.',

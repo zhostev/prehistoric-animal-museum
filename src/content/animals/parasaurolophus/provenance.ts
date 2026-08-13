@@ -19,13 +19,12 @@ export const provenance = [
       url: 'https://creativecommons.org/publicdomain/zero/1.0/',
     },
     runtime: {
-      sha256: '1e638121c380c3c468961c6fce4eeb3be8a58a606a24d02fb1cd3399c5fb78c2',
-      bytes: 675256,
+      sha256: '670414698050432d29af10158ea53845132b1823bf06dfab6b890430254ac2f4',
+      bytes: 134800,
     },
     modifications: [
-      'Added deterministic project-authored procedural baked textures (Smart UV unwrap + Cycles diffuse bake, texture_materials.py); geometry, rig and Idle animation unchanged.',
       'pipeline: rigged .blend source, keeping only \'Parasaurolophus_Idle\' retimed to 8 s',
-      'action \'Parasaurolophus_Idle\' (0..60 f, BEZIER) resampled to \'Idle\': frames 0..192 at 24 fps = 8.0 s, one LINEAR key per frame, 102 fcurves; frame 192 resamples frame 0 exactly (seamless loop); pose location channels scaled by 1.000000 (1.0 = armature-space units kept, metres come from the object node scale)',
+      'action \'Parasaurolophus_Idle\' (0..60 f, BEZIER) resampled to \'Idle\': frames 0..192 at 24 fps = 8.0 s with 3 source cycle(s), one LINEAR key per frame, 102 fcurves; frame 192 resamples frame 0 exactly (seamless loop); pose location channels scaled by 1.000000 (1.0 = armature-space units kept, metres come from the object node scale)',
       'parasaurolophus: source faces Blender -Y; 180 deg Z rotation kept on object node(s) [\'Armature\'] (rigged source: applying to armature data would break bone-local pose fcurves; child meshes inherit the node transform; matches the production maiasaura package) -> head now toward +Y (glTF -Z)',
       'scale: source body length 12.4811 Blender units -> 9.0 m; uniform factor 0.721089 kept on object node(s) [\'Armature\'] (armature-space pose fcurves stay in source units)',
       'grounding (land): shifted z by +0.00680 m so the lowest vertex rests at z=0 (object node translation)',
@@ -46,9 +45,9 @@ export const provenance = [
       type: 'generated',
       title: 'Parasaurolophus habitat scene — landscape',
       tool: 'Blender 4.5.12 (project-authored habitat scene, deterministic seed)',
-      generatedOn: '2026-08-10',
-      prompt: 'Deterministic project-authored Blender habitat scene; scene spec qa/derivatives-scene-spec.json (SHA-256 31bcd04b05080796d8624c12ce34641301e39a4c1527b780b2b02d0e00acd1a0) rendered with seed 3991224688 for the land habitat.',
-      sha256: '31bcd04b05080796d8624c12ce34641301e39a4c1527b780b2b02d0e00acd1a0',
+      generatedOn: '2026-08-13',
+      prompt: 'Deterministic project-authored Blender habitat scene; scene spec qa/derivatives-scene-spec.json (SHA-256 08bb9762a9d8be3f847fc9e01a06bbe198f05b80e83f567047ffb8e20b148197) rendered with seed 3991224688 for the land habitat.',
+      sha256: '08bb9762a9d8be3f847fc9e01a06bbe198f05b80e83f567047ffb8e20b148197',
       bytes: 13330,
     },
     license: {
@@ -77,9 +76,9 @@ export const provenance = [
       type: 'generated',
       title: 'Parasaurolophus habitat scene — portrait',
       tool: 'Blender 4.5.12 (project-authored habitat scene, deterministic seed)',
-      generatedOn: '2026-08-10',
-      prompt: 'Deterministic project-authored Blender habitat scene; scene spec qa/derivatives-scene-spec.json (SHA-256 31bcd04b05080796d8624c12ce34641301e39a4c1527b780b2b02d0e00acd1a0) rendered with seed 3991224688 for the land habitat.',
-      sha256: '31bcd04b05080796d8624c12ce34641301e39a4c1527b780b2b02d0e00acd1a0',
+      generatedOn: '2026-08-13',
+      prompt: 'Deterministic project-authored Blender habitat scene; scene spec qa/derivatives-scene-spec.json (SHA-256 08bb9762a9d8be3f847fc9e01a06bbe198f05b80e83f567047ffb8e20b148197) rendered with seed 3991224688 for the land habitat.',
+      sha256: '08bb9762a9d8be3f847fc9e01a06bbe198f05b80e83f567047ffb8e20b148197',
       bytes: 13330,
     },
     license: {
@@ -107,7 +106,7 @@ export const provenance = [
     source: {
       type: 'derived',
       title: 'Parasaurolophus transparent model still',
-      generatedOn: '2026-08-10',
+      generatedOn: '2026-08-13',
       inputAssetPaths: [
         'model/model.glb',
       ],
@@ -119,8 +118,8 @@ export const provenance = [
       url: 'https://creativecommons.org/publicdomain/zero/1.0/',
     },
     runtime: {
-      sha256: '9fc8aa2b000151a10105981f077ed628062645b5a5272557b014ad3d8aebf389',
-      bytes: 12838,
+      sha256: '65d1161e203e52660ae666f219802daf13645ec6a84d37f612a3fd477c5f072e',
+      bytes: 13562,
     },
     modifications: [
       'Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.',
@@ -140,7 +139,7 @@ export const provenance = [
     source: {
       type: 'derived',
       title: 'Parasaurolophus transparent portrait model still',
-      generatedOn: '2026-08-10',
+      generatedOn: '2026-08-13',
       inputAssetPaths: [
         'model/model.glb',
       ],
@@ -152,8 +151,8 @@ export const provenance = [
       url: 'https://creativecommons.org/publicdomain/zero/1.0/',
     },
     runtime: {
-      sha256: '9158502e5c316a647b6eb50175f7269844a29d2ee8e6f0d42ff9b0f0be605f88',
-      bytes: 3926,
+      sha256: '4e0df83bf4dd942dab86d6d199d7b3721b2bf46c3f89f214a6218b70c95b1a6b',
+      bytes: 4220,
     },
     modifications: [
       'Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.',
@@ -173,7 +172,7 @@ export const provenance = [
     source: {
       type: 'derived',
       title: 'Parasaurolophus collection thumbnail',
-      generatedOn: '2026-08-10',
+      generatedOn: '2026-08-13',
       inputAssetPaths: [
         'model/model.glb',
         'backgrounds/landscape.webp',
@@ -186,8 +185,8 @@ export const provenance = [
       url: 'https://creativecommons.org/publicdomain/zero/1.0/',
     },
     runtime: {
-      sha256: '44d33b526f7bb1e3e285c9c0f31a24f6041daac5e3dce821a93f65120d27c61c',
-      bytes: 3134,
+      sha256: '98cc23c8398d211917b74fe8ddf8d40ac4e9230196fbf3389f72f03798168f9e',
+      bytes: 3422,
     },
     modifications: [
       'Selected a card-size crop that keeps the animal readable.',

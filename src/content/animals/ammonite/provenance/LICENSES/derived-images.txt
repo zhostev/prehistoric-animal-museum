@@ -1,7 +1,7 @@
 Ammonite poster and thumbnail derivation record
 =================================================
 
-Generated: 2026-08-11
+Generated: 2026-08-13
 
 The 1200 × 675 poster and the
 390 × 844 portrait poster are deterministic
@@ -10,9 +10,9 @@ watermarks. The 320 × 320 thumbnail was
 captured from the accepted desktop review presentation after hiding all
 interface chrome.
 
-Poster SHA-256: a6d6257375e6566583e552fb2f46bd1f94ad3988236b686fb1cfed1002c63283 (11232 bytes)
-Portrait poster SHA-256: 6e058ef68440eebb20f6947e310be06beb237f07c0421c1276c6fa1caf2b3233 (4778 bytes)
-Thumbnail SHA-256: bcc2471d50db9a41aa5a6e16d9b997e65b294a084990cfd9fc53bc97c44d5a2e (2314 bytes)
+Poster SHA-256: a52ecff4e5a2317e16d766d412ac8e66f7d95a70f5c746c3ae4f124385460a38 (17336 bytes)
+Portrait poster SHA-256: ecc537f6ea5840600985c2baf5fa66f8ba9925be06eb2af3c9f2363faaa4f16d (8224 bytes)
+Thumbnail SHA-256: b919676c5812bf88be51634dfa8b4aa7038500a2901c04172598b1abe59f8713 (4118 bytes)
 
 The model attribution and CC0-1.0 terms in model-license.txt
 continue to apply. The background generation record is retained separately.

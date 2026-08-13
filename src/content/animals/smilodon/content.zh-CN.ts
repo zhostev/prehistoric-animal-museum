@@ -51,7 +51,7 @@ export const zhCN = {
       '来源网格确认只有一个身体连通组件、没有独立底座；新增的呼吸和摆头展示动作已经馆主复核。',
     ],
     editedBy: 'Codex',
-    reviewedBy: 'museum-owner',
-    reviewedOn: '2026-08-11',
+    reviewedBy: 'zho',
+    reviewedOn: '2026-08-13',
   },
 } satisfies AnimalContentZhCN

@@ -1,5 +1,5 @@
 Qwen3-TTS Serena narration rights record
-Reviewed: 2026-08-11
+Reviewed: 2026-08-13
 
 The Mandarin and English scripts are project-authored. Both audio takes were
 generated offline with Qwen3-TTS-12Hz-0.6B-CustomVoice using its built-in
@@ -15,7 +15,7 @@ https://qwen.ai/blog/?id=qwen3tts-0115
 
 The owner approves public distribution of these reviewed MP3s. The public
 notice identifies the model, Serena speaker, AI synthesis, and model license.
-Recorded in approval-record.json: approved by museum-owner on 2026-08-11.
+Recorded in approval-record.json: approved by zho on 2026-08-13.
 
 Chinese narration approval
 
@@ -27,7 +27,7 @@ Runtime bytes: 95852
 Runtime SHA-256: d8231702fa7931073680b90c3584fe03e6224644aacb3627ad03daad09bcd3b0
 Human listening review: approved
 Public distribution decision: approved
-Approved: project owner museum-owner on 2026-08-11
+Approved: project owner zho on 2026-08-13
 
 Script: 这是一件菊石化石壳的三维扫描，不是带有软体部分的活体复原。看看这枚盘卷的壳，一圈绕着一圈，像不像一条卷起来的石头绳子？
 
@@ -41,6 +41,6 @@ Runtime bytes: 141356
 Runtime SHA-256: 5b735cfde1fd8cfecbd0dc34eba2415be308e49db7329911f0e51cac8f635a06
 Human listening review: approved
 Public distribution decision: approved
-Approved: project owner museum-owner on 2026-08-11
+Approved: project owner zho on 2026-08-13
 
 Script: This is a three-dimensional scan of an ammonite fossil shell, not a living-animal reconstruction with soft parts. Look at the coiled shell winding round and round. Does it look like a stone rope rolled into a spiral?

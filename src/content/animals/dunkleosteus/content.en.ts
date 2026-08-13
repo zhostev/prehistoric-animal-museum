@@ -57,7 +57,7 @@ export const en = {
       'The attribution of Moroccan material to Dunkleosteus is still discussed; the model’s colours and soft-tissue details have no direct fossil evidence.',
     ],
     editedBy: 'kimi-code (draft)',
-    reviewedBy: 'zhostev (owner)',
-    reviewedOn: '2026-08-10',
+    reviewedBy: 'zho',
+    reviewedOn: '2026-08-13',
   },
 } satisfies AnimalContentEn

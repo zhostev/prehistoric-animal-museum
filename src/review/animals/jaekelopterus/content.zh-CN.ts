@@ -46,7 +46,7 @@ export const zhCN = {
       '体色、软组织、游泳姿态和分节摆动均为馆主已复核的审慎展示设计，不代表来源身份冲突已解决。',
     ],
     editedBy: 'Codex',
-    reviewedBy: 'museum-owner',
-    reviewedOn: '2026-08-11',
+    reviewedBy: 'zho',
+    reviewedOn: '2026-08-13',
   },
 } satisfies AnimalContentZhCN

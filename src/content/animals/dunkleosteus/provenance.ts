@@ -19,20 +19,18 @@ export const provenance = [
       url: 'https://creativecommons.org/publicdomain/zero/1.0/',
     },
     runtime: {
-      sha256: '39e12696ffbec1c5579aa70d06af1f243888dfe44e7ff33ab627bc6d3a070afe',
-      bytes: 3713332,
+      sha256: '23a4543f81450a3890899c945b02bd46c9657feeec08a6e9d53a6e283ad96b8b',
+      bytes: 2633476,
     },
     modifications: [
-      'Added deterministic project-authored procedural baked textures (Smart UV unwrap + Cycles diffuse bake, texture_materials.py); geometry, rig and Idle animation unchanged.',
-      'pipeline: unrigged static STL -> decimate, author materials, synthesize 5-bone spine chain + 8 s swim Idle',
+      'pipeline: unrigged static STL (dunkleosteus) -> topology-budget check/decimate, author materials, synthesize 5-bone articulated spine chain + 8 s swim Idle',
       'dunkleosteus: source faces Blender -Y; rotated 180 deg about Z, applied to mesh data -> head now toward +Y (glTF -Z)',
-      'decimate: ratio 0.2162 (416332 -> 90000 tris, 44990 verts); over-ceiling source reduced to <=100k target',
+      'decimate: ratio 0.216174 (416332 -> 90000 tris, 44990 verts); <= 90000 target',
       'shading: smooth (source STL was flat-shaded)',
-      'materials authored (source had none): \'Body\' muted slate blue (0.38,0.47,0.55) + \'HeadPlates\' muted warm grey (0.52,0.49,0.43), roughness 0.8/0.85; head plates assigned to faces with local centre y > -1.379 (front 30%, the armoured head): 65769/90000 faces; choices remain human-reviewable (humanApprovals.materials stays false)',
       'scale: source body length 4.1131 Blender units -> 6.0 m; uniform factor 1.458754 applied to mesh data',
       'centring (water): shifted by [-0.23914, 3.21208, -1.57498] m so the bounding-box centre sits at the origin (x/y centred, centred vertically in the water column)',
       'armature synthesized: 5-bone spine chain Spine1..Spine5 along -Y (head end y=0.90 m to tail tip y=-3.00 m), roll 0',
-      'Idle synthesized: frames 0..192 at 24 fps = 8.0 s, one LINEAR key per frame; lateral wave amplitudes [1.5, 3.0, 5.0, 7.0, 9.0] deg (Spine1->Spine5, travelling phase -0.55 rad/bone), vertical bob +/-0.05 m on the armature object, no root travel; frame 192 repeats frame 0 exactly (seamless loop)',
+      'Idle synthesized: frames 0..192 at 24 fps = 8.0 s, one LINEAR key per frame; 3 travelling-wave cycles with lateral amplitudes [1.5, 3.5, 6.0, 9.0, 12.0] deg (Spine1->Spine5, phase -0.68 rad/bone), two-cycle vertical bob +/-0.05 m plus gentle whole-body pitch/roll, no forward root travel; frame 192 repeats frame 0 exactly (seamless loop)',
       'mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only',
     ],
     attribution: '“Dunkleosteus” by EvolutionIncarnate, CC0-1.0; modified for the Prehistoric Animal Museum.',
@@ -49,9 +47,9 @@ export const provenance = [
       type: 'generated',
       title: 'Dunkleosteus habitat scene — landscape',
       tool: 'Blender 4.5.12 (project-authored habitat scene, deterministic seed)',
-      generatedOn: '2026-08-10',
-      prompt: 'Deterministic project-authored Blender habitat scene; scene spec qa/derivatives-scene-spec.json (SHA-256 f9da775c9426b9fe1e4c0ce37c04920792f04f4df0c5391d29361cc38e45cb69) rendered with seed 3504070383 for the water habitat.',
-      sha256: 'f9da775c9426b9fe1e4c0ce37c04920792f04f4df0c5391d29361cc38e45cb69',
+      generatedOn: '2026-08-13',
+      prompt: 'Deterministic project-authored Blender habitat scene; scene spec qa/derivatives-scene-spec.json (SHA-256 1f5905848c9049876f2816b5735ef9e1bfe40e3bd42485013b1c8eff41fbec89) rendered with seed 3504070383 for the water habitat.',
+      sha256: '1f5905848c9049876f2816b5735ef9e1bfe40e3bd42485013b1c8eff41fbec89',
       bytes: 18958,
     },
     license: {
@@ -80,9 +78,9 @@ export const provenance = [
       type: 'generated',
       title: 'Dunkleosteus habitat scene — portrait',
       tool: 'Blender 4.5.12 (project-authored habitat scene, deterministic seed)',
-      generatedOn: '2026-08-10',
-      prompt: 'Deterministic project-authored Blender habitat scene; scene spec qa/derivatives-scene-spec.json (SHA-256 f9da775c9426b9fe1e4c0ce37c04920792f04f4df0c5391d29361cc38e45cb69) rendered with seed 3504070383 for the water habitat.',
-      sha256: 'f9da775c9426b9fe1e4c0ce37c04920792f04f4df0c5391d29361cc38e45cb69',
+      generatedOn: '2026-08-13',
+      prompt: 'Deterministic project-authored Blender habitat scene; scene spec qa/derivatives-scene-spec.json (SHA-256 1f5905848c9049876f2816b5735ef9e1bfe40e3bd42485013b1c8eff41fbec89) rendered with seed 3504070383 for the water habitat.',
+      sha256: '1f5905848c9049876f2816b5735ef9e1bfe40e3bd42485013b1c8eff41fbec89',
       bytes: 18958,
     },
     license: {
@@ -110,7 +108,7 @@ export const provenance = [
     source: {
       type: 'derived',
       title: 'Dunkleosteus transparent model still',
-      generatedOn: '2026-08-10',
+      generatedOn: '2026-08-13',
       inputAssetPaths: [
         'model/model.glb',
       ],
@@ -122,8 +120,8 @@ export const provenance = [
       url: 'https://creativecommons.org/publicdomain/zero/1.0/',
     },
     runtime: {
-      sha256: 'ca4cce0e5fb3e1d62b0c0571b208cf0ccb8f784b3faf56270017b968216bbe5f',
-      bytes: 12852,
+      sha256: '2b7c87303d85a9cbedf0539ca70b2bed37d46bbcf2e7f6835da6d5233a314610',
+      bytes: 13356,
     },
     modifications: [
       'Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.',
@@ -143,7 +141,7 @@ export const provenance = [
     source: {
       type: 'derived',
       title: 'Dunkleosteus transparent portrait model still',
-      generatedOn: '2026-08-10',
+      generatedOn: '2026-08-13',
       inputAssetPaths: [
         'model/model.glb',
       ],
@@ -155,8 +153,8 @@ export const provenance = [
       url: 'https://creativecommons.org/publicdomain/zero/1.0/',
     },
     runtime: {
-      sha256: 'd2a3217d8431a0ca78ce85e09c101799dc8124e66fd836f850bcd5d577cca4af',
-      bytes: 3616,
+      sha256: 'b974284656a7d0b9989be6f337fb12a68fb9b362ba5d92fdac67ac3f3cf6f3e8',
+      bytes: 3636,
     },
     modifications: [
       'Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.',
@@ -176,7 +174,7 @@ export const provenance = [
     source: {
       type: 'derived',
       title: 'Dunkleosteus collection thumbnail',
-      generatedOn: '2026-08-10',
+      generatedOn: '2026-08-13',
       inputAssetPaths: [
         'model/model.glb',
         'backgrounds/landscape.webp',
@@ -189,8 +187,8 @@ export const provenance = [
       url: 'https://creativecommons.org/publicdomain/zero/1.0/',
     },
     runtime: {
-      sha256: 'e2e1ffbd20b7b2cc8bd536c7624e1819a1533154bacb43ad83045e6f8b60e245',
-      bytes: 2740,
+      sha256: '867cb4a074d1af3a23cbc025a854d05c7aff72a25622e7d250e6d1b9c72fb7de',
+      bytes: 2848,
     },
     modifications: [
       'Selected a card-size crop that keeps the animal readable.',
