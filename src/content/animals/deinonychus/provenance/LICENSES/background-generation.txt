@@ -1,0 +1,22 @@
+Deinonychus background generation record
+========================================
+
+Tool: Blender 4.5.12 (project-authored habitat scene, deterministic seed)
+Seed: 322799196
+Generated: 2026-08-17
+Use: project-specific responsive museum backgrounds
+
+The landscape and portrait were rendered as separate deterministic EEVEE Next
+passes from the project-authored habitat scene spec
+qa/derivatives-scene-spec.json (SHA-256 00e27d7bf8f115f3c9d6b2044cc8dd8645231ac842a8d90785e319a5910705cc).
+No animal, person, text, UI, logo, or watermark appears in the renders.
+
+Landscape runtime WebP: 14502 bytes (1920 × 1080)
+SHA-256: 0c52cfc4b336fb162a0181f6f747bb65dbede3741d3e4d2a84c9c2da0dc311e7
+
+Portrait runtime WebP: 8744 bytes (1080 × 1920)
+SHA-256: a113f033581ea0bd4eb9281e18b92dbd3dc3e5395e0cb3bb254ef2f7d37ec555
+
+The reviewed renders were encoded as lossy WebP at quality 82.
+The project owner approved public distribution on 2026-08-17.
+Recorded in approval-record.json: approved by zho on 2026-08-17.

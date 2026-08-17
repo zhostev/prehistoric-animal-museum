@@ -1,0 +1,46 @@
+Qwen3-TTS Serena narration rights record
+Reviewed: 2026-08-17
+
+The Mandarin and English scripts are project-authored. Both audio takes were
+generated offline with Qwen3-TTS-12Hz-0.6B-CustomVoice using its built-in
+Serena speaker, normalized to 48 kHz mono MP3s, and listened to and approved
+by the project owner.
+
+Qwen3-TTS code and the official 0.6B CustomVoice model card are Apache-2.0:
+https://github.com/QwenLM/Qwen3-TTS/blob/main/LICENSE
+https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice
+
+The official release identifies Serena among the open-sourced timbres:
+https://qwen.ai/blog/?id=qwen3tts-0115
+
+The owner approves public distribution of these reviewed MP3s. The public
+notice identifies the model, Serena speaker, AI synthesis, and model license.
+Recorded in approval-record.json: approved by zho on 2026-08-17.
+
+Chinese narration approval
+
+Locale: zh-CN
+Speaker: Serena
+Language: Chinese
+Generated: 2026-08-14
+Runtime bytes: 97196
+Runtime SHA-256: 1728662bca3a463c6ed0690e0c679134fca93b065f25111c11dbcf24f32a910d
+Human listening review: approved
+Public distribution decision: approved
+Approved: project owner zho on 2026-08-17
+
+Script: 这是恐爪龙，学名是Deinonychus antirrhopus。看看它醒目的“sickle claw”外形，再观察轻轻的呼吸、转头和尾部动作。
+
+English narration approval
+
+Locale: en
+Speaker: Serena
+Language: English
+Generated: 2026-08-14
+Runtime bytes: 154028
+Runtime SHA-256: 6a35d9ebf42cf5bc71b6a8974082e80c9b883fbf062782cc55c0bc16424f41f8
+Human listening review: approved
+Public distribution decision: approved
+Approved: project owner zho on 2026-08-17
+
+Script: This is Deinonychus, a prehistoric animal known as Deinonychus antirrhopus. Look for its sickle claw. Watch the gentle breathing, head movement and tail motion that make this reconstruction feel alert.

@@ -26,6 +26,81 @@ import { animal as ammoniteDraft } from './animals/ammonite/package'
 import { animal as jaekelopterusDraft } from './animals/jaekelopterus/package'
 import { animal as smilodonDraft } from './animals/smilodon/package'
 import { animal as spinosaurusDraft } from './animals/spinosaurus/package'
+import { animal as allosaurusDraft } from './animals/allosaurus/package'
+import { animal as brachiosaurusDraft } from './animals/brachiosaurus/package'
+import { animal as quetzalcoatlusDraft } from './animals/quetzalcoatlus/package'
+import { animal as elasmosaurusDraft } from './animals/elasmosaurus/package'
+import { animal as woollyRhinocerosDraft } from './animals/woolly-rhinoceros/package'
+import { animal as anomalocarisDraft } from './animals/anomalocaris/package'
+import { animal as albertosaurusDraft } from './animals/albertosaurus/package'
+import { animal as carnotaurusDraft } from './animals/carnotaurus/package'
+import { animal as ceratosaurusDraft } from './animals/ceratosaurus/package'
+import { animal as coelophysisDraft } from './animals/coelophysis/package'
+import { animal as compsognathusDraft } from './animals/compsognathus/package'
+import { animal as deinonychusDraft } from './animals/deinonychus/package'
+import { animal as baryonyxDraft } from './animals/baryonyx/package'
+import { animal as giganotosaurusDraft } from './animals/giganotosaurus/package'
+import { animal as suchomimusDraft } from './animals/suchomimus/package'
+import { animal as oviraptorDraft } from './animals/oviraptor/package'
+import { animal as therizinosaurusDraft } from './animals/therizinosaurus/package'
+import { animal as archaeopteryxDraft } from './animals/archaeopteryx/package'
+import { animal as sinosauropteryxDraft } from './animals/sinosauropteryx/package'
+import { animal as monolophosaurusDraft } from './animals/monolophosaurus/package'
+import { animal as herrerasaurusDraft } from './animals/herrerasaurus/package'
+import { animal as utahraptorDraft } from './animals/utahraptor/package'
+import { animal as acrocanthosaurusDraft } from './animals/acrocanthosaurus/package'
+import { animal as carcharodontosaurusDraft } from './animals/carcharodontosaurus/package'
+import { animal as microraptorDraft } from './animals/microraptor/package'
+import { animal as diplodocusDraft } from './animals/diplodocus/package'
+import { animal as argentinosaurusDraft } from './animals/argentinosaurus/package'
+import { animal as brontosaurusDraft } from './animals/brontosaurus/package'
+import { animal as camarasaurusDraft } from './animals/camarasaurus/package'
+import { animal as plateosaurusDraft } from './animals/plateosaurus/package'
+import { animal as ankylosaurusDraft } from './animals/ankylosaurus/package'
+import { animal as euoplocephalusDraft } from './animals/euoplocephalus/package'
+import { animal as kentrosaurusDraft } from './animals/kentrosaurus/package'
+import { animal as protoceratopsDraft } from './animals/protoceratops/package'
+import { animal as styracosaurusDraft } from './animals/styracosaurus/package'
+import { animal as pachyrhinosaurusDraft } from './animals/pachyrhinosaurus/package'
+import { animal as diabloceratopsDraft } from './animals/diabloceratops/package'
+import { animal as iguanodonDraft } from './animals/iguanodon/package'
+import { animal as edmontosaurusDraft } from './animals/edmontosaurus/package'
+import { animal as corythosaurusDraft } from './animals/corythosaurus/package'
+import { animal as lambeosaurusDraft } from './animals/lambeosaurus/package'
+import { animal as gallimimusDraft } from './animals/gallimimus/package'
+import { animal as psittacosaurusDraft } from './animals/psittacosaurus/package'
+import { animal as heterodontosaurusDraft } from './animals/heterodontosaurus/package'
+import { animal as dryosaurusDraft } from './animals/dryosaurus/package'
+import { animal as nigersaurusDraft } from './animals/nigersaurus/package'
+import { animal as dimorphodonDraft } from './animals/dimorphodon/package'
+import { animal as anhangueraDraft } from './animals/anhanguera/package'
+import { animal as tapejaraDraft } from './animals/tapejara/package'
+import { animal as nyctosaurusDraft } from './animals/nyctosaurus/package'
+import { animal as dsungaripterusDraft } from './animals/dsungaripterus/package'
+import { animal as kronosaurusDraft } from './animals/kronosaurus/package'
+import { animal as liopleurodonDraft } from './animals/liopleurodon/package'
+import { animal as tylosaurusDraft } from './animals/tylosaurus/package'
+import { animal as ophthalmosaurusDraft } from './animals/ophthalmosaurus/package'
+import { animal as shonisaurusDraft } from './animals/shonisaurus/package'
+import { animal as nothosaurusDraft } from './animals/nothosaurus/package'
+import { animal as placodusDraft } from './animals/placodus/package'
+import { animal as dimetrodonDraft } from './animals/dimetrodon/package'
+import { animal as lystrosaurusDraft } from './animals/lystrosaurus/package'
+import { animal as gorgonopsDraft } from './animals/gorgonops/package'
+import { animal as inostranceviaDraft } from './animals/inostrancevia/package'
+import { animal as postosuchusDraft } from './animals/postosuchus/package'
+import { animal as desmatosuchusDraft } from './animals/desmatosuchus/package'
+import { animal as megalocerosDraft } from './animals/megaloceros/package'
+import { animal as glyptodonDraft } from './animals/glyptodon/package'
+import { animal as megatheriumDraft } from './animals/megatherium/package'
+import { animal as doedicurusDraft } from './animals/doedicurus/package'
+import { animal as paraceratheriumDraft } from './animals/paraceratherium/package'
+import { animal as gomphotheriumDraft } from './animals/gomphotherium/package'
+import { animal as macraucheniaDraft } from './animals/macrauchenia/package'
+import { animal as thylacoleoDraft } from './animals/thylacoleo/package'
+import { animal as opabiniaDraft } from './animals/opabinia/package'
+import { animal as hallucigeniaDraft } from './animals/hallucigenia/package'
+import { animal as titanoboaDraft } from './animals/titanoboa/package'
 import type {
   CompleteDraftAnimalPackage,
   DisplayableAnimalPackage,
@@ -153,6 +228,81 @@ const onboardingDrafts: readonly CompleteDraftAnimalPackage[] = [
   jaekelopterusDraft,
   smilodonDraft,
   spinosaurusDraft,
+  allosaurusDraft,
+  brachiosaurusDraft,
+  quetzalcoatlusDraft,
+  elasmosaurusDraft,
+  woollyRhinocerosDraft,
+  anomalocarisDraft,
+  albertosaurusDraft,
+  carnotaurusDraft,
+  ceratosaurusDraft,
+  coelophysisDraft,
+  compsognathusDraft,
+  deinonychusDraft,
+  baryonyxDraft,
+  giganotosaurusDraft,
+  suchomimusDraft,
+  oviraptorDraft,
+  therizinosaurusDraft,
+  archaeopteryxDraft,
+  sinosauropteryxDraft,
+  monolophosaurusDraft,
+  herrerasaurusDraft,
+  utahraptorDraft,
+  acrocanthosaurusDraft,
+  carcharodontosaurusDraft,
+  microraptorDraft,
+  diplodocusDraft,
+  argentinosaurusDraft,
+  brontosaurusDraft,
+  camarasaurusDraft,
+  plateosaurusDraft,
+  ankylosaurusDraft,
+  euoplocephalusDraft,
+  kentrosaurusDraft,
+  protoceratopsDraft,
+  styracosaurusDraft,
+  pachyrhinosaurusDraft,
+  diabloceratopsDraft,
+  iguanodonDraft,
+  edmontosaurusDraft,
+  corythosaurusDraft,
+  lambeosaurusDraft,
+  gallimimusDraft,
+  psittacosaurusDraft,
+  heterodontosaurusDraft,
+  dryosaurusDraft,
+  nigersaurusDraft,
+  dimorphodonDraft,
+  anhangueraDraft,
+  tapejaraDraft,
+  nyctosaurusDraft,
+  dsungaripterusDraft,
+  kronosaurusDraft,
+  liopleurodonDraft,
+  tylosaurusDraft,
+  ophthalmosaurusDraft,
+  shonisaurusDraft,
+  nothosaurusDraft,
+  placodusDraft,
+  dimetrodonDraft,
+  lystrosaurusDraft,
+  gorgonopsDraft,
+  inostranceviaDraft,
+  postosuchusDraft,
+  desmatosuchusDraft,
+  megalocerosDraft,
+  glyptodonDraft,
+  megatheriumDraft,
+  doedicurusDraft,
+  paraceratheriumDraft,
+  gomphotheriumDraft,
+  macraucheniaDraft,
+  thylacoleoDraft,
+  opabiniaDraft,
+  hallucigeniaDraft,
+  titanoboaDraft,
 ]
 
 // The production collection is authoritative. A local draft automatically

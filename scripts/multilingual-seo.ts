@@ -7,8 +7,14 @@ import sharp from 'sharp'
 import type { Plugin } from 'vite'
 
 import { animalSeoDescription } from '../src/content/animal-seo'
+import { animalDefinition as allosaurusDefinition } from '../src/content/animals/allosaurus/package'
 import { animalDefinition as ammoniteDefinition } from '../src/content/animals/ammonite/package'
 import { animalDefinition as apatosaurusDefinition } from '../src/content/animals/apatosaurus/package'
+import { animalDefinition as baryonyxDefinition } from '../src/content/animals/baryonyx/package'
+import { animalDefinition as carnotaurusDefinition } from '../src/content/animals/carnotaurus/package'
+import { animalDefinition as ceratosaurusDefinition } from '../src/content/animals/ceratosaurus/package'
+import { animalDefinition as compsognathusDefinition } from '../src/content/animals/compsognathus/package'
+import { animalDefinition as deinonychusDefinition } from '../src/content/animals/deinonychus/package'
 import { animalDefinition as dilophosaurusDefinition } from '../src/content/animals/dilophosaurus/package'
 import { animalDefinition as dunkleosteusDefinition } from '../src/content/animals/dunkleosteus/package'
 import { animalDefinition as gigantoraptorDefinition } from '../src/content/animals/gigantoraptor/package'
@@ -107,8 +113,14 @@ const defaultOptions = {
 } satisfies Required<MultilingualSeoOptions>
 
 const canonicalAnimalDefinitions = [
+  allosaurusDefinition,
   ammoniteDefinition,
   apatosaurusDefinition,
+  baryonyxDefinition,
+  carnotaurusDefinition,
+  ceratosaurusDefinition,
+  compsognathusDefinition,
+  deinonychusDefinition,
   dilophosaurusDefinition,
   dunkleosteusDefinition,
   gigantoraptorDefinition,

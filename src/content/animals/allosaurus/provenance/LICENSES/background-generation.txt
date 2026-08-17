@@ -1,0 +1,22 @@
+Allosaurus background generation record
+=======================================
+
+Tool: Blender 4.5.12 (project-authored habitat scene, deterministic seed)
+Seed: 1732538382
+Generated: 2026-08-17
+Use: project-specific responsive museum backgrounds
+
+The landscape and portrait were rendered as separate deterministic EEVEE Next
+passes from the project-authored habitat scene spec
+qa/derivatives-scene-spec.json (SHA-256 b88ad3edd7a15c9c91f589ebd28efde78b0cf7ff38cfe947126b3bed99605adc).
+No animal, person, text, UI, logo, or watermark appears in the renders.
+
+Landscape runtime WebP: 16280 bytes (1920 × 1080)
+SHA-256: f5ee5d127ae88eb2438ab1736d07a84c365ac0152614e55c1f40cac4b00f6d84
+
+Portrait runtime WebP: 9200 bytes (1080 × 1920)
+SHA-256: 86c2d784285cc443bed058e9232fb4c8997857c19ad667f589fa969c9a9f5f51
+
+The reviewed renders were encoded as lossy WebP at quality 82.
+The project owner approved public distribution on 2026-08-17.
+Recorded in approval-record.json: approved by zho on 2026-08-17.

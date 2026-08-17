@@ -1,0 +1,18 @@
+Deinonychus poster and thumbnail derivation record
+====================================================
+
+Generated: 2026-08-17
+
+The 1200 × 675 poster and the
+390 × 844 portrait poster are deterministic
+runtime captures of the normalized model without text, controls, logos, or
+watermarks. The 320 × 320 thumbnail was
+captured from the accepted desktop review presentation after hiding all
+interface chrome.
+
+Poster SHA-256: f659a42cc46715ab3efefb2cfd526825dcb159f313a2bd3ffefef1eb67a487c9 (10602 bytes)
+Portrait poster SHA-256: 9d3cd0b574b9eab1d16c86920994b485f1e7274cf1e6eff290097fb747c3a12d (3122 bytes)
+Thumbnail SHA-256: 098f3f6fc53e01cfc4cc0d0dcb0c2694b2e3c777e7973bbae767435610015cb4 (2418 bytes)
+
+The model attribution and CC0-1.0 terms in model-license.txt
+continue to apply. The background generation record is retained separately.

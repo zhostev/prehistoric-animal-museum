@@ -9,7 +9,7 @@ import {
   type FileFingerprint,
 } from './files'
 import { encodeGradientPng, type Rgb } from './png'
-import { pathExists, type LoadedProfile } from './profile'
+import { pathExists, type CandidateProfile, type LoadedProfile } from './profile'
 
 export const REVIEW_MANIFEST_PATH = 'qa/review-manifest.json'
 
@@ -165,6 +165,9 @@ function packageSource(
   reviewRevision: boolean,
 ): string {
   const { profile } = loaded
+  const draftMetadata = (profile as CandidateProfile & {
+    readonly draft?: { readonly kind?: string; readonly atmosphere?: string }
+  }).draft
   const id = profile.id
   const habitat = profile.presentation.habitat
   const shadowGround = profile.presentation.shadow === 'ground'
@@ -232,9 +235,9 @@ ${hasEnglishContent ? `import { en } from './content.en'\n` : ''}
 export const animal = {
   id: '${id}',
   status: 'draft',
-${reviewRevision ? "  reviewRevision: true,\n" : ''}  kind: '${kindFor(habitat)}',
+${reviewRevision ? "  reviewRevision: true,\n" : ''}  kind: '${draftMetadata?.kind ?? kindFor(habitat)}',
   habitat: '${habitat}',
-  atmosphere: '${atmosphereFor(habitat)}',
+  atmosphere: '${draftMetadata?.atmosphere ?? atmosphereFor(habitat)}',
   content: {
     'zh-CN': zhCN,${hasEnglishContent ? '\n    en,' : ''}
   },

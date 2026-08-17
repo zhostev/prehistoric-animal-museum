@@ -611,13 +611,16 @@ describe('derivatives pure logic', () => {
       expect(spec.rays.length).toBeGreaterThan(0)
     })
 
-    it('rejects the unimplemented air habitat', () => {
-      expect(() =>
-        habitatSceneSpec(
-          { id: 'pteranodon', presentation: { habitat: 'air' as const } },
-          specPaths,
-        ),
-      ).toThrow('no air habitat scene authored yet')
+    it('gives the air habitat the quiet sky composition of the land scene', () => {
+      const spec = habitatSceneSpec(
+        { id: 'pteranodon', presentation: { habitat: 'air' as const } },
+        specPaths,
+      )
+      expect(spec.habitat).toBe('land')
+      expect(spec.rays).toEqual([])
+      expect(spec.particles).toEqual([])
+      expect(spec.cameras.landscape.width).toBe(1920)
+      expect(spec.cameras.portrait.height).toBe(1920)
     })
   })
 

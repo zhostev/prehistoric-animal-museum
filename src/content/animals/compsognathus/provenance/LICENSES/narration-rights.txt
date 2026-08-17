@@ -1,0 +1,46 @@
+Qwen3-TTS Serena narration rights record
+Reviewed: 2026-08-17
+
+The Mandarin and English scripts are project-authored. Both audio takes were
+generated offline with Qwen3-TTS-12Hz-0.6B-CustomVoice using its built-in
+Serena speaker, normalized to 48 kHz mono MP3s, and listened to and approved
+by the project owner.
+
+Qwen3-TTS code and the official 0.6B CustomVoice model card are Apache-2.0:
+https://github.com/QwenLM/Qwen3-TTS/blob/main/LICENSE
+https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice
+
+The official release identifies Serena among the open-sourced timbres:
+https://qwen.ai/blog/?id=qwen3tts-0115
+
+The owner approves public distribution of these reviewed MP3s. The public
+notice identifies the model, Serena speaker, AI synthesis, and model license.
+Recorded in approval-record.json: approved by zho on 2026-08-17.
+
+Chinese narration approval
+
+Locale: zh-CN
+Speaker: Serena
+Language: Chinese
+Generated: 2026-08-14
+Runtime bytes: 109292
+Runtime SHA-256: 63d6a05b9564f881fdd85f92705679779d4d77a7a240fbd1b9b40e6c86fc9350
+Human listening review: approved
+Public distribution decision: approved
+Approved: project owner zho on 2026-08-17
+
+Script: 这是美颌龙，学名是Compsognathus longipes。看看它醒目的“tiny slender”外形，再观察轻轻的呼吸、转头和尾部动作。
+
+English narration approval
+
+Locale: en
+Speaker: Serena
+Language: English
+Generated: 2026-08-14
+Runtime bytes: 145772
+Runtime SHA-256: 8892464b62d5bbc3f283831150417773b4d173e0314772bb51a6cf905e56c0a7
+Human listening review: approved
+Public distribution decision: approved
+Approved: project owner zho on 2026-08-17
+
+Script: This is Compsognathus, a prehistoric animal known as Compsognathus longipes. Look for its tiny slender. Watch the gentle breathing, head movement and tail motion that make this reconstruction feel alert.

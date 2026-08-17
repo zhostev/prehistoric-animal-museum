@@ -1,0 +1,22 @@
+Carnotaurus background generation record
+========================================
+
+Tool: Blender 4.5.12 (project-authored habitat scene, deterministic seed)
+Seed: 387207758
+Generated: 2026-08-17
+Use: project-specific responsive museum backgrounds
+
+The landscape and portrait were rendered as separate deterministic EEVEE Next
+passes from the project-authored habitat scene spec
+qa/derivatives-scene-spec.json (SHA-256 2a43851dee98be53d69c1a02086acc55792ea99b110e3df1fdb5d24953d336f6).
+No animal, person, text, UI, logo, or watermark appears in the renders.
+
+Landscape runtime WebP: 14434 bytes (1920 × 1080)
+SHA-256: 61f6f4ab19afce8e2c8e74fad4d362fafc029a1a9e8f98ab28b67015169ebd8d
+
+Portrait runtime WebP: 8348 bytes (1080 × 1920)
+SHA-256: f1f94a1be6ac52ee2ec29d85746d83d9ffb45510a85e32e129dd9406ee677e98
+
+The reviewed renders were encoded as lossy WebP at quality 82.
+The project owner approved public distribution on 2026-08-17.
+Recorded in approval-record.json: approved by zho on 2026-08-17.

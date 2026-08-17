@@ -1,0 +1,55 @@
+{
+  "animalId": "allosaurus",
+  "contractVersion": 2,
+  "generatedAt": "2026-08-17T08:29:07.292Z",
+  "presentationSignature": "{\"contractVersion\":2,\"renderer\":{\"cameraFieldOfViewDegrees\":34,\"maxPixelRatio\":2},\"layout\":{\"coordinateSystem\":\"fixed-fullscreen-canvas+composition-frame-v1\",\"previewObjectFit\":\"contain\",\"referenceViewports\":[{\"key\":\"landscapeCompact\",\"width\":844,\"height\":390},{\"key\":\"desktopWide\",\"width\":1280,\"height\":720},{\"key\":\"phonePortraitCompact\",\"width\":360,\"height\":640},{\"key\":\"phonePortraitTall\",\"width\":390,\"height\":844},{\"key\":\"tabletPortrait\",\"width\":768,\"height\":1024},{\"key\":\"desktopStandard\",\"width\":1440,\"height\":900}]},\"animation\":{\"clip\":\"Idle\",\"loop\":\"repeat\",\"speed\":1},\"presentation\":{\"cameraLightScale\":1,\"horizontalOffset\":{\"landscape\":0,\"portrait\":0},\"initialYawDegrees\":90,\"preciseBounds\":true,\"safeAreaPadding\":{\"landscape\":0.12,\"portrait\":0.12},\"shadow\":{\"depthOffset\":0,\"depthScale\":1,\"horizontalOffset\":0,\"opacity\":0.5,\"scale\":0.5,\"yOffset\":0},\"toneMappingExposure\":1,\"verticalOffset\":{\"landscape\":0,\"portrait\":0}}}",
+  "profiles": {
+    "landscapeCompact": {
+      "bytes": 63530,
+      "fileName": "preview-landscape-compact.webp",
+      "height": 650,
+      "sha256": "02b01740f29cf97cb6dab16e30500b4872c8408f9587b98bc8dffa601fd0e86d",
+      "width": 1250
+    },
+    "desktopWide": {
+      "bytes": 69646,
+      "fileName": "preview-desktop-wide.webp",
+      "height": 800,
+      "sha256": "42051be91641454046327a536ab5b61ff4309c8da9f63aeffc8fdff308f1d5e2",
+      "width": 1200
+    },
+    "phonePortraitCompact": {
+      "bytes": 43548,
+      "fileName": "preview-phone-compact.webp",
+      "height": 1000,
+      "sha256": "cf7cf58eeef5d4d8aa63e2a4fc74adcd59cfffd9fcc7e8f5724d4844334e1a26",
+      "width": 875
+    },
+    "phonePortraitTall": {
+      "bytes": 33008,
+      "fileName": "preview-phone-tall.webp",
+      "height": 1000,
+      "sha256": "6f9dbede409f485026cf59ded876dd4258f1f823248d07ea6c14eb7cf597b97c",
+      "width": 640
+    },
+    "tabletPortrait": {
+      "bytes": 49484,
+      "fileName": "preview-tablet-portrait.webp",
+      "height": 960,
+      "sha256": "be56ce032a1abebd5a4c6f2b5d61a60d5f551cf500f333dcbae821a43e6c43c5",
+      "width": 900
+    },
+    "desktopStandard": {
+      "bytes": 71752,
+      "fileName": "preview-desktop-standard.webp",
+      "height": 960,
+      "sha256": "945031d9c7ff2537916f632657a3c95368c680870ce834685874128f21cef040",
+      "width": 1200
+    }
+  },
+  "sourceModel": {
+    "bytes": 164812,
+    "sha256": "cdaf64e520f29a7cbe9742752078a0f66c9196fdfa727720c7b85820cea2c783"
+  },
+  "target": "production"
+}

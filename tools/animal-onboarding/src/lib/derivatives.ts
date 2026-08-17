@@ -416,7 +416,10 @@ export function habitatSceneSpec(
     return waterSceneSpec(profile.id, paths)
   }
   if (profile.presentation.habitat === 'air') {
-    throw new Error(`derivatives: no air habitat scene authored yet (${profile.id})`)
+    // Flying animals use the quiet sky composition of the land scene while
+    // their runtime package keeps shadow:none. This retains separate
+    // landscape/portrait cameras without inventing a ground contact.
+    return landSceneSpec(profile.id, paths)
   }
   return landSceneSpec(profile.id, paths)
 }

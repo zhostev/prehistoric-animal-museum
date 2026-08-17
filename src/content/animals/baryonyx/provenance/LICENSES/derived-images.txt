@@ -1,0 +1,18 @@
+Baryonyx poster and thumbnail derivation record
+=================================================
+
+Generated: 2026-08-17
+
+The 1200 × 675 poster and the
+390 × 844 portrait poster are deterministic
+runtime captures of the normalized model without text, controls, logos, or
+watermarks. The 320 × 320 thumbnail was
+captured from the accepted desktop review presentation after hiding all
+interface chrome.
+
+Poster SHA-256: 40c7bc0ac56909d44cbecf38511c12b1ed37aa78db11a51d415fd4702e485ac9 (11508 bytes)
+Portrait poster SHA-256: eee8c8d10e9fc2e226a043240465a1d0c8d815df12d2bf7bd8ecb99a7e26d15f (3446 bytes)
+Thumbnail SHA-256: 9e81c944fc2a7f3c129c311cff3fdfa1df7b60be6bd2689d4facc3eb0a375825 (2592 bytes)
+
+The model attribution and CC0-1.0 terms in model-license.txt
+continue to apply. The background generation record is retained separately.

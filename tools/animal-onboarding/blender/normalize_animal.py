@@ -71,6 +71,18 @@ BODY_LENGTHS_M = {
     "spinosaurus": 13.0,   # Spinosaurus aegyptiacus ~13 m (matches the published content copy)
 }
 
+EXPANSION_CATALOG = os.path.abspath(
+    os.path.join(os.path.dirname(__file__), "..", "expansion-100.json"))
+
+
+def expansion_entry(animal_id):
+    if not os.path.exists(EXPANSION_CATALOG):
+        return None
+    with open(EXPANSION_CATALOG, encoding="utf-8") as handle:
+        catalog = json.load(handle)
+    return next((item for item in catalog.get("animals", [])
+                 if item.get("id") == animal_id), None)
+
 CONVENTION_NOTE = (
     "production orientation convention (measured 2026-08-10 from "
     "src/content/animals/maiasaura + mosasaurus model.glb): maiasaura and the "
@@ -940,6 +952,172 @@ def run_static_sculpt(profile_path, profile, profile_dir, source_path, log):
     return armature, habitat
 
 
+def join_source_meshes(log):
+    meshes = scene_meshes()
+    if not meshes:
+        raise HardFail("project-authored source has no mesh objects")
+    select_only(meshes)
+    bpy.context.view_layer.objects.active = meshes[0]
+    bpy.ops.object.convert(target="MESH")
+    bpy.ops.object.join()
+    mesh = bpy.context.object
+    mesh.name = "Animal"
+    log.add(f"project-authored source joined: {len(meshes)} semantic primitive(s) -> "
+            f"one mesh with {len(mesh.data.vertices)} vertices and {triangle_count()} triangles")
+    return mesh
+
+
+def run_expansion_source(profile_path, profile, profile_dir, source_path, log, entry):
+    """Normalize the deterministic project-authored expansion GLB.
+
+    Sources are assembled from semantic primitives by the retained Blender
+    generator.  The normalization stage joins those pieces, creates a bounded
+    Body/Head/Tail rig and authors an archetype-specific visible Idle.
+    """
+    animal_id = profile["id"]
+    habitat = profile["presentation"]["habitat"]
+    log.add(f"pipeline: project-authored expansion GLB ({entry['archetype']}, "
+            f"feature={entry['feature']}) -> joined web mesh, Body/Head/Tail "
+            "deformation rig, archetype-specific 8 s Idle")
+    bpy.ops.import_scene.gltf(filepath=source_path)
+    setup_scene_defaults()
+    mesh = join_source_meshes(log)
+    decimate_if_needed(mesh, 90_000, log)
+
+    # Generator authors forward along Blender +Y/glTF -Z already.
+    scale_to_body_length([mesh], float(entry.get("length", 1.0)), log, apply=True)
+    coords = all_world_vertices()
+    centre = (coords.min(axis=0) + coords.max(axis=0)) / 2.0
+    mesh.location.x -= float(centre[0])
+    mesh.location.y -= float(centre[1])
+    apply_transform([mesh], location=True, rotation=False, scale=False)
+    ground_or_centre([mesh], habitat, log, apply=True)
+
+    coords = all_world_vertices()
+    lo, hi = coords.min(axis=0), coords.max(axis=0)
+    span_y = float(hi[1] - lo[1])
+    body_height = float(hi[2] - lo[2])
+    head_blend_start = float(hi[1] - 0.30 * span_y)
+    head_full_start = float(hi[1] - 0.16 * span_y)
+    tail_blend_start = float(lo[1] + 0.28 * span_y)
+    tail_full_start = float(lo[1] + 0.12 * span_y)
+    specs = [
+        ("Body", (0.0, 0.0, float(lo[2])),
+         (0.0, 0.0, float(lo[2] + max(0.15, body_height * 0.68))), None, False),
+        ("Head", (0.0, head_blend_start, float(lo[2] + body_height * 0.52)),
+         (0.0, float(hi[1]), float(lo[2] + body_height * 0.58)), "Body", False),
+        ("Tail", (0.0, tail_blend_start, float(lo[2] + body_height * 0.42)),
+         (0.0, float(lo[1]), float(lo[2] + body_height * 0.38)), "Body", False),
+    ]
+    armature = create_armature_bones(specs, log)
+    modifier = mesh.modifiers.new("Armature", "ARMATURE")
+    modifier.object = armature
+    mesh.parent = armature
+    groups = {name: mesh.vertex_groups.new(name=name) for name in ("Body", "Head", "Tail")}
+    buckets = {}
+    for vertex in mesh.data.vertices:
+        y = vertex.co.y
+        if y >= head_blend_start:
+            blend = (y - head_blend_start) / max(head_full_start - head_blend_start, 1e-6)
+            region = "Head"
+        elif y <= tail_blend_start:
+            blend = (tail_blend_start - y) / max(tail_blend_start - tail_full_start, 1e-6)
+            region = "Tail"
+        else:
+            blend, region = 0.0, "Body"
+        bucket = (region, int(round(max(0.0, min(1.0, blend)) * 20.0)))
+        buckets.setdefault(bucket, []).append(vertex.index)
+    for (region, bucket), indices in buckets.items():
+        weight = bucket / 20.0
+        if region == "Body":
+            groups["Body"].add(indices, 1.0, "REPLACE")
+        else:
+            groups[region].add(indices, weight, "REPLACE")
+            if weight < 1.0:
+                groups["Body"].add(indices, 1.0 - weight, "REPLACE")
+    log.add(f"skinning: deterministic 20-step head/tail blends; head zone "
+            f"y>={head_blend_start:.4f}, tail zone y<={tail_blend_start:.4f}; "
+            "central grounded/swimming body stays on Body")
+
+    action = bpy.data.actions.new("Idle")
+    frames = IDLE_END_FRAME + 1
+    if habitat == "water":
+        body_scale = ((0, 0.010), (1, 0.004), (2, 0.008))
+        head_amp, head_cycles, tail_amp, tail_cycles = 5.5, 1, 11.0, 3
+        bob = min(0.08, max(0.012, float(entry.get("length", 1.0)) * 0.006))
+    elif habitat == "air":
+        body_scale = ((0, 0.014), (1, 0.005), (2, 0.010))
+        head_amp, head_cycles, tail_amp, tail_cycles = 5.0, 1, 7.5, 2
+        bob = min(0.09, max(0.015, float(entry.get("length", 1.0)) * 0.008))
+    else:
+        body_scale = ((0, 0.018), (1, 0.004), (2, 0.012))
+        head_amp, head_cycles, tail_amp, tail_cycles = 5.5, 1, 8.0, 3
+        bob = 0.0
+    for channel, amplitude in body_scale:
+        curve = action.fcurves.new('pose.bones["Body"].scale', index=channel)
+        curve.keyframe_points.add(frames)
+        co = np.empty(frames * 2)
+        co[0::2] = np.arange(frames)
+        for frame in range(frames):
+            co[2 * frame + 1] = 1.0 + amplitude * math.sin(loop_phase(frame, 2, 0.42))
+        curve.keyframe_points.foreach_set("co", co)
+        for point in curve.keyframe_points:
+            point.interpolation = "LINEAR"
+        curve.update()
+    for bone_name, amplitude, cycles, phase in (
+            ("Head", head_amp, head_cycles, 0.75),
+            ("Tail", tail_amp, tail_cycles, 2.05)):
+        rest = armature.data.bones[bone_name].matrix_local.to_3x3()
+        local_z = rest.inverted() @ Vector((0.0, 0.0, 1.0))
+        local_x = rest.inverted() @ Vector((1.0, 0.0, 0.0))
+        sampled_composite_quaternion_fcurve(
+            action,
+            f'pose.bones["{bone_name}"].rotation_quaternion',
+            [(local_z, amplitude, cycles, phase),
+             (local_x, amplitude * 0.28, 1, phase + 0.55)],
+        )
+    if bob:
+        curve = action.fcurves.new("location", index=2)
+        curve.keyframe_points.add(frames)
+        co = np.empty(frames * 2)
+        co[0::2] = np.arange(frames)
+        for frame in range(frames):
+            co[2 * frame + 1] = bob * math.sin(loop_phase(frame, 2, 0.22))
+        curve.keyframe_points.foreach_set("co", co)
+        for point in curve.keyframe_points:
+            point.interpolation = "LINEAR"
+        curve.update()
+        # A secondary lateral drift makes swimming/flying motion visible from
+        # the fixed Blender evidence camera even for a very long, thin animal
+        # whose vertical silhouette can otherwise hide a centred bob.
+        curve = action.fcurves.new("location", index=0)
+        curve.keyframe_points.add(frames)
+        co = np.empty(frames * 2)
+        co[0::2] = np.arange(frames)
+        for frame in range(frames):
+            co[2 * frame + 1] = bob * 0.9 * math.sin(loop_phase(frame, 1, 0.45))
+        curve.keyframe_points.foreach_set("co", co)
+        for point in curve.keyframe_points:
+            point.interpolation = "LINEAR"
+        curve.update()
+    if entry.get("archetype") == "snake":
+        armature.rotation_mode = "QUATERNION"
+        sampled_composite_quaternion_fcurve(
+            action,
+            "rotation_quaternion",
+            [((0.0, 0.0, 1.0), 4.5, 1, 0.30),
+             ((1.0, 0.0, 0.0), 5.0, 1, 0.20)],
+        )
+        log.add("snake-specific whole-body swim: one-cycle +/-4.5 deg yaw and "
+                "one-cycle +/-5.0 deg roll, in addition to head/tail motion")
+    assign_action(armature, action)
+    log.add(f"Idle synthesized: frames 0..{IDLE_END_FRAME} at {FPS} fps = 8.0 s, "
+            f"two-cycle body breathing, Head +/-{head_amp} deg, Tail +/-{tail_amp} "
+            f"deg; habitat={habitat}, vertical drift +/-{bob:.4f} m; frame 192 "
+            "repeats frame 0 exactly (seamless loop)")
+    return armature, habitat
+
+
 def main():
     profile_path = parse_args()
     profile_dir = os.path.dirname(profile_path)
@@ -956,7 +1134,11 @@ def main():
         # Cube/Camera/Light that must not leak into renders or the export)
         bpy.ops.wm.read_homefile(use_empty=True)
         landmarks = None
-        if source_path.lower().endswith(".blend"):
+        entry = expansion_entry(animal_id)
+        if entry is not None and source_path.lower().endswith(".glb"):
+            armature, habitat = run_expansion_source(
+                profile_path, profile, profile_dir, source_path, log, entry)
+        elif source_path.lower().endswith(".blend"):
             armature, habitat = run_quaternius(profile_path, profile, profile_dir, source_path, log)
         elif animal_id in SCULPT_CONFIGS and source_path.lower().endswith((".stl", ".fbx", ".ply")):
             armature, habitat = run_static_sculpt(profile_path, profile, profile_dir, source_path, log)

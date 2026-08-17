@@ -259,6 +259,24 @@ function generatePackageModule(
   yawDegrees: number,
 ): string {
   const shadow = profile.presentation.shadow
+  // Expansion drafts author kind/atmosphere explicitly (a pterosaur is not a
+  // dinosaur, a forest exhibit is not plains); habitat alone cannot recover
+  // either. Fall back to the habitat mapping for older profiles without it.
+  const draftMetadata = (profile as CandidateProfile & {
+    readonly draft?: { readonly kind?: string; readonly atmosphere?: string }
+  }).draft
+  const kind =
+    draftMetadata?.kind ??
+    (profile.presentation.habitat === 'water'
+      ? 'other-prehistoric-animal'
+      : 'dinosaur')
+  const atmosphere =
+    draftMetadata?.atmosphere ??
+    (profile.presentation.habitat === 'water'
+      ? 'underwater'
+      : profile.presentation.habitat === 'air'
+        ? 'air'
+        : 'plains')
   return `import { definePublishedAnimal } from '../../types'
 import { en } from './content.en'
 import { zhCN } from './content.zh-CN'
@@ -267,9 +285,9 @@ import { provenance } from './provenance'
 export const animalDefinition = definePublishedAnimal({
   id: '${profile.id}',
   status: 'published',
-  kind: '${profile.presentation.habitat === 'water' ? 'other-prehistoric-animal' : 'dinosaur'}',
+  kind: '${kind}',
   habitat: '${profile.presentation.habitat}',
-  atmosphere: '${profile.presentation.habitat === 'water' ? 'underwater' : profile.presentation.habitat === 'air' ? 'air' : 'plains'}',
+  atmosphere: '${atmosphere}',
   content: { 'zh-CN': zhCN, en },
   presentation: {
     initialYawDegrees: ${yawDegrees},
