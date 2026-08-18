@@ -19,6 +19,6 @@ Modifications for the Prehistoric Animal Museum:
 - Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys; Body breathes for two cycles at +/-1.8% width, +/-1.2% height, +/-0.4% length about a z=0 bone origin; Head combines a slow +/-5.5 deg look and two-cycle +/-2.0 deg nod; Tail combines a three-cycle +/-7.0 deg sway with a slow +/-1.5 deg lift; frame 192 repeats frame 0 exactly (seamless loop)
 - mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
 
-Published runtime GLB: 3923372 bytes
+Published runtime GLB: 3886076 bytes
 Published SHA-256:
-a3701845691a31a43f914bcf068f61ef3ee6a0c24c9f29f1c122192c20642056
+35a3a2b4f75b6df268621dd3dfbd44a14ed3bdfbf81696314179f3a9b88a904c

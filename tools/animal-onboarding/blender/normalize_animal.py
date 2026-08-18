@@ -49,6 +49,7 @@ from normalize_lib import (  # noqa: E402
 )
 from refine_materials import (  # noqa: E402
     author_ammonite_materials,
+    author_sculpt_palette_materials,
     author_aquatic_scan_materials,
     author_sculpt_materials,
     author_smilodon_materials,
@@ -784,6 +785,18 @@ SCULPT_CONFIGS = {
         "headSign": 1,
         "headBones": (),
         "decimateTris": 90_000,
+        # Linear-space medians sampled from the CC-BY-4.0 reference artwork at
+        # the matching anatomical regions, so the exhibit colour is traceable
+        # to the same source as the geometry.
+        "palette": {
+            "flank": ((0.426, 0.263, 0.037), 0.86),
+            "belly": ((0.494, 0.369, 0.164), 0.88),
+            "dorsal": ((0.173, 0.048, 0.019), 0.84),
+            "crest": ((0.399, 0.334, 0.128), 0.72),
+            "snout": ((0.223, 0.096, 0.010), 0.80),
+            "limb": ((0.666, 0.548, 0.374), 0.90),
+            "stripes": True,
+        },
     },
     "velociraptor": {
         # Noximous CC-BY-4.0 STL (Raptor_Standing pose); broad skull end
@@ -870,6 +883,13 @@ def run_static_sculpt(profile_path, profile, profile_dir, source_path, log):
 
     if cfg["decimateTris"] is not None:
         decimate_if_needed(meshes[0], cfg["decimateTris"], log)
+
+    # A generated sculpt has no material regions. Apply the palette after
+    # decimation so the per-polygon region assignment matches the exported
+    # topology instead of being blurred by the collapse.
+    palette = cfg.get("palette")
+    if palette is not None:
+        author_sculpt_palette_materials(meshes[0], palette, log)
 
     scale_to_body_length(meshes, body_length, log, apply=True)
     coords = all_world_vertices()

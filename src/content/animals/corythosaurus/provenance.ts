@@ -19,8 +19,8 @@ export const provenance = [
       url: 'https://creativecommons.org/licenses/by/4.0/',
     },
     runtime: {
-      sha256: 'a3701845691a31a43f914bcf068f61ef3ee6a0c24c9f29f1c122192c20642056',
-      bytes: 3923372,
+      sha256: '35a3a2b4f75b6df268621dd3dfbd44a14ed3bdfbf81696314179f3a9b88a904c',
+      bytes: 3886076,
     },
     modifications: [
       'pipeline: static sculpt (corythosaurus) -> keep configured meshes, author materials, optional normal bake, synthesize Body/Head/Tail rig + 8 s Idle',
@@ -118,8 +118,8 @@ export const provenance = [
       url: 'https://creativecommons.org/licenses/by/4.0/',
     },
     runtime: {
-      sha256: '3d9ae59860927a0a103910bc91cdb49d7d368a023f4e6c81f8aff7fc032a5698',
-      bytes: 12938,
+      sha256: '4743c1ab06d75f18fbf2e4db94bf31cfdf7b1f8bfb07036992355f882c86caf3',
+      bytes: 15262,
     },
     modifications: [
       'Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.',
@@ -151,8 +151,8 @@ export const provenance = [
       url: 'https://creativecommons.org/licenses/by/4.0/',
     },
     runtime: {
-      sha256: 'f77717422651aae076276df06e8a5785226be6e521a6740a09c72d70eb451350',
-      bytes: 3518,
+      sha256: '19af1e42f38e320111a0026aab9663014fb76066f86dc2391104649858b92822',
+      bytes: 4226,
     },
     modifications: [
       'Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.',
@@ -185,8 +185,8 @@ export const provenance = [
       url: 'https://creativecommons.org/licenses/by/4.0/',
     },
     runtime: {
-      sha256: 'daccc951b75036a3834986ec561b1762b3b641bda0c115cf145ed1f8a3be7ca3',
-      bytes: 3204,
+      sha256: 'c94826ff4b3c219f9f3278f0b1f9ccfbfb37e87787a4d49496f931275eb3be8b',
+      bytes: 3954,
     },
     modifications: [
       'Selected a card-size crop that keeps the animal readable.',

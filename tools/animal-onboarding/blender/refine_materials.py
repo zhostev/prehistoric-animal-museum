@@ -265,6 +265,66 @@ def author_smilodon_materials(mesh, log):
     )
 
 
+def author_sculpt_palette_materials(mesh, palette, log):
+    """Region palette for a single-mesh sculpt, assigned from normalized
+    geometry.
+
+    A generated sculpt arrives with no material regions at all, so a flat slot
+    reads far plainer than the hand-authored collection. The rules below are
+    written against normalized local coordinates (y along the body with the
+    head at y=1, z up), which makes them transfer between animals of the same
+    broad body plan; the colours themselves come from the licensed reference
+    artwork the mesh was inferred from, so they stay evidence-linked rather
+    than invented. Biological plausibility still needs the 'materials'
+    human-review category."""
+    centers, normalized, _lo, _hi = _local_geometry(mesh)
+    order = ("flank", "belly", "dorsal", "crest", "snout", "limb")
+    specs = [
+        (name.capitalize(), tuple(palette[name][0]), float(palette[name][1]), 0.0)
+        for name in order
+    ]
+    _clear_palette(mesh, specs)
+    stripes = bool(palette.get("stripes", False))
+    counts = [0] * len(specs)
+    for poly, _center, norm in zip(mesh.data.polygons, centers, normalized):
+        x, y, z = norm
+        side = abs(x - 0.5) * 2.0
+        # A flat z cut reads as a painted rectangle on a rounded body, so the
+        # dorsal boundary follows a shallow wave and the flank banding narrows
+        # as it descends, the way the reference artwork's chevrons fade out.
+        dorsal_edge = 0.72 + 0.05 * math.sin(y * 6.0 * math.pi)
+        if z < 0.13:
+            index = 5                      # feet and lower limbs
+        elif y > 0.88 and z > 0.60:
+            index = 3                      # crest / head top
+        elif y > 0.91:
+            index = 4                      # snout and beak
+        elif z < 0.36 and 0.12 < y < 0.88:
+            index = 1                      # belly
+        elif z > dorsal_edge:
+            index = 2                      # dorsal ridge and back
+        elif (
+            stripes
+            and 0.08 < y < 0.88
+            and 0.44 < z < dorsal_edge
+            and side > 0.22
+            and math.sin(y * 24.0 * math.pi)
+            > 0.18 + (dorsal_edge - z) * 2.2
+        ):
+            index = 2                      # dorsal-toned flank banding
+        else:
+            index = 0                      # flank
+        poly.material_index = index
+        poly.use_smooth = True
+        counts[index] += 1
+    log.add(
+        "sculpt palette: regions "
+        f"{[(specs[i][0], counts[i]) for i in range(len(specs))]}"
+        f"{'; dorsal flank banding on' if stripes else ''}; colours sampled "
+        "from the licensed reference artwork; human material review required",
+    )
+
+
 def author_ammonite_materials(mesh, log):
     centers, normalized, lo, hi = _local_geometry(mesh)
     specs = [

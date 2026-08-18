@@ -41,7 +41,7 @@ export const animal = {
   provenance: [],
   assets: {
     model: reviewAssetUrl('corythosaurus', 'model.glb'),
-    modelBytes: 3923372,
+    modelBytes: 3886076,
     poster: reviewAssetUrl('corythosaurus', 'poster.webp'),
     posterPortrait: reviewAssetUrl('corythosaurus', 'poster-portrait.webp'),
     thumbnail: reviewAssetUrl('corythosaurus', 'thumbnail.webp'),

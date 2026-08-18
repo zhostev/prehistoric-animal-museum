@@ -243,7 +243,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Corythosaurus transparent portrait model still, derived on 2026-08-18
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 - Attribution: “Corythosaurus” by TotalDino, CC-BY-4.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `f77717422651aae076276df06e8a5785226be6e521a6740a09c72d70eb451350`
+- Runtime SHA-256: `19af1e42f38e320111a0026aab9663014fb76066f86dc2391104649858b92822`
 - Modifications:
   - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
   - Encoded as exact lossless WebP without text, controls, labels, logos, or watermarks.
@@ -253,7 +253,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Corythosaurus transparent model still, derived on 2026-08-18
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 - Attribution: “Corythosaurus” by TotalDino, CC-BY-4.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `3d9ae59860927a0a103910bc91cdb49d7d368a023f4e6c81f8aff7fc032a5698`
+- Runtime SHA-256: `4743c1ab06d75f18fbf2e4db94bf31cfdf7b1f8bfb07036992355f882c86caf3`
 - Modifications:
   - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
   - Encoded as lossless WebP without text, controls, labels, logos, or watermarks.
@@ -263,7 +263,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Corythosaurus collection thumbnail, derived on 2026-08-18
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 - Attribution: “Corythosaurus” by TotalDino, CC-BY-4.0; modified for the Prehistoric Animal Museum. Scene art generated for this project.
-- Runtime SHA-256: `daccc951b75036a3834986ec561b1762b3b641bda0c115cf145ed1f8a3be7ca3`
+- Runtime SHA-256: `c94826ff4b3c219f9f3278f0b1f9ccfbfb37e87787a4d49496f931275eb3be8b`
 - Modifications:
   - Selected a card-size crop that keeps the animal readable.
   - Exported without embedded text, controls, labels, logos, or watermarks.
@@ -273,7 +273,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: [Corythosaurus](https://commons.wikimedia.org/wiki/File:Corythosaurus_TD.png) by TotalDino
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 - Attribution: “Corythosaurus” by TotalDino, CC-BY-4.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `a3701845691a31a43f914bcf068f61ef3ee6a0c24c9f29f1c122192c20642056`
+- Runtime SHA-256: `35a3a2b4f75b6df268621dd3dfbd44a14ed3bdfbf81696314179f3a9b88a904c`
 - Modifications:
   - pipeline: static sculpt (corythosaurus) -> keep configured meshes, author materials, optional normal bake, synthesize Body/Head/Tail rig + 8 s Idle
   - decimate: ratio 0.322995 (278642 -> 90000 tris, 44998 verts); <= 90000 target

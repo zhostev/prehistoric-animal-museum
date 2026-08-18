@@ -10,9 +10,9 @@ watermarks. The 320 × 320 thumbnail was
 captured from the accepted desktop review presentation after hiding all
 interface chrome.
 
-Poster SHA-256: 3d9ae59860927a0a103910bc91cdb49d7d368a023f4e6c81f8aff7fc032a5698 (12938 bytes)
-Portrait poster SHA-256: f77717422651aae076276df06e8a5785226be6e521a6740a09c72d70eb451350 (3518 bytes)
-Thumbnail SHA-256: daccc951b75036a3834986ec561b1762b3b641bda0c115cf145ed1f8a3be7ca3 (3204 bytes)
+Poster SHA-256: 4743c1ab06d75f18fbf2e4db94bf31cfdf7b1f8bfb07036992355f882c86caf3 (15262 bytes)
+Portrait poster SHA-256: 19af1e42f38e320111a0026aab9663014fb76066f86dc2391104649858b92822 (4226 bytes)
+Thumbnail SHA-256: c94826ff4b3c219f9f3278f0b1f9ccfbfb37e87787a4d49496f931275eb3be8b (3954 bytes)
 
 The model attribution and CC-BY-4.0 terms in model-license.txt
 continue to apply. The background generation record is retained separately.
