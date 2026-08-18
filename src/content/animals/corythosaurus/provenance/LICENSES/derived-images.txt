@@ -1,0 +1,18 @@
+Corythosaurus poster and thumbnail derivation record
+======================================================
+
+Generated: 2026-08-18
+
+The 1200 × 675 poster and the
+390 × 844 portrait poster are deterministic
+runtime captures of the normalized model without text, controls, logos, or
+watermarks. The 320 × 320 thumbnail was
+captured from the accepted desktop review presentation after hiding all
+interface chrome.
+
+Poster SHA-256: 3d9ae59860927a0a103910bc91cdb49d7d368a023f4e6c81f8aff7fc032a5698 (12938 bytes)
+Portrait poster SHA-256: f77717422651aae076276df06e8a5785226be6e521a6740a09c72d70eb451350 (3518 bytes)
+Thumbnail SHA-256: daccc951b75036a3834986ec561b1762b3b641bda0c115cf145ed1f8a3be7ca3 (3204 bytes)
+
+The model attribution and CC-BY-4.0 terms in model-license.txt
+continue to apply. The background generation record is retained separately.

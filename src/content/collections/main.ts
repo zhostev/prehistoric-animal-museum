@@ -28,6 +28,7 @@ export const mainCollection = {
     'jaekelopterus',
     'smilodon',
     'spinosaurus',
+    'corythosaurus',
   ],
   defaultAnimalId: 'stegosaurus',
   loop: true,

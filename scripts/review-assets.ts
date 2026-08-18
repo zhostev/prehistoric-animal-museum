@@ -1370,22 +1370,25 @@ const reviewAnimalFiles: Readonly<
   },
   corythosaurus: {
     model: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-13-expansion-100/corythosaurus/output/model/model.glb',
+      'assets/candidates/animal-onboarding-2026-08-18-ai-pilot/corythosaurus/output/model/model.glb',
     ),
     backgroundLandscape: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-13-expansion-100/corythosaurus/output/background-landscape.webp',
+      'assets/candidates/animal-onboarding-2026-08-18-ai-pilot/corythosaurus/output/background-landscape.webp',
     ),
     backgroundPortrait: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-13-expansion-100/corythosaurus/output/background-portrait.webp',
+      'assets/candidates/animal-onboarding-2026-08-18-ai-pilot/corythosaurus/output/background-portrait.webp',
+    ),
+    narration: repositoryFile(
+      'assets/candidates/animal-onboarding-2026-08-18-ai-pilot/corythosaurus/output/audio/narration.zh-CN.mp3',
     ),
     poster: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-13-expansion-100/corythosaurus/output/poster.webp',
+      'assets/candidates/animal-onboarding-2026-08-18-ai-pilot/corythosaurus/output/poster.webp',
     ),
     posterPortrait: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-13-expansion-100/corythosaurus/output/images/poster-portrait.webp',
+      'assets/candidates/animal-onboarding-2026-08-18-ai-pilot/corythosaurus/output/images/poster-portrait.webp',
     ),
     thumbnail: repositoryFile(
-      'assets/candidates/animal-onboarding-2026-08-13-expansion-100/corythosaurus/output/thumbnail.webp',
+      'assets/candidates/animal-onboarding-2026-08-18-ai-pilot/corythosaurus/output/thumbnail.webp',
     ),
   },
   lambeosaurus: {

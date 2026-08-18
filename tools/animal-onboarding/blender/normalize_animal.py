@@ -75,6 +75,21 @@ EXPANSION_CATALOG = os.path.abspath(
     os.path.join(os.path.dirname(__file__), "..", "expansion-100.json"))
 
 
+def body_length_m(animal_id):
+    """Declared body length in metres. Hand-maintained entries win; the
+    expansion catalogue supplies the rest so a new animal does not need a code
+    edit just to record how long it is."""
+    if animal_id in BODY_LENGTHS_M:
+        return BODY_LENGTHS_M[animal_id]
+    entry = expansion_entry(animal_id)
+    if entry is None:
+        raise HardFail(f"no declared body length for {animal_id}")
+    length = entry.get("wingspan") or entry.get("length")
+    if not length:
+        raise HardFail(f"expansion entry for {animal_id} declares no length")
+    return float(length)
+
+
 def expansion_entry(animal_id):
     if not os.path.exists(EXPANSION_CATALOG):
         return None
@@ -243,7 +258,7 @@ def run_quaternius(profile_path, profile, profile_dir, source_path, log):
     animal_id = profile["id"]
     source_clip = profile["model"]["sourceClip"]
     habitat = profile["presentation"]["habitat"]
-    body_length = BODY_LENGTHS_M[animal_id]
+    body_length = body_length_m(animal_id)
     log.add(f"pipeline: rigged .blend source, keeping only '{source_clip}' retimed to 8 s")
 
     bpy.ops.wm.open_mainfile(filepath=source_path)
@@ -399,7 +414,7 @@ def sampled_quaternion_fcurve(
 def run_dunkleosteus(profile_path, profile, profile_dir, source_path, log):
     animal_id = profile["id"]
     habitat = profile["presentation"]["habitat"]
-    body_length = BODY_LENGTHS_M[animal_id]
+    body_length = body_length_m(animal_id)
     log.add(f"pipeline: unrigged static STL ({animal_id}) -> topology-budget "
             "check/decimate, author materials, synthesize 5-bone articulated "
             "spine chain + 8 s swim Idle")
@@ -557,7 +572,7 @@ def run_smilodon(profile_path, profile, profile_dir, source_path, log):
     rotate_to_production_forward([mesh], log, animal_id, apply=True)
     decimate_if_needed(mesh, 90_000, log)
     author_smilodon_materials(mesh, log)
-    scale_to_body_length([mesh], BODY_LENGTHS_M[animal_id], log, apply=True)
+    scale_to_body_length([mesh], body_length_m(animal_id), log, apply=True)
     coords = all_world_vertices()
     centre = (coords.min(axis=0) + coords.max(axis=0)) / 2.0
     mesh.location.x -= float(centre[0])
@@ -760,6 +775,16 @@ SCULPT_CONFIGS = {
         "headBones": ("teethtop1", "teethbot1"),
         "decimateTris": None,  # 20k-vert low mesh is already within budget
     },
+    "corythosaurus": {
+        # Hunyuan3D-2.1 shape inference (fixed seed) from the CC-BY-4.0
+        # TotalDino life restoration. The cleanup pass already merges doubles,
+        # drops floater islands and rotates the body onto Blender +Y with the
+        # crested skull at +Y, so no further orientation change is needed.
+        "keep": None,
+        "headSign": 1,
+        "headBones": (),
+        "decimateTris": 90_000,
+    },
     "velociraptor": {
         # Noximous CC-BY-4.0 STL (Raptor_Standing pose); broad skull end
         # measured at -Y, so the source is rotated 180 deg about Z.
@@ -778,7 +803,7 @@ def run_static_sculpt(profile_path, profile, profile_dir, source_path, log):
     animal_id = profile["id"]
     cfg = SCULPT_CONFIGS[animal_id]
     habitat = profile["presentation"]["habitat"]
-    body_length = BODY_LENGTHS_M[animal_id]
+    body_length = body_length_m(animal_id)
     log.add(f"pipeline: static sculpt ({animal_id}) -> keep configured meshes, "
             "author materials, optional normal bake, synthesize Body/Head/Tail "
             "rig + 8 s Idle")

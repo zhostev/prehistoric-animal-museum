@@ -1,0 +1,14 @@
+Corythosaurus model license record
+===================================
+
+Asset: Corythosaurus
+Creator: TotalDino
+License: Creative Commons Attribution 4.0 International (CC-BY-4.0)
+License URL: https://creativecommons.org/licenses/by/4.0/
+Source URL: https://commons.wikimedia.org/wiki/File:Corythosaurus_TD.png
+Accessed: 2026-08-18
+
+Attribution:
+“Corythosaurus” by TotalDino, CC-BY-4.0; modified for the Prehistoric Animal Museum.
+
+License evidence: Wikimedia Commons file page states Creative Commons Attribution 4.0 International, author TotalDino. The 3D mesh is a derivative work of that life restoration, produced by local single-image shape inference (Hunyuan3D-2.1 shape model, fixed seed 20260818, 50 steps, octree resolution 512, guidance 5.0); Tencent's licence claims no rights in model outputs, so the upstream CC-BY-4.0 grant governs and TotalDino is attributed.

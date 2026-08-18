@@ -1,0 +1,22 @@
+Corythosaurus background generation record
+==========================================
+
+Tool: Blender 4.5.12 (project-authored habitat scene, deterministic seed)
+Seed: 52597444
+Generated: 2026-08-18
+Use: project-specific responsive museum backgrounds
+
+The landscape and portrait were rendered as separate deterministic EEVEE Next
+passes from the project-authored habitat scene spec
+qa/derivatives-scene-spec.json (SHA-256 8ca48837f35c6ade7bed7e352d04325f807789fada29b2c7d823ef01f19a7a70).
+No animal, person, text, UI, logo, or watermark appears in the renders.
+
+Landscape runtime WebP: 14156 bytes (1920 × 1080)
+SHA-256: ea998c1a9a066c9a670ab0039bfe583d5a00ac2a231e136a480e6f03ee7bd360
+
+Portrait runtime WebP: 8030 bytes (1080 × 1920)
+SHA-256: b3d1bbb3042ab034facab687fc45b486d388722d80b7fbb119415a4ea1b76ffa
+
+The reviewed renders were encoded as lossy WebP at quality 82.
+The project owner approved public distribution on 2026-08-18.
+Recorded in approval-record.json: approved by zho on 2026-08-18.

@@ -94,6 +94,7 @@ describe('local collection review catalog', () => {
       'jaekelopterus',
       'smilodon',
       'spinosaurus',
+      'corythosaurus',
     ])
     expect(
       productionSlice
@@ -126,6 +127,7 @@ describe('local collection review catalog', () => {
       'jaekelopterus',
       'smilodon',
       'spinosaurus',
+      'corythosaurus',
     ])
     for (const animal of localReviewAnimals) {
       if (productionReviewIds.has(animal.id)) {
@@ -239,6 +241,7 @@ describe('local collection review catalog', () => {
       ['jaekelopterus', 'underwater'],
       ['smilodon', 'plains'],
       ['spinosaurus', 'plains'],
+      ['corythosaurus', 'forest'],
       ['allosaurus', 'plains'],
       ['brachiosaurus', 'forest'],
       ['quetzalcoatlus', 'plains'],
@@ -278,7 +281,6 @@ describe('local collection review catalog', () => {
       ['diabloceratops', 'plains'],
       ['iguanodon', 'forest'],
       ['edmontosaurus', 'plains'],
-      ['corythosaurus', 'forest'],
       ['lambeosaurus', 'forest'],
       ['gallimimus', 'plains'],
       ['psittacosaurus', 'forest'],

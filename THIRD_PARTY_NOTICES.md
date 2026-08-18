@@ -195,6 +195,93 @@ content, contributions, and Brand Assets follow the separate scopes in
   - Normalized the animal to a 3.2-unit total length with canonical transforms, centred horizontal bounds, and all four feet resting on the ground plane.
   - Authored one eight-second in-place morph-target Idle at 24 frames per second; all feet and lower limbs remain fixed, the loop closes exactly, and the head and open mouth move as one rigid region.
   - Verified zero foot drift, ground penetration, seam separation, new BVH overlap, collapsed triangles, and flipped triangles, then validator-checked and reviewed the derivative in the shared museum viewer.
+## 冠龙 (`corythosaurus`)
+
+### `audio/narration.en.mp3`
+
+- Asset type: narration
+- Source: Corythosaurus English narration, generated with Qwen3-TTS CustomVoice on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Qwen3-TTS output](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated English narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).
+- Runtime SHA-256: `5ecd1839895993c711bd385c20f7d6072147b89e77bf06bb06f13872b329fa4a`
+- Modifications:
+  - Generated offline from the exact reviewed two-sentence script.
+  - Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis.
+### `audio/narration.zh-CN.mp3`
+
+- Asset type: narration
+- Source: Corythosaurus Mandarin narration, generated with Qwen3-TTS CustomVoice on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Qwen3-TTS output](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Mandarin narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).
+- Runtime SHA-256: `a3282fd434373643b3dc3dca30c854fcd36ff8d5f47967064edd582ae46c44e4`
+- Modifications:
+  - Generated offline from the exact reviewed two-sentence script.
+  - Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis.
+### `backgrounds/landscape.webp`
+
+- Asset type: background
+- Source: Corythosaurus habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-18
+- License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Corythosaurus landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
+- Runtime SHA-256: `ea998c1a9a066c9a670ab0039bfe583d5a00ac2a231e136a480e6f03ee7bd360`
+- Modifications:
+  - Rendered the landscape pass deterministically from the project-authored habitat scene spec with EEVEE Next.
+  - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
+### `backgrounds/portrait.webp`
+
+- Asset type: background
+- Source: Corythosaurus habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-18
+- License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Corythosaurus portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
+- Runtime SHA-256: `b3d1bbb3042ab034facab687fc45b486d388722d80b7fbb119415a4ea1b76ffa`
+- Modifications:
+  - Rendered the portrait pass deterministically from the project-authored habitat scene spec with EEVEE Next.
+  - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
+### `images/poster-portrait.webp`
+
+- Asset type: poster
+- Source: Corythosaurus transparent portrait model still, derived on 2026-08-18
+- License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
+- Attribution: “Corythosaurus” by TotalDino, CC-BY-4.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `f77717422651aae076276df06e8a5785226be6e521a6740a09c72d70eb451350`
+- Modifications:
+  - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
+  - Encoded as exact lossless WebP without text, controls, labels, logos, or watermarks.
+### `images/poster.webp`
+
+- Asset type: poster
+- Source: Corythosaurus transparent model still, derived on 2026-08-18
+- License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
+- Attribution: “Corythosaurus” by TotalDino, CC-BY-4.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `3d9ae59860927a0a103910bc91cdb49d7d368a023f4e6c81f8aff7fc032a5698`
+- Modifications:
+  - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
+  - Encoded as lossless WebP without text, controls, labels, logos, or watermarks.
+### `images/thumbnail.webp`
+
+- Asset type: thumbnail
+- Source: Corythosaurus collection thumbnail, derived on 2026-08-18
+- License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
+- Attribution: “Corythosaurus” by TotalDino, CC-BY-4.0; modified for the Prehistoric Animal Museum. Scene art generated for this project.
+- Runtime SHA-256: `daccc951b75036a3834986ec561b1762b3b641bda0c115cf145ed1f8a3be7ca3`
+- Modifications:
+  - Selected a card-size crop that keeps the animal readable.
+  - Exported without embedded text, controls, labels, logos, or watermarks.
+### `model/model.glb`
+
+- Asset type: model
+- Source: [Corythosaurus](https://commons.wikimedia.org/wiki/File:Corythosaurus_TD.png) by TotalDino
+- License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
+- Attribution: “Corythosaurus” by TotalDino, CC-BY-4.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `a3701845691a31a43f914bcf068f61ef3ee6a0c24c9f29f1c122192c20642056`
+- Modifications:
+  - pipeline: static sculpt (corythosaurus) -> keep configured meshes, author materials, optional normal bake, synthesize Body/Head/Tail rig + 8 s Idle
+  - decimate: ratio 0.322995 (278642 -> 90000 tris, 44998 verts); <= 90000 target
+  - scale: source body length 1.9627 Blender units -> 9.0 m; uniform factor 4.585533 applied to mesh data
+  - grounding (land): shifted z by +1.71831 m so the lowest vertex rests at z=0
+  - armature synthesized: 3 bones ['Body', 'Head', 'Tail']
+  - Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys; Body breathes for two cycles at +/-1.8% width, +/-1.2% height, +/-0.4% length about a z=0 bone origin; Head combines a slow +/-5.5 deg look and two-cycle +/-2.0 deg nod; Tail combines a three-cycle +/-7.0 deg sway with a slow +/-1.5 deg lift; frame 192 repeats frame 0 exactly (seamless loop)
+  - mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
 ## 双冠龙 (`dilophosaurus`)
 
 ### `audio/narration.en.mp3`

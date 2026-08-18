@@ -251,6 +251,132 @@ export const credits = [
     ]
   },
   {
+    "id": "corythosaurus:audio/narration.en.mp3",
+    "animalId": "corythosaurus",
+    "assetPath": "audio/narration.en.mp3",
+    "assetKind": "narration",
+    "sourceTitle": "Corythosaurus English narration",
+    "author": "Qwen3-TTS CustomVoice",
+    "licenseName": "CC BY-NC-SA 4.0 project-owned Qwen3-TTS output",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attribution": "Project-generated English narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).",
+    "modifications": [
+      "Generated offline from the exact reviewed two-sentence script.",
+      "Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis."
+    ]
+  },
+  {
+    "id": "corythosaurus:audio/narration.zh-CN.mp3",
+    "animalId": "corythosaurus",
+    "assetPath": "audio/narration.zh-CN.mp3",
+    "assetKind": "narration",
+    "sourceTitle": "Corythosaurus Mandarin narration",
+    "author": "Qwen3-TTS CustomVoice",
+    "licenseName": "CC BY-NC-SA 4.0 project-owned Qwen3-TTS output",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attribution": "Project-generated Mandarin narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).",
+    "modifications": [
+      "Generated offline from the exact reviewed two-sentence script.",
+      "Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis."
+    ]
+  },
+  {
+    "id": "corythosaurus:backgrounds/landscape.webp",
+    "animalId": "corythosaurus",
+    "assetPath": "backgrounds/landscape.webp",
+    "assetKind": "background",
+    "sourceTitle": "Corythosaurus habitat scene — landscape",
+    "author": "Blender 4.5.12 (project-authored habitat scene, deterministic seed)",
+    "licenseName": "CC BY-NC-SA 4.0 project-owned Blender habitat render",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attribution": "Project-generated Corythosaurus landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.",
+    "modifications": [
+      "Rendered the landscape pass deterministically from the project-authored habitat scene spec with EEVEE Next.",
+      "Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks."
+    ]
+  },
+  {
+    "id": "corythosaurus:backgrounds/portrait.webp",
+    "animalId": "corythosaurus",
+    "assetPath": "backgrounds/portrait.webp",
+    "assetKind": "background",
+    "sourceTitle": "Corythosaurus habitat scene — portrait",
+    "author": "Blender 4.5.12 (project-authored habitat scene, deterministic seed)",
+    "licenseName": "CC BY-NC-SA 4.0 project-owned Blender habitat render",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attribution": "Project-generated Corythosaurus portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.",
+    "modifications": [
+      "Rendered the portrait pass deterministically from the project-authored habitat scene spec with EEVEE Next.",
+      "Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks."
+    ]
+  },
+  {
+    "id": "corythosaurus:images/poster-portrait.webp",
+    "animalId": "corythosaurus",
+    "assetPath": "images/poster-portrait.webp",
+    "assetKind": "poster",
+    "sourceTitle": "Corythosaurus transparent portrait model still",
+    "author": "Prehistoric Animal Museum",
+    "licenseName": "Creative Commons Attribution 4.0 International",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "“Corythosaurus” by TotalDino, CC-BY-4.0; modified for the Prehistoric Animal Museum.",
+    "modifications": [
+      "Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.",
+      "Encoded as exact lossless WebP without text, controls, labels, logos, or watermarks."
+    ]
+  },
+  {
+    "id": "corythosaurus:images/poster.webp",
+    "animalId": "corythosaurus",
+    "assetPath": "images/poster.webp",
+    "assetKind": "poster",
+    "sourceTitle": "Corythosaurus transparent model still",
+    "author": "Prehistoric Animal Museum",
+    "licenseName": "Creative Commons Attribution 4.0 International",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "“Corythosaurus” by TotalDino, CC-BY-4.0; modified for the Prehistoric Animal Museum.",
+    "modifications": [
+      "Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.",
+      "Encoded as lossless WebP without text, controls, labels, logos, or watermarks."
+    ]
+  },
+  {
+    "id": "corythosaurus:images/thumbnail.webp",
+    "animalId": "corythosaurus",
+    "assetPath": "images/thumbnail.webp",
+    "assetKind": "thumbnail",
+    "sourceTitle": "Corythosaurus collection thumbnail",
+    "author": "Prehistoric Animal Museum",
+    "licenseName": "Creative Commons Attribution 4.0 International",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "“Corythosaurus” by TotalDino, CC-BY-4.0; modified for the Prehistoric Animal Museum. Scene art generated for this project.",
+    "modifications": [
+      "Selected a card-size crop that keeps the animal readable.",
+      "Exported without embedded text, controls, labels, logos, or watermarks."
+    ]
+  },
+  {
+    "id": "corythosaurus:model/model.glb",
+    "animalId": "corythosaurus",
+    "assetPath": "model/model.glb",
+    "assetKind": "model",
+    "sourceTitle": "Corythosaurus",
+    "author": "TotalDino",
+    "licenseName": "Creative Commons Attribution 4.0 International",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Corythosaurus_TD.png",
+    "attribution": "“Corythosaurus” by TotalDino, CC-BY-4.0; modified for the Prehistoric Animal Museum.",
+    "modifications": [
+      "pipeline: static sculpt (corythosaurus) -> keep configured meshes, author materials, optional normal bake, synthesize Body/Head/Tail rig + 8 s Idle",
+      "decimate: ratio 0.322995 (278642 -> 90000 tris, 44998 verts); <= 90000 target",
+      "scale: source body length 1.9627 Blender units -> 9.0 m; uniform factor 4.585533 applied to mesh data",
+      "grounding (land): shifted z by +1.71831 m so the lowest vertex rests at z=0",
+      "armature synthesized: 3 bones ['Body', 'Head', 'Tail']",
+      "Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys; Body breathes for two cycles at +/-1.8% width, +/-1.2% height, +/-0.4% length about a z=0 bone origin; Head combines a slow +/-5.5 deg look and two-cycle +/-2.0 deg nod; Tail combines a three-cycle +/-7.0 deg sway with a slow +/-1.5 deg lift; frame 192 repeats frame 0 exactly (seamless loop)",
+      "mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only"
+    ]
+  },
+  {
     "id": "dilophosaurus:audio/narration.en.mp3",
     "animalId": "dilophosaurus",
     "assetPath": "audio/narration.en.mp3",

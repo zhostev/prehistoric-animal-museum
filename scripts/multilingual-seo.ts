@@ -9,6 +9,7 @@ import type { Plugin } from 'vite'
 import { animalSeoDescription } from '../src/content/animal-seo'
 import { animalDefinition as ammoniteDefinition } from '../src/content/animals/ammonite/package'
 import { animalDefinition as apatosaurusDefinition } from '../src/content/animals/apatosaurus/package'
+import { animalDefinition as corythosaurusDefinition } from '../src/content/animals/corythosaurus/package'
 import { animalDefinition as dilophosaurusDefinition } from '../src/content/animals/dilophosaurus/package'
 import { animalDefinition as dunkleosteusDefinition } from '../src/content/animals/dunkleosteus/package'
 import { animalDefinition as gigantoraptorDefinition } from '../src/content/animals/gigantoraptor/package'
@@ -109,6 +110,7 @@ const defaultOptions = {
 const canonicalAnimalDefinitions = [
   ammoniteDefinition,
   apatosaurusDefinition,
+  corythosaurusDefinition,
   dilophosaurusDefinition,
   dunkleosteusDefinition,
   gigantoraptorDefinition,

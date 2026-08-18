@@ -1,0 +1,24 @@
+Corythosaurus model source and modifications
+============================================
+
+Direct source:
+https://commons.wikimedia.org/wiki/File:Corythosaurus_TD.png
+
+Creator: TotalDino
+License: CC-BY-4.0
+Original downloaded source: 6965868 bytes (archive/chosen-model.ply)
+Original SHA-256:
+f0a9ba8f2f7fefe3d6ecb9e7f90c2bebcfc84427691b50ce9d2982d3e97082c8
+
+Modifications for the Prehistoric Animal Museum:
+- pipeline: static sculpt (corythosaurus) -> keep configured meshes, author materials, optional normal bake, synthesize Body/Head/Tail rig + 8 s Idle
+- decimate: ratio 0.322995 (278642 -> 90000 tris, 44998 verts); <= 90000 target
+- scale: source body length 1.9627 Blender units -> 9.0 m; uniform factor 4.585533 applied to mesh data
+- grounding (land): shifted z by +1.71831 m so the lowest vertex rests at z=0
+- armature synthesized: 3 bones ['Body', 'Head', 'Tail']
+- Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys; Body breathes for two cycles at +/-1.8% width, +/-1.2% height, +/-0.4% length about a z=0 bone origin; Head combines a slow +/-5.5 deg look and two-cycle +/-2.0 deg nod; Tail combines a three-cycle +/-7.0 deg sway with a slow +/-1.5 deg lift; frame 192 repeats frame 0 exactly (seamless loop)
+- mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
+
+Published runtime GLB: 3923372 bytes
+Published SHA-256:
+a3701845691a31a43f914bcf068f61ef3ee6a0c24c9f29f1c122192c20642056
