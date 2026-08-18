@@ -38,12 +38,12 @@ The museum follows the device language on a first visit. You can switch between 
 
 It is designed mainly for children aged 2–6 with a grown-up nearby, but curiosity matters more than the age label. If an image or sound feels uncomfortable, choose another animal or close the page.
 
-## 31 animals across sea, land, and sky
+## 25 animals across sea, land, and sky
 
 <details>
 <summary><strong>See the full collection</strong></summary>
 
-- **Land:** Stegosaurus, Pachycephalosaurus, Tyrannosaurus rex, Triceratops, Apatosaurus, Gigantoraptor, Woolly mammoth, Maiasaura, Sauropelta, Dilophosaurus, Velociraptor, Parasaurolophus, Smilodon, Spinosaurus, Allosaurus, Baryonyx, Carnotaurus, Ceratosaurus, Compsognathus, and Deinonychus.
+- **Land:** Stegosaurus, Pachycephalosaurus, Tyrannosaurus rex, Triceratops, Apatosaurus, Gigantoraptor, Woolly mammoth, Maiasaura, Sauropelta, Dilophosaurus, Velociraptor, Parasaurolophus, Smilodon, and Spinosaurus.
 - **Sky:** Pteranodon, Rhamphorhynchus, Tupandactylus, and Meganeura.
 - **Sea:** Ichthyosaurs, Plesiosaurs, Megalodon, Mosasaurus, Dunkleosteus, Ammonite scan, and Jaekelopterus.
 
