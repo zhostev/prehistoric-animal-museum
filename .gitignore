@@ -42,3 +42,5 @@ tools/animal-onboarding/**/*.py[cod]
 .env
 .env.*
 !.env.example
+*.glb.bak
+tmp/

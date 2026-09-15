@@ -1,0 +1,33 @@
+# 工业级动物建模生产管线配置文件
+
+meshy_settings:
+  api_endpoint: "https://api.meshy.ai"
+  default_model: "meshy-6"
+  text_to_3d:
+    art_style: "realistic"
+    enable_pbr: true
+    default_negative_prompt: "low quality, distorted, missing limbs, extra limbs, cartoonish, low poly, bad anatomy"
+  image_to_3d:
+    enable_pbr: true
+
+pipeline_standards:
+  sculpting:
+    target_polycount_range: [15000000, 30000000] # ZBrush 目标面数
+    displacement_format: "32-bit float EXR"
+  topology:
+    type: "All-Quad (全四边面)"
+    target_lowpoly_range: [25000, 60000] # 动画低模面数（视动物体型大小）
+  texturing:
+    udim_layout:
+      1001: "Head / Mouth / Eyes"
+      1002: "Body / Torso / Tail"
+      1003: "Limbs / Paws / Claws"
+      1004: "Horns / Teeth / Accessories"
+    default_resolution: 8192
+    texel_density: "40.96 px/cm"
+  grooming:
+    delivery_format: "Alembic (.abc) Hair Curves"
+    layers: ["Undercoat", "Guard_Hairs", "Whiskers"]
+  rigging:
+    type: "Quadruped IK/FK with Scapula Slide & Reverse Foot"
+    tissue_sim: "Ziva Dynamics / UE ML Deformer"

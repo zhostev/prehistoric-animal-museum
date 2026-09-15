@@ -335,6 +335,54 @@ def decimate_if_needed(mesh, target_tris, log):
     return after
 
 
+def decimate_scene_to_budget(meshes, target_tris, log):
+    """Spread a triangle budget across several meshes.
+
+    decimate_if_needed measures the whole scene but applies its modifier to one
+    mesh, which silently under-decimates a model split across body parts. Here
+    each mesh gets a share proportional to its own size, so a 2M-triangle head
+    is not flattened to the same absolute count as a 400-triangle eye. Meshes
+    below the floor are left untouched: teeth and eyes carry recognition value
+    far out of proportion to their triangle count."""
+    FLOOR = 2000
+    sizes = {m.name: len(m.data.loop_triangles) or len(m.data.polygons)
+             for m in meshes}
+    for m in meshes:
+        m.data.calc_loop_triangles()
+    sizes = {m.name: len(m.data.loop_triangles) for m in meshes}
+    total = sum(sizes.values())
+    if total <= target_tris:
+        log.add(f"decimation check: {total} triangles across {len(meshes)} "
+                f"mesh(es) <= {target_tris} target; topology retained")
+        return total
+    small = {n: c for n, c in sizes.items() if c <= FLOOR}
+    big = {n: c for n, c in sizes.items() if c > FLOOR}
+    remaining = target_tris - sum(small.values())
+    big_total = sum(big.values())
+    applied = []
+    for mesh in meshes:
+        count = sizes[mesh.name]
+        if count <= FLOOR:
+            applied.append((mesh.name, count, count))
+            continue
+        share = max(int(remaining * count / big_total), FLOOR)
+        if count <= share:
+            applied.append((mesh.name, count, count))
+            continue
+        modifier = mesh.modifiers.new("Decimate", "DECIMATE")
+        modifier.ratio = share / count
+        select_only([mesh])
+        bpy.ops.object.modifier_apply(modifier=modifier.name)
+        mesh.data.calc_loop_triangles()
+        applied.append((mesh.name, count, len(mesh.data.loop_triangles)))
+    after = sum(a[2] for a in applied)
+    log.add(f"decimate by budget: {total} -> {after} tris across "
+            f"{len(meshes)} mesh(es) {applied}; <= {target_tris} target")
+    if after > target_tris:
+        raise HardFail(f"decimation budget missed: {after} > {target_tris}")
+    return after
+
+
 def author_single_material(mesh, name, color, roughness, log):
     material = bpy.data.materials.new(name)
     material.diffuse_color = (*color, 1.0)
@@ -776,6 +824,26 @@ SCULPT_CONFIGS = {
         "headBones": ("teethtop1", "teethbot1"),
         "decimateTris": None,  # 20k-vert low mesh is already within budget
     },
+    "acrocanthosaurus": {
+        # Julian Johnson-Mortimer CC-BY-4.0 sculpt, the same author and account
+        # as the published spinosaurus. Chunk-split glTF pre-joined into one
+        # object per material; its painted textures are the reason for choosing
+        # it, so they are kept rather than replaced with flat slots.
+        "keep": {
+            "Head":  ("Head",  (0.30, 0.30, 0.26), 0.82),
+            "Body":  ("Body",  (0.30, 0.30, 0.26), 0.84),
+            "Tail":  ("Tail",  (0.30, 0.30, 0.26), 0.84),
+            "Legs":  ("Legs",  (0.28, 0.28, 0.24), 0.86),
+            "Teeth": ("Teeth", (0.82, 0.78, 0.66), 0.55),
+            "Eye":   ("Eye",   (0.10, 0.09, 0.07), 0.30),
+        },
+        "keepSourceMaterials": True,
+        # measured: Teeth centroid sits at -Y of the body midpoint, so the
+        # source faces away from the production convention
+        "headSign": -1,
+        "headBones": ("Head", "Teeth"),
+        "decimateTris": 90_000,
+    },
     "corythosaurus": {
         # Hunyuan3D-2.1 shape inference (fixed seed) from the CC-BY-4.0
         # TotalDino life restoration. The cleanup pass already merges doubles,
@@ -863,7 +931,12 @@ def run_static_sculpt(profile_path, profile, profile_dir, source_path, log):
     log.add("source object transforms applied into mesh data (import "
             "scale/rotation normalized; data now matches world space)")
 
-    if keep is not None:
+    if cfg.get("keepSourceMaterials"):
+        # The source already ships painted textures; replacing them with flat
+        # slots would throw away the whole reason for choosing this sculpt.
+        log.add("source materials retained (keepSourceMaterials); no flat "
+                "slot authoring; material quality remains human-reviewable")
+    elif keep is not None:
         author_sculpt_materials(keep, log)
     else:
         author_sculpt_materials(
@@ -882,7 +955,11 @@ def run_static_sculpt(profile_path, profile, profile_dir, source_path, log):
         log.add(f"normal-bake source '{normal_from}' removed after baking")
 
     if cfg["decimateTris"] is not None:
-        decimate_if_needed(meshes[0], cfg["decimateTris"], log)
+        meshes = scene_meshes()
+        if len(meshes) > 1:
+            decimate_scene_to_budget(meshes, cfg["decimateTris"], log)
+        else:
+            decimate_if_needed(meshes[0], cfg["decimateTris"], log)
 
     # A generated sculpt has no material regions. Apply the palette after
     # decimation so the per-polygon region assignment matches the exported
