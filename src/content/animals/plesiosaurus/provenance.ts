@@ -37,17 +37,17 @@ const baseProvenance = createPublishedAssetProvenance({
     landscape: {
       source: reviewedBackgroundSources.plesiosaurus.landscape,
       runtime: {
-        bytes: 42_220,
+        bytes: 496_852,
         sha256:
-          '36cc7edcf6f34366420c7fe98ed064656cd265377fb18829e385124d53c3db9f',
+          '4c21f7b51fc107505c3a732798b399bddbc9a7f990c6540200f308547836f205',
       },
     },
     portrait: {
       source: reviewedBackgroundSources.plesiosaurus.portrait,
       runtime: {
-        bytes: 62_060,
+        bytes: 311_458,
         sha256:
-          'a36bdf51a3f4ccb72f6c9f97bf13fef2de1c62af6ebd531b0567667fc001986e',
+          '942580a4195be0f806d69a1bc52fca8fdb8af1caf579929aab4df1375aad96f2',
       },
     },
   },
