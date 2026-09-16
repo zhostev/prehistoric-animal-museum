@@ -1,5 +1,5 @@
 {
-  "capturedAt": "2026-09-16T03:58:18.487Z",
+  "capturedAt": "2026-09-16T04:15:30.887Z",
   "collection": [
     "stegosaurus",
     "pteranodon",
@@ -44,7 +44,13 @@
     "ankylosaurus",
     "diplodocus",
     "microraptor",
-    "glyptodon"
+    "glyptodon",
+    "acrocanthosaurus",
+    "carcharodontosaurus",
+    "herrerasaurus",
+    "argentinosaurus",
+    "anhanguera",
+    "ophthalmosaurus"
   ],
   "originalIds": [
     "stegosaurus",

@@ -1007,6 +1007,9 @@ const reviewAnimalFiles: Readonly<
     backgroundPortrait: repositoryFile(
       'assets/candidates/animal-onboarding-2026-08-13-expansion-100/herrerasaurus/output/background-portrait.webp',
     ),
+    narration: repositoryFile(
+      'assets/candidates/animal-onboarding-2026-08-13-expansion-100/herrerasaurus/output/audio/narration.zh-CN.mp3',
+    ),
     poster: repositoryFile(
       'assets/candidates/animal-onboarding-2026-08-13-expansion-100/herrerasaurus/output/poster.webp',
     ),
@@ -1047,6 +1050,9 @@ const reviewAnimalFiles: Readonly<
     backgroundPortrait: repositoryFile(
       'assets/candidates/animal-onboarding-2026-08-13-expansion-100/acrocanthosaurus/output/background-portrait.webp',
     ),
+    narration: repositoryFile(
+      'assets/candidates/animal-onboarding-2026-08-13-expansion-100/acrocanthosaurus/output/audio/narration.zh-CN.mp3',
+    ),
     poster: repositoryFile(
       'assets/candidates/animal-onboarding-2026-08-13-expansion-100/acrocanthosaurus/output/poster.webp',
     ),
@@ -1066,6 +1072,9 @@ const reviewAnimalFiles: Readonly<
     ),
     backgroundPortrait: repositoryFile(
       'assets/candidates/animal-onboarding-2026-08-13-expansion-100/carcharodontosaurus/output/background-portrait.webp',
+    ),
+    narration: repositoryFile(
+      'assets/candidates/animal-onboarding-2026-08-13-expansion-100/carcharodontosaurus/output/audio/narration.zh-CN.mp3',
     ),
     poster: repositoryFile(
       'assets/candidates/animal-onboarding-2026-08-13-expansion-100/carcharodontosaurus/output/poster.webp',
@@ -1132,6 +1141,9 @@ const reviewAnimalFiles: Readonly<
     ),
     backgroundPortrait: repositoryFile(
       'assets/candidates/animal-onboarding-2026-08-13-expansion-100/argentinosaurus/output/background-portrait.webp',
+    ),
+    narration: repositoryFile(
+      'assets/candidates/animal-onboarding-2026-08-13-expansion-100/argentinosaurus/output/audio/narration.zh-CN.mp3',
     ),
     poster: repositoryFile(
       'assets/candidates/animal-onboarding-2026-08-13-expansion-100/argentinosaurus/output/poster.webp',
@@ -1562,6 +1574,9 @@ const reviewAnimalFiles: Readonly<
     backgroundPortrait: repositoryFile(
       'assets/candidates/animal-onboarding-2026-08-13-expansion-100/anhanguera/output/background-portrait.webp',
     ),
+    narration: repositoryFile(
+      'assets/candidates/animal-onboarding-2026-08-13-expansion-100/anhanguera/output/audio/narration.zh-CN.mp3',
+    ),
     poster: repositoryFile(
       'assets/candidates/animal-onboarding-2026-08-13-expansion-100/anhanguera/output/poster.webp',
     ),
@@ -1701,6 +1716,9 @@ const reviewAnimalFiles: Readonly<
     ),
     backgroundPortrait: repositoryFile(
       'assets/candidates/animal-onboarding-2026-08-13-expansion-100/ophthalmosaurus/output/background-portrait.webp',
+    ),
+    narration: repositoryFile(
+      'assets/candidates/animal-onboarding-2026-08-13-expansion-100/ophthalmosaurus/output/audio/narration.zh-CN.mp3',
     ),
     poster: repositoryFile(
       'assets/candidates/animal-onboarding-2026-08-13-expansion-100/ophthalmosaurus/output/poster.webp',

@@ -1,0 +1,18 @@
+Ophthalmosaurus poster and thumbnail derivation record
+========================================================
+
+Generated: 2026-08-17
+
+The 1200 × 675 poster and the
+390 × 844 portrait poster are deterministic
+runtime captures of the normalized model without text, controls, logos, or
+watermarks. The 320 × 320 thumbnail was
+captured from the accepted desktop review presentation after hiding all
+interface chrome.
+
+Poster SHA-256: 70742c7e976048e284d7baca21b2787f5c8bc100fad938af88339e96e4309c29 (12324 bytes)
+Portrait poster SHA-256: b870b15682ce78c04839c84329891ad644a12c795ce66ce86161451b6c5696ac (3320 bytes)
+Thumbnail SHA-256: 104618ba869270651890c4bbda9afe6dbac68d5bbc8c16b5bdd93b699994949c (2550 bytes)
+
+The model attribution and CC0-1.0 terms in model-license.txt
+continue to apply. The background generation record is retained separately.

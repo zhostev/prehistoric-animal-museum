@@ -1,0 +1,23 @@
+Carcharodontosaurus model source and modifications
+==================================================
+
+Direct source:
+project-authored (no upstream)
+
+Creator: Prehistoric Animal Museum (project-authored)
+License: CC0-1.0
+Original downloaded source: 101320 bytes (archive/chosen-model.glb)
+Original SHA-256:
+e888757a2eb42de54052fe6f3722287cf5386e92e529878ac266f1961850fcbc
+
+Modifications for the Prehistoric Animal Museum:
+- pipeline: project-authored expansion GLB (theropod, feature=deep-skull) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
+- scale: source body length 7.9097 Blender units -> 12.5 m; uniform factor 1.580330 applied to mesh data
+- grounding (land): shifted z by +0.88230 m so the lowest vertex rests at z=0
+- armature synthesized: 3 bones ['Body', 'Head', 'Tail']
+- Idle synthesized: frames 0..192 at 24 fps = 8.0 s, two-cycle body breathing, Head +/-5.5 deg, Tail +/-8.0 deg; habitat=land, vertical drift +/-0.0000 m; frame 192 repeats frame 0 exactly (seamless loop)
+- mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
+
+Published runtime GLB: 157088 bytes
+Published SHA-256:
+1d367a5651f27fe7bb57d9ca4b598a683a19ebf4d02de124e29d11d660752a82

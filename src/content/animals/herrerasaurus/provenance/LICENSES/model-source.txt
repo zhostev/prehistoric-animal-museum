@@ -1,0 +1,23 @@
+Herrerasaurus model source and modifications
+============================================
+
+Direct source:
+project-authored (no upstream)
+
+Creator: Prehistoric Animal Museum (project-authored)
+License: CC0-1.0
+Original downloaded source: 101836 bytes (archive/chosen-model.glb)
+Original SHA-256:
+1e5e8a684929eb2b66aac7496676e55cd61e6f3ec3fe82be61dfa40cf63c338a
+
+Modifications for the Prehistoric Animal Museum:
+- pipeline: project-authored expansion GLB (theropod, feature=primitive-slender) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
+- scale: source body length 7.9101 Blender units -> 4.5 m; uniform factor 0.568896 applied to mesh data
+- grounding (land): shifted z by -0.61040 m so the lowest vertex rests at z=0
+- armature synthesized: 3 bones ['Body', 'Head', 'Tail']
+- Idle synthesized: frames 0..192 at 24 fps = 8.0 s, two-cycle body breathing, Head +/-5.5 deg, Tail +/-8.0 deg; habitat=land, vertical drift +/-0.0000 m; frame 192 repeats frame 0 exactly (seamless loop)
+- mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
+
+Published runtime GLB: 157888 bytes
+Published SHA-256:
+c15565a8b98e5105b8797a24a8aeb7449428c124d05d3e75b5f8af91f17446c5

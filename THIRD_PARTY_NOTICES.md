@@ -25,6 +25,92 @@ content, contributions, and Brand Assets follow the separate scopes in
   Bundled from `@fontsource-variable/noto-sans-sc@5.3.0` under the
   [SIL Open Font License 1.1](LICENSES/OFL-1.1.txt).
 
+## 高棘龙 (`acrocanthosaurus`)
+
+### `audio/narration.en.mp3`
+
+- Asset type: narration
+- Source: Acrocanthosaurus English narration, generated with Qwen3-TTS CustomVoice on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Qwen3-TTS output](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated English narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).
+- Runtime SHA-256: `2e8360e1548b979f94a689c770c6caf272f8e0b30bb48065fb29eb8ca790823d`
+- Modifications:
+  - Generated offline from the exact reviewed two-sentence script.
+  - Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis.
+### `audio/narration.zh-CN.mp3`
+
+- Asset type: narration
+- Source: Acrocanthosaurus Mandarin narration, generated with Qwen3-TTS CustomVoice on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Qwen3-TTS output](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Mandarin narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).
+- Runtime SHA-256: `17d12ecb98e8d7d6737a7efcfb35dcccbc7f6587ad8f13c78de570697e8ed2d0`
+- Modifications:
+  - Generated offline from the exact reviewed two-sentence script.
+  - Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis.
+### `backgrounds/landscape.webp`
+
+- Asset type: background
+- Source: Acrocanthosaurus habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Acrocanthosaurus landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
+- Runtime SHA-256: `c02789618949e5f18f4c661a6a96714fd2caa8725a5a433dba6b9cc4c0d3d457`
+- Modifications:
+  - Rendered the landscape pass deterministically from the project-authored habitat scene spec with EEVEE Next.
+  - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
+### `backgrounds/portrait.webp`
+
+- Asset type: background
+- Source: Acrocanthosaurus habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Acrocanthosaurus portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
+- Runtime SHA-256: `87a7713dc2d31d39dd3bc4f676137802d4d6efa71bf33bcc4c468e1039a6e5d8`
+- Modifications:
+  - Rendered the portrait pass deterministically from the project-authored habitat scene spec with EEVEE Next.
+  - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
+### `images/poster-portrait.webp`
+
+- Asset type: poster
+- Source: Acrocanthosaurus transparent portrait model still, derived on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Acrocanthosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `5d6e35d14d518c78013a8cd16c340bf85fb218f4e55f100fdefcd0d22fe94703`
+- Modifications:
+  - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
+  - Encoded as exact lossless WebP without text, controls, labels, logos, or watermarks.
+### `images/poster.webp`
+
+- Asset type: poster
+- Source: Acrocanthosaurus transparent model still, derived on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Acrocanthosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `036aa517bb9846235a4f728155960db363f92e240941de08ecd95637df858ee4`
+- Modifications:
+  - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
+  - Encoded as lossless WebP without text, controls, labels, logos, or watermarks.
+### `images/thumbnail.webp`
+
+- Asset type: thumbnail
+- Source: Acrocanthosaurus collection thumbnail, derived on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Acrocanthosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum. Scene art generated for this project.
+- Runtime SHA-256: `23de3118c9ab3b4ce016882b4d0ba337a21e1997bbe217b9dbdf1d08a639ae1a`
+- Modifications:
+  - Selected a card-size crop that keeps the animal readable.
+  - Exported without embedded text, controls, labels, logos, or watermarks.
+### `model/model.glb`
+
+- Asset type: model
+- Source: Acrocanthosaurus deterministic procedural model source, generated with Blender Python generator authored by the Prehistoric Animal Museum on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Acrocanthosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `527fc5263af92946379aefad274af1d7ba57de85284d7d24213c4973ff504da3`
+- Modifications:
+  - pipeline: project-authored expansion GLB (theropod, feature=back-ridge) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
+  - scale: source body length 7.9101 Blender units -> 11.5 m; uniform factor 1.453845 applied to mesh data
+  - grounding (land): shifted z by +0.69563 m so the lowest vertex rests at z=0
+  - armature synthesized: 3 bones ['Body', 'Head', 'Tail']
+  - Idle synthesized: frames 0..192 at 24 fps = 8.0 s, two-cycle body breathing, Head +/-5.5 deg, Tail +/-8.0 deg; habitat=land, vertical drift +/-0.0000 m; frame 192 repeats frame 0 exactly (seamless loop)
+  - mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
 ## 阿尔伯塔龙 (`albertosaurus`)
 
 ### `audio/narration.en.mp3`
@@ -280,6 +366,91 @@ content, contributions, and Brand Assets follow the separate scopes in
   - pipeline: one-piece fossil-shell PLY scan (not a living-animal reconstruction) -> topology check, stone material, single-bone floating display Idle
   - armature synthesized: 1 bones ['Shell']
   - Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys; fossil-shell exhibit follows a bounded three-axis drift (+/-0.012/+/-0.006/+/-0.022 m) and layered one-/two-cycle rocking (+/-7.0/+/-3.0 deg); this is display motion, not invented living anatomy; frame 192 repeats frame 0 exactly
+  - mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
+## 古魔翼龙 (`anhanguera`)
+
+### `audio/narration.en.mp3`
+
+- Asset type: narration
+- Source: Anhanguera English narration, generated with Qwen3-TTS CustomVoice on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Qwen3-TTS output](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated English narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).
+- Runtime SHA-256: `58b2765c69c418c3b98e74cef578b019cca74a9448f1069734fb598e9edc67e8`
+- Modifications:
+  - Generated offline from the exact reviewed two-sentence script.
+  - Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis.
+### `audio/narration.zh-CN.mp3`
+
+- Asset type: narration
+- Source: Anhanguera Mandarin narration, generated with Qwen3-TTS CustomVoice on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Qwen3-TTS output](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Mandarin narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).
+- Runtime SHA-256: `1153156d1fe0e226f074c91eb66f634e33a22f77b1e0c9309e4980de2eba901d`
+- Modifications:
+  - Generated offline from the exact reviewed two-sentence script.
+  - Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis.
+### `backgrounds/landscape.webp`
+
+- Asset type: background
+- Source: Anhanguera habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Anhanguera landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
+- Runtime SHA-256: `60a92315d5a5546107d025f63a637da685ee6dc0e8cb9ca425a4b0f5631d2f3a`
+- Modifications:
+  - Rendered the landscape pass deterministically from the project-authored habitat scene spec with EEVEE Next.
+  - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
+### `backgrounds/portrait.webp`
+
+- Asset type: background
+- Source: Anhanguera habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Anhanguera portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
+- Runtime SHA-256: `8d4b724ec3c3400e67fed50e864ba3d2a337626206e72ff527d27ef75f499f03`
+- Modifications:
+  - Rendered the portrait pass deterministically from the project-authored habitat scene spec with EEVEE Next.
+  - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
+### `images/poster-portrait.webp`
+
+- Asset type: poster
+- Source: Anhanguera transparent portrait model still, derived on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Anhanguera” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `0e06f32781e1fb1d25fe6f5630e331598a76061c4e5bebb610e54c24977332b8`
+- Modifications:
+  - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
+  - Encoded as exact lossless WebP without text, controls, labels, logos, or watermarks.
+### `images/poster.webp`
+
+- Asset type: poster
+- Source: Anhanguera transparent model still, derived on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Anhanguera” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `d7264e1074d2b2d6ec559807e33ade54fc0b98418ab030bc144982db8d41fe69`
+- Modifications:
+  - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
+  - Encoded as lossless WebP without text, controls, labels, logos, or watermarks.
+### `images/thumbnail.webp`
+
+- Asset type: thumbnail
+- Source: Anhanguera collection thumbnail, derived on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Anhanguera” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum. Scene art generated for this project.
+- Runtime SHA-256: `d6515cae2dfddf4c5466231a91b8b13e9bd85b68e23231c7469f28beeafdc6e0`
+- Modifications:
+  - Selected a card-size crop that keeps the animal readable.
+  - Exported without embedded text, controls, labels, logos, or watermarks.
+### `model/model.glb`
+
+- Asset type: model
+- Source: Anhanguera deterministic procedural model source, generated with Blender Python generator authored by the Prehistoric Animal Museum on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Anhanguera” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `eaf33a31d3dbac2beea344565634e031c272c1566b091d15a4475cc837f25ecd`
+- Modifications:
+  - pipeline: project-authored expansion GLB (pterosaur, feature=jaw-crests) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
+  - scale: source body length 4.9748 Blender units -> 4.5 m; uniform factor 0.904553 applied to mesh data
+  - armature synthesized: 3 bones ['Body', 'Head', 'Tail']
+  - Idle synthesized: frames 0..192 at 24 fps = 8.0 s, two-cycle body breathing, Head +/-5.0 deg, Tail +/-7.5 deg; habitat=air, vertical drift +/-0.0360 m; frame 192 repeats frame 0 exactly (seamless loop)
   - mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
 ## 甲龙 (`ankylosaurus`)
 
@@ -538,6 +709,92 @@ content, contributions, and Brand Assets follow the separate scopes in
   - Normalized the animal to a 3.2-unit total length with canonical transforms, centred horizontal bounds, and all four feet resting on the ground plane.
   - Authored one eight-second in-place morph-target Idle at 24 frames per second; all feet and lower limbs remain fixed, the loop closes exactly, and the head and open mouth move as one rigid region.
   - Verified zero foot drift, ground penetration, seam separation, new BVH overlap, collapsed triangles, and flipped triangles, then validator-checked and reviewed the derivative in the shared museum viewer.
+## 阿根廷龙 (`argentinosaurus`)
+
+### `audio/narration.en.mp3`
+
+- Asset type: narration
+- Source: Argentinosaurus English narration, generated with Qwen3-TTS CustomVoice on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Qwen3-TTS output](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated English narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).
+- Runtime SHA-256: `7dccd775440dd2f82ec331b59ff6c125bb6995443d9bee8f6729c08ee3386246`
+- Modifications:
+  - Generated offline from the exact reviewed two-sentence script.
+  - Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis.
+### `audio/narration.zh-CN.mp3`
+
+- Asset type: narration
+- Source: Argentinosaurus Mandarin narration, generated with Qwen3-TTS CustomVoice on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Qwen3-TTS output](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Mandarin narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).
+- Runtime SHA-256: `47225da6501c58141a10ba07ff35726ea55d0c921b00b8ae42a1cca9d8605001`
+- Modifications:
+  - Generated offline from the exact reviewed two-sentence script.
+  - Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis.
+### `backgrounds/landscape.webp`
+
+- Asset type: background
+- Source: Argentinosaurus habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Argentinosaurus landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
+- Runtime SHA-256: `763b6105f6fb5ccba775b0857ca7d9a064f41e2c854bc5c576bc0658643458b1`
+- Modifications:
+  - Rendered the landscape pass deterministically from the project-authored habitat scene spec with EEVEE Next.
+  - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
+### `backgrounds/portrait.webp`
+
+- Asset type: background
+- Source: Argentinosaurus habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Argentinosaurus portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
+- Runtime SHA-256: `8a494f6bf368bc1d347014b35fb7fd67b29dae3dc7a1a7ea9dfa2de5b84c74e5`
+- Modifications:
+  - Rendered the portrait pass deterministically from the project-authored habitat scene spec with EEVEE Next.
+  - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
+### `images/poster-portrait.webp`
+
+- Asset type: poster
+- Source: Argentinosaurus transparent portrait model still, derived on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Argentinosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `b93bc0873809693c38554d36d5b07f1871631c1feadaf9c06931e66984cb0d53`
+- Modifications:
+  - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
+  - Encoded as exact lossless WebP without text, controls, labels, logos, or watermarks.
+### `images/poster.webp`
+
+- Asset type: poster
+- Source: Argentinosaurus transparent model still, derived on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Argentinosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `c160df6604587fc3679c5934212c861f887fae1019f64d9afa780e5aa2adbcdd`
+- Modifications:
+  - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
+  - Encoded as lossless WebP without text, controls, labels, logos, or watermarks.
+### `images/thumbnail.webp`
+
+- Asset type: thumbnail
+- Source: Argentinosaurus collection thumbnail, derived on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Argentinosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum. Scene art generated for this project.
+- Runtime SHA-256: `315ff4da70dca430a4022f152fc40a1b56b6b9af66361fc38af22a20d4a432a0`
+- Modifications:
+  - Selected a card-size crop that keeps the animal readable.
+  - Exported without embedded text, controls, labels, logos, or watermarks.
+### `model/model.glb`
+
+- Asset type: model
+- Source: Argentinosaurus deterministic procedural model source, generated with Blender Python generator authored by the Prehistoric Animal Museum on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Argentinosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `d66529f7ca107af604c861474aae83196975bfe082e3e08dd650bafa126764e8`
+- Modifications:
+  - pipeline: project-authored expansion GLB (sauropod, feature=giant-body) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
+  - scale: source body length 9.9082 Blender units -> 30.0 m; uniform factor 3.027787 applied to mesh data
+  - grounding (land): shifted z by +3.32674 m so the lowest vertex rests at z=0
+  - armature synthesized: 3 bones ['Body', 'Head', 'Tail']
+  - Idle synthesized: frames 0..192 at 24 fps = 8.0 s, two-cycle body breathing, Head +/-5.5 deg, Tail +/-8.0 deg; habitat=land, vertical drift +/-0.0000 m; frame 192 repeats frame 0 exactly (seamless loop)
+  - mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
 ## 重爪龙 (`baryonyx`)
 
 ### `audio/narration.en.mp3`
@@ -707,6 +964,92 @@ content, contributions, and Brand Assets follow the separate scopes in
   - pipeline: project-authored expansion GLB (sauropod, feature=high-shoulders) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
   - scale: source body length 9.9161 Blender units -> 22.0 m; uniform factor 2.218611 applied to mesh data
   - grounding (land): shifted z by +2.02343 m so the lowest vertex rests at z=0
+  - armature synthesized: 3 bones ['Body', 'Head', 'Tail']
+  - Idle synthesized: frames 0..192 at 24 fps = 8.0 s, two-cycle body breathing, Head +/-5.5 deg, Tail +/-8.0 deg; habitat=land, vertical drift +/-0.0000 m; frame 192 repeats frame 0 exactly (seamless loop)
+  - mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
+## 鲨齿龙 (`carcharodontosaurus`)
+
+### `audio/narration.en.mp3`
+
+- Asset type: narration
+- Source: Carcharodontosaurus English narration, generated with Qwen3-TTS CustomVoice on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Qwen3-TTS output](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated English narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).
+- Runtime SHA-256: `7f5a8be412f69c77380adfe2dad3aff00633931d059eb79937a27d53e769e8e6`
+- Modifications:
+  - Generated offline from the exact reviewed two-sentence script.
+  - Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis.
+### `audio/narration.zh-CN.mp3`
+
+- Asset type: narration
+- Source: Carcharodontosaurus Mandarin narration, generated with Qwen3-TTS CustomVoice on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Qwen3-TTS output](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Mandarin narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).
+- Runtime SHA-256: `eab7296208442e69009909ddc9a9fc797181995aa8a8fb8e7282b17d1bbd898c`
+- Modifications:
+  - Generated offline from the exact reviewed two-sentence script.
+  - Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis.
+### `backgrounds/landscape.webp`
+
+- Asset type: background
+- Source: Carcharodontosaurus habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Carcharodontosaurus landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
+- Runtime SHA-256: `c8984e50a69369b620b1782346919c7a7f6197c24917edca9e39ca349ae17c3b`
+- Modifications:
+  - Rendered the landscape pass deterministically from the project-authored habitat scene spec with EEVEE Next.
+  - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
+### `backgrounds/portrait.webp`
+
+- Asset type: background
+- Source: Carcharodontosaurus habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Carcharodontosaurus portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
+- Runtime SHA-256: `df31e71a98d8b2af904d4e709b8dc8793601096aaa10d61017b37f57019103e0`
+- Modifications:
+  - Rendered the portrait pass deterministically from the project-authored habitat scene spec with EEVEE Next.
+  - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
+### `images/poster-portrait.webp`
+
+- Asset type: poster
+- Source: Carcharodontosaurus transparent portrait model still, derived on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Carcharodontosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `1dc23450477f5a2a884b110bcce6134a414b295f76e156d9203e244dd5bca9f2`
+- Modifications:
+  - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
+  - Encoded as exact lossless WebP without text, controls, labels, logos, or watermarks.
+### `images/poster.webp`
+
+- Asset type: poster
+- Source: Carcharodontosaurus transparent model still, derived on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Carcharodontosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `f9e5b9795e28dac7bf5ecc3e09d24ae12ed69cfffed03f05f69cc8c79aed309e`
+- Modifications:
+  - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
+  - Encoded as lossless WebP without text, controls, labels, logos, or watermarks.
+### `images/thumbnail.webp`
+
+- Asset type: thumbnail
+- Source: Carcharodontosaurus collection thumbnail, derived on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Carcharodontosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum. Scene art generated for this project.
+- Runtime SHA-256: `3757b2a48c7a767b38865d8320fa12df7d6704daa388cb37793fe65c616e7bf3`
+- Modifications:
+  - Selected a card-size crop that keeps the animal readable.
+  - Exported without embedded text, controls, labels, logos, or watermarks.
+### `model/model.glb`
+
+- Asset type: model
+- Source: Carcharodontosaurus deterministic procedural model source, generated with Blender Python generator authored by the Prehistoric Animal Museum on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Carcharodontosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `1d367a5651f27fe7bb57d9ca4b598a683a19ebf4d02de124e29d11d660752a82`
+- Modifications:
+  - pipeline: project-authored expansion GLB (theropod, feature=deep-skull) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
+  - scale: source body length 7.9097 Blender units -> 12.5 m; uniform factor 1.580330 applied to mesh data
+  - grounding (land): shifted z by +0.88230 m so the lowest vertex rests at z=0
   - armature synthesized: 3 bones ['Body', 'Head', 'Tail']
   - Idle synthesized: frames 0..192 at 24 fps = 8.0 s, two-cycle body breathing, Head +/-5.5 deg, Tail +/-8.0 deg; habitat=land, vertical drift +/-0.0000 m; frame 192 repeats frame 0 exactly (seamless loop)
   - mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
@@ -1831,6 +2174,92 @@ content, contributions, and Brand Assets follow the separate scopes in
   - armature synthesized: 3 bones ['Body', 'Head', 'Tail']
   - Idle synthesized: frames 0..192 at 24 fps = 8.0 s, two-cycle body breathing, Head +/-5.5 deg, Tail +/-8.0 deg; habitat=land, vertical drift +/-0.0000 m; frame 192 repeats frame 0 exactly (seamless loop)
   - mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
+## 埃雷拉龙 (`herrerasaurus`)
+
+### `audio/narration.en.mp3`
+
+- Asset type: narration
+- Source: Herrerasaurus English narration, generated with Qwen3-TTS CustomVoice on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Qwen3-TTS output](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated English narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).
+- Runtime SHA-256: `e4999e1d4ed32cdadb80a01764a6d033d1a4748f852bff32e0c7c1f93e3dbfb1`
+- Modifications:
+  - Generated offline from the exact reviewed two-sentence script.
+  - Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis.
+### `audio/narration.zh-CN.mp3`
+
+- Asset type: narration
+- Source: Herrerasaurus Mandarin narration, generated with Qwen3-TTS CustomVoice on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Qwen3-TTS output](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Mandarin narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).
+- Runtime SHA-256: `2a581afa53e151d4573f860190482ac167a1e23b80dfce05663466aa2bfe6e95`
+- Modifications:
+  - Generated offline from the exact reviewed two-sentence script.
+  - Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis.
+### `backgrounds/landscape.webp`
+
+- Asset type: background
+- Source: Herrerasaurus habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Herrerasaurus landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
+- Runtime SHA-256: `bb0728ecd9d03c8de46d4f069cd3ec1db2cb5c9da9177440fd7918c2182fa41c`
+- Modifications:
+  - Rendered the landscape pass deterministically from the project-authored habitat scene spec with EEVEE Next.
+  - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
+### `backgrounds/portrait.webp`
+
+- Asset type: background
+- Source: Herrerasaurus habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Herrerasaurus portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
+- Runtime SHA-256: `1cacd96930611a6deda24fba530c9b7a1f7cc741624bbd0ab83560ea6b07cfdf`
+- Modifications:
+  - Rendered the portrait pass deterministically from the project-authored habitat scene spec with EEVEE Next.
+  - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
+### `images/poster-portrait.webp`
+
+- Asset type: poster
+- Source: Herrerasaurus transparent portrait model still, derived on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Herrerasaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `af118f999674533de265c0836abad2d53b094a1794eb69f37d5e8263e30e0553`
+- Modifications:
+  - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
+  - Encoded as exact lossless WebP without text, controls, labels, logos, or watermarks.
+### `images/poster.webp`
+
+- Asset type: poster
+- Source: Herrerasaurus transparent model still, derived on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Herrerasaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `8f735dfa75b75a40636d2ce0ad16c84a32af95aa78d969bb6e576bca3a699151`
+- Modifications:
+  - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
+  - Encoded as lossless WebP without text, controls, labels, logos, or watermarks.
+### `images/thumbnail.webp`
+
+- Asset type: thumbnail
+- Source: Herrerasaurus collection thumbnail, derived on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Herrerasaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum. Scene art generated for this project.
+- Runtime SHA-256: `8c225602c87f0ecdb582ca487198b15ebc384e8a1571b2f3ff2d18867e6ce2c6`
+- Modifications:
+  - Selected a card-size crop that keeps the animal readable.
+  - Exported without embedded text, controls, labels, logos, or watermarks.
+### `model/model.glb`
+
+- Asset type: model
+- Source: Herrerasaurus deterministic procedural model source, generated with Blender Python generator authored by the Prehistoric Animal Museum on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Herrerasaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `c15565a8b98e5105b8797a24a8aeb7449428c124d05d3e75b5f8af91f17446c5`
+- Modifications:
+  - pipeline: project-authored expansion GLB (theropod, feature=primitive-slender) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
+  - scale: source body length 7.9101 Blender units -> 4.5 m; uniform factor 0.568896 applied to mesh data
+  - grounding (land): shifted z by -0.61040 m so the lowest vertex rests at z=0
+  - armature synthesized: 3 bones ['Body', 'Head', 'Tail']
+  - Idle synthesized: frames 0..192 at 24 fps = 8.0 s, two-cycle body breathing, Head +/-5.5 deg, Tail +/-8.0 deg; habitat=land, vertical drift +/-0.0000 m; frame 192 repeats frame 0 exactly (seamless loop)
+  - mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
 ## 鱼龙类 (`ichthyosaur`)
 
 ### `audio/narration.en.mp3`
@@ -2604,6 +3033,91 @@ content, contributions, and Brand Assets follow the separate scopes in
   - Export one traceable, closed-loop, in-place project Idle. Operation: replace-runtime-animation.
   - Authored and validator-checked one closed eight-second marine-tail Idle for the shared museum viewer.
   - Included the human-reviewed source-rig partial mouth relaxation in the same Idle loop.
+## 大眼鱼龙 (`ophthalmosaurus`)
+
+### `audio/narration.en.mp3`
+
+- Asset type: narration
+- Source: Ophthalmosaurus English narration, generated with Qwen3-TTS CustomVoice on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Qwen3-TTS output](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated English narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).
+- Runtime SHA-256: `7e3b58879b0e9c05f3df36f7212ca6d5dcb26aea4da9fcb07faeab732460bfb0`
+- Modifications:
+  - Generated offline from the exact reviewed two-sentence script.
+  - Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis.
+### `audio/narration.zh-CN.mp3`
+
+- Asset type: narration
+- Source: Ophthalmosaurus Mandarin narration, generated with Qwen3-TTS CustomVoice on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Qwen3-TTS output](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Mandarin narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).
+- Runtime SHA-256: `6bd66a1916b895ba17b849c8bf5487ab8be573036ce9ad958b51828a7a120fb1`
+- Modifications:
+  - Generated offline from the exact reviewed two-sentence script.
+  - Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis.
+### `backgrounds/landscape.webp`
+
+- Asset type: background
+- Source: Ophthalmosaurus habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Ophthalmosaurus landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
+- Runtime SHA-256: `23c6fad5f726bc803bde005a9df3b986539a7f950d3d9867c3808a659437c527`
+- Modifications:
+  - Rendered the landscape pass deterministically from the project-authored habitat scene spec with EEVEE Next.
+  - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
+### `backgrounds/portrait.webp`
+
+- Asset type: background
+- Source: Ophthalmosaurus habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Ophthalmosaurus portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
+- Runtime SHA-256: `11329cb8686455c79332ffc3e7dcc10e22885e4ef3dee997c11e2bd5afd5c9d6`
+- Modifications:
+  - Rendered the portrait pass deterministically from the project-authored habitat scene spec with EEVEE Next.
+  - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
+### `images/poster-portrait.webp`
+
+- Asset type: poster
+- Source: Ophthalmosaurus transparent portrait model still, derived on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Ophthalmosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `b870b15682ce78c04839c84329891ad644a12c795ce66ce86161451b6c5696ac`
+- Modifications:
+  - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
+  - Encoded as exact lossless WebP without text, controls, labels, logos, or watermarks.
+### `images/poster.webp`
+
+- Asset type: poster
+- Source: Ophthalmosaurus transparent model still, derived on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Ophthalmosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `70742c7e976048e284d7baca21b2787f5c8bc100fad938af88339e96e4309c29`
+- Modifications:
+  - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
+  - Encoded as lossless WebP without text, controls, labels, logos, or watermarks.
+### `images/thumbnail.webp`
+
+- Asset type: thumbnail
+- Source: Ophthalmosaurus collection thumbnail, derived on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Ophthalmosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum. Scene art generated for this project.
+- Runtime SHA-256: `104618ba869270651890c4bbda9afe6dbac68d5bbc8c16b5bdd93b699994949c`
+- Modifications:
+  - Selected a card-size crop that keeps the animal readable.
+  - Exported without embedded text, controls, labels, logos, or watermarks.
+### `model/model.glb`
+
+- Asset type: model
+- Source: Ophthalmosaurus deterministic procedural model source, generated with Blender Python generator authored by the Prehistoric Animal Museum on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Ophthalmosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `cd1db1895700fdf4dd1492acd017fde6a168c1dc209a59718a9e404a8f2c3119`
+- Modifications:
+  - pipeline: project-authored expansion GLB (marine-fish, feature=giant-eyes) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
+  - scale: source body length 7.7133 Blender units -> 4.0 m; uniform factor 0.518588 applied to mesh data
+  - armature synthesized: 3 bones ['Body', 'Head', 'Tail']
+  - Idle synthesized: frames 0..192 at 24 fps = 8.0 s, two-cycle body breathing, Head +/-5.5 deg, Tail +/-11.0 deg; habitat=water, vertical drift +/-0.0240 m; frame 192 repeats frame 0 exactly (seamless loop)
+  - mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
 ## 肿头龙 (`pachycephalosaurus`)
 
 ### `audio/narration.en.mp3`

@@ -1,0 +1,18 @@
+Acrocanthosaurus poster and thumbnail derivation record
+=========================================================
+
+Generated: 2026-08-17
+
+The 1200 × 675 poster and the
+390 × 844 portrait poster are deterministic
+runtime captures of the normalized model without text, controls, logos, or
+watermarks. The 320 × 320 thumbnail was
+captured from the accepted desktop review presentation after hiding all
+interface chrome.
+
+Poster SHA-256: 036aa517bb9846235a4f728155960db363f92e240941de08ecd95637df858ee4 (13100 bytes)
+Portrait poster SHA-256: 5d6e35d14d518c78013a8cd16c340bf85fb218f4e55f100fdefcd0d22fe94703 (4226 bytes)
+Thumbnail SHA-256: 23de3118c9ab3b4ce016882b4d0ba337a21e1997bbe217b9dbdf1d08a639ae1a (3324 bytes)
+
+The model attribution and CC0-1.0 terms in model-license.txt
+continue to apply. The background generation record is retained separately.

@@ -1,0 +1,22 @@
+Ophthalmosaurus background generation record
+============================================
+
+Tool: Blender 4.5.12 (project-authored habitat scene, deterministic seed)
+Seed: 2275027316
+Generated: 2026-08-17
+Use: project-specific responsive museum backgrounds
+
+The landscape and portrait were rendered as separate deterministic EEVEE Next
+passes from the project-authored habitat scene spec
+qa/derivatives-scene-spec.json (SHA-256 ad8edab8d96220f0c83a544985065659b8262ddb6d9b27bf2aa52e9dd8a38da4).
+No animal, person, text, UI, logo, or watermark appears in the renders.
+
+Landscape runtime WebP: 26676 bytes (1920 × 1080)
+SHA-256: 23c6fad5f726bc803bde005a9df3b986539a7f950d3d9867c3808a659437c527
+
+Portrait runtime WebP: 19142 bytes (1080 × 1920)
+SHA-256: 11329cb8686455c79332ffc3e7dcc10e22885e4ef3dee997c11e2bd5afd5c9d6
+
+The reviewed renders were encoded as lossy WebP at quality 82.
+The project owner approved public distribution on 2026-08-17.
+Recorded in approval-record.json: approved by owner on 2026-08-17.

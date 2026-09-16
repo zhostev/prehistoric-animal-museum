@@ -7,14 +7,18 @@ import sharp from 'sharp'
 import type { Plugin } from 'vite'
 
 import { animalSeoDescription } from '../src/content/animal-seo'
+import { animalDefinition as acrocanthosaurusDefinition } from '../src/content/animals/acrocanthosaurus/package'
 import { animalDefinition as albertosaurusDefinition } from '../src/content/animals/albertosaurus/package'
 import { animalDefinition as allosaurusDefinition } from '../src/content/animals/allosaurus/package'
 import { animalDefinition as ammoniteDefinition } from '../src/content/animals/ammonite/package'
+import { animalDefinition as anhangueraDefinition } from '../src/content/animals/anhanguera/package'
 import { animalDefinition as ankylosaurusDefinition } from '../src/content/animals/ankylosaurus/package'
 import { animalDefinition as anomalocarisDefinition } from '../src/content/animals/anomalocaris/package'
 import { animalDefinition as apatosaurusDefinition } from '../src/content/animals/apatosaurus/package'
+import { animalDefinition as argentinosaurusDefinition } from '../src/content/animals/argentinosaurus/package'
 import { animalDefinition as baryonyxDefinition } from '../src/content/animals/baryonyx/package'
 import { animalDefinition as brachiosaurusDefinition } from '../src/content/animals/brachiosaurus/package'
+import { animalDefinition as carcharodontosaurusDefinition } from '../src/content/animals/carcharodontosaurus/package'
 import { animalDefinition as carnotaurusDefinition } from '../src/content/animals/carnotaurus/package'
 import { animalDefinition as ceratosaurusDefinition } from '../src/content/animals/ceratosaurus/package'
 import { animalDefinition as compsognathusDefinition } from '../src/content/animals/compsognathus/package'
@@ -28,6 +32,7 @@ import { animalDefinition as edmontosaurusDefinition } from '../src/content/anim
 import { animalDefinition as elasmosaurusDefinition } from '../src/content/animals/elasmosaurus/package'
 import { animalDefinition as gigantoraptorDefinition } from '../src/content/animals/gigantoraptor/package'
 import { animalDefinition as glyptodonDefinition } from '../src/content/animals/glyptodon/package'
+import { animalDefinition as herrerasaurusDefinition } from '../src/content/animals/herrerasaurus/package'
 import { animalDefinition as ichthyosaurDefinition } from '../src/content/animals/ichthyosaur/package'
 import { animalDefinition as jaekelopterusDefinition } from '../src/content/animals/jaekelopterus/package'
 import { animalDefinition as maiasauraDefinition } from '../src/content/animals/maiasaura/package'
@@ -37,6 +42,7 @@ import { animalDefinition as megalodonDefinition } from '../src/content/animals/
 import { animalDefinition as meganeuraDefinition } from '../src/content/animals/meganeura/package'
 import { animalDefinition as microraptorDefinition } from '../src/content/animals/microraptor/package'
 import { animalDefinition as mosasaurusDefinition } from '../src/content/animals/mosasaurus/package'
+import { animalDefinition as ophthalmosaurusDefinition } from '../src/content/animals/ophthalmosaurus/package'
 import { animalDefinition as pachycephalosaurusDefinition } from '../src/content/animals/pachycephalosaurus/package'
 import { animalDefinition as parasaurolophusDefinition } from '../src/content/animals/parasaurolophus/package'
 import { animalDefinition as plesiosaurusDefinition } from '../src/content/animals/plesiosaurus/package'
@@ -126,14 +132,18 @@ const defaultOptions = {
 } satisfies Required<MultilingualSeoOptions>
 
 const canonicalAnimalDefinitions = [
+  acrocanthosaurusDefinition,
   albertosaurusDefinition,
   allosaurusDefinition,
   ammoniteDefinition,
+  anhangueraDefinition,
   ankylosaurusDefinition,
   anomalocarisDefinition,
   apatosaurusDefinition,
+  argentinosaurusDefinition,
   baryonyxDefinition,
   brachiosaurusDefinition,
+  carcharodontosaurusDefinition,
   carnotaurusDefinition,
   ceratosaurusDefinition,
   compsognathusDefinition,
@@ -147,6 +157,7 @@ const canonicalAnimalDefinitions = [
   elasmosaurusDefinition,
   gigantoraptorDefinition,
   glyptodonDefinition,
+  herrerasaurusDefinition,
   ichthyosaurDefinition,
   jaekelopterusDefinition,
   maiasauraDefinition,
@@ -156,6 +167,7 @@ const canonicalAnimalDefinitions = [
   meganeuraDefinition,
   microraptorDefinition,
   mosasaurusDefinition,
+  ophthalmosaurusDefinition,
   pachycephalosaurusDefinition,
   parasaurolophusDefinition,
   plesiosaurusDefinition,

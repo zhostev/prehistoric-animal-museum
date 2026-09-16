@@ -1,0 +1,23 @@
+Argentinosaurus model source and modifications
+==============================================
+
+Direct source:
+project-authored (no upstream)
+
+Creator: Prehistoric Animal Museum (project-authored)
+License: CC0-1.0
+Original downloaded source: 140684 bytes (archive/chosen-model.glb)
+Original SHA-256:
+60119aac1355ac0608e936adc43824f4d74ac97f758785d82f5541d813fc1a6d
+
+Modifications for the Prehistoric Animal Museum:
+- pipeline: project-authored expansion GLB (sauropod, feature=giant-body) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
+- scale: source body length 9.9082 Blender units -> 30.0 m; uniform factor 3.027787 applied to mesh data
+- grounding (land): shifted z by +3.32674 m so the lowest vertex rests at z=0
+- armature synthesized: 3 bones ['Body', 'Head', 'Tail']
+- Idle synthesized: frames 0..192 at 24 fps = 8.0 s, two-cycle body breathing, Head +/-5.5 deg, Tail +/-8.0 deg; habitat=land, vertical drift +/-0.0000 m; frame 192 repeats frame 0 exactly (seamless loop)
+- mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
+
+Published runtime GLB: 214876 bytes
+Published SHA-256:
+d66529f7ca107af604c861474aae83196975bfe082e3e08dd650bafa126764e8

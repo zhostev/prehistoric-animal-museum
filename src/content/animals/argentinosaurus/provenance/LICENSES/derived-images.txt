@@ -1,0 +1,18 @@
+Argentinosaurus poster and thumbnail derivation record
+========================================================
+
+Generated: 2026-08-17
+
+The 1200 × 675 poster and the
+390 × 844 portrait poster are deterministic
+runtime captures of the normalized model without text, controls, logos, or
+watermarks. The 320 × 320 thumbnail was
+captured from the accepted desktop review presentation after hiding all
+interface chrome.
+
+Poster SHA-256: c160df6604587fc3679c5934212c861f887fae1019f64d9afa780e5aa2adbcdd (11060 bytes)
+Portrait poster SHA-256: b93bc0873809693c38554d36d5b07f1871631c1feadaf9c06931e66984cb0d53 (3324 bytes)
+Thumbnail SHA-256: 315ff4da70dca430a4022f152fc40a1b56b6b9af66361fc38af22a20d4a432a0 (2548 bytes)
+
+The model attribution and CC0-1.0 terms in model-license.txt
+continue to apply. The background generation record is retained separately.

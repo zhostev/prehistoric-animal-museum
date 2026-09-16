@@ -1,0 +1,22 @@
+Carcharodontosaurus background generation record
+================================================
+
+Tool: Blender 4.5.12 (project-authored habitat scene, deterministic seed)
+Seed: 3995409601
+Generated: 2026-08-17
+Use: project-specific responsive museum backgrounds
+
+The landscape and portrait were rendered as separate deterministic EEVEE Next
+passes from the project-authored habitat scene spec
+qa/derivatives-scene-spec.json (SHA-256 78dd74cf4f4ca85e43f766f25ea974c9ac5f456f4ca8afbc18287c218267c584).
+No animal, person, text, UI, logo, or watermark appears in the renders.
+
+Landscape runtime WebP: 16006 bytes (1920 × 1080)
+SHA-256: c8984e50a69369b620b1782346919c7a7f6197c24917edca9e39ca349ae17c3b
+
+Portrait runtime WebP: 9072 bytes (1080 × 1920)
+SHA-256: df31e71a98d8b2af904d4e709b8dc8793601096aaa10d61017b37f57019103e0
+
+The reviewed renders were encoded as lossy WebP at quality 82.
+The project owner approved public distribution on 2026-08-17.
+Recorded in approval-record.json: approved by owner on 2026-08-17.

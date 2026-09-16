@@ -1,0 +1,22 @@
+Herrerasaurus background generation record
+==========================================
+
+Tool: Blender 4.5.12 (project-authored habitat scene, deterministic seed)
+Seed: 3662375803
+Generated: 2026-08-17
+Use: project-specific responsive museum backgrounds
+
+The landscape and portrait were rendered as separate deterministic EEVEE Next
+passes from the project-authored habitat scene spec
+qa/derivatives-scene-spec.json (SHA-256 68726c88cfe23c02b19a481392d250c13ca0fddc1fcbc463ddb9a363e5800cc6).
+No animal, person, text, UI, logo, or watermark appears in the renders.
+
+Landscape runtime WebP: 15608 bytes (1920 × 1080)
+SHA-256: bb0728ecd9d03c8de46d4f069cd3ec1db2cb5c9da9177440fd7918c2182fa41c
+
+Portrait runtime WebP: 8592 bytes (1080 × 1920)
+SHA-256: 1cacd96930611a6deda24fba530c9b7a1f7cc741624bbd0ab83560ea6b07cfdf
+
+The reviewed renders were encoded as lossy WebP at quality 82.
+The project owner approved public distribution on 2026-08-17.
+Recorded in approval-record.json: approved by owner on 2026-08-17.

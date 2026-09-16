@@ -1,0 +1,22 @@
+Anhanguera background generation record
+=======================================
+
+Tool: Blender 4.5.12 (project-authored habitat scene, deterministic seed)
+Seed: 1089718641
+Generated: 2026-08-17
+Use: project-specific responsive museum backgrounds
+
+The landscape and portrait were rendered as separate deterministic EEVEE Next
+passes from the project-authored habitat scene spec
+qa/derivatives-scene-spec.json (SHA-256 6b89651389579528c9150d9ddc0e51147969c6767bc25c06d4f693625f26cff8).
+No animal, person, text, UI, logo, or watermark appears in the renders.
+
+Landscape runtime WebP: 15660 bytes (1920 × 1080)
+SHA-256: 60a92315d5a5546107d025f63a637da685ee6dc0e8cb9ca425a4b0f5631d2f3a
+
+Portrait runtime WebP: 9532 bytes (1080 × 1920)
+SHA-256: 8d4b724ec3c3400e67fed50e864ba3d2a337626206e72ff527d27ef75f499f03
+
+The reviewed renders were encoded as lossy WebP at quality 82.
+The project owner approved public distribution on 2026-08-17.
+Recorded in approval-record.json: approved by owner on 2026-08-17.

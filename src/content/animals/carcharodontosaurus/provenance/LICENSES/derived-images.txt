@@ -1,0 +1,18 @@
+Carcharodontosaurus poster and thumbnail derivation record
+============================================================
+
+Generated: 2026-08-17
+
+The 1200 × 675 poster and the
+390 × 844 portrait poster are deterministic
+runtime captures of the normalized model without text, controls, logos, or
+watermarks. The 320 × 320 thumbnail was
+captured from the accepted desktop review presentation after hiding all
+interface chrome.
+
+Poster SHA-256: f9e5b9795e28dac7bf5ecc3e09d24ae12ed69cfffed03f05f69cc8c79aed309e (11314 bytes)
+Portrait poster SHA-256: 1dc23450477f5a2a884b110bcce6134a414b295f76e156d9203e244dd5bca9f2 (3310 bytes)
+Thumbnail SHA-256: 3757b2a48c7a767b38865d8320fa12df7d6704daa388cb37793fe65c616e7bf3 (2294 bytes)
+
+The model attribution and CC0-1.0 terms in model-license.txt
+continue to apply. The background generation record is retained separately.

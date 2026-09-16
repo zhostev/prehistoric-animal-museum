@@ -1,0 +1,18 @@
+Anhanguera poster and thumbnail derivation record
+===================================================
+
+Generated: 2026-08-17
+
+The 1200 × 675 poster and the
+390 × 844 portrait poster are deterministic
+runtime captures of the normalized model without text, controls, logos, or
+watermarks. The 320 × 320 thumbnail was
+captured from the accepted desktop review presentation after hiding all
+interface chrome.
+
+Poster SHA-256: d7264e1074d2b2d6ec559807e33ade54fc0b98418ab030bc144982db8d41fe69 (11294 bytes)
+Portrait poster SHA-256: 0e06f32781e1fb1d25fe6f5630e331598a76061c4e5bebb610e54c24977332b8 (3492 bytes)
+Thumbnail SHA-256: d6515cae2dfddf4c5466231a91b8b13e9bd85b68e23231c7469f28beeafdc6e0 (2540 bytes)
+
+The model attribution and CC0-1.0 terms in model-license.txt
+continue to apply. The background generation record is retained separately.

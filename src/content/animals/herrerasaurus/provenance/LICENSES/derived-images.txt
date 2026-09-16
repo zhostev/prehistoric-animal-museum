@@ -1,0 +1,18 @@
+Herrerasaurus poster and thumbnail derivation record
+======================================================
+
+Generated: 2026-08-17
+
+The 1200 × 675 poster and the
+390 × 844 portrait poster are deterministic
+runtime captures of the normalized model without text, controls, logos, or
+watermarks. The 320 × 320 thumbnail was
+captured from the accepted desktop review presentation after hiding all
+interface chrome.
+
+Poster SHA-256: 8f735dfa75b75a40636d2ce0ad16c84a32af95aa78d969bb6e576bca3a699151 (11258 bytes)
+Portrait poster SHA-256: af118f999674533de265c0836abad2d53b094a1794eb69f37d5e8263e30e0553 (3328 bytes)
+Thumbnail SHA-256: 8c225602c87f0ecdb582ca487198b15ebc384e8a1571b2f3ff2d18867e6ce2c6 (2264 bytes)
+
+The model attribution and CC0-1.0 terms in model-license.txt
+continue to apply. The background generation record is retained separately.
