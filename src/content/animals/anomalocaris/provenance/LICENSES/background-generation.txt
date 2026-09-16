@@ -1,0 +1,22 @@
+Anomalocaris background generation record
+=========================================
+
+Tool: Blender 4.5.12 (project-authored habitat scene, deterministic seed)
+Seed: 1295954034
+Generated: 2026-08-17
+Use: project-specific responsive museum backgrounds
+
+The landscape and portrait were rendered as separate deterministic EEVEE Next
+passes from the project-authored habitat scene spec
+qa/derivatives-scene-spec.json (SHA-256 7fb731a441865201c45148d62eef452a3ad4fa1abcc86e4a9972695600da27d8).
+No animal, person, text, UI, logo, or watermark appears in the renders.
+
+Landscape runtime WebP: 23944 bytes (1920 × 1080)
+SHA-256: 80ec58267fe0a7c7964480e8d60dd815529d9b9178c3d1553175f450919ebab9
+
+Portrait runtime WebP: 7740 bytes (1080 × 1920)
+SHA-256: c0d2b637e876c70820555f7b9f8209a7a542a6281cf7cf6eea08e27b065503e3
+
+The reviewed renders were encoded as lossy WebP at quality 82.
+The project owner approved public distribution on 2026-08-17.
+Recorded in approval-record.json: approved by owner on 2026-08-17.

@@ -1,0 +1,22 @@
+Quetzalcoatlus background generation record
+===========================================
+
+Tool: Blender 4.5.12 (project-authored habitat scene, deterministic seed)
+Seed: 3725393474
+Generated: 2026-08-17
+Use: project-specific responsive museum backgrounds
+
+The landscape and portrait were rendered as separate deterministic EEVEE Next
+passes from the project-authored habitat scene spec
+qa/derivatives-scene-spec.json (SHA-256 e462acf986a0081875e854141c4391ad9bc764220b334748679db85e8b62268d).
+No animal, person, text, UI, logo, or watermark appears in the renders.
+
+Landscape runtime WebP: 13616 bytes (1920 × 1080)
+SHA-256: ee73253d125a02f0254b858480364b78546771962706c614878a6ef48d261969
+
+Portrait runtime WebP: 8716 bytes (1080 × 1920)
+SHA-256: 2962ea2855554c768cce58627e83e335497d6dd7d9d58f17df3b3554e00bf361
+
+The reviewed renders were encoded as lossy WebP at quality 82.
+The project owner approved public distribution on 2026-08-17.
+Recorded in approval-record.json: approved by owner on 2026-08-17.

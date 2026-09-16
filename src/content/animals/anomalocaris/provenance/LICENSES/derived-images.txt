@@ -1,0 +1,18 @@
+Anomalocaris poster and thumbnail derivation record
+=====================================================
+
+Generated: 2026-08-17
+
+The 1200 × 675 poster and the
+390 × 844 portrait poster are deterministic
+runtime captures of the normalized model without text, controls, logos, or
+watermarks. The 320 × 320 thumbnail was
+captured from the accepted desktop review presentation after hiding all
+interface chrome.
+
+Poster SHA-256: 2c5d53fc4a16ee7ef8f5c003bf4ee8bc1bc4d607836baa43c4e968cfce774d7f (14346 bytes)
+Portrait poster SHA-256: bc7f3125ce93f0642cd62b2a1dc45851eb27031397587af2aad2cda40590b925 (3802 bytes)
+Thumbnail SHA-256: f7b82aea0bcf53bb1b4b178822a621c447aa9039754f1bb02c3a339cecfb6f54 (2568 bytes)
+
+The model attribution and CC0-1.0 terms in model-license.txt
+continue to apply. The background generation record is retained separately.

@@ -1,0 +1,22 @@
+Elasmosaurus model source and modifications
+===========================================
+
+Direct source:
+project-authored (no upstream)
+
+Creator: Prehistoric Animal Museum (project-authored)
+License: CC0-1.0
+Original downloaded source: 108296 bytes (archive/chosen-model.glb)
+Original SHA-256:
+886cea3d83a953c28ad79846188a9e20e809906f4d78f07d515433758b04054b
+
+Modifications for the Prehistoric Animal Museum:
+- pipeline: project-authored expansion GLB (marine-longneck, feature=very-long-neck) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
+- scale: source body length 9.0614 Blender units -> 10.5 m; uniform factor 1.158755 applied to mesh data
+- armature synthesized: 3 bones ['Body', 'Head', 'Tail']
+- Idle synthesized: frames 0..192 at 24 fps = 8.0 s, two-cycle body breathing, Head +/-5.5 deg, Tail +/-11.0 deg; habitat=water, vertical drift +/-0.0630 m; frame 192 repeats frame 0 exactly (seamless loop)
+- mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
+
+Published runtime GLB: 171832 bytes
+Published SHA-256:
+10f1942555291a00846186fcd884681f980c993325065b2d01178f9be6238728

@@ -1,0 +1,18 @@
+Megaloceros poster and thumbnail derivation record
+====================================================
+
+Generated: 2026-08-17
+
+The 1200 × 675 poster and the
+390 × 844 portrait poster are deterministic
+runtime captures of the normalized model without text, controls, logos, or
+watermarks. The 320 × 320 thumbnail was
+captured from the accepted desktop review presentation after hiding all
+interface chrome.
+
+Poster SHA-256: b34954e3e2720c16283f6a42b0fa45f5c2cdde1d61d2b3f2b7bb9ec6e50b047c (12188 bytes)
+Portrait poster SHA-256: 95923d21152537676b27c9e7558079dcee7e23a604e00dd4e00f05dbc1cb0215 (3872 bytes)
+Thumbnail SHA-256: c8f7d1eb0b9e97bb8987624184a2a5fe0dad1071d33b2b3ed544fec4e9dcbe79 (2798 bytes)
+
+The model attribution and CC0-1.0 terms in model-license.txt
+continue to apply. The background generation record is retained separately.

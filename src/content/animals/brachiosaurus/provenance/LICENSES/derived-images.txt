@@ -1,0 +1,18 @@
+Brachiosaurus poster and thumbnail derivation record
+======================================================
+
+Generated: 2026-08-17
+
+The 1200 × 675 poster and the
+390 × 844 portrait poster are deterministic
+runtime captures of the normalized model without text, controls, logos, or
+watermarks. The 320 × 320 thumbnail was
+captured from the accepted desktop review presentation after hiding all
+interface chrome.
+
+Poster SHA-256: 4202a6ea39038285bae9e99a6a4ceaa24ab0e19d200de76520742d44f77b4348 (11556 bytes)
+Portrait poster SHA-256: b50d3020b9582b3218b7097ae96087a1ec0f131c27d275bfe7cab27753a1f780 (3616 bytes)
+Thumbnail SHA-256: 80674747792ddfae7c1ebcae4181b9d4d4825b7dc0242cf30b0fb6360587705f (2588 bytes)
+
+The model attribution and CC0-1.0 terms in model-license.txt
+continue to apply. The background generation record is retained separately.

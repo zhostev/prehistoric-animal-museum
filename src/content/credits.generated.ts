@@ -3,6 +3,130 @@ import type { CreditEntry } from './types'
 
 export const credits = [
   {
+    "id": "allosaurus:audio/narration.en.mp3",
+    "animalId": "allosaurus",
+    "assetPath": "audio/narration.en.mp3",
+    "assetKind": "narration",
+    "sourceTitle": "Allosaurus English narration",
+    "author": "Qwen3-TTS CustomVoice",
+    "licenseName": "CC BY-NC-SA 4.0 project-owned Qwen3-TTS output",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attribution": "Project-generated English narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).",
+    "modifications": [
+      "Generated offline from the exact reviewed two-sentence script.",
+      "Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis."
+    ]
+  },
+  {
+    "id": "allosaurus:audio/narration.zh-CN.mp3",
+    "animalId": "allosaurus",
+    "assetPath": "audio/narration.zh-CN.mp3",
+    "assetKind": "narration",
+    "sourceTitle": "Allosaurus Mandarin narration",
+    "author": "Qwen3-TTS CustomVoice",
+    "licenseName": "CC BY-NC-SA 4.0 project-owned Qwen3-TTS output",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attribution": "Project-generated Mandarin narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).",
+    "modifications": [
+      "Generated offline from the exact reviewed two-sentence script.",
+      "Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis."
+    ]
+  },
+  {
+    "id": "allosaurus:backgrounds/landscape.webp",
+    "animalId": "allosaurus",
+    "assetPath": "backgrounds/landscape.webp",
+    "assetKind": "background",
+    "sourceTitle": "Allosaurus habitat scene — landscape",
+    "author": "Blender 4.5.12 (project-authored habitat scene, deterministic seed)",
+    "licenseName": "CC BY-NC-SA 4.0 project-owned Blender habitat render",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attribution": "Project-generated Allosaurus landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.",
+    "modifications": [
+      "Rendered the landscape pass deterministically from the project-authored habitat scene spec with EEVEE Next.",
+      "Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks."
+    ]
+  },
+  {
+    "id": "allosaurus:backgrounds/portrait.webp",
+    "animalId": "allosaurus",
+    "assetPath": "backgrounds/portrait.webp",
+    "assetKind": "background",
+    "sourceTitle": "Allosaurus habitat scene — portrait",
+    "author": "Blender 4.5.12 (project-authored habitat scene, deterministic seed)",
+    "licenseName": "CC BY-NC-SA 4.0 project-owned Blender habitat render",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attribution": "Project-generated Allosaurus portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.",
+    "modifications": [
+      "Rendered the portrait pass deterministically from the project-authored habitat scene spec with EEVEE Next.",
+      "Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks."
+    ]
+  },
+  {
+    "id": "allosaurus:images/poster-portrait.webp",
+    "animalId": "allosaurus",
+    "assetPath": "images/poster-portrait.webp",
+    "assetKind": "poster",
+    "sourceTitle": "Allosaurus transparent portrait model still",
+    "author": "Prehistoric Animal Museum",
+    "licenseName": "CC0 1.0 Universal Public Domain Dedication",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "attribution": "“Allosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.",
+    "modifications": [
+      "Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.",
+      "Encoded as exact lossless WebP without text, controls, labels, logos, or watermarks."
+    ]
+  },
+  {
+    "id": "allosaurus:images/poster.webp",
+    "animalId": "allosaurus",
+    "assetPath": "images/poster.webp",
+    "assetKind": "poster",
+    "sourceTitle": "Allosaurus transparent model still",
+    "author": "Prehistoric Animal Museum",
+    "licenseName": "CC0 1.0 Universal Public Domain Dedication",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "attribution": "“Allosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.",
+    "modifications": [
+      "Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.",
+      "Encoded as lossless WebP without text, controls, labels, logos, or watermarks."
+    ]
+  },
+  {
+    "id": "allosaurus:images/thumbnail.webp",
+    "animalId": "allosaurus",
+    "assetPath": "images/thumbnail.webp",
+    "assetKind": "thumbnail",
+    "sourceTitle": "Allosaurus collection thumbnail",
+    "author": "Prehistoric Animal Museum",
+    "licenseName": "CC0 1.0 Universal Public Domain Dedication",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "attribution": "“Allosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum. Scene art generated for this project.",
+    "modifications": [
+      "Selected a card-size crop that keeps the animal readable.",
+      "Exported without embedded text, controls, labels, logos, or watermarks."
+    ]
+  },
+  {
+    "id": "allosaurus:model/model.glb",
+    "animalId": "allosaurus",
+    "assetPath": "model/model.glb",
+    "assetKind": "model",
+    "sourceTitle": "Allosaurus deterministic procedural model source",
+    "author": "Blender Python generator authored by the Prehistoric Animal Museum",
+    "licenseName": "CC0 1.0 Universal Public Domain Dedication",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "attribution": "“Allosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.",
+    "modifications": [
+      "pipeline: project-authored expansion GLB (theropod, feature=brow-horns) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle",
+      "scale: source body length 7.9101 Blender units -> 9.0 m; uniform factor 1.137792 applied to mesh data",
+      "grounding (land): shifted z by +0.22919 m so the lowest vertex rests at z=0",
+      "armature synthesized: 3 bones ['Body', 'Head', 'Tail']",
+      "Idle synthesized: frames 0..192 at 24 fps = 8.0 s, two-cycle body breathing, Head +/-5.5 deg, Tail +/-8.0 deg; habitat=land, vertical drift +/-0.0000 m; frame 192 repeats frame 0 exactly (seamless loop)",
+      "mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only"
+    ]
+  },
+  {
     "id": "ammonite:audio/narration.en.mp3",
     "animalId": "ammonite",
     "assetPath": "audio/narration.en.mp3",
@@ -122,6 +246,129 @@ export const credits = [
       "pipeline: one-piece fossil-shell PLY scan (not a living-animal reconstruction) -> topology check, stone material, single-bone floating display Idle",
       "armature synthesized: 1 bones ['Shell']",
       "Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys; fossil-shell exhibit follows a bounded three-axis drift (+/-0.012/+/-0.006/+/-0.022 m) and layered one-/two-cycle rocking (+/-7.0/+/-3.0 deg); this is display motion, not invented living anatomy; frame 192 repeats frame 0 exactly",
+      "mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only"
+    ]
+  },
+  {
+    "id": "anomalocaris:audio/narration.en.mp3",
+    "animalId": "anomalocaris",
+    "assetPath": "audio/narration.en.mp3",
+    "assetKind": "narration",
+    "sourceTitle": "Anomalocaris English narration",
+    "author": "Qwen3-TTS CustomVoice",
+    "licenseName": "CC BY-NC-SA 4.0 project-owned Qwen3-TTS output",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attribution": "Project-generated English narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).",
+    "modifications": [
+      "Generated offline from the exact reviewed two-sentence script.",
+      "Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis."
+    ]
+  },
+  {
+    "id": "anomalocaris:audio/narration.zh-CN.mp3",
+    "animalId": "anomalocaris",
+    "assetPath": "audio/narration.zh-CN.mp3",
+    "assetKind": "narration",
+    "sourceTitle": "Anomalocaris Mandarin narration",
+    "author": "Qwen3-TTS CustomVoice",
+    "licenseName": "CC BY-NC-SA 4.0 project-owned Qwen3-TTS output",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attribution": "Project-generated Mandarin narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).",
+    "modifications": [
+      "Generated offline from the exact reviewed two-sentence script.",
+      "Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis."
+    ]
+  },
+  {
+    "id": "anomalocaris:backgrounds/landscape.webp",
+    "animalId": "anomalocaris",
+    "assetPath": "backgrounds/landscape.webp",
+    "assetKind": "background",
+    "sourceTitle": "Anomalocaris habitat scene — landscape",
+    "author": "Blender 4.5.12 (project-authored habitat scene, deterministic seed)",
+    "licenseName": "CC BY-NC-SA 4.0 project-owned Blender habitat render",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attribution": "Project-generated Anomalocaris landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.",
+    "modifications": [
+      "Rendered the landscape pass deterministically from the project-authored habitat scene spec with EEVEE Next.",
+      "Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks."
+    ]
+  },
+  {
+    "id": "anomalocaris:backgrounds/portrait.webp",
+    "animalId": "anomalocaris",
+    "assetPath": "backgrounds/portrait.webp",
+    "assetKind": "background",
+    "sourceTitle": "Anomalocaris habitat scene — portrait",
+    "author": "Blender 4.5.12 (project-authored habitat scene, deterministic seed)",
+    "licenseName": "CC BY-NC-SA 4.0 project-owned Blender habitat render",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attribution": "Project-generated Anomalocaris portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.",
+    "modifications": [
+      "Rendered the portrait pass deterministically from the project-authored habitat scene spec with EEVEE Next.",
+      "Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks."
+    ]
+  },
+  {
+    "id": "anomalocaris:images/poster-portrait.webp",
+    "animalId": "anomalocaris",
+    "assetPath": "images/poster-portrait.webp",
+    "assetKind": "poster",
+    "sourceTitle": "Anomalocaris transparent portrait model still",
+    "author": "Prehistoric Animal Museum",
+    "licenseName": "CC0 1.0 Universal Public Domain Dedication",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "attribution": "“Anomalocaris” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.",
+    "modifications": [
+      "Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.",
+      "Encoded as exact lossless WebP without text, controls, labels, logos, or watermarks."
+    ]
+  },
+  {
+    "id": "anomalocaris:images/poster.webp",
+    "animalId": "anomalocaris",
+    "assetPath": "images/poster.webp",
+    "assetKind": "poster",
+    "sourceTitle": "Anomalocaris transparent model still",
+    "author": "Prehistoric Animal Museum",
+    "licenseName": "CC0 1.0 Universal Public Domain Dedication",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "attribution": "“Anomalocaris” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.",
+    "modifications": [
+      "Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.",
+      "Encoded as lossless WebP without text, controls, labels, logos, or watermarks."
+    ]
+  },
+  {
+    "id": "anomalocaris:images/thumbnail.webp",
+    "animalId": "anomalocaris",
+    "assetPath": "images/thumbnail.webp",
+    "assetKind": "thumbnail",
+    "sourceTitle": "Anomalocaris collection thumbnail",
+    "author": "Prehistoric Animal Museum",
+    "licenseName": "CC0 1.0 Universal Public Domain Dedication",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "attribution": "“Anomalocaris” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum. Scene art generated for this project.",
+    "modifications": [
+      "Selected a card-size crop that keeps the animal readable.",
+      "Exported without embedded text, controls, labels, logos, or watermarks."
+    ]
+  },
+  {
+    "id": "anomalocaris:model/model.glb",
+    "animalId": "anomalocaris",
+    "assetPath": "model/model.glb",
+    "assetKind": "model",
+    "sourceTitle": "Anomalocaris deterministic procedural model source",
+    "author": "Blender Python generator authored by the Prehistoric Animal Museum",
+    "licenseName": "CC0 1.0 Universal Public Domain Dedication",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "attribution": "“Anomalocaris” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.",
+    "modifications": [
+      "pipeline: project-authored expansion GLB (arthropod, feature=grasping-appendages) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle",
+      "scale: source body length 4.8059 Blender units -> 1.0 m; uniform factor 0.208077 applied to mesh data",
+      "armature synthesized: 3 bones ['Body', 'Head', 'Tail']",
+      "Idle synthesized: frames 0..192 at 24 fps = 8.0 s, two-cycle body breathing, Head +/-5.5 deg, Tail +/-11.0 deg; habitat=water, vertical drift +/-0.0120 m; frame 192 repeats frame 0 exactly (seamless loop)",
       "mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only"
     ]
   },
@@ -248,6 +495,130 @@ export const credits = [
       "Normalized the animal to a 3.2-unit total length with canonical transforms, centred horizontal bounds, and all four feet resting on the ground plane.",
       "Authored one eight-second in-place morph-target Idle at 24 frames per second; all feet and lower limbs remain fixed, the loop closes exactly, and the head and open mouth move as one rigid region.",
       "Verified zero foot drift, ground penetration, seam separation, new BVH overlap, collapsed triangles, and flipped triangles, then validator-checked and reviewed the derivative in the shared museum viewer."
+    ]
+  },
+  {
+    "id": "brachiosaurus:audio/narration.en.mp3",
+    "animalId": "brachiosaurus",
+    "assetPath": "audio/narration.en.mp3",
+    "assetKind": "narration",
+    "sourceTitle": "Brachiosaurus English narration",
+    "author": "Qwen3-TTS CustomVoice",
+    "licenseName": "CC BY-NC-SA 4.0 project-owned Qwen3-TTS output",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attribution": "Project-generated English narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).",
+    "modifications": [
+      "Generated offline from the exact reviewed two-sentence script.",
+      "Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis."
+    ]
+  },
+  {
+    "id": "brachiosaurus:audio/narration.zh-CN.mp3",
+    "animalId": "brachiosaurus",
+    "assetPath": "audio/narration.zh-CN.mp3",
+    "assetKind": "narration",
+    "sourceTitle": "Brachiosaurus Mandarin narration",
+    "author": "Qwen3-TTS CustomVoice",
+    "licenseName": "CC BY-NC-SA 4.0 project-owned Qwen3-TTS output",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attribution": "Project-generated Mandarin narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).",
+    "modifications": [
+      "Generated offline from the exact reviewed two-sentence script.",
+      "Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis."
+    ]
+  },
+  {
+    "id": "brachiosaurus:backgrounds/landscape.webp",
+    "animalId": "brachiosaurus",
+    "assetPath": "backgrounds/landscape.webp",
+    "assetKind": "background",
+    "sourceTitle": "Brachiosaurus habitat scene — landscape",
+    "author": "Blender 4.5.12 (project-authored habitat scene, deterministic seed)",
+    "licenseName": "CC BY-NC-SA 4.0 project-owned Blender habitat render",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attribution": "Project-generated Brachiosaurus landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.",
+    "modifications": [
+      "Rendered the landscape pass deterministically from the project-authored habitat scene spec with EEVEE Next.",
+      "Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks."
+    ]
+  },
+  {
+    "id": "brachiosaurus:backgrounds/portrait.webp",
+    "animalId": "brachiosaurus",
+    "assetPath": "backgrounds/portrait.webp",
+    "assetKind": "background",
+    "sourceTitle": "Brachiosaurus habitat scene — portrait",
+    "author": "Blender 4.5.12 (project-authored habitat scene, deterministic seed)",
+    "licenseName": "CC BY-NC-SA 4.0 project-owned Blender habitat render",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attribution": "Project-generated Brachiosaurus portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.",
+    "modifications": [
+      "Rendered the portrait pass deterministically from the project-authored habitat scene spec with EEVEE Next.",
+      "Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks."
+    ]
+  },
+  {
+    "id": "brachiosaurus:images/poster-portrait.webp",
+    "animalId": "brachiosaurus",
+    "assetPath": "images/poster-portrait.webp",
+    "assetKind": "poster",
+    "sourceTitle": "Brachiosaurus transparent portrait model still",
+    "author": "Prehistoric Animal Museum",
+    "licenseName": "CC0 1.0 Universal Public Domain Dedication",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "attribution": "“Brachiosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.",
+    "modifications": [
+      "Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.",
+      "Encoded as exact lossless WebP without text, controls, labels, logos, or watermarks."
+    ]
+  },
+  {
+    "id": "brachiosaurus:images/poster.webp",
+    "animalId": "brachiosaurus",
+    "assetPath": "images/poster.webp",
+    "assetKind": "poster",
+    "sourceTitle": "Brachiosaurus transparent model still",
+    "author": "Prehistoric Animal Museum",
+    "licenseName": "CC0 1.0 Universal Public Domain Dedication",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "attribution": "“Brachiosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.",
+    "modifications": [
+      "Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.",
+      "Encoded as lossless WebP without text, controls, labels, logos, or watermarks."
+    ]
+  },
+  {
+    "id": "brachiosaurus:images/thumbnail.webp",
+    "animalId": "brachiosaurus",
+    "assetPath": "images/thumbnail.webp",
+    "assetKind": "thumbnail",
+    "sourceTitle": "Brachiosaurus collection thumbnail",
+    "author": "Prehistoric Animal Museum",
+    "licenseName": "CC0 1.0 Universal Public Domain Dedication",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "attribution": "“Brachiosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum. Scene art generated for this project.",
+    "modifications": [
+      "Selected a card-size crop that keeps the animal readable.",
+      "Exported without embedded text, controls, labels, logos, or watermarks."
+    ]
+  },
+  {
+    "id": "brachiosaurus:model/model.glb",
+    "animalId": "brachiosaurus",
+    "assetPath": "model/model.glb",
+    "assetKind": "model",
+    "sourceTitle": "Brachiosaurus deterministic procedural model source",
+    "author": "Blender Python generator authored by the Prehistoric Animal Museum",
+    "licenseName": "CC0 1.0 Universal Public Domain Dedication",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "attribution": "“Brachiosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.",
+    "modifications": [
+      "pipeline: project-authored expansion GLB (sauropod, feature=high-shoulders) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle",
+      "scale: source body length 9.9161 Blender units -> 22.0 m; uniform factor 2.218611 applied to mesh data",
+      "grounding (land): shifted z by +2.02343 m so the lowest vertex rests at z=0",
+      "armature synthesized: 3 bones ['Body', 'Head', 'Tail']",
+      "Idle synthesized: frames 0..192 at 24 fps = 8.0 s, two-cycle body breathing, Head +/-5.5 deg, Tail +/-8.0 deg; habitat=land, vertical drift +/-0.0000 m; frame 192 repeats frame 0 exactly (seamless loop)",
+      "mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only"
     ]
   },
   {
@@ -626,6 +997,129 @@ export const credits = [
       "centring (water): shifted by [-0.23914, 3.21208, -1.57498] m so the bounding-box centre sits at the origin (x/y centred, centred vertically in the water column)",
       "armature synthesized: 5-bone spine chain Spine1..Spine5 along -Y (head end y=0.90 m to tail tip y=-3.00 m), roll 0",
       "Idle synthesized: frames 0..192 at 24 fps = 8.0 s, one LINEAR key per frame; 3 travelling-wave cycles with lateral amplitudes [1.5, 3.5, 6.0, 9.0, 12.0] deg (Spine1->Spine5, phase -0.68 rad/bone), two-cycle vertical bob +/-0.05 m plus gentle whole-body pitch/roll, no forward root travel; frame 192 repeats frame 0 exactly (seamless loop)",
+      "mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only"
+    ]
+  },
+  {
+    "id": "elasmosaurus:audio/narration.en.mp3",
+    "animalId": "elasmosaurus",
+    "assetPath": "audio/narration.en.mp3",
+    "assetKind": "narration",
+    "sourceTitle": "Elasmosaurus English narration",
+    "author": "Qwen3-TTS CustomVoice",
+    "licenseName": "CC BY-NC-SA 4.0 project-owned Qwen3-TTS output",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attribution": "Project-generated English narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).",
+    "modifications": [
+      "Generated offline from the exact reviewed two-sentence script.",
+      "Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis."
+    ]
+  },
+  {
+    "id": "elasmosaurus:audio/narration.zh-CN.mp3",
+    "animalId": "elasmosaurus",
+    "assetPath": "audio/narration.zh-CN.mp3",
+    "assetKind": "narration",
+    "sourceTitle": "Elasmosaurus Mandarin narration",
+    "author": "Qwen3-TTS CustomVoice",
+    "licenseName": "CC BY-NC-SA 4.0 project-owned Qwen3-TTS output",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attribution": "Project-generated Mandarin narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).",
+    "modifications": [
+      "Generated offline from the exact reviewed two-sentence script.",
+      "Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis."
+    ]
+  },
+  {
+    "id": "elasmosaurus:backgrounds/landscape.webp",
+    "animalId": "elasmosaurus",
+    "assetPath": "backgrounds/landscape.webp",
+    "assetKind": "background",
+    "sourceTitle": "Elasmosaurus habitat scene — landscape",
+    "author": "Blender 4.5.12 (project-authored habitat scene, deterministic seed)",
+    "licenseName": "CC BY-NC-SA 4.0 project-owned Blender habitat render",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attribution": "Project-generated Elasmosaurus landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.",
+    "modifications": [
+      "Rendered the landscape pass deterministically from the project-authored habitat scene spec with EEVEE Next.",
+      "Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks."
+    ]
+  },
+  {
+    "id": "elasmosaurus:backgrounds/portrait.webp",
+    "animalId": "elasmosaurus",
+    "assetPath": "backgrounds/portrait.webp",
+    "assetKind": "background",
+    "sourceTitle": "Elasmosaurus habitat scene — portrait",
+    "author": "Blender 4.5.12 (project-authored habitat scene, deterministic seed)",
+    "licenseName": "CC BY-NC-SA 4.0 project-owned Blender habitat render",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attribution": "Project-generated Elasmosaurus portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.",
+    "modifications": [
+      "Rendered the portrait pass deterministically from the project-authored habitat scene spec with EEVEE Next.",
+      "Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks."
+    ]
+  },
+  {
+    "id": "elasmosaurus:images/poster-portrait.webp",
+    "animalId": "elasmosaurus",
+    "assetPath": "images/poster-portrait.webp",
+    "assetKind": "poster",
+    "sourceTitle": "Elasmosaurus transparent portrait model still",
+    "author": "Prehistoric Animal Museum",
+    "licenseName": "CC0 1.0 Universal Public Domain Dedication",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "attribution": "“Elasmosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.",
+    "modifications": [
+      "Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.",
+      "Encoded as exact lossless WebP without text, controls, labels, logos, or watermarks."
+    ]
+  },
+  {
+    "id": "elasmosaurus:images/poster.webp",
+    "animalId": "elasmosaurus",
+    "assetPath": "images/poster.webp",
+    "assetKind": "poster",
+    "sourceTitle": "Elasmosaurus transparent model still",
+    "author": "Prehistoric Animal Museum",
+    "licenseName": "CC0 1.0 Universal Public Domain Dedication",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "attribution": "“Elasmosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.",
+    "modifications": [
+      "Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.",
+      "Encoded as lossless WebP without text, controls, labels, logos, or watermarks."
+    ]
+  },
+  {
+    "id": "elasmosaurus:images/thumbnail.webp",
+    "animalId": "elasmosaurus",
+    "assetPath": "images/thumbnail.webp",
+    "assetKind": "thumbnail",
+    "sourceTitle": "Elasmosaurus collection thumbnail",
+    "author": "Prehistoric Animal Museum",
+    "licenseName": "CC0 1.0 Universal Public Domain Dedication",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "attribution": "“Elasmosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum. Scene art generated for this project.",
+    "modifications": [
+      "Selected a card-size crop that keeps the animal readable.",
+      "Exported without embedded text, controls, labels, logos, or watermarks."
+    ]
+  },
+  {
+    "id": "elasmosaurus:model/model.glb",
+    "animalId": "elasmosaurus",
+    "assetPath": "model/model.glb",
+    "assetKind": "model",
+    "sourceTitle": "Elasmosaurus deterministic procedural model source",
+    "author": "Blender Python generator authored by the Prehistoric Animal Museum",
+    "licenseName": "CC0 1.0 Universal Public Domain Dedication",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "attribution": "“Elasmosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.",
+    "modifications": [
+      "pipeline: project-authored expansion GLB (marine-longneck, feature=very-long-neck) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle",
+      "scale: source body length 9.0614 Blender units -> 10.5 m; uniform factor 1.158755 applied to mesh data",
+      "armature synthesized: 3 bones ['Body', 'Head', 'Tail']",
+      "Idle synthesized: frames 0..192 at 24 fps = 8.0 s, two-cycle body breathing, Head +/-5.5 deg, Tail +/-11.0 deg; habitat=water, vertical drift +/-0.0630 m; frame 192 repeats frame 0 exactly (seamless loop)",
       "mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only"
     ]
   },
@@ -1254,6 +1748,130 @@ export const credits = [
       "Matched the head and body blend across the disconnected neck surfaces and held the tail root stationary after close-up owner review, preventing either junction from opening during motion.",
       "Authored an eight-second in-place Idle with an approximately 7-degree head pitch and 4-degree turn so the long tusks move clearly, plus a larger distal tail swing.",
       "Normalized the Blender export to one closed-loop Idle clip with two rotation-only channels, then validator-checked and reviewed the derivative in the shared museum viewer."
+    ]
+  },
+  {
+    "id": "megaloceros:audio/narration.en.mp3",
+    "animalId": "megaloceros",
+    "assetPath": "audio/narration.en.mp3",
+    "assetKind": "narration",
+    "sourceTitle": "Megaloceros English narration",
+    "author": "Qwen3-TTS CustomVoice",
+    "licenseName": "CC BY-NC-SA 4.0 project-owned Qwen3-TTS output",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attribution": "Project-generated English narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).",
+    "modifications": [
+      "Generated offline from the exact reviewed two-sentence script.",
+      "Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis."
+    ]
+  },
+  {
+    "id": "megaloceros:audio/narration.zh-CN.mp3",
+    "animalId": "megaloceros",
+    "assetPath": "audio/narration.zh-CN.mp3",
+    "assetKind": "narration",
+    "sourceTitle": "Megaloceros Mandarin narration",
+    "author": "Qwen3-TTS CustomVoice",
+    "licenseName": "CC BY-NC-SA 4.0 project-owned Qwen3-TTS output",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attribution": "Project-generated Mandarin narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).",
+    "modifications": [
+      "Generated offline from the exact reviewed two-sentence script.",
+      "Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis."
+    ]
+  },
+  {
+    "id": "megaloceros:backgrounds/landscape.webp",
+    "animalId": "megaloceros",
+    "assetPath": "backgrounds/landscape.webp",
+    "assetKind": "background",
+    "sourceTitle": "Megaloceros habitat scene — landscape",
+    "author": "Blender 4.5.12 (project-authored habitat scene, deterministic seed)",
+    "licenseName": "CC BY-NC-SA 4.0 project-owned Blender habitat render",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attribution": "Project-generated Megaloceros landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.",
+    "modifications": [
+      "Rendered the landscape pass deterministically from the project-authored habitat scene spec with EEVEE Next.",
+      "Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks."
+    ]
+  },
+  {
+    "id": "megaloceros:backgrounds/portrait.webp",
+    "animalId": "megaloceros",
+    "assetPath": "backgrounds/portrait.webp",
+    "assetKind": "background",
+    "sourceTitle": "Megaloceros habitat scene — portrait",
+    "author": "Blender 4.5.12 (project-authored habitat scene, deterministic seed)",
+    "licenseName": "CC BY-NC-SA 4.0 project-owned Blender habitat render",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attribution": "Project-generated Megaloceros portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.",
+    "modifications": [
+      "Rendered the portrait pass deterministically from the project-authored habitat scene spec with EEVEE Next.",
+      "Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks."
+    ]
+  },
+  {
+    "id": "megaloceros:images/poster-portrait.webp",
+    "animalId": "megaloceros",
+    "assetPath": "images/poster-portrait.webp",
+    "assetKind": "poster",
+    "sourceTitle": "Megaloceros transparent portrait model still",
+    "author": "Prehistoric Animal Museum",
+    "licenseName": "CC0 1.0 Universal Public Domain Dedication",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "attribution": "“Megaloceros” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.",
+    "modifications": [
+      "Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.",
+      "Encoded as exact lossless WebP without text, controls, labels, logos, or watermarks."
+    ]
+  },
+  {
+    "id": "megaloceros:images/poster.webp",
+    "animalId": "megaloceros",
+    "assetPath": "images/poster.webp",
+    "assetKind": "poster",
+    "sourceTitle": "Megaloceros transparent model still",
+    "author": "Prehistoric Animal Museum",
+    "licenseName": "CC0 1.0 Universal Public Domain Dedication",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "attribution": "“Megaloceros” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.",
+    "modifications": [
+      "Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.",
+      "Encoded as lossless WebP without text, controls, labels, logos, or watermarks."
+    ]
+  },
+  {
+    "id": "megaloceros:images/thumbnail.webp",
+    "animalId": "megaloceros",
+    "assetPath": "images/thumbnail.webp",
+    "assetKind": "thumbnail",
+    "sourceTitle": "Megaloceros collection thumbnail",
+    "author": "Prehistoric Animal Museum",
+    "licenseName": "CC0 1.0 Universal Public Domain Dedication",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "attribution": "“Megaloceros” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum. Scene art generated for this project.",
+    "modifications": [
+      "Selected a card-size crop that keeps the animal readable.",
+      "Exported without embedded text, controls, labels, logos, or watermarks."
+    ]
+  },
+  {
+    "id": "megaloceros:model/model.glb",
+    "animalId": "megaloceros",
+    "assetPath": "model/model.glb",
+    "assetKind": "model",
+    "sourceTitle": "Megaloceros deterministic procedural model source",
+    "author": "Blender Python generator authored by the Prehistoric Animal Museum",
+    "licenseName": "CC0 1.0 Universal Public Domain Dedication",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "attribution": "“Megaloceros” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.",
+    "modifications": [
+      "pipeline: project-authored expansion GLB (mammal, feature=giant-antlers) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle",
+      "scale: source body length 5.9621 Blender units -> 3.0 m; uniform factor 0.503178 applied to mesh data",
+      "grounding (land): shifted z by -0.53240 m so the lowest vertex rests at z=0",
+      "armature synthesized: 3 bones ['Body', 'Head', 'Tail']",
+      "Idle synthesized: frames 0..192 at 24 fps = 8.0 s, two-cycle body breathing, Head +/-5.5 deg, Tail +/-8.0 deg; habitat=land, vertical drift +/-0.0000 m; frame 192 repeats frame 0 exactly (seamless loop)",
+      "mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only"
     ]
   },
   {
@@ -2125,6 +2743,129 @@ export const credits = [
       "Used Blender 5.2 to transfer the source flying action onto the normalized runtime rig, rebase the root to the museum rest origin, and reduce its translation to 3.5%.",
       "Retained the repaired in-place flight loop as the single Idle clip.",
       "Deduplicated, pruned, repacked, validated, and reviewed the derivative."
+    ]
+  },
+  {
+    "id": "quetzalcoatlus:audio/narration.en.mp3",
+    "animalId": "quetzalcoatlus",
+    "assetPath": "audio/narration.en.mp3",
+    "assetKind": "narration",
+    "sourceTitle": "Quetzalcoatlus English narration",
+    "author": "Qwen3-TTS CustomVoice",
+    "licenseName": "CC BY-NC-SA 4.0 project-owned Qwen3-TTS output",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attribution": "Project-generated English narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).",
+    "modifications": [
+      "Generated offline from the exact reviewed two-sentence script.",
+      "Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis."
+    ]
+  },
+  {
+    "id": "quetzalcoatlus:audio/narration.zh-CN.mp3",
+    "animalId": "quetzalcoatlus",
+    "assetPath": "audio/narration.zh-CN.mp3",
+    "assetKind": "narration",
+    "sourceTitle": "Quetzalcoatlus Mandarin narration",
+    "author": "Qwen3-TTS CustomVoice",
+    "licenseName": "CC BY-NC-SA 4.0 project-owned Qwen3-TTS output",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attribution": "Project-generated Mandarin narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).",
+    "modifications": [
+      "Generated offline from the exact reviewed two-sentence script.",
+      "Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis."
+    ]
+  },
+  {
+    "id": "quetzalcoatlus:backgrounds/landscape.webp",
+    "animalId": "quetzalcoatlus",
+    "assetPath": "backgrounds/landscape.webp",
+    "assetKind": "background",
+    "sourceTitle": "Quetzalcoatlus habitat scene — landscape",
+    "author": "Blender 4.5.12 (project-authored habitat scene, deterministic seed)",
+    "licenseName": "CC BY-NC-SA 4.0 project-owned Blender habitat render",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attribution": "Project-generated Quetzalcoatlus landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.",
+    "modifications": [
+      "Rendered the landscape pass deterministically from the project-authored habitat scene spec with EEVEE Next.",
+      "Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks."
+    ]
+  },
+  {
+    "id": "quetzalcoatlus:backgrounds/portrait.webp",
+    "animalId": "quetzalcoatlus",
+    "assetPath": "backgrounds/portrait.webp",
+    "assetKind": "background",
+    "sourceTitle": "Quetzalcoatlus habitat scene — portrait",
+    "author": "Blender 4.5.12 (project-authored habitat scene, deterministic seed)",
+    "licenseName": "CC BY-NC-SA 4.0 project-owned Blender habitat render",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attribution": "Project-generated Quetzalcoatlus portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.",
+    "modifications": [
+      "Rendered the portrait pass deterministically from the project-authored habitat scene spec with EEVEE Next.",
+      "Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks."
+    ]
+  },
+  {
+    "id": "quetzalcoatlus:images/poster-portrait.webp",
+    "animalId": "quetzalcoatlus",
+    "assetPath": "images/poster-portrait.webp",
+    "assetKind": "poster",
+    "sourceTitle": "Quetzalcoatlus transparent portrait model still",
+    "author": "Prehistoric Animal Museum",
+    "licenseName": "CC0 1.0 Universal Public Domain Dedication",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "attribution": "“Quetzalcoatlus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.",
+    "modifications": [
+      "Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.",
+      "Encoded as exact lossless WebP without text, controls, labels, logos, or watermarks."
+    ]
+  },
+  {
+    "id": "quetzalcoatlus:images/poster.webp",
+    "animalId": "quetzalcoatlus",
+    "assetPath": "images/poster.webp",
+    "assetKind": "poster",
+    "sourceTitle": "Quetzalcoatlus transparent model still",
+    "author": "Prehistoric Animal Museum",
+    "licenseName": "CC0 1.0 Universal Public Domain Dedication",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "attribution": "“Quetzalcoatlus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.",
+    "modifications": [
+      "Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.",
+      "Encoded as lossless WebP without text, controls, labels, logos, or watermarks."
+    ]
+  },
+  {
+    "id": "quetzalcoatlus:images/thumbnail.webp",
+    "animalId": "quetzalcoatlus",
+    "assetPath": "images/thumbnail.webp",
+    "assetKind": "thumbnail",
+    "sourceTitle": "Quetzalcoatlus collection thumbnail",
+    "author": "Prehistoric Animal Museum",
+    "licenseName": "CC0 1.0 Universal Public Domain Dedication",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "attribution": "“Quetzalcoatlus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum. Scene art generated for this project.",
+    "modifications": [
+      "Selected a card-size crop that keeps the animal readable.",
+      "Exported without embedded text, controls, labels, logos, or watermarks."
+    ]
+  },
+  {
+    "id": "quetzalcoatlus:model/model.glb",
+    "animalId": "quetzalcoatlus",
+    "assetPath": "model/model.glb",
+    "assetKind": "model",
+    "sourceTitle": "Quetzalcoatlus deterministic procedural model source",
+    "author": "Blender Python generator authored by the Prehistoric Animal Museum",
+    "licenseName": "CC0 1.0 Universal Public Domain Dedication",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "attribution": "“Quetzalcoatlus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.",
+    "modifications": [
+      "pipeline: project-authored expansion GLB (pterosaur, feature=giant-wings) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle",
+      "scale: source body length 4.9748 Blender units -> 5.5 m; uniform factor 1.105565 applied to mesh data",
+      "armature synthesized: 3 bones ['Body', 'Head', 'Tail']",
+      "Idle synthesized: frames 0..192 at 24 fps = 8.0 s, two-cycle body breathing, Head +/-5.0 deg, Tail +/-7.5 deg; habitat=air, vertical drift +/-0.0440 m; frame 192 repeats frame 0 exactly (seamless loop)",
+      "mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only"
     ]
   },
   {

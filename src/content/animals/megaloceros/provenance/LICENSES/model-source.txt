@@ -1,0 +1,23 @@
+Megaloceros model source and modifications
+==========================================
+
+Direct source:
+project-authored (no upstream)
+
+Creator: Prehistoric Animal Museum (project-authored)
+License: CC0-1.0
+Original downloaded source: 117608 bytes (archive/chosen-model.glb)
+Original SHA-256:
+7e7cb5edf1e63c93e94a10c70d376a3195d612706148d2828ff2a07aaea280af
+
+Modifications for the Prehistoric Animal Museum:
+- pipeline: project-authored expansion GLB (mammal, feature=giant-antlers) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
+- scale: source body length 5.9621 Blender units -> 3.0 m; uniform factor 0.503178 applied to mesh data
+- grounding (land): shifted z by -0.53240 m so the lowest vertex rests at z=0
+- armature synthesized: 3 bones ['Body', 'Head', 'Tail']
+- Idle synthesized: frames 0..192 at 24 fps = 8.0 s, two-cycle body breathing, Head +/-5.5 deg, Tail +/-8.0 deg; habitat=land, vertical drift +/-0.0000 m; frame 192 repeats frame 0 exactly (seamless loop)
+- mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
+
+Published runtime GLB: 176328 bytes
+Published SHA-256:
+f63210b15d959b68bbeb85dfa167ff99090d6f6701acc353c579e0858bd5017d

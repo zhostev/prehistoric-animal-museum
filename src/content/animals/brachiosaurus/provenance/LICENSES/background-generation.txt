@@ -1,0 +1,22 @@
+Brachiosaurus background generation record
+==========================================
+
+Tool: Blender 4.5.12 (project-authored habitat scene, deterministic seed)
+Seed: 1782577000
+Generated: 2026-08-17
+Use: project-specific responsive museum backgrounds
+
+The landscape and portrait were rendered as separate deterministic EEVEE Next
+passes from the project-authored habitat scene spec
+qa/derivatives-scene-spec.json (SHA-256 abc9ce08f87009f75f543412391e1058cbd7d070e5c045f740ed07ce7b44537a).
+No animal, person, text, UI, logo, or watermark appears in the renders.
+
+Landscape runtime WebP: 14956 bytes (1920 × 1080)
+SHA-256: 3ae82314a682d496de6935a98b8dde752f248eca95403a382a2aaa35e9a1fc2a
+
+Portrait runtime WebP: 8324 bytes (1080 × 1920)
+SHA-256: 7533f20f3425525d9d6c36c276870073a9af88caa5d88279feb30a3d0aeff6af
+
+The reviewed renders were encoded as lossy WebP at quality 82.
+The project owner approved public distribution on 2026-08-17.
+Recorded in approval-record.json: approved by owner on 2026-08-17.

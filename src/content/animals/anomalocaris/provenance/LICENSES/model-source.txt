@@ -1,0 +1,22 @@
+Anomalocaris model source and modifications
+===========================================
+
+Direct source:
+project-authored (no upstream)
+
+Creator: Prehistoric Animal Museum (project-authored)
+License: CC0-1.0
+Original downloaded source: 108096 bytes (archive/chosen-model.glb)
+Original SHA-256:
+e0511dea625703fe92bd7a4b5c3b20c17df8cabeb6cca48ab8b895d2cfd7c43e
+
+Modifications for the Prehistoric Animal Museum:
+- pipeline: project-authored expansion GLB (arthropod, feature=grasping-appendages) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
+- scale: source body length 4.8059 Blender units -> 1.0 m; uniform factor 0.208077 applied to mesh data
+- armature synthesized: 3 bones ['Body', 'Head', 'Tail']
+- Idle synthesized: frames 0..192 at 24 fps = 8.0 s, two-cycle body breathing, Head +/-5.5 deg, Tail +/-11.0 deg; habitat=water, vertical drift +/-0.0120 m; frame 192 repeats frame 0 exactly (seamless loop)
+- mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
+
+Published runtime GLB: 171064 bytes
+Published SHA-256:
+3a81ff1cc68d29fc149fcd1b3397e9dbeee0c7f169d9995170eb088749bb6b20

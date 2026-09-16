@@ -1,0 +1,18 @@
+Quetzalcoatlus poster and thumbnail derivation record
+=======================================================
+
+Generated: 2026-08-17
+
+The 1200 × 675 poster and the
+390 × 844 portrait poster are deterministic
+runtime captures of the normalized model without text, controls, logos, or
+watermarks. The 320 × 320 thumbnail was
+captured from the accepted desktop review presentation after hiding all
+interface chrome.
+
+Poster SHA-256: 19e7b472f45d9c4287a12375696eda579796246b132a881a41336c0cbc5f3775 (9676 bytes)
+Portrait poster SHA-256: 65a2b5e0ffe79fa3b08c36746b254cf986f0f79871cfaf6d08c550f0dbb59aca (3394 bytes)
+Thumbnail SHA-256: 1a41299dfc6738045c2eee3a1be9c9cf0edefbfdc03a54e165f8704b83c4887e (2420 bytes)
+
+The model attribution and CC0-1.0 terms in model-license.txt
+continue to apply. The background generation record is retained separately.

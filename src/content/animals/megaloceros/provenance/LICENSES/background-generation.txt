@@ -1,0 +1,22 @@
+Megaloceros background generation record
+========================================
+
+Tool: Blender 4.5.12 (project-authored habitat scene, deterministic seed)
+Seed: 1499317526
+Generated: 2026-08-17
+Use: project-specific responsive museum backgrounds
+
+The landscape and portrait were rendered as separate deterministic EEVEE Next
+passes from the project-authored habitat scene spec
+qa/derivatives-scene-spec.json (SHA-256 1fdbe8cb87f4e25ad933e69896640a94e51d2ffe08995e0bfa7a49accb03ac9c).
+No animal, person, text, UI, logo, or watermark appears in the renders.
+
+Landscape runtime WebP: 15328 bytes (1920 × 1080)
+SHA-256: 2167fbd9c17cbe58908dd05295820ace8b219f0ed93e8d12403bf4924cb885a4
+
+Portrait runtime WebP: 9314 bytes (1080 × 1920)
+SHA-256: ae29c8892d403fcac9fe47af69965a7d8735967b431a614c7e918e30db6dcea2
+
+The reviewed renders were encoded as lossy WebP at quality 82.
+The project owner approved public distribution on 2026-08-17.
+Recorded in approval-record.json: approved by owner on 2026-08-17.

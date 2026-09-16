@@ -1,0 +1,18 @@
+Elasmosaurus poster and thumbnail derivation record
+=====================================================
+
+Generated: 2026-08-17
+
+The 1200 × 675 poster and the
+390 × 844 portrait poster are deterministic
+runtime captures of the normalized model without text, controls, logos, or
+watermarks. The 320 × 320 thumbnail was
+captured from the accepted desktop review presentation after hiding all
+interface chrome.
+
+Poster SHA-256: f575d53045519889f9dc12f59d3386db2aeedd535c0a9469fcbe2779307184c6 (11042 bytes)
+Portrait poster SHA-256: 472628796f70f59bb833a52b3c6426fc611dbfebebbf3971e47bbc39850cd3d3 (2872 bytes)
+Thumbnail SHA-256: a45413ac554ed231d669d424d56f381b4f7a16401d3004a548ddf9d172aeb617 (2074 bytes)
+
+The model attribution and CC0-1.0 terms in model-license.txt
+continue to apply. The background generation record is retained separately.

@@ -853,8 +853,9 @@ describe('App', () => {
     expect(
       urls.slice(1, 3).every((url) => url.includes('pteranodon')),
     ).toBe(true)
-    expect(urls[3]).toContain('corythosaurus/model/model.glb')
-    expect(urls.slice(4).every((url) => url.includes('corythosaurus'))).toBe(true)
+    const lastAnimalId = mainAnimals[mainAnimals.length - 1]!.id
+    expect(urls[3]).toContain(`${lastAnimalId}/model/model.glb`)
+    expect(urls.slice(4).every((url) => url.includes(lastAnimalId))).toBe(true)
     for (const [, init] of fetchMock.mock.calls) {
       expect(init).toMatchObject({ priority: 'low' })
     }
@@ -1017,7 +1018,8 @@ describe('App', () => {
       expect(urls.slice(0, 3).every((url) => url.includes('pteranodon'))).toBe(
         true,
       )
-      expect(urls[3]).toContain('corythosaurus/model/model.glb')
+      const lastAnimalId = mainAnimals[mainAnimals.length - 1]!.id
+      expect(urls[3]).toContain(`${lastAnimalId}/model/model.glb`)
     } finally {
       if (originalVisibilityState) {
         Object.defineProperty(

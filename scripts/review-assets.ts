@@ -614,6 +614,9 @@ const reviewAnimalFiles: Readonly<
     backgroundPortrait: repositoryFile(
       'assets/candidates/animal-onboarding-2026-08-13-expansion-100/quetzalcoatlus/output/background-portrait.webp',
     ),
+    narration: repositoryFile(
+      'assets/candidates/animal-onboarding-2026-08-13-expansion-100/quetzalcoatlus/output/audio/narration.zh-CN.mp3',
+    ),
     poster: repositoryFile(
       'assets/candidates/animal-onboarding-2026-08-13-expansion-100/quetzalcoatlus/output/poster.webp',
     ),
@@ -633,6 +636,9 @@ const reviewAnimalFiles: Readonly<
     ),
     backgroundPortrait: repositoryFile(
       'assets/candidates/animal-onboarding-2026-08-13-expansion-100/elasmosaurus/output/background-portrait.webp',
+    ),
+    narration: repositoryFile(
+      'assets/candidates/animal-onboarding-2026-08-13-expansion-100/elasmosaurus/output/audio/narration.zh-CN.mp3',
     ),
     poster: repositoryFile(
       'assets/candidates/animal-onboarding-2026-08-13-expansion-100/elasmosaurus/output/poster.webp',
@@ -673,6 +679,9 @@ const reviewAnimalFiles: Readonly<
     ),
     backgroundPortrait: repositoryFile(
       'assets/candidates/animal-onboarding-2026-08-13-expansion-100/anomalocaris/output/background-portrait.webp',
+    ),
+    narration: repositoryFile(
+      'assets/candidates/animal-onboarding-2026-08-13-expansion-100/anomalocaris/output/audio/narration.zh-CN.mp3',
     ),
     poster: repositoryFile(
       'assets/candidates/animal-onboarding-2026-08-13-expansion-100/anomalocaris/output/poster.webp',
@@ -1880,6 +1889,9 @@ const reviewAnimalFiles: Readonly<
     ),
     backgroundPortrait: repositoryFile(
       'assets/candidates/animal-onboarding-2026-08-13-expansion-100/megaloceros/output/background-portrait.webp',
+    ),
+    narration: repositoryFile(
+      'assets/candidates/animal-onboarding-2026-08-13-expansion-100/megaloceros/output/audio/narration.zh-CN.mp3',
     ),
     poster: repositoryFile(
       'assets/candidates/animal-onboarding-2026-08-13-expansion-100/megaloceros/output/poster.webp',

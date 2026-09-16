@@ -1,5 +1,5 @@
 {
-  "capturedAt": "2026-08-18T05:59:31.176Z",
+  "capturedAt": "2026-09-16T02:52:16.091Z",
   "collection": [
     "stegosaurus",
     "pteranodon",
@@ -26,7 +26,13 @@
     "jaekelopterus",
     "smilodon",
     "spinosaurus",
-    "corythosaurus"
+    "corythosaurus",
+    "allosaurus",
+    "brachiosaurus",
+    "quetzalcoatlus",
+    "elasmosaurus",
+    "megaloceros",
+    "anomalocaris"
   ],
   "originalIds": [
     "stegosaurus",

@@ -1,0 +1,18 @@
+Allosaurus poster and thumbnail derivation record
+===================================================
+
+Generated: 2026-08-17
+
+The 1200 × 675 poster and the
+390 × 844 portrait poster are deterministic
+runtime captures of the normalized model without text, controls, logos, or
+watermarks. The 320 × 320 thumbnail was
+captured from the accepted desktop review presentation after hiding all
+interface chrome.
+
+Poster SHA-256: b15e838d117218e55bf11b0998d7cd94ca42f544ee13171491db2070a0e3ca2f (11984 bytes)
+Portrait poster SHA-256: 8de11eca986ac9b22d3a89d5f8ce88fc31caf062cda35a9dd946b30867308883 (3566 bytes)
+Thumbnail SHA-256: a775a39ed25385a9bf0af42ca3ff98ca655b749e7969c7956b9774f77f45f47d (2702 bytes)
+
+The model attribution and CC0-1.0 terms in model-license.txt
+continue to apply. The background generation record is retained separately.

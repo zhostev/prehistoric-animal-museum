@@ -1,0 +1,23 @@
+Brachiosaurus model source and modifications
+============================================
+
+Direct source:
+project-authored (no upstream)
+
+Creator: Prehistoric Animal Museum (project-authored)
+License: CC0-1.0
+Original downloaded source: 146220 bytes (archive/chosen-model.glb)
+Original SHA-256:
+df6990512e34bd3c982687a828bae06d5d648e1eac0a94560d827735af9a841e
+
+Modifications for the Prehistoric Animal Museum:
+- pipeline: project-authored expansion GLB (sauropod, feature=high-shoulders) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
+- scale: source body length 9.9161 Blender units -> 22.0 m; uniform factor 2.218611 applied to mesh data
+- grounding (land): shifted z by +2.02343 m so the lowest vertex rests at z=0
+- armature synthesized: 3 bones ['Body', 'Head', 'Tail']
+- Idle synthesized: frames 0..192 at 24 fps = 8.0 s, two-cycle body breathing, Head +/-5.5 deg, Tail +/-8.0 deg; habitat=land, vertical drift +/-0.0000 m; frame 192 repeats frame 0 exactly (seamless loop)
+- mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
+
+Published runtime GLB: 222616 bytes
+Published SHA-256:
+bb665c90456d65f33cd7aae46d87e75822a7507326684bd2fa85bc21fac03c31

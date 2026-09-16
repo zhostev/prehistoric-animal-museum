@@ -7,16 +7,21 @@ import sharp from 'sharp'
 import type { Plugin } from 'vite'
 
 import { animalSeoDescription } from '../src/content/animal-seo'
+import { animalDefinition as allosaurusDefinition } from '../src/content/animals/allosaurus/package'
 import { animalDefinition as ammoniteDefinition } from '../src/content/animals/ammonite/package'
+import { animalDefinition as anomalocarisDefinition } from '../src/content/animals/anomalocaris/package'
 import { animalDefinition as apatosaurusDefinition } from '../src/content/animals/apatosaurus/package'
+import { animalDefinition as brachiosaurusDefinition } from '../src/content/animals/brachiosaurus/package'
 import { animalDefinition as corythosaurusDefinition } from '../src/content/animals/corythosaurus/package'
 import { animalDefinition as dilophosaurusDefinition } from '../src/content/animals/dilophosaurus/package'
 import { animalDefinition as dunkleosteusDefinition } from '../src/content/animals/dunkleosteus/package'
+import { animalDefinition as elasmosaurusDefinition } from '../src/content/animals/elasmosaurus/package'
 import { animalDefinition as gigantoraptorDefinition } from '../src/content/animals/gigantoraptor/package'
 import { animalDefinition as ichthyosaurDefinition } from '../src/content/animals/ichthyosaur/package'
 import { animalDefinition as jaekelopterusDefinition } from '../src/content/animals/jaekelopterus/package'
 import { animalDefinition as maiasauraDefinition } from '../src/content/animals/maiasaura/package'
 import { animalDefinition as mammothDefinition } from '../src/content/animals/mammoth/package'
+import { animalDefinition as megalocerosDefinition } from '../src/content/animals/megaloceros/package'
 import { animalDefinition as megalodonDefinition } from '../src/content/animals/megalodon/package'
 import { animalDefinition as meganeuraDefinition } from '../src/content/animals/meganeura/package'
 import { animalDefinition as mosasaurusDefinition } from '../src/content/animals/mosasaurus/package'
@@ -24,6 +29,7 @@ import { animalDefinition as pachycephalosaurusDefinition } from '../src/content
 import { animalDefinition as parasaurolophusDefinition } from '../src/content/animals/parasaurolophus/package'
 import { animalDefinition as plesiosaurusDefinition } from '../src/content/animals/plesiosaurus/package'
 import { animalDefinition as pteranodonDefinition } from '../src/content/animals/pteranodon/package'
+import { animalDefinition as quetzalcoatlusDefinition } from '../src/content/animals/quetzalcoatlus/package'
 import { animalDefinition as rhamphorhynchusDefinition } from '../src/content/animals/rhamphorhynchus/package'
 import { animalDefinition as sauropeltaDefinition } from '../src/content/animals/sauropelta/package'
 import { animalDefinition as smilodonDefinition } from '../src/content/animals/smilodon/package'
@@ -108,16 +114,21 @@ const defaultOptions = {
 } satisfies Required<MultilingualSeoOptions>
 
 const canonicalAnimalDefinitions = [
+  allosaurusDefinition,
   ammoniteDefinition,
+  anomalocarisDefinition,
   apatosaurusDefinition,
+  brachiosaurusDefinition,
   corythosaurusDefinition,
   dilophosaurusDefinition,
   dunkleosteusDefinition,
+  elasmosaurusDefinition,
   gigantoraptorDefinition,
   ichthyosaurDefinition,
   jaekelopterusDefinition,
   maiasauraDefinition,
   mammothDefinition,
+  megalocerosDefinition,
   megalodonDefinition,
   meganeuraDefinition,
   mosasaurusDefinition,
@@ -125,6 +136,7 @@ const canonicalAnimalDefinitions = [
   parasaurolophusDefinition,
   plesiosaurusDefinition,
   pteranodonDefinition,
+  quetzalcoatlusDefinition,
   rhamphorhynchusDefinition,
   sauropeltaDefinition,
   smilodonDefinition,

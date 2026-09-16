@@ -1,0 +1,22 @@
+Elasmosaurus background generation record
+=========================================
+
+Tool: Blender 4.5.12 (project-authored habitat scene, deterministic seed)
+Seed: 3561462435
+Generated: 2026-08-17
+Use: project-specific responsive museum backgrounds
+
+The landscape and portrait were rendered as separate deterministic EEVEE Next
+passes from the project-authored habitat scene spec
+qa/derivatives-scene-spec.json (SHA-256 a96860e344afd85511cd279a1be8c98eeef7b5eaa0268bdca77bff851dea97a9).
+No animal, person, text, UI, logo, or watermark appears in the renders.
+
+Landscape runtime WebP: 28698 bytes (1920 × 1080)
+SHA-256: 57282df8c5b7e2b5be56d4216814d37780937c439a8e9ca3ce57cb786dfb7786
+
+Portrait runtime WebP: 10820 bytes (1080 × 1920)
+SHA-256: 4a66f1c2e3fd58e6e14b6dc82e1b05ec97ec9ca22dac29246102a9aaab6e4ff4
+
+The reviewed renders were encoded as lossy WebP at quality 82.
+The project owner approved public distribution on 2026-08-17.
+Recorded in approval-record.json: approved by owner on 2026-08-17.
