@@ -19,8 +19,8 @@ export const provenance = [
       url: 'https://creativecommons.org/publicdomain/zero/1.0/',
     },
     runtime: {
-      sha256: 'b40c87dff46d26292927dc8fd202f99bd913c23b744bc994dbc6b7f0940bb29d',
-      bytes: 160600,
+      sha256: 'a435c5f6f92525a909ebdb12d9582c8db5c13773735e33fdc19624ab7a221ec7',
+      bytes: 1847520,
     },
     modifications: [
       'pipeline: project-authored expansion GLB (feathered, feature=four-wings) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle',

@@ -19,8 +19,8 @@ export const provenance = [
       url: 'https://creativecommons.org/publicdomain/zero/1.0/',
     },
     runtime: {
-      sha256: 'eaf33a31d3dbac2beea344565634e031c272c1566b091d15a4475cc837f25ecd',
-      bytes: 117980,
+      sha256: '0d9eccfdc8f908c506c4db5cf199df3c4912e53017f2052941e3c04329556f1a',
+      bytes: 2015308,
     },
     modifications: [
       'pipeline: project-authored expansion GLB (pterosaur, feature=jaw-crests) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle',

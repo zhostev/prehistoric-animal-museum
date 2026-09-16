@@ -19,8 +19,8 @@ export const provenance = [
       url: 'https://creativecommons.org/publicdomain/zero/1.0/',
     },
     runtime: {
-      sha256: '3a81ff1cc68d29fc149fcd1b3397e9dbeee0c7f169d9995170eb088749bb6b20',
-      bytes: 171064,
+      sha256: 'c6c5635cbd164486b54f57011d2c5c5d92d05ed911404a4273d6850a13b11a5d',
+      bytes: 2340740,
     },
     modifications: [
       'pipeline: project-authored expansion GLB (arthropod, feature=grasping-appendages) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle',
@@ -54,8 +54,8 @@ export const provenance = [
       url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
     },
     runtime: {
-      sha256: '80ec58267fe0a7c7964480e8d60dd815529d9b9178c3d1553175f450919ebab9',
-      bytes: 23944,
+      sha256: 'b0dcf89346ff564a863ad69283b130e5c32461e09a3158531b720946cb314f0a',
+      bytes: 258474,
     },
     modifications: [
       'Rendered the landscape pass deterministically from the project-authored habitat scene spec with EEVEE Next.',
@@ -85,8 +85,8 @@ export const provenance = [
       url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
     },
     runtime: {
-      sha256: 'c0d2b637e876c70820555f7b9f8209a7a542a6281cf7cf6eea08e27b065503e3',
-      bytes: 7740,
+      sha256: 'd23802f3c07ade5ccd516ab77a2e21b8174b079d22b391721f365f7dea3ec181',
+      bytes: 162898,
     },
     modifications: [
       'Rendered the portrait pass deterministically from the project-authored habitat scene spec with EEVEE Next.',

@@ -21,7 +21,7 @@ export const animalDefinition = definePublishedAnimal({
   animation: {
     clip: 'Idle',
     loop: 'repeat',
-    speed: 1,
+    speed: 0.8,
   },
   narration: {
     'zh-CN': {

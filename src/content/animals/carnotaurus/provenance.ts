@@ -19,8 +19,8 @@ export const provenance = [
       url: 'https://creativecommons.org/publicdomain/zero/1.0/',
     },
     runtime: {
-      sha256: 'd9ff0bc76e94f140268aa7cc7a055308ee1732b1c440d5ee3717d94e2bf5693c',
-      bytes: 164780,
+      sha256: '5062aa930c52831fc7d00df98552e58d8e73479044893930a5b2e6e5c2d523e4',
+      bytes: 1561124,
     },
     modifications: [
       'pipeline: project-authored expansion GLB (theropod, feature=bull-horns) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle',

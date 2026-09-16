@@ -19,8 +19,8 @@ export const provenance = [
       url: 'https://creativecommons.org/publicdomain/zero/1.0/',
     },
     runtime: {
-      sha256: '2023df09939b8fbcc2b65175e29a93faf4ae8a827d475118a40f00d47496f71e',
-      bytes: 152236,
+      sha256: '2e4b6353f249766da22cca0b02c71e0087c7c79c2aedf33ee8b4b2b3f01c4266',
+      bytes: 1632712,
     },
     modifications: [
       'pipeline: project-authored expansion GLB (ornithopod, feature=duck-bill) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle',
