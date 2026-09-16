@@ -36,7 +36,7 @@ The 24 new species are curated from the existing candidate repository (`assets/c
 
 ### Batch 3 (Animals 39–44): Specialized Niches & Evolutionary Transitions
 - **39. `baryonyx` (重爪龙)**: Fish-eating spinosaurid with crocodile-like snout (Land / Dinosaur)
-- **40. `giganotosaurus` (南方巨兽龙)**: Giant South American carcharodontosaurid (Land / Dinosaur)
+- **40. `edmontosaurus` (埃德蒙顿龙)**: Late Cretaceous crest-bearing hadrosaurid (Land / Dinosaur)
 - **41. `suchomimus` (似鳄龙)**: Long-snouted Cretaceous piscivorous theropod (Land / Dinosaur)
 - **42. `oviraptor` (窃蛋龙)**: Toothless, crested feathered oviraptorosaur (Land / Dinosaur)
 - **43. `therizinosaurus` (镰刀龙)**: Herbivorous therizinosaur with enormous hand claws (Land / Dinosaur)

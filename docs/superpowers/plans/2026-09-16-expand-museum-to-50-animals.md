@@ -151,21 +151,21 @@
 
 ---
 
-### Task 3: Onboard Batch 3 (Animals 39–44: Baryonyx, Giganotosaurus, Ankylosaurus, Diplodocus, Microraptor, Glyptodon)
+### Task 3: Onboard Batch 3 (Animals 39–44: Baryonyx, Edmontosaurus, Ankylosaurus, Diplodocus, Microraptor, Glyptodon)
 
 **Files:**
-- Create: `src/content/animals/{baryonyx,giganotosaurus,ankylosaurus,diplodocus,microraptor,glyptodon}/**`
+- Create: `src/content/animals/{baryonyx,edmontosaurus,ankylosaurus,diplodocus,microraptor,glyptodon}/**`
 - Modify: `src/content/collections/main.ts`
 - Modify: `src/content/credits.generated.ts`
 - Modify: `THIRD_PARTY_NOTICES.md`
 
 **Interfaces:**
-- Consumes: `assets/candidates/animal-onboarding-2026-08-13-expansion-100/{baryonyx,giganotosaurus,ankylosaurus,diplodocus,microraptor,glyptodon}/profile.json`
+- Consumes: `assets/candidates/animal-onboarding-2026-08-13-expansion-100/{baryonyx,edmontosaurus,ankylosaurus,diplodocus,microraptor,glyptodon}/profile.json`
 - Produces: 6 new published animal packages in `src/content/animals/`, `mainCollection.animalIds` expanded to 44 species.
 
 - [ ] **Step 1: Sign approval records and update review manifest for Batch 3**
   ```bash
-  for id in baryonyx giganotosaurus ankylosaurus diplodocus microraptor glyptodon; do
+  for id in baryonyx edmontosaurus ankylosaurus diplodocus microraptor glyptodon; do
     p="assets/candidates/animal-onboarding-2026-08-13-expansion-100/$id/profile.json"
     npx tsx tools/animal-onboarding/src/cli.ts approval record "$p" --by owner --on 2026-08-17 --approve science,anatomy,materials,background,naturalMotion,mouthComfort,contentZhCN,contentEn,audioZhCN,audioEn,redistribution,production
     npx tsx tools/animal-onboarding/src/cli.ts review prepare "$p"
@@ -177,7 +177,7 @@
   ```bash
   npx tsx tools/animal-onboarding/src/cli.ts promote-batch \
     assets/candidates/animal-onboarding-2026-08-13-expansion-100/baryonyx/profile.json \
-    assets/candidates/animal-onboarding-2026-08-13-expansion-100/giganotosaurus/profile.json \
+    assets/candidates/animal-onboarding-2026-08-13-expansion-100/edmontosaurus/profile.json \
     assets/candidates/animal-onboarding-2026-08-13-expansion-100/ankylosaurus/profile.json \
     assets/candidates/animal-onboarding-2026-08-13-expansion-100/diplodocus/profile.json \
     assets/candidates/animal-onboarding-2026-08-13-expansion-100/microraptor/profile.json \
@@ -188,7 +188,7 @@
 
 - [ ] **Step 3: Render model previews with Playwright WebGL for Batch 3**
   ```bash
-  npx tsx scripts/render-model-previews.ts --target=production baryonyx giganotosaurus ankylosaurus diplodocus microraptor glyptodon
+  npx tsx scripts/render-model-previews.ts --target=production baryonyx edmontosaurus ankylosaurus diplodocus microraptor glyptodon
   ```
   Expected: 36 WebP viewport images rendered and signed in `model-preview.manifest.json`.
 
@@ -201,7 +201,7 @@
 - [ ] **Step 5: Git commit and push Batch 3**
   ```bash
   git add src/content/ THIRD_PARTY_NOTICES.md
-  git commit -m "feat(museum): onboard batch 3 (animals 39-44: baryonyx, giganotosaurus, ankylosaurus, diplodocus, microraptor, glyptodon)"
+  git commit -m "feat(museum): onboard batch 3 (animals 39-44: baryonyx, edmontosaurus, ankylosaurus, diplodocus, microraptor, glyptodon)"
   git push origin main && git push origin main:master
   ```
   Expected: Clean working tree and remote branches synchronized.
