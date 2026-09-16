@@ -23,32 +23,32 @@ The 24 new species are curated from the existing candidate repository (`assets/c
 - **28. `brachiosaurus` (腕龙)**: Giant long-necked sauropod (Land / Dinosaur)
 - **29. `quetzalcoatlus` (风神翼龙)**: Giant late Cretaceous azhdarchid pterosaur (Air / Pterosaur)
 - **30. `elasmosaurus` (薄板龙)**: Extremely long-necked marine plesiosaur (Water / Marine Reptile)
-- **31. `woolly-rhinoceros` (披毛犀)**: Pleistocene cold-adapted megafauna (Land / Mammal)
+- **31. `megaloceros` (大角鹿)**: Giant Pleistocene deer megafauna (Land / Mammal)
 - **32. `anomalocaris` (奇虾)**: Cambrian apex predatory radiodont (Water / Early Arthropod)
 
-### Batch 2 (Animals 33–38): Iconic Theropods & Agile Hunters
+### Batch 2 (Animals 33–38): Iconic Predators, Agile Hunters & Synapsids
 - **33. `albertosaurus` (阿尔伯塔龙)**: Late Cretaceous tyrannosaurid (Land / Dinosaur)
 - **34. `carnotaurus` (食肉牛龙)**: Distinctive horned South American abelisaurid (Land / Dinosaur)
 - **35. `ceratosaurus` (角鼻龙)**: Jurassic horned theropod with dorsal osteoderms (Land / Dinosaur)
-- **36. `coelophysis` (腔骨龙)**: Agile, slender Triassic basal theropod (Land / Dinosaur)
-- **37. `compsognathus` (美颌龙)**: Small, nimble Late Jurassic coelurosaur (Land / Dinosaur)
-- **38. `deinonychus` (恐爪龙)**: Cretaceous dromaeosaurid with prominent sickle claws (Land / Dinosaur)
+- **36. `compsognathus` (美颌龙)**: Small, nimble Late Jurassic coelurosaur (Land / Dinosaur)
+- **37. `deinonychus` (恐爪龙)**: Cretaceous dromaeosaurid with prominent sickle claws (Land / Dinosaur)
+- **38. `dimetrodon` (异齿兽)**: Permian sail-backed synapsid (Land / Synapsid)
 
-### Batch 3 (Animals 39–44): Specialized Niches & Evolutionary Transitions
+### Batch 3 (Animals 39–44): Specialized Niches, Armored Titans & Feathered Wonders
 - **39. `baryonyx` (重爪龙)**: Fish-eating spinosaurid with crocodile-like snout (Land / Dinosaur)
 - **40. `edmontosaurus` (埃德蒙顿龙)**: Late Cretaceous crest-bearing hadrosaurid (Land / Dinosaur)
-- **41. `suchomimus` (似鳄龙)**: Long-snouted Cretaceous piscivorous theropod (Land / Dinosaur)
-- **42. `oviraptor` (窃蛋龙)**: Toothless, crested feathered oviraptorosaur (Land / Dinosaur)
-- **43. `therizinosaurus` (镰刀龙)**: Herbivorous therizinosaur with enormous hand claws (Land / Dinosaur)
-- **44. `archaeopteryx` (始祖鸟)**: Transitional fossil between non-avian dinosaurs and birds (Air / Avialan)
+- **41. `ankylosaurus` (甲龙)**: Armored herbivorous dinosaur with heavy tail club (Land / Dinosaur)
+- **42. `diplodocus` (梁龙)**: Iconic Jurassic sauropod with whip-like tail (Land / Dinosaur)
+- **43. `microraptor` (小盗龙)**: Four-winged arboreal feathered dromaeosaurid (Air / Dinosaur)
+- **44. `glyptodon` (雕齿兽)**: Armored giant mammal of the Pleistocene (Land / Mammal)
 
-### Batch 4 (Animals 45–50): Feathered Icons, Distinctive Crests & Apex Giants
-- **45. `sinosauropteryx` (中华龙鸟)**: First discovered feathered non-avian dinosaur (Land / Dinosaur)
-- **46. `monolophosaurus` (单脊龙)**: Middle Jurassic theropod with midline skull crest (Land / Dinosaur)
+### Batch 4 (Animals 45–50): Apex Predators, Colossal Titanosaurs & Ancient Skies/Seas
+- **45. `acrocanthosaurus` (高棘龙)**: High-spined apex predator of Early Cretaceous North America (Land / Dinosaur)
+- **46. `carcharodontosaurus` (鲨齿龙)**: Giant North African carcharodontosaurid (Land / Dinosaur)
 - **47. `herrerasaurus` (黑瑞拉龙)**: Early carnivorous dinosaur of the Late Triassic (Land / Dinosaur)
-- **48. `utahraptor` (犹他盗龙)**: Largest known member of the dromaeosaurid family (Land / Dinosaur)
-- **49. `acrocanthosaurus` (高棘龙)**: High-spined apex predator of Early Cretaceous North America (Land / Dinosaur)
-- **50. `carcharodontosaurus` (鲨齿龙)**: Giant North African carcharodontosaurid (Land / Dinosaur)
+- **48. `argentinosaurus` (阿根廷龙)**: Colossal titanosaur sauropod (Land / Dinosaur)
+- **49. `anhanguera` (安汉翼龙)**: Toothed fish-hunting Cretaceous pterosaur (Air / Pterosaur)
+- **50. `ophthalmosaurus` (大眼鱼龙)**: Deep-diving Jurassic ichthyosaur (Water / Marine Reptile)
 
 ---
 
