@@ -103,7 +103,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: [Ammonite](https://archive.org/details/thingiverse-2246008) by Steph Piper (sjpiper145)
 - License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - Attribution: “Ammonite” by Steph Piper (sjpiper145), CC0-1.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `908da345d507fa27422f47452afa9b737afdd2c4d1f1a674bb3edeb8198f8291`
+- Runtime SHA-256: `c08fb452e4d41670ba47326791037fa36e6f92148996210d255578a2ca374966`
 - Modifications:
   - pipeline: one-piece fossil-shell PLY scan (not a living-animal reconstruction) -> topology check, stone material, single-bone floating display Idle
   - armature synthesized: 1 bones ['Shell']
@@ -273,7 +273,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: [Corythosaurus](https://commons.wikimedia.org/wiki/File:Corythosaurus_TD.png) by TotalDino
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 - Attribution: “Corythosaurus” by TotalDino, CC-BY-4.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `9f948777776bfa5e4428c35f463a9617ab120a3a4b50a756601147409e09fae5`
+- Runtime SHA-256: `a80d8b3c303912d83e8c1f8e883cf32412a3ea7fc21bf56e2a641a30de0ac8a7`
 - Modifications:
   - pipeline: static sculpt (corythosaurus) -> keep configured meshes, author materials, optional normal bake, synthesize Body/Head/Tail rig + 8 s Idle
   - decimate: ratio 0.322995 (278642 -> 90000 tris, 44998 verts); <= 90000 target
@@ -446,7 +446,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: [Dunkleosteus](https://commons.wikimedia.org/wiki/File:Dunkliferecon.stl) by EvolutionIncarnate
 - License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - Attribution: “Dunkleosteus” by EvolutionIncarnate, CC0-1.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `15576cbf96867bc0b4ccf93913a5cf4bd52ab4b17f885509903f4d1e92f1c9c4`
+- Runtime SHA-256: `2b34967652defc1aa57047a0b308a5ae4f5e543c939f0b44050b92a92c54434a`
 - Modifications:
   - pipeline: unrigged static STL (dunkleosteus) -> topology-budget check/decimate, author materials, synthesize 5-bone articulated spine chain + 8 s swim Idle
   - dunkleosteus: source faces Blender -Y; rotated 180 deg about Z, applied to mesh data -> head now toward +Y (glTF -Z)
@@ -707,7 +707,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: [Jaekelopterus](https://archive.org/details/thingiverse-4702654) by chris mckenzie (dinoking27)
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 - Attribution: “Jaekelopterus” by chris mckenzie (dinoking27), CC-BY-4.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `75e78c6964369a8cb7885352fa2801316a6957c478f36e629f95948558c5c62a`
+- Runtime SHA-256: `9cf9e3831f50309554eeda4aa87dda05bebcf92f1e3d34931aa4214c2e70ee82`
 - Modifications:
   - pipeline: unrigged static STL (jaekelopterus) -> topology-budget check/decimate, author materials, synthesize 5-bone articulated spine chain + 8 s swim Idle
   - jaekelopterus: source faces Blender -Y; rotated 180 deg about Z, applied to mesh data -> head now toward +Y (glTF -Z)
@@ -1307,7 +1307,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: [Parasaurolophus](https://quaternius.com/packs/animateddinosaurs.html) by Quaternius
 - License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - Attribution: “Parasaurolophus” by Quaternius, CC0-1.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `7d6d0b1b9361e3ff91a47033a46b9c827f4a0f6a99e3959ec6e9b445d3b0a358`
+- Runtime SHA-256: `c81d7043cc513c40e5633917321e018d212249416003168d7ac13a2f1b20132b`
 - Modifications:
   - pipeline: rigged .blend source, keeping only 'Parasaurolophus_Idle' retimed to 8 s
   - action 'Parasaurolophus_Idle' (0..60 f, BEZIER) resampled to 'Idle': frames 0..192 at 24 fps = 8.0 s with 3 source cycle(s), one LINEAR key per frame, 102 fcurves; frame 192 resamples frame 0 exactly (seamless loop); pose location channels scaled by 1.000000 (1.0 = armature-space units kept, metres come from the object node scale)
@@ -1735,7 +1735,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: [Smilodon](https://archive.org/details/thingiverse-4759291) by Eric (Tepuitrouble)
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 - Attribution: “Smilodon” by Eric (Tepuitrouble), CC-BY-4.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `d8bb4adff2b59f8567911d8d94348b4023a1607a95167fb051cc9c9442966e2e`
+- Runtime SHA-256: `fdf0fabe75e1457e49d30557dce5fae79ea321a84f90f7ec8e48f5fa6cd54406`
 - Modifications:
   - pipeline: unrigged Smilodon STL -> exact pedestal/component check, decimate to the web target, grounded two-bone deformation rig, 8 s breathing + head-sway Idle
   - smilodon: source faces Blender -Y; rotated 180 deg about Z, applied to mesh data -> head now toward +Y (glTF -Z)
@@ -1823,7 +1823,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: [Spinosaurus](https://sketchfab.com/3d-models/spinosaurus-4f2332ee93874d59a55fb60ed2873ec2) by Julian Johnson-Mortimer (@FreddyFoxFreddy)
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 - Attribution: “Spinosaurus” by Julian Johnson-Mortimer (@FreddyFoxFreddy), CC-BY-4.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `3dbf118be93db76172c6daf94ee41d04bd35637af269fd8575f46644642bb26d`
+- Runtime SHA-256: `f990685b92ce0540147c00ce257d312d6200caaccdb2b84cc4e6f1fe45a87083`
 - Modifications:
   - pipeline: static sculpt (spinosaurus) -> keep configured meshes, author materials, optional normal bake, synthesize Body/Head/Tail rig + 8 s Idle
   - spinosaurus: source faces Blender -Y; rotated 180 deg about Z, applied to mesh data -> head now toward +Y (glTF -Z)
@@ -2258,7 +2258,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: [Raptor Pack (Standing pose)](https://archive.org/details/thingiverse-3784576) by Greg Criddle (Noximous)
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 - Attribution: “Raptor Pack (Standing pose)” by Greg Criddle (Noximous), CC-BY-4.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `f816123cfca3a185bb11cdc13c909120cfc48956ace73a4cf931a2c31f6a76d2`
+- Runtime SHA-256: `9221412578f075bb21a10aaa4c6eb66e1c80a13a769799d346cd6bf3432213ab`
 - Modifications:
   - pipeline: static sculpt (velociraptor) -> keep configured meshes, author materials, optional normal bake, synthesize Body/Head/Tail rig + 8 s Idle
   - velociraptor: source faces Blender -Y; rotated 180 deg about Z, applied to mesh data -> head now toward +Y (glTF -Z)

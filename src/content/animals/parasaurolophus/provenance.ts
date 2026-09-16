@@ -19,8 +19,8 @@ export const provenance = [
       url: 'https://creativecommons.org/publicdomain/zero/1.0/',
     },
     runtime: {
-      sha256: '7d6d0b1b9361e3ff91a47033a46b9c827f4a0f6a99e3959ec6e9b445d3b0a358',
-      bytes: 7930092,
+      sha256: 'c81d7043cc513c40e5633917321e018d212249416003168d7ac13a2f1b20132b',
+      bytes: 1607948,
     },
     modifications: [
       'pipeline: rigged .blend source, keeping only \'Parasaurolophus_Idle\' retimed to 8 s',
