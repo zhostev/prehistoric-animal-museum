@@ -19,8 +19,8 @@ export const provenance = [
       url: 'https://creativecommons.org/publicdomain/zero/1.0/',
     },
     runtime: {
-      sha256: '23a4543f81450a3890899c945b02bd46c9657feeec08a6e9d53a6e283ad96b8b',
-      bytes: 2633476,
+      sha256: '15576cbf96867bc0b4ccf93913a5cf4bd52ab4b17f885509903f4d1e92f1c9c4',
+      bytes: 8552948,
     },
     modifications: [
       'pipeline: unrigged static STL (dunkleosteus) -> topology-budget check/decimate, author materials, synthesize 5-bone articulated spine chain + 8 s swim Idle',

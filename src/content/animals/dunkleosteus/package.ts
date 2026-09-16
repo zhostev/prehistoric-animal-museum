@@ -16,11 +16,6 @@ export const animalDefinition = definePublishedAnimal({
     preciseBounds: true,
     shadow: 'none',
   },
-  animation: {
-    clip: 'Idle',
-    loop: 'repeat',
-    speed: 1,
-  },
   narration: {
     'zh-CN': {
       status: 'ready',

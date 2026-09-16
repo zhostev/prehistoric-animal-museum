@@ -19,8 +19,8 @@ export const provenance = [
       url: 'https://creativecommons.org/publicdomain/zero/1.0/',
     },
     runtime: {
-      sha256: 'eb708299a0a08cd3ed9d11c9b54105c5769b376877a5fb28e4e888324cd6ed41',
-      bytes: 2105996,
+      sha256: '908da345d507fa27422f47452afa9b737afdd2c4d1f1a674bb3edeb8198f8291',
+      bytes: 9482516,
     },
     modifications: [
       'pipeline: one-piece fossil-shell PLY scan (not a living-animal reconstruction) -> topology check, stone material, single-bone floating display Idle',

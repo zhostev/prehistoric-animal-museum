@@ -19,8 +19,8 @@ export const provenance = [
       url: 'https://creativecommons.org/licenses/by/4.0/',
     },
     runtime: {
-      sha256: '35a3a2b4f75b6df268621dd3dfbd44a14ed3bdfbf81696314179f3a9b88a904c',
-      bytes: 3886076,
+      sha256: '9f948777776bfa5e4428c35f463a9617ab120a3a4b50a756601147409e09fae5',
+      bytes: 8030868,
     },
     modifications: [
       'pipeline: static sculpt (corythosaurus) -> keep configured meshes, author materials, optional normal bake, synthesize Body/Head/Tail rig + 8 s Idle',

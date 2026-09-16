@@ -19,8 +19,8 @@ export const provenance = [
       url: 'https://creativecommons.org/licenses/by/4.0/',
     },
     runtime: {
-      sha256: 'cf1025e69e0f3112ba4443d8cedb877df567f0bc450494bedf9c85f315ce2bc9',
-      bytes: 2621804,
+      sha256: 'd8bb4adff2b59f8567911d8d94348b4023a1607a95167fb051cc9c9442966e2e',
+      bytes: 7606492,
     },
     modifications: [
       'pipeline: unrigged Smilodon STL -> exact pedestal/component check, decimate to the web target, grounded two-bone deformation rig, 8 s breathing + head-sway Idle',

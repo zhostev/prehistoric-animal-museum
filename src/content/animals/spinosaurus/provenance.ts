@@ -19,8 +19,8 @@ export const provenance = [
       url: 'https://creativecommons.org/licenses/by/4.0/',
     },
     runtime: {
-      sha256: '61ffb70077690bbc2623504a06b685ed3c2ab4763e861f1c69abf413f64d80a7',
-      bytes: 8432628,
+      sha256: '3dbf118be93db76172c6daf94ee41d04bd35637af269fd8575f46644642bb26d',
+      bytes: 8960428,
     },
     modifications: [
       'pipeline: static sculpt (spinosaurus) -> keep configured meshes, author materials, optional normal bake, synthesize Body/Head/Tail rig + 8 s Idle',
