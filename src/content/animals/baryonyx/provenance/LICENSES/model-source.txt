@@ -1,0 +1,23 @@
+Baryonyx model source and modifications
+=======================================
+
+Direct source:
+project-authored (no upstream)
+
+Creator: Prehistoric Animal Museum (project-authored)
+License: CC0-1.0
+Original downloaded source: 114636 bytes (archive/chosen-model.glb)
+Original SHA-256:
+6e25224d8a88066d6e268069ef79c87422d6b3921b5d9f972d9c39165a9f12ca
+
+Modifications for the Prehistoric Animal Museum:
+- pipeline: project-authored expansion GLB (theropod, feature=long-snout-claw) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
+- scale: source body length 8.1018 Blender units -> 9.0 m; uniform factor 1.110869 applied to mesh data
+- grounding (land): shifted z by +0.18946 m so the lowest vertex rests at z=0
+- armature synthesized: 3 bones ['Body', 'Head', 'Tail']
+- Idle synthesized: frames 0..192 at 24 fps = 8.0 s, two-cycle body breathing, Head +/-5.5 deg, Tail +/-8.0 deg; habitat=land, vertical drift +/-0.0000 m; frame 192 repeats frame 0 exactly (seamless loop)
+- mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
+
+Published runtime GLB: 171928 bytes
+Published SHA-256:
+1766dfc6696a4837480fe4d74721dd88424da032388bea08b6ee1514f08f1896

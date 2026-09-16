@@ -10,8 +10,10 @@ import { animalSeoDescription } from '../src/content/animal-seo'
 import { animalDefinition as albertosaurusDefinition } from '../src/content/animals/albertosaurus/package'
 import { animalDefinition as allosaurusDefinition } from '../src/content/animals/allosaurus/package'
 import { animalDefinition as ammoniteDefinition } from '../src/content/animals/ammonite/package'
+import { animalDefinition as ankylosaurusDefinition } from '../src/content/animals/ankylosaurus/package'
 import { animalDefinition as anomalocarisDefinition } from '../src/content/animals/anomalocaris/package'
 import { animalDefinition as apatosaurusDefinition } from '../src/content/animals/apatosaurus/package'
+import { animalDefinition as baryonyxDefinition } from '../src/content/animals/baryonyx/package'
 import { animalDefinition as brachiosaurusDefinition } from '../src/content/animals/brachiosaurus/package'
 import { animalDefinition as carnotaurusDefinition } from '../src/content/animals/carnotaurus/package'
 import { animalDefinition as ceratosaurusDefinition } from '../src/content/animals/ceratosaurus/package'
@@ -20,9 +22,12 @@ import { animalDefinition as corythosaurusDefinition } from '../src/content/anim
 import { animalDefinition as deinonychusDefinition } from '../src/content/animals/deinonychus/package'
 import { animalDefinition as dilophosaurusDefinition } from '../src/content/animals/dilophosaurus/package'
 import { animalDefinition as dimetrodonDefinition } from '../src/content/animals/dimetrodon/package'
+import { animalDefinition as diplodocusDefinition } from '../src/content/animals/diplodocus/package'
 import { animalDefinition as dunkleosteusDefinition } from '../src/content/animals/dunkleosteus/package'
+import { animalDefinition as edmontosaurusDefinition } from '../src/content/animals/edmontosaurus/package'
 import { animalDefinition as elasmosaurusDefinition } from '../src/content/animals/elasmosaurus/package'
 import { animalDefinition as gigantoraptorDefinition } from '../src/content/animals/gigantoraptor/package'
+import { animalDefinition as glyptodonDefinition } from '../src/content/animals/glyptodon/package'
 import { animalDefinition as ichthyosaurDefinition } from '../src/content/animals/ichthyosaur/package'
 import { animalDefinition as jaekelopterusDefinition } from '../src/content/animals/jaekelopterus/package'
 import { animalDefinition as maiasauraDefinition } from '../src/content/animals/maiasaura/package'
@@ -30,6 +35,7 @@ import { animalDefinition as mammothDefinition } from '../src/content/animals/ma
 import { animalDefinition as megalocerosDefinition } from '../src/content/animals/megaloceros/package'
 import { animalDefinition as megalodonDefinition } from '../src/content/animals/megalodon/package'
 import { animalDefinition as meganeuraDefinition } from '../src/content/animals/meganeura/package'
+import { animalDefinition as microraptorDefinition } from '../src/content/animals/microraptor/package'
 import { animalDefinition as mosasaurusDefinition } from '../src/content/animals/mosasaurus/package'
 import { animalDefinition as pachycephalosaurusDefinition } from '../src/content/animals/pachycephalosaurus/package'
 import { animalDefinition as parasaurolophusDefinition } from '../src/content/animals/parasaurolophus/package'
@@ -123,8 +129,10 @@ const canonicalAnimalDefinitions = [
   albertosaurusDefinition,
   allosaurusDefinition,
   ammoniteDefinition,
+  ankylosaurusDefinition,
   anomalocarisDefinition,
   apatosaurusDefinition,
+  baryonyxDefinition,
   brachiosaurusDefinition,
   carnotaurusDefinition,
   ceratosaurusDefinition,
@@ -133,9 +141,12 @@ const canonicalAnimalDefinitions = [
   deinonychusDefinition,
   dilophosaurusDefinition,
   dimetrodonDefinition,
+  diplodocusDefinition,
   dunkleosteusDefinition,
+  edmontosaurusDefinition,
   elasmosaurusDefinition,
   gigantoraptorDefinition,
+  glyptodonDefinition,
   ichthyosaurDefinition,
   jaekelopterusDefinition,
   maiasauraDefinition,
@@ -143,6 +154,7 @@ const canonicalAnimalDefinitions = [
   megalocerosDefinition,
   megalodonDefinition,
   meganeuraDefinition,
+  microraptorDefinition,
   mosasaurusDefinition,
   pachycephalosaurusDefinition,
   parasaurolophusDefinition,

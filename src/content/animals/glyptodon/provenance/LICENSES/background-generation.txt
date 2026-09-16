@@ -1,0 +1,22 @@
+Glyptodon background generation record
+======================================
+
+Tool: Blender 4.5.12 (project-authored habitat scene, deterministic seed)
+Seed: 1961557539
+Generated: 2026-08-17
+Use: project-specific responsive museum backgrounds
+
+The landscape and portrait were rendered as separate deterministic EEVEE Next
+passes from the project-authored habitat scene spec
+qa/derivatives-scene-spec.json (SHA-256 f158278c1d9136eb1631ad27e12e7a1de1cd3e396b52bfaef9175843c948e8b9).
+No animal, person, text, UI, logo, or watermark appears in the renders.
+
+Landscape runtime WebP: 14490 bytes (1920 × 1080)
+SHA-256: 3323dcddd918807aa4830fec6a02fc7416c2aa975c772d9778c247aa4ccb10fa
+
+Portrait runtime WebP: 8084 bytes (1080 × 1920)
+SHA-256: a850c1c921001274b45f8d69b64e5ee6969e61a2d5ec376edb4e01cd7915fbe9
+
+The reviewed renders were encoded as lossy WebP at quality 82.
+The project owner approved public distribution on 2026-08-17.
+Recorded in approval-record.json: approved by owner on 2026-08-17.

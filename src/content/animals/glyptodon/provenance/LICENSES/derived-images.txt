@@ -1,0 +1,18 @@
+Glyptodon poster and thumbnail derivation record
+==================================================
+
+Generated: 2026-08-17
+
+The 1200 × 675 poster and the
+390 × 844 portrait poster are deterministic
+runtime captures of the normalized model without text, controls, logos, or
+watermarks. The 320 × 320 thumbnail was
+captured from the accepted desktop review presentation after hiding all
+interface chrome.
+
+Poster SHA-256: aa42902d62857de62d2e8c72f63b6ff8ed933701b53dad8bd2a19f3b1c5f72fd (11752 bytes)
+Portrait poster SHA-256: 5626820c9d3c29045e8b56e46d78092364abc3eacce0bcbec4ad3f4cece5b949 (3448 bytes)
+Thumbnail SHA-256: 588bbf3dcb339999e32f9f2e7c01fbba8b5ccd8829bc8713e9725306d6106627 (2602 bytes)
+
+The model attribution and CC0-1.0 terms in model-license.txt
+continue to apply. The background generation record is retained separately.

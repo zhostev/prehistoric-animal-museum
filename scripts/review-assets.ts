@@ -1087,6 +1087,9 @@ const reviewAnimalFiles: Readonly<
     backgroundPortrait: repositoryFile(
       'assets/candidates/animal-onboarding-2026-08-13-expansion-100/microraptor/output/background-portrait.webp',
     ),
+    narration: repositoryFile(
+      'assets/candidates/animal-onboarding-2026-08-13-expansion-100/microraptor/output/audio/narration.zh-CN.mp3',
+    ),
     poster: repositoryFile(
       'assets/candidates/animal-onboarding-2026-08-13-expansion-100/microraptor/output/poster.webp',
     ),
@@ -1106,6 +1109,9 @@ const reviewAnimalFiles: Readonly<
     ),
     backgroundPortrait: repositoryFile(
       'assets/candidates/animal-onboarding-2026-08-13-expansion-100/diplodocus/output/background-portrait.webp',
+    ),
+    narration: repositoryFile(
+      'assets/candidates/animal-onboarding-2026-08-13-expansion-100/diplodocus/output/audio/narration.zh-CN.mp3',
     ),
     poster: repositoryFile(
       'assets/candidates/animal-onboarding-2026-08-13-expansion-100/diplodocus/output/poster.webp',
@@ -1206,6 +1212,9 @@ const reviewAnimalFiles: Readonly<
     ),
     backgroundPortrait: repositoryFile(
       'assets/candidates/animal-onboarding-2026-08-13-expansion-100/ankylosaurus/output/background-portrait.webp',
+    ),
+    narration: repositoryFile(
+      'assets/candidates/animal-onboarding-2026-08-13-expansion-100/ankylosaurus/output/audio/narration.zh-CN.mp3',
     ),
     poster: repositoryFile(
       'assets/candidates/animal-onboarding-2026-08-13-expansion-100/ankylosaurus/output/poster.webp',
@@ -1366,6 +1375,9 @@ const reviewAnimalFiles: Readonly<
     ),
     backgroundPortrait: repositoryFile(
       'assets/candidates/animal-onboarding-2026-08-13-expansion-100/edmontosaurus/output/background-portrait.webp',
+    ),
+    narration: repositoryFile(
+      'assets/candidates/animal-onboarding-2026-08-13-expansion-100/edmontosaurus/output/audio/narration.zh-CN.mp3',
     ),
     poster: repositoryFile(
       'assets/candidates/animal-onboarding-2026-08-13-expansion-100/edmontosaurus/output/poster.webp',
@@ -1915,6 +1927,9 @@ const reviewAnimalFiles: Readonly<
     ),
     backgroundPortrait: repositoryFile(
       'assets/candidates/animal-onboarding-2026-08-13-expansion-100/glyptodon/output/background-portrait.webp',
+    ),
+    narration: repositoryFile(
+      'assets/candidates/animal-onboarding-2026-08-13-expansion-100/glyptodon/output/audio/narration.zh-CN.mp3',
     ),
     poster: repositoryFile(
       'assets/candidates/animal-onboarding-2026-08-13-expansion-100/glyptodon/output/poster.webp',

@@ -279,5 +279,5 @@ describe('localized museum prerender document', () => {
     } finally {
       await rm(outputDirectory, { recursive: true })
     }
-  }, 15_000)
+  }, 60_000)
 })

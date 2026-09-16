@@ -1,0 +1,22 @@
+Ankylosaurus background generation record
+=========================================
+
+Tool: Blender 4.5.12 (project-authored habitat scene, deterministic seed)
+Seed: 3807037400
+Generated: 2026-08-17
+Use: project-specific responsive museum backgrounds
+
+The landscape and portrait were rendered as separate deterministic EEVEE Next
+passes from the project-authored habitat scene spec
+qa/derivatives-scene-spec.json (SHA-256 3618327b087af6574441994f90b5ab98f7ba40c627a2fc6295d31479a83812b7).
+No animal, person, text, UI, logo, or watermark appears in the renders.
+
+Landscape runtime WebP: 15002 bytes (1920 × 1080)
+SHA-256: 5972bca8c1f14a8d84b2922b86a22d0b25d9757bb89f967ce676942dab0341d4
+
+Portrait runtime WebP: 8212 bytes (1080 × 1920)
+SHA-256: 7c89ef44929bcaad740be3492e5d5352e93493289a9dc3bb8bd6155e84caac53
+
+The reviewed renders were encoded as lossy WebP at quality 82.
+The project owner approved public distribution on 2026-08-17.
+Recorded in approval-record.json: approved by owner on 2026-08-17.

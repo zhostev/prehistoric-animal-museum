@@ -1,0 +1,46 @@
+Qwen3-TTS Serena narration rights record
+Reviewed: 2026-08-17
+
+The Mandarin and English scripts are project-authored. Both audio takes were
+generated offline with Qwen3-TTS-12Hz-0.6B-CustomVoice using its built-in
+Serena speaker, normalized to 48 kHz mono MP3s, and listened to and approved
+by the project owner.
+
+Qwen3-TTS code and the official 0.6B CustomVoice model card are Apache-2.0:
+https://github.com/QwenLM/Qwen3-TTS/blob/main/LICENSE
+https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice
+
+The official release identifies Serena among the open-sourced timbres:
+https://qwen.ai/blog/?id=qwen3tts-0115
+
+The owner approves public distribution of these reviewed MP3s. The public
+notice identifies the model, Serena speaker, AI synthesis, and model license.
+Recorded in approval-record.json: approved by owner on 2026-08-17.
+
+Chinese narration approval
+
+Locale: zh-CN
+Speaker: Serena
+Language: Chinese
+Generated: 2026-08-17
+Runtime bytes: 100268
+Runtime SHA-256: d74449b64c29eba35991b028909ae6529bd96dcf9a299462c9fabd9c112d0b7e
+Human listening review: approved
+Public distribution decision: approved
+Approved: project owner owner on 2026-08-17
+
+Script: 这是雕齿兽，学名是Glyptodon clavipes。看看它醒目的“domed shell”外形，再观察轻轻的呼吸、转头和尾部动作。
+
+English narration approval
+
+Locale: en
+Speaker: Serena
+Language: English
+Generated: 2026-08-17
+Runtime bytes: 124076
+Runtime SHA-256: d90eca2a8667e0fbd5409a629c03a09d8eeebacf8c799daf7733e5279b7fac56
+Human listening review: approved
+Public distribution decision: approved
+Approved: project owner owner on 2026-08-17
+
+Script: This is Glyptodon, a prehistoric animal known as Glyptodon clavipes. Look for its domed shell. Watch the gentle breathing, head movement and tail motion that make this reconstruction feel alert.

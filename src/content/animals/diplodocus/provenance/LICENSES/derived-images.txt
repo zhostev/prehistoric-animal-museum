@@ -1,0 +1,18 @@
+Diplodocus poster and thumbnail derivation record
+===================================================
+
+Generated: 2026-08-17
+
+The 1200 × 675 poster and the
+390 × 844 portrait poster are deterministic
+runtime captures of the normalized model without text, controls, logos, or
+watermarks. The 320 × 320 thumbnail was
+captured from the accepted desktop review presentation after hiding all
+interface chrome.
+
+Poster SHA-256: e48aa6bd8d9d616cc6620a4036bc0951fa0e4fd27bbe8c4a4cdd9573c7f77ec2 (11210 bytes)
+Portrait poster SHA-256: 4a495c9a2ca351aef48c51e5d2121c1d3f0ab00c2957c21e5fefbafd06379b15 (3886 bytes)
+Thumbnail SHA-256: 6d88f1fd9f9e6c4ceb34a822488a2b3171a1691323dd4a9d9b55f9a2e629152b (2576 bytes)
+
+The model attribution and CC0-1.0 terms in model-license.txt
+continue to apply. The background generation record is retained separately.

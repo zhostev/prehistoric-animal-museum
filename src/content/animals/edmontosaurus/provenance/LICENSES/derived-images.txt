@@ -1,0 +1,18 @@
+Edmontosaurus poster and thumbnail derivation record
+======================================================
+
+Generated: 2026-08-17
+
+The 1200 × 675 poster and the
+390 × 844 portrait poster are deterministic
+runtime captures of the normalized model without text, controls, logos, or
+watermarks. The 320 × 320 thumbnail was
+captured from the accepted desktop review presentation after hiding all
+interface chrome.
+
+Poster SHA-256: e56929d3c7ecb8d9c89809e1f2bed6ba692572ee142f2d86b2b16efa48ffd7f6 (11140 bytes)
+Portrait poster SHA-256: 1d2283ff055e94f6edbbef6ddf6d6baceafa8d36a2bc5d2522d00e65024d6c98 (3748 bytes)
+Thumbnail SHA-256: 00e4bf885ed97e8ad17b40cf18036aec4503a602e9580d2d3d8df42c8062213b (2502 bytes)
+
+The model attribution and CC0-1.0 terms in model-license.txt
+continue to apply. The background generation record is retained separately.

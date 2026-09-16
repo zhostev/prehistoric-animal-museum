@@ -1,0 +1,18 @@
+Ankylosaurus poster and thumbnail derivation record
+=====================================================
+
+Generated: 2026-08-17
+
+The 1200 × 675 poster and the
+390 × 844 portrait poster are deterministic
+runtime captures of the normalized model without text, controls, logos, or
+watermarks. The 320 × 320 thumbnail was
+captured from the accepted desktop review presentation after hiding all
+interface chrome.
+
+Poster SHA-256: 23a1782eff6fb43b220d79e78c7f0c6d6039ebcaa7fbd57e957ae2704c98ebba (11212 bytes)
+Portrait poster SHA-256: 2177ce33623d23343f1f232716774e1b944b0ac1222d777ab682c581eb20ccec (3454 bytes)
+Thumbnail SHA-256: b13a48ef62c9d0245e9f53c08129e274584afda4215bbe180ccbf5fd260ac901 (2522 bytes)
+
+The model attribution and CC0-1.0 terms in model-license.txt
+continue to apply. The background generation record is retained separately.

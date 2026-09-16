@@ -1,0 +1,18 @@
+Microraptor poster and thumbnail derivation record
+====================================================
+
+Generated: 2026-08-17
+
+The 1200 × 675 poster and the
+390 × 844 portrait poster are deterministic
+runtime captures of the normalized model without text, controls, logos, or
+watermarks. The 320 × 320 thumbnail was
+captured from the accepted desktop review presentation after hiding all
+interface chrome.
+
+Poster SHA-256: e176db1070084d80f150e39ef5329a16815c68f0488488c07d4bc74f059641ca (11224 bytes)
+Portrait poster SHA-256: cace3d0b97653a80294246b4a14a48feef8b944e4f648ae3447ee11ea62774e3 (3440 bytes)
+Thumbnail SHA-256: 52098767930dd6fc65d1cac3a7e2bde4d63b5a7bc62d45b5602c1683142b23ee (2590 bytes)
+
+The model attribution and CC0-1.0 terms in model-license.txt
+continue to apply. The background generation record is retained separately.

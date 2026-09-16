@@ -1,0 +1,22 @@
+Edmontosaurus background generation record
+==========================================
+
+Tool: Blender 4.5.12 (project-authored habitat scene, deterministic seed)
+Seed: 1345034580
+Generated: 2026-08-17
+Use: project-specific responsive museum backgrounds
+
+The landscape and portrait were rendered as separate deterministic EEVEE Next
+passes from the project-authored habitat scene spec
+qa/derivatives-scene-spec.json (SHA-256 cf4756b4c8bd91c7b95a47b472c8e30b622fa26d850474948e6613e164546d9d).
+No animal, person, text, UI, logo, or watermark appears in the renders.
+
+Landscape runtime WebP: 15498 bytes (1920 × 1080)
+SHA-256: 671f55139d3f1a6d9e1c6a7e48ba8aa9cfd4d78ff07d7533c98da4da28dcd293
+
+Portrait runtime WebP: 9404 bytes (1080 × 1920)
+SHA-256: d0402e85830fa22cba99d5bdd109a658f330d02034e36df55644cea75c2b9bcc
+
+The reviewed renders were encoded as lossy WebP at quality 82.
+The project owner approved public distribution on 2026-08-17.
+Recorded in approval-record.json: approved by owner on 2026-08-17.

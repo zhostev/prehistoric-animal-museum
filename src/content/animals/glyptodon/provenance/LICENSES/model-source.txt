@@ -1,0 +1,23 @@
+Glyptodon model source and modifications
+========================================
+
+Direct source:
+project-authored (no upstream)
+
+Creator: Prehistoric Animal Museum (project-authored)
+License: CC0-1.0
+Original downloaded source: 111080 bytes (archive/chosen-model.glb)
+Original SHA-256:
+aaf6a3df6d51c559144c45666da6ad96d0a40211efe09c98f766ee7950319e59
+
+Modifications for the Prehistoric Animal Museum:
+- pipeline: project-authored expansion GLB (armored-mammal, feature=domed-shell) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
+- scale: source body length 5.9621 Blender units -> 3.0 m; uniform factor 0.503178 applied to mesh data
+- grounding (land): shifted z by -0.53240 m so the lowest vertex rests at z=0
+- armature synthesized: 3 bones ['Body', 'Head', 'Tail']
+- Idle synthesized: frames 0..192 at 24 fps = 8.0 s, two-cycle body breathing, Head +/-5.5 deg, Tail +/-8.0 deg; habitat=land, vertical drift +/-0.0000 m; frame 192 repeats frame 0 exactly (seamless loop)
+- mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
+
+Published runtime GLB: 173084 bytes
+Published SHA-256:
+9c0ab8e473182e943a0e9f22482416b13d5664c99c50d8e9408f144ad075bf1e

@@ -1,0 +1,22 @@
+Diplodocus background generation record
+=======================================
+
+Tool: Blender 4.5.12 (project-authored habitat scene, deterministic seed)
+Seed: 239664227
+Generated: 2026-08-17
+Use: project-specific responsive museum backgrounds
+
+The landscape and portrait were rendered as separate deterministic EEVEE Next
+passes from the project-authored habitat scene spec
+qa/derivatives-scene-spec.json (SHA-256 a1184ca7a8e9c0a1c86479998d50a4af47170e13600272f4cfc523fa0c6f6282).
+No animal, person, text, UI, logo, or watermark appears in the renders.
+
+Landscape runtime WebP: 15804 bytes (1920 × 1080)
+SHA-256: 793056099f59176a00b7163ce24987577da428b24243f1c4f493c79df43c93e3
+
+Portrait runtime WebP: 10018 bytes (1080 × 1920)
+SHA-256: 1055bae867843d55ce361c305e4ed3946a554b35944f939d8ad02cc4dadce68a
+
+The reviewed renders were encoded as lossy WebP at quality 82.
+The project owner approved public distribution on 2026-08-17.
+Recorded in approval-record.json: approved by owner on 2026-08-17.

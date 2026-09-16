@@ -16,6 +16,8 @@ import {
   type AnimalCollection,
   type AnimalPackageDefinition,
   type AssetProvenance,
+  type AtmosphereKind,
+  type Habitat,
 } from '../src/content/types'
 import type { LoadedAnimalDefinition } from './content-data'
 
@@ -874,14 +876,19 @@ function validateContentFields(
       ),
     )
   }
-  const atmosphereHabitat = {
-    air: 'air',
-    forest: 'land',
-    ice: 'land',
-    plains: 'land',
-    underwater: 'water',
-  } as const
-  if (atmosphereHabitat[definition.atmosphere] !== definition.habitat) {
+  const allowedAtmospheresByHabitat: Record<
+    Habitat,
+    readonly AtmosphereKind[]
+  > = {
+    air: ['air', 'forest', 'plains'],
+    land: ['forest', 'ice', 'plains'],
+    water: ['underwater'],
+  }
+  if (
+    !allowedAtmospheresByHabitat[definition.habitat].includes(
+      definition.atmosphere,
+    )
+  ) {
     issues.push(
       issue(
         'error',

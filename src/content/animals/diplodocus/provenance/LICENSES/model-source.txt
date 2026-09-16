@@ -1,0 +1,23 @@
+Diplodocus model source and modifications
+=========================================
+
+Direct source:
+project-authored (no upstream)
+
+Creator: Prehistoric Animal Museum (project-authored)
+License: CC0-1.0
+Original downloaded source: 145572 bytes (archive/chosen-model.glb)
+Original SHA-256:
+c5dbb02cab0ac2a3b5920afb6e7b11c5302bd7e523cb38566956be6ea4ff00dd
+
+Modifications for the Prehistoric Animal Museum:
+- pipeline: project-authored expansion GLB (sauropod, feature=whip-tail) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
+- scale: source body length 11.0773 Blender units -> 25.0 m; uniform factor 2.256861 applied to mesh data
+- grounding (land): shifted z by +2.08504 m so the lowest vertex rests at z=0
+- armature synthesized: 3 bones ['Body', 'Head', 'Tail']
+- Idle synthesized: frames 0..192 at 24 fps = 8.0 s, two-cycle body breathing, Head +/-5.5 deg, Tail +/-8.0 deg; habitat=land, vertical drift +/-0.0000 m; frame 192 repeats frame 0 exactly (seamless loop)
+- mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
+
+Published runtime GLB: 221956 bytes
+Published SHA-256:
+8fc4537d39b81b9b90ee9a33d9a3dcc0845b5e856e224063c532c6eae5d14856

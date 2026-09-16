@@ -281,6 +281,92 @@ content, contributions, and Brand Assets follow the separate scopes in
   - armature synthesized: 1 bones ['Shell']
   - Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys; fossil-shell exhibit follows a bounded three-axis drift (+/-0.012/+/-0.006/+/-0.022 m) and layered one-/two-cycle rocking (+/-7.0/+/-3.0 deg); this is display motion, not invented living anatomy; frame 192 repeats frame 0 exactly
   - mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
+## 甲龙 (`ankylosaurus`)
+
+### `audio/narration.en.mp3`
+
+- Asset type: narration
+- Source: Ankylosaurus English narration, generated with Qwen3-TTS CustomVoice on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Qwen3-TTS output](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated English narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).
+- Runtime SHA-256: `4c59456717d383378683ba5824f7f8d08bd76dcc90090112203a5127d86d4afd`
+- Modifications:
+  - Generated offline from the exact reviewed two-sentence script.
+  - Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis.
+### `audio/narration.zh-CN.mp3`
+
+- Asset type: narration
+- Source: Ankylosaurus Mandarin narration, generated with Qwen3-TTS CustomVoice on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Qwen3-TTS output](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Mandarin narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).
+- Runtime SHA-256: `ee743158711ada04826e798f3e0420b446674b2e1bef292df1dc8faec6fc26ed`
+- Modifications:
+  - Generated offline from the exact reviewed two-sentence script.
+  - Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis.
+### `backgrounds/landscape.webp`
+
+- Asset type: background
+- Source: Ankylosaurus habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Ankylosaurus landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
+- Runtime SHA-256: `5972bca8c1f14a8d84b2922b86a22d0b25d9757bb89f967ce676942dab0341d4`
+- Modifications:
+  - Rendered the landscape pass deterministically from the project-authored habitat scene spec with EEVEE Next.
+  - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
+### `backgrounds/portrait.webp`
+
+- Asset type: background
+- Source: Ankylosaurus habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Ankylosaurus portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
+- Runtime SHA-256: `7c89ef44929bcaad740be3492e5d5352e93493289a9dc3bb8bd6155e84caac53`
+- Modifications:
+  - Rendered the portrait pass deterministically from the project-authored habitat scene spec with EEVEE Next.
+  - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
+### `images/poster-portrait.webp`
+
+- Asset type: poster
+- Source: Ankylosaurus transparent portrait model still, derived on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Ankylosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `2177ce33623d23343f1f232716774e1b944b0ac1222d777ab682c581eb20ccec`
+- Modifications:
+  - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
+  - Encoded as exact lossless WebP without text, controls, labels, logos, or watermarks.
+### `images/poster.webp`
+
+- Asset type: poster
+- Source: Ankylosaurus transparent model still, derived on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Ankylosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `23a1782eff6fb43b220d79e78c7f0c6d6039ebcaa7fbd57e957ae2704c98ebba`
+- Modifications:
+  - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
+  - Encoded as lossless WebP without text, controls, labels, logos, or watermarks.
+### `images/thumbnail.webp`
+
+- Asset type: thumbnail
+- Source: Ankylosaurus collection thumbnail, derived on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Ankylosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum. Scene art generated for this project.
+- Runtime SHA-256: `b13a48ef62c9d0245e9f53c08129e274584afda4215bbe180ccbf5fd260ac901`
+- Modifications:
+  - Selected a card-size crop that keeps the animal readable.
+  - Exported without embedded text, controls, labels, logos, or watermarks.
+### `model/model.glb`
+
+- Asset type: model
+- Source: Ankylosaurus deterministic procedural model source, generated with Blender Python generator authored by the Prehistoric Animal Museum on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Ankylosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `c3cd1f00a4d79e47bd9fbf206124562caa0effe484413a2cf1dd48cb709647f5`
+- Modifications:
+  - pipeline: project-authored expansion GLB (armored, feature=tail-club) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
+  - scale: source body length 6.7420 Blender units -> 8.0 m; uniform factor 1.186593 applied to mesh data
+  - grounding (land): shifted z by +0.23850 m so the lowest vertex rests at z=0
+  - armature synthesized: 3 bones ['Body', 'Head', 'Tail']
+  - Idle synthesized: frames 0..192 at 24 fps = 8.0 s, two-cycle body breathing, Head +/-5.5 deg, Tail +/-8.0 deg; habitat=land, vertical drift +/-0.0000 m; frame 192 repeats frame 0 exactly (seamless loop)
+  - mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
 ## 奇虾 (`anomalocaris`)
 
 ### `audio/narration.en.mp3`
@@ -452,6 +538,92 @@ content, contributions, and Brand Assets follow the separate scopes in
   - Normalized the animal to a 3.2-unit total length with canonical transforms, centred horizontal bounds, and all four feet resting on the ground plane.
   - Authored one eight-second in-place morph-target Idle at 24 frames per second; all feet and lower limbs remain fixed, the loop closes exactly, and the head and open mouth move as one rigid region.
   - Verified zero foot drift, ground penetration, seam separation, new BVH overlap, collapsed triangles, and flipped triangles, then validator-checked and reviewed the derivative in the shared museum viewer.
+## 重爪龙 (`baryonyx`)
+
+### `audio/narration.en.mp3`
+
+- Asset type: narration
+- Source: Baryonyx English narration, generated with Qwen3-TTS CustomVoice on 2026-08-14
+- License: [CC BY-NC-SA 4.0 project-owned Qwen3-TTS output](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated English narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).
+- Runtime SHA-256: `30655b349468ca71ca841a5ada8de859b37e676445d8127db4d492eabc753dfd`
+- Modifications:
+  - Generated offline from the exact reviewed two-sentence script.
+  - Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis.
+### `audio/narration.zh-CN.mp3`
+
+- Asset type: narration
+- Source: Baryonyx Mandarin narration, generated with Qwen3-TTS CustomVoice on 2026-08-14
+- License: [CC BY-NC-SA 4.0 project-owned Qwen3-TTS output](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Mandarin narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).
+- Runtime SHA-256: `8746ad433495b9bbd38caee7526c001b568c56cfc95e05fc31792f2517074b20`
+- Modifications:
+  - Generated offline from the exact reviewed two-sentence script.
+  - Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis.
+### `backgrounds/landscape.webp`
+
+- Asset type: background
+- Source: Baryonyx habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Baryonyx landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
+- Runtime SHA-256: `3b2a15fea4750e49eb94896ba5fc68648405078b9afda8a78f9e8bf1dcd9b058`
+- Modifications:
+  - Rendered the landscape pass deterministically from the project-authored habitat scene spec with EEVEE Next.
+  - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
+### `backgrounds/portrait.webp`
+
+- Asset type: background
+- Source: Baryonyx habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Baryonyx portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
+- Runtime SHA-256: `33aae73b778067f922780d6f347c515a4cc29f3f640a423ada3c0927cccfa311`
+- Modifications:
+  - Rendered the portrait pass deterministically from the project-authored habitat scene spec with EEVEE Next.
+  - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
+### `images/poster-portrait.webp`
+
+- Asset type: poster
+- Source: Baryonyx transparent portrait model still, derived on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Baryonyx” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `eee8c8d10e9fc2e226a043240465a1d0c8d815df12d2bf7bd8ecb99a7e26d15f`
+- Modifications:
+  - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
+  - Encoded as exact lossless WebP without text, controls, labels, logos, or watermarks.
+### `images/poster.webp`
+
+- Asset type: poster
+- Source: Baryonyx transparent model still, derived on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Baryonyx” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `40c7bc0ac56909d44cbecf38511c12b1ed37aa78db11a51d415fd4702e485ac9`
+- Modifications:
+  - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
+  - Encoded as lossless WebP without text, controls, labels, logos, or watermarks.
+### `images/thumbnail.webp`
+
+- Asset type: thumbnail
+- Source: Baryonyx collection thumbnail, derived on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Baryonyx” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum. Scene art generated for this project.
+- Runtime SHA-256: `9e81c944fc2a7f3c129c311cff3fdfa1df7b60be6bd2689d4facc3eb0a375825`
+- Modifications:
+  - Selected a card-size crop that keeps the animal readable.
+  - Exported without embedded text, controls, labels, logos, or watermarks.
+### `model/model.glb`
+
+- Asset type: model
+- Source: Baryonyx deterministic procedural model source, generated with Blender Python generator authored by the Prehistoric Animal Museum on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Baryonyx” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `1766dfc6696a4837480fe4d74721dd88424da032388bea08b6ee1514f08f1896`
+- Modifications:
+  - pipeline: project-authored expansion GLB (theropod, feature=long-snout-claw) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
+  - scale: source body length 8.1018 Blender units -> 9.0 m; uniform factor 1.110869 applied to mesh data
+  - grounding (land): shifted z by +0.18946 m so the lowest vertex rests at z=0
+  - armature synthesized: 3 bones ['Body', 'Head', 'Tail']
+  - Idle synthesized: frames 0..192 at 24 fps = 8.0 s, two-cycle body breathing, Head +/-5.5 deg, Tail +/-8.0 deg; habitat=land, vertical drift +/-0.0000 m; frame 192 repeats frame 0 exactly (seamless loop)
+  - mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
 ## 腕龙 (`brachiosaurus`)
 
 ### `audio/narration.en.mp3`
@@ -1141,6 +1313,92 @@ content, contributions, and Brand Assets follow the separate scopes in
   - armature synthesized: 3 bones ['Body', 'Head', 'Tail']
   - Idle synthesized: frames 0..192 at 24 fps = 8.0 s, two-cycle body breathing, Head +/-5.5 deg, Tail +/-8.0 deg; habitat=land, vertical drift +/-0.0000 m; frame 192 repeats frame 0 exactly (seamless loop)
   - mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
+## 梁龙 (`diplodocus`)
+
+### `audio/narration.en.mp3`
+
+- Asset type: narration
+- Source: Diplodocus English narration, generated with Qwen3-TTS CustomVoice on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Qwen3-TTS output](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated English narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).
+- Runtime SHA-256: `7a8b68f4effa74a669280a1c93ee8a6d48938c728dbdc9eecbc7c364eea84b80`
+- Modifications:
+  - Generated offline from the exact reviewed two-sentence script.
+  - Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis.
+### `audio/narration.zh-CN.mp3`
+
+- Asset type: narration
+- Source: Diplodocus Mandarin narration, generated with Qwen3-TTS CustomVoice on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Qwen3-TTS output](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Mandarin narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).
+- Runtime SHA-256: `9055aaade7f7df4d6364967ff53e3cff8369defbfea694c230c60e1cd3fcf2c2`
+- Modifications:
+  - Generated offline from the exact reviewed two-sentence script.
+  - Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis.
+### `backgrounds/landscape.webp`
+
+- Asset type: background
+- Source: Diplodocus habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Diplodocus landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
+- Runtime SHA-256: `793056099f59176a00b7163ce24987577da428b24243f1c4f493c79df43c93e3`
+- Modifications:
+  - Rendered the landscape pass deterministically from the project-authored habitat scene spec with EEVEE Next.
+  - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
+### `backgrounds/portrait.webp`
+
+- Asset type: background
+- Source: Diplodocus habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Diplodocus portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
+- Runtime SHA-256: `1055bae867843d55ce361c305e4ed3946a554b35944f939d8ad02cc4dadce68a`
+- Modifications:
+  - Rendered the portrait pass deterministically from the project-authored habitat scene spec with EEVEE Next.
+  - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
+### `images/poster-portrait.webp`
+
+- Asset type: poster
+- Source: Diplodocus transparent portrait model still, derived on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Diplodocus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `4a495c9a2ca351aef48c51e5d2121c1d3f0ab00c2957c21e5fefbafd06379b15`
+- Modifications:
+  - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
+  - Encoded as exact lossless WebP without text, controls, labels, logos, or watermarks.
+### `images/poster.webp`
+
+- Asset type: poster
+- Source: Diplodocus transparent model still, derived on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Diplodocus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `e48aa6bd8d9d616cc6620a4036bc0951fa0e4fd27bbe8c4a4cdd9573c7f77ec2`
+- Modifications:
+  - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
+  - Encoded as lossless WebP without text, controls, labels, logos, or watermarks.
+### `images/thumbnail.webp`
+
+- Asset type: thumbnail
+- Source: Diplodocus collection thumbnail, derived on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Diplodocus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum. Scene art generated for this project.
+- Runtime SHA-256: `6d88f1fd9f9e6c4ceb34a822488a2b3171a1691323dd4a9d9b55f9a2e629152b`
+- Modifications:
+  - Selected a card-size crop that keeps the animal readable.
+  - Exported without embedded text, controls, labels, logos, or watermarks.
+### `model/model.glb`
+
+- Asset type: model
+- Source: Diplodocus deterministic procedural model source, generated with Blender Python generator authored by the Prehistoric Animal Museum on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Diplodocus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `8fc4537d39b81b9b90ee9a33d9a3dcc0845b5e856e224063c532c6eae5d14856`
+- Modifications:
+  - pipeline: project-authored expansion GLB (sauropod, feature=whip-tail) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
+  - scale: source body length 11.0773 Blender units -> 25.0 m; uniform factor 2.256861 applied to mesh data
+  - grounding (land): shifted z by +2.08504 m so the lowest vertex rests at z=0
+  - armature synthesized: 3 bones ['Body', 'Head', 'Tail']
+  - Idle synthesized: frames 0..192 at 24 fps = 8.0 s, two-cycle body breathing, Head +/-5.5 deg, Tail +/-8.0 deg; habitat=land, vertical drift +/-0.0000 m; frame 192 repeats frame 0 exactly (seamless loop)
+  - mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
 ## 邓氏鱼 (`dunkleosteus`)
 
 ### `audio/narration.en.mp3`
@@ -1229,6 +1487,92 @@ content, contributions, and Brand Assets follow the separate scopes in
   - centring (water): shifted by [-0.23914, 3.21208, -1.57498] m so the bounding-box centre sits at the origin (x/y centred, centred vertically in the water column)
   - armature synthesized: 5-bone spine chain Spine1..Spine5 along -Y (head end y=0.90 m to tail tip y=-3.00 m), roll 0
   - Idle synthesized: frames 0..192 at 24 fps = 8.0 s, one LINEAR key per frame; 3 travelling-wave cycles with lateral amplitudes [1.5, 3.5, 6.0, 9.0, 12.0] deg (Spine1->Spine5, phase -0.68 rad/bone), two-cycle vertical bob +/-0.05 m plus gentle whole-body pitch/roll, no forward root travel; frame 192 repeats frame 0 exactly (seamless loop)
+  - mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
+## 埃德蒙顿龙 (`edmontosaurus`)
+
+### `audio/narration.en.mp3`
+
+- Asset type: narration
+- Source: Edmontosaurus English narration, generated with Qwen3-TTS CustomVoice on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Qwen3-TTS output](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated English narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).
+- Runtime SHA-256: `007a546f961cd67b0a32f32e8a42a3a7b21665e575a65a72b1f53d86c16d9ccb`
+- Modifications:
+  - Generated offline from the exact reviewed two-sentence script.
+  - Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis.
+### `audio/narration.zh-CN.mp3`
+
+- Asset type: narration
+- Source: Edmontosaurus Mandarin narration, generated with Qwen3-TTS CustomVoice on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Qwen3-TTS output](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Mandarin narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).
+- Runtime SHA-256: `3617bfd67c97784f9a3facc074df8a22816ff1a4e67685d20cf33066f2762581`
+- Modifications:
+  - Generated offline from the exact reviewed two-sentence script.
+  - Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis.
+### `backgrounds/landscape.webp`
+
+- Asset type: background
+- Source: Edmontosaurus habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Edmontosaurus landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
+- Runtime SHA-256: `671f55139d3f1a6d9e1c6a7e48ba8aa9cfd4d78ff07d7533c98da4da28dcd293`
+- Modifications:
+  - Rendered the landscape pass deterministically from the project-authored habitat scene spec with EEVEE Next.
+  - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
+### `backgrounds/portrait.webp`
+
+- Asset type: background
+- Source: Edmontosaurus habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Edmontosaurus portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
+- Runtime SHA-256: `d0402e85830fa22cba99d5bdd109a658f330d02034e36df55644cea75c2b9bcc`
+- Modifications:
+  - Rendered the portrait pass deterministically from the project-authored habitat scene spec with EEVEE Next.
+  - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
+### `images/poster-portrait.webp`
+
+- Asset type: poster
+- Source: Edmontosaurus transparent portrait model still, derived on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Edmontosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `1d2283ff055e94f6edbbef6ddf6d6baceafa8d36a2bc5d2522d00e65024d6c98`
+- Modifications:
+  - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
+  - Encoded as exact lossless WebP without text, controls, labels, logos, or watermarks.
+### `images/poster.webp`
+
+- Asset type: poster
+- Source: Edmontosaurus transparent model still, derived on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Edmontosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `e56929d3c7ecb8d9c89809e1f2bed6ba692572ee142f2d86b2b16efa48ffd7f6`
+- Modifications:
+  - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
+  - Encoded as lossless WebP without text, controls, labels, logos, or watermarks.
+### `images/thumbnail.webp`
+
+- Asset type: thumbnail
+- Source: Edmontosaurus collection thumbnail, derived on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Edmontosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum. Scene art generated for this project.
+- Runtime SHA-256: `00e4bf885ed97e8ad17b40cf18036aec4503a602e9580d2d3d8df42c8062213b`
+- Modifications:
+  - Selected a card-size crop that keeps the animal readable.
+  - Exported without embedded text, controls, labels, logos, or watermarks.
+### `model/model.glb`
+
+- Asset type: model
+- Source: Edmontosaurus deterministic procedural model source, generated with Blender Python generator authored by the Prehistoric Animal Museum on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Edmontosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `2023df09939b8fbcc2b65175e29a93faf4ae8a827d475118a40f00d47496f71e`
+- Modifications:
+  - pipeline: project-authored expansion GLB (ornithopod, feature=duck-bill) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
+  - scale: source body length 5.9621 Blender units -> 12.0 m; uniform factor 2.012713 applied to mesh data
+  - grounding (land): shifted z by +1.17039 m so the lowest vertex rests at z=0
+  - armature synthesized: 3 bones ['Body', 'Head', 'Tail']
+  - Idle synthesized: frames 0..192 at 24 fps = 8.0 s, two-cycle body breathing, Head +/-5.5 deg, Tail +/-8.0 deg; habitat=land, vertical drift +/-0.0000 m; frame 192 repeats frame 0 exactly (seamless loop)
   - mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
 ## 薄板龙 (`elasmosaurus`)
 
@@ -1401,6 +1745,92 @@ content, contributions, and Brand Assets follow the separate scopes in
   - Injected 29 rotation-only channels for the torso, neck, head, jaw, arms, and tail into the normalized base GLB while preserving its original mesh and skin hierarchy.
   - Kept the root, hips, and legs stationary to avoid foot sliding.
   - Validated and reviewed the self-contained derivative.
+## 雕齿兽 (`glyptodon`)
+
+### `audio/narration.en.mp3`
+
+- Asset type: narration
+- Source: Glyptodon English narration, generated with Qwen3-TTS CustomVoice on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Qwen3-TTS output](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated English narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).
+- Runtime SHA-256: `d90eca2a8667e0fbd5409a629c03a09d8eeebacf8c799daf7733e5279b7fac56`
+- Modifications:
+  - Generated offline from the exact reviewed two-sentence script.
+  - Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis.
+### `audio/narration.zh-CN.mp3`
+
+- Asset type: narration
+- Source: Glyptodon Mandarin narration, generated with Qwen3-TTS CustomVoice on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Qwen3-TTS output](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Mandarin narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).
+- Runtime SHA-256: `d74449b64c29eba35991b028909ae6529bd96dcf9a299462c9fabd9c112d0b7e`
+- Modifications:
+  - Generated offline from the exact reviewed two-sentence script.
+  - Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis.
+### `backgrounds/landscape.webp`
+
+- Asset type: background
+- Source: Glyptodon habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Glyptodon landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
+- Runtime SHA-256: `3323dcddd918807aa4830fec6a02fc7416c2aa975c772d9778c247aa4ccb10fa`
+- Modifications:
+  - Rendered the landscape pass deterministically from the project-authored habitat scene spec with EEVEE Next.
+  - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
+### `backgrounds/portrait.webp`
+
+- Asset type: background
+- Source: Glyptodon habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Glyptodon portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
+- Runtime SHA-256: `a850c1c921001274b45f8d69b64e5ee6969e61a2d5ec376edb4e01cd7915fbe9`
+- Modifications:
+  - Rendered the portrait pass deterministically from the project-authored habitat scene spec with EEVEE Next.
+  - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
+### `images/poster-portrait.webp`
+
+- Asset type: poster
+- Source: Glyptodon transparent portrait model still, derived on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Glyptodon” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `5626820c9d3c29045e8b56e46d78092364abc3eacce0bcbec4ad3f4cece5b949`
+- Modifications:
+  - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
+  - Encoded as exact lossless WebP without text, controls, labels, logos, or watermarks.
+### `images/poster.webp`
+
+- Asset type: poster
+- Source: Glyptodon transparent model still, derived on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Glyptodon” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `aa42902d62857de62d2e8c72f63b6ff8ed933701b53dad8bd2a19f3b1c5f72fd`
+- Modifications:
+  - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
+  - Encoded as lossless WebP without text, controls, labels, logos, or watermarks.
+### `images/thumbnail.webp`
+
+- Asset type: thumbnail
+- Source: Glyptodon collection thumbnail, derived on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Glyptodon” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum. Scene art generated for this project.
+- Runtime SHA-256: `588bbf3dcb339999e32f9f2e7c01fbba8b5ccd8829bc8713e9725306d6106627`
+- Modifications:
+  - Selected a card-size crop that keeps the animal readable.
+  - Exported without embedded text, controls, labels, logos, or watermarks.
+### `model/model.glb`
+
+- Asset type: model
+- Source: Glyptodon deterministic procedural model source, generated with Blender Python generator authored by the Prehistoric Animal Museum on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Glyptodon” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `9c0ab8e473182e943a0e9f22482416b13d5664c99c50d8e9408f144ad075bf1e`
+- Modifications:
+  - pipeline: project-authored expansion GLB (armored-mammal, feature=domed-shell) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
+  - scale: source body length 5.9621 Blender units -> 3.0 m; uniform factor 0.503178 applied to mesh data
+  - grounding (land): shifted z by -0.53240 m so the lowest vertex rests at z=0
+  - armature synthesized: 3 bones ['Body', 'Head', 'Tail']
+  - Idle synthesized: frames 0..192 at 24 fps = 8.0 s, two-cycle body breathing, Head +/-5.5 deg, Tail +/-8.0 deg; habitat=land, vertical drift +/-0.0000 m; frame 192 repeats frame 0 exactly (seamless loop)
+  - mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
 ## 鱼龙类 (`ichthyosaur`)
 
 ### `audio/narration.en.mp3`
@@ -2003,6 +2433,91 @@ content, contributions, and Brand Assets follow the separate scopes in
   - Align length to X, center the visible bounds, and apply habitat grounding. Operation: canonical-transform.
   - Export one traceable, closed-loop, in-place project Idle. Operation: replace-runtime-animation.
   - Authored and validator-checked one closed eight-second flying-insect Idle for the shared museum viewer.
+## 小盗龙 (`microraptor`)
+
+### `audio/narration.en.mp3`
+
+- Asset type: narration
+- Source: Microraptor English narration, generated with Qwen3-TTS CustomVoice on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Qwen3-TTS output](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated English narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).
+- Runtime SHA-256: `ee5fc921e1ec033db93a001ed60d20f48015168623da3b9c806a847f5a324c8c`
+- Modifications:
+  - Generated offline from the exact reviewed two-sentence script.
+  - Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis.
+### `audio/narration.zh-CN.mp3`
+
+- Asset type: narration
+- Source: Microraptor Mandarin narration, generated with Qwen3-TTS CustomVoice on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Qwen3-TTS output](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Mandarin narration produced locally with Qwen3-TTS 0.6B CustomVoice (Serena).
+- Runtime SHA-256: `cfe76ee578e1080939d9458025e7d943d281baf9ba1aa6a5086e8cba0da2fb5e`
+- Modifications:
+  - Generated offline from the exact reviewed two-sentence script.
+  - Normalized to a reviewed 48 kHz mono MP3 without runtime synthesis.
+### `backgrounds/landscape.webp`
+
+- Asset type: background
+- Source: Microraptor habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Microraptor landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
+- Runtime SHA-256: `3548ac0dd68687036c0d76edeea60cc325634146f774837e48f88f1037a34010`
+- Modifications:
+  - Rendered the landscape pass deterministically from the project-authored habitat scene spec with EEVEE Next.
+  - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
+### `backgrounds/portrait.webp`
+
+- Asset type: background
+- Source: Microraptor habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
+- License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- Attribution: Project-generated Microraptor portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
+- Runtime SHA-256: `9890535cc0d6a06fd91a9c7bc09e52bc2b44c08a128e69eb2df1cacc788c47d5`
+- Modifications:
+  - Rendered the portrait pass deterministically from the project-authored habitat scene spec with EEVEE Next.
+  - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
+### `images/poster-portrait.webp`
+
+- Asset type: poster
+- Source: Microraptor transparent portrait model still, derived on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Microraptor” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `cace3d0b97653a80294246b4a14a48feef8b944e4f648ae3447ee11ea62774e3`
+- Modifications:
+  - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
+  - Encoded as exact lossless WebP without text, controls, labels, logos, or watermarks.
+### `images/poster.webp`
+
+- Asset type: poster
+- Source: Microraptor transparent model still, derived on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Microraptor” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `e176db1070084d80f150e39ef5329a16815c68f0488488c07d4bc74f059641ca`
+- Modifications:
+  - Removed the habitat composite and all interface chrome; kept only the model and contact shadow on a transparent background.
+  - Encoded as lossless WebP without text, controls, labels, logos, or watermarks.
+### `images/thumbnail.webp`
+
+- Asset type: thumbnail
+- Source: Microraptor collection thumbnail, derived on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Microraptor” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum. Scene art generated for this project.
+- Runtime SHA-256: `52098767930dd6fc65d1cac3a7e2bde4d63b5a7bc62d45b5602c1683142b23ee`
+- Modifications:
+  - Selected a card-size crop that keeps the animal readable.
+  - Exported without embedded text, controls, labels, logos, or watermarks.
+### `model/model.glb`
+
+- Asset type: model
+- Source: Microraptor deterministic procedural model source, generated with Blender Python generator authored by the Prehistoric Animal Museum on 2026-08-17
+- License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+- Attribution: “Microraptor” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
+- Runtime SHA-256: `b40c87dff46d26292927dc8fd202f99bd913c23b744bc994dbc6b7f0940bb29d`
+- Modifications:
+  - pipeline: project-authored expansion GLB (feathered, feature=four-wings) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
+  - scale: source body length 7.9101 Blender units -> 0.8 m; uniform factor 0.101137 applied to mesh data
+  - armature synthesized: 3 bones ['Body', 'Head', 'Tail']
+  - Idle synthesized: frames 0..192 at 24 fps = 8.0 s, two-cycle body breathing, Head +/-5.0 deg, Tail +/-7.5 deg; habitat=air, vertical drift +/-0.0150 m; frame 192 repeats frame 0 exactly (seamless loop)
+  - mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
 ## 沧龙 (`mosasaurus`)
 
 ### `audio/narration.en.mp3`

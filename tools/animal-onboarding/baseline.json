@@ -1,5 +1,5 @@
 {
-  "capturedAt": "2026-09-16T03:13:36.145Z",
+  "capturedAt": "2026-09-16T03:58:18.487Z",
   "collection": [
     "stegosaurus",
     "pteranodon",
@@ -38,7 +38,13 @@
     "ceratosaurus",
     "compsognathus",
     "deinonychus",
-    "dimetrodon"
+    "dimetrodon",
+    "baryonyx",
+    "edmontosaurus",
+    "ankylosaurus",
+    "diplodocus",
+    "microraptor",
+    "glyptodon"
   ],
   "originalIds": [
     "stegosaurus",

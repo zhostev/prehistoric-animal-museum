@@ -1,0 +1,22 @@
+Microraptor background generation record
+========================================
+
+Tool: Blender 4.5.12 (project-authored habitat scene, deterministic seed)
+Seed: 3175652455
+Generated: 2026-08-17
+Use: project-specific responsive museum backgrounds
+
+The landscape and portrait were rendered as separate deterministic EEVEE Next
+passes from the project-authored habitat scene spec
+qa/derivatives-scene-spec.json (SHA-256 41a9fc3603755c5cbca5d0a6251bb5e0323810831723499b3ead0a7d96ecb1d2).
+No animal, person, text, UI, logo, or watermark appears in the renders.
+
+Landscape runtime WebP: 15868 bytes (1920 × 1080)
+SHA-256: 3548ac0dd68687036c0d76edeea60cc325634146f774837e48f88f1037a34010
+
+Portrait runtime WebP: 9636 bytes (1080 × 1920)
+SHA-256: 9890535cc0d6a06fd91a9c7bc09e52bc2b44c08a128e69eb2df1cacc788c47d5
+
+The reviewed renders were encoded as lossy WebP at quality 82.
+The project owner approved public distribution on 2026-08-17.
+Recorded in approval-record.json: approved by owner on 2026-08-17.
