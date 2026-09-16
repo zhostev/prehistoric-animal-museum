@@ -1,0 +1,22 @@
+Dimetrodon background generation record
+=======================================
+
+Tool: Blender 4.5.12 (project-authored habitat scene, deterministic seed)
+Seed: 3602187128
+Generated: 2026-08-17
+Use: project-specific responsive museum backgrounds
+
+The landscape and portrait were rendered as separate deterministic EEVEE Next
+passes from the project-authored habitat scene spec
+qa/derivatives-scene-spec.json (SHA-256 125a0017f6b92aebe4c9419e94c9e401f413427fcd0e7efdbcd756ed167cd24f).
+No animal, person, text, UI, logo, or watermark appears in the renders.
+
+Landscape runtime WebP: 15838 bytes (1920 × 1080)
+SHA-256: 7b41426c14a5389a116bd7ec5c67ddef05343079d59bebde71b58f43af91149b
+
+Portrait runtime WebP: 9346 bytes (1080 × 1920)
+SHA-256: 31d749f7cc3a4f6500facb5630c61e7424c08a4bc8f345f001deb1a8c63943de
+
+The reviewed renders were encoded as lossy WebP at quality 82.
+The project owner approved public distribution on 2026-08-17.
+Recorded in approval-record.json: approved by owner on 2026-08-17.

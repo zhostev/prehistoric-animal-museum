@@ -7,13 +7,19 @@ import sharp from 'sharp'
 import type { Plugin } from 'vite'
 
 import { animalSeoDescription } from '../src/content/animal-seo'
+import { animalDefinition as albertosaurusDefinition } from '../src/content/animals/albertosaurus/package'
 import { animalDefinition as allosaurusDefinition } from '../src/content/animals/allosaurus/package'
 import { animalDefinition as ammoniteDefinition } from '../src/content/animals/ammonite/package'
 import { animalDefinition as anomalocarisDefinition } from '../src/content/animals/anomalocaris/package'
 import { animalDefinition as apatosaurusDefinition } from '../src/content/animals/apatosaurus/package'
 import { animalDefinition as brachiosaurusDefinition } from '../src/content/animals/brachiosaurus/package'
+import { animalDefinition as carnotaurusDefinition } from '../src/content/animals/carnotaurus/package'
+import { animalDefinition as ceratosaurusDefinition } from '../src/content/animals/ceratosaurus/package'
+import { animalDefinition as compsognathusDefinition } from '../src/content/animals/compsognathus/package'
 import { animalDefinition as corythosaurusDefinition } from '../src/content/animals/corythosaurus/package'
+import { animalDefinition as deinonychusDefinition } from '../src/content/animals/deinonychus/package'
 import { animalDefinition as dilophosaurusDefinition } from '../src/content/animals/dilophosaurus/package'
+import { animalDefinition as dimetrodonDefinition } from '../src/content/animals/dimetrodon/package'
 import { animalDefinition as dunkleosteusDefinition } from '../src/content/animals/dunkleosteus/package'
 import { animalDefinition as elasmosaurusDefinition } from '../src/content/animals/elasmosaurus/package'
 import { animalDefinition as gigantoraptorDefinition } from '../src/content/animals/gigantoraptor/package'
@@ -114,13 +120,19 @@ const defaultOptions = {
 } satisfies Required<MultilingualSeoOptions>
 
 const canonicalAnimalDefinitions = [
+  albertosaurusDefinition,
   allosaurusDefinition,
   ammoniteDefinition,
   anomalocarisDefinition,
   apatosaurusDefinition,
   brachiosaurusDefinition,
+  carnotaurusDefinition,
+  ceratosaurusDefinition,
+  compsognathusDefinition,
   corythosaurusDefinition,
+  deinonychusDefinition,
   dilophosaurusDefinition,
+  dimetrodonDefinition,
   dunkleosteusDefinition,
   elasmosaurusDefinition,
   gigantoraptorDefinition,

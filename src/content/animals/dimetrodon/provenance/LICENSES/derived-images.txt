@@ -1,0 +1,18 @@
+Dimetrodon poster and thumbnail derivation record
+===================================================
+
+Generated: 2026-08-17
+
+The 1200 × 675 poster and the
+390 × 844 portrait poster are deterministic
+runtime captures of the normalized model without text, controls, logos, or
+watermarks. The 320 × 320 thumbnail was
+captured from the accepted desktop review presentation after hiding all
+interface chrome.
+
+Poster SHA-256: 62fe1237de7c343e31d0f41368f573d90e6647be4b5c58c94fa7724eb99fe93d (11708 bytes)
+Portrait poster SHA-256: c92ed47041c05c6cf4feb64715426f8891a17a2b8059d1ee558f4d8491da657e (3870 bytes)
+Thumbnail SHA-256: c4cacd515f24e63fc88fbea35ea1f97779a69d7e6f1a04a07f52943402e712af (2744 bytes)
+
+The model attribution and CC0-1.0 terms in model-license.txt
+continue to apply. The background generation record is retained separately.

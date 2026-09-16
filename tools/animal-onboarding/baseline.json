@@ -1,5 +1,5 @@
 {
-  "capturedAt": "2026-09-16T02:52:16.091Z",
+  "capturedAt": "2026-09-16T03:13:36.145Z",
   "collection": [
     "stegosaurus",
     "pteranodon",
@@ -32,7 +32,13 @@
     "quetzalcoatlus",
     "elasmosaurus",
     "megaloceros",
-    "anomalocaris"
+    "anomalocaris",
+    "albertosaurus",
+    "carnotaurus",
+    "ceratosaurus",
+    "compsognathus",
+    "deinonychus",
+    "dimetrodon"
   ],
   "originalIds": [
     "stegosaurus",

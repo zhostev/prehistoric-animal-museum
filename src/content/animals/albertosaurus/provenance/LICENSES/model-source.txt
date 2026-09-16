@@ -1,0 +1,23 @@
+Albertosaurus model source and modifications
+============================================
+
+Direct source:
+project-authored (no upstream)
+
+Creator: Prehistoric Animal Museum (project-authored)
+License: CC0-1.0
+Original downloaded source: 107256 bytes (archive/chosen-model.glb)
+Original SHA-256:
+c05d5c9867a416b602f5c2ebf9f7cc80f5b2d870673eb3e31cc37193b587d597
+
+Modifications for the Prehistoric Animal Museum:
+- pipeline: project-authored expansion GLB (theropod, feature=small-brow-crests) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
+- scale: source body length 7.9101 Blender units -> 9.0 m; uniform factor 1.137792 applied to mesh data
+- grounding (land): shifted z by +0.22919 m so the lowest vertex rests at z=0
+- armature synthesized: 3 bones ['Body', 'Head', 'Tail']
+- Idle synthesized: frames 0..192 at 24 fps = 8.0 s, two-cycle body breathing, Head +/-5.5 deg, Tail +/-8.0 deg; habitat=land, vertical drift +/-0.0000 m; frame 192 repeats frame 0 exactly (seamless loop)
+- mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
+
+Published runtime GLB: 164812 bytes
+Published SHA-256:
+e9b9bee9aca054c2d49a09df0d3b3cda85f20d63694f2ef4785b952203e28ddb

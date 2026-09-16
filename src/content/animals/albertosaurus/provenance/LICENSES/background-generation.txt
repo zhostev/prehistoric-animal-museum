@@ -1,0 +1,22 @@
+Albertosaurus background generation record
+==========================================
+
+Tool: Blender 4.5.12 (project-authored habitat scene, deterministic seed)
+Seed: 3317668871
+Generated: 2026-08-17
+Use: project-specific responsive museum backgrounds
+
+The landscape and portrait were rendered as separate deterministic EEVEE Next
+passes from the project-authored habitat scene spec
+qa/derivatives-scene-spec.json (SHA-256 3913306b75512e8d73260b2000e314c83a97d3d291b21383078db1887c0077af).
+No animal, person, text, UI, logo, or watermark appears in the renders.
+
+Landscape runtime WebP: 14808 bytes (1920 × 1080)
+SHA-256: 699aa7893e3260ef7706d75fa723eb063d7c049741feff4f061e31155684aa3c
+
+Portrait runtime WebP: 9206 bytes (1080 × 1920)
+SHA-256: 336cf095059e9bf7481879278f9eb6e9f575d66a5b3d40c27e05322586a1f768
+
+The reviewed renders were encoded as lossy WebP at quality 82.
+The project owner approved public distribution on 2026-08-17.
+Recorded in approval-record.json: approved by owner on 2026-08-17.

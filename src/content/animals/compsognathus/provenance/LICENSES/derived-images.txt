@@ -1,0 +1,18 @@
+Compsognathus poster and thumbnail derivation record
+======================================================
+
+Generated: 2026-08-17
+
+The 1200 × 675 poster and the
+390 × 844 portrait poster are deterministic
+runtime captures of the normalized model without text, controls, logos, or
+watermarks. The 320 × 320 thumbnail was
+captured from the accepted desktop review presentation after hiding all
+interface chrome.
+
+Poster SHA-256: d6631b670daa8c38f7013b375d4e819315f65605a49f0ab80675b99b6e8650c2 (12064 bytes)
+Portrait poster SHA-256: 23c88b687e9d71b66f4ce4eb82323f033a66684da8f6043525221eea9108011b (3632 bytes)
+Thumbnail SHA-256: 9514d99de3a250c28acf9a161068340600c5f18ec3b0ed0ed7604c99baa0f8d6 (2580 bytes)
+
+The model attribution and CC0-1.0 terms in model-license.txt
+continue to apply. The background generation record is retained separately.

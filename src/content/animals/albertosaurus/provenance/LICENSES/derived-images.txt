@@ -1,0 +1,18 @@
+Albertosaurus poster and thumbnail derivation record
+======================================================
+
+Generated: 2026-08-17
+
+The 1200 × 675 poster and the
+390 × 844 portrait poster are deterministic
+runtime captures of the normalized model without text, controls, logos, or
+watermarks. The 320 × 320 thumbnail was
+captured from the accepted desktop review presentation after hiding all
+interface chrome.
+
+Poster SHA-256: 62d28f4f839cc231a8ac55274fb22343b546891be87014e9b20f62be2a467d2b (10812 bytes)
+Portrait poster SHA-256: eda2db26ccefabc3588037abf6e6284f1bc818550aeccf78a75833d7a7f08cfb (3674 bytes)
+Thumbnail SHA-256: e40c1280fe6d1c6365ac2a08b246bb1d754d31d30d983c05e30c853eafa200ee (2482 bytes)
+
+The model attribution and CC0-1.0 terms in model-license.txt
+continue to apply. The background generation record is retained separately.

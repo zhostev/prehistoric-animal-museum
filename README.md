@@ -4,7 +4,7 @@
 
 <p align="center">
   <strong>For curious children and the grown-ups willing to sit beside them.</strong><br>
-  Explore 32 prehistoric animals in English or Simplified Chinese, with short narration and a parent guide for the questions that follow.
+  Explore 38 prehistoric animals in English or Simplified Chinese, with short narration and a parent guide for the questions that follow.
 </p>
 
 <p align="center">
@@ -38,12 +38,12 @@ The museum follows the device language on a first visit. You can switch between 
 
 It is designed mainly for children aged 2–6 with a grown-up nearby, but curiosity matters more than the age label. If an image or sound feels uncomfortable, choose another animal or close the page.
 
-## 32 animals across sea, land, and sky
+## 38 animals across sea, land, and sky
 
 <details>
 <summary><strong>See the full collection</strong></summary>
 
-- **Land:** Stegosaurus, Pachycephalosaurus, Tyrannosaurus rex, Triceratops, Apatosaurus, Gigantoraptor, Woolly mammoth, Maiasaura, Sauropelta, Dilophosaurus, Velociraptor, Parasaurolophus, Smilodon, Spinosaurus, Corythosaurus, Allosaurus, Brachiosaurus, and Megaloceros.
+- **Land:** Stegosaurus, Pachycephalosaurus, Tyrannosaurus rex, Triceratops, Apatosaurus, Gigantoraptor, Woolly mammoth, Maiasaura, Sauropelta, Dilophosaurus, Velociraptor, Parasaurolophus, Smilodon, Spinosaurus, Corythosaurus, Allosaurus, Brachiosaurus, Megaloceros, Albertosaurus, Carnotaurus, Ceratosaurus, Compsognathus, Deinonychus, and Dimetrodon.
 - **Sky:** Pteranodon, Rhamphorhynchus, Tupandactylus, Meganeura, and Quetzalcoatlus.
 - **Sea:** Ichthyosaurs, Plesiosaurs, Megalodon, Mosasaurus, Dunkleosteus, Ammonite scan, Jaekelopterus, Elasmosaurus, and Anomalocaris.
 

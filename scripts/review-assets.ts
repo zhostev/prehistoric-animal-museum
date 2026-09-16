@@ -1770,6 +1770,9 @@ const reviewAnimalFiles: Readonly<
     backgroundPortrait: repositoryFile(
       'assets/candidates/animal-onboarding-2026-08-13-expansion-100/dimetrodon/output/background-portrait.webp',
     ),
+    narration: repositoryFile(
+      'assets/candidates/animal-onboarding-2026-08-13-expansion-100/dimetrodon/output/audio/narration.zh-CN.mp3',
+    ),
     poster: repositoryFile(
       'assets/candidates/animal-onboarding-2026-08-13-expansion-100/dimetrodon/output/poster.webp',
     ),
