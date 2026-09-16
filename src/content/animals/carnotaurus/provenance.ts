@@ -55,8 +55,8 @@ export const provenance = [
       url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
     },
     runtime: {
-      sha256: '61f6f4ab19afce8e2c8e74fad4d362fafc029a1a9e8f98ab28b67015169ebd8d',
-      bytes: 14434,
+      sha256: '8459e3a6fb02950495ad19e15ad69c0fdf703014944fc1401e4b5e1c71baea11',
+      bytes: 411670,
     },
     modifications: [
       'Rendered the landscape pass deterministically from the project-authored habitat scene spec with EEVEE Next.',
@@ -86,8 +86,8 @@ export const provenance = [
       url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
     },
     runtime: {
-      sha256: 'f1f94a1be6ac52ee2ec29d85746d83d9ffb45510a85e32e129dd9406ee677e98',
-      bytes: 8348,
+      sha256: '5cc5b423df0808915e7d5d8a67e0bc29c79979c3f14615ab30d874fd30789361',
+      bytes: 236826,
     },
     modifications: [
       'Rendered the portrait pass deterministically from the project-authored habitat scene spec with EEVEE Next.',
