@@ -17,7 +17,7 @@ interface ViewerAnimalSource {
  * so a new animal needs presentation data rather than viewport-specific code.
  */
 export function createViewerModelDescriptor(
-  animal: ViewerAnimalSource & { readonly atmosphere?: string },
+  animal: ViewerAnimalSource,
   label: string,
   modelUrl: string,
   accessibilityLabel?: string,

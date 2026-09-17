@@ -752,10 +752,7 @@ export class ViewerController {
         prepareAnimation()
       }
 
-      const palette = getAtmosphereLightingPalette(descriptor.presentation.atmosphere)
-      this.hemisphereLight.color.copy(palette.skyColor)
-      this.hemisphereLight.groundColor.copy(palette.groundColor)
-      this.hemisphereLight.intensity = palette.intensity
+      this.updateAtmosphereLighting(descriptor.presentation.atmosphere)
 
       return {
         action,
