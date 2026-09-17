@@ -35,6 +35,7 @@ tools/*
 # remain private under assets/candidates/.
 !tools/animal-onboarding/
 !tools/animal-onboarding/**
+!tools/audit-animal-integration.ts
 tools/animal-onboarding/**/__pycache__/
 tools/animal-onboarding/**/*.py[cod]
 
