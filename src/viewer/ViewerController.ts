@@ -273,6 +273,40 @@ export function computeModelTransitionFrame(
   }
 }
 
+export interface AtmosphereLightingPaletteConfig {
+  readonly groundColor: string
+  readonly intensity: number
+  readonly skyColor: string
+}
+
+export const ATMOSPHERE_LIGHTING_PALETTES = {
+  underwater: {
+    groundColor: '#1d3557',
+    intensity: 1.45,
+    skyColor: '#82c3ec',
+  },
+  ice: {
+    groundColor: '#b0c4de',
+    intensity: 1.25,
+    skyColor: '#f0f8ff',
+  },
+  plains: {
+    groundColor: '#a67c52',
+    intensity: 1.35,
+    skyColor: '#fff4e6',
+  },
+  air: {
+    groundColor: '#7a8b99',
+    intensity: 1.3,
+    skyColor: '#ffffff',
+  },
+  forest: {
+    groundColor: '#5c6e46',
+    intensity: 1.3,
+    skyColor: '#eef5e5',
+  },
+} as const satisfies Record<string, AtmosphereLightingPaletteConfig>
+
 export interface AtmosphereLightingPalette {
   readonly groundColor: Color
   readonly intensity: number
@@ -284,38 +318,16 @@ export type AtmosphereLightingConfig = AtmosphereLightingPalette
 export function getAtmosphereLightingPalette(
   atmosphere?: string,
 ): AtmosphereLightingPalette {
-  switch (atmosphere) {
-    case 'underwater':
-      return {
-        groundColor: new Color('#1d3557'),
-        intensity: 1.45,
-        skyColor: new Color('#82c3ec'),
-      }
-    case 'ice':
-      return {
-        groundColor: new Color('#b0c4de'),
-        intensity: 1.25,
-        skyColor: new Color('#f0f8ff'),
-      }
-    case 'plains':
-      return {
-        groundColor: new Color('#a67c52'),
-        intensity: 1.35,
-        skyColor: new Color('#fff4e6'),
-      }
-    case 'air':
-      return {
-        groundColor: new Color('#7a8b99'),
-        intensity: 1.3,
-        skyColor: new Color('#ffffff'),
-      }
-    case 'forest':
-    default:
-      return {
-        groundColor: new Color('#5c6e46'),
-        intensity: 1.3,
-        skyColor: new Color('#eef5e5'),
-      }
+  const config =
+    (atmosphere
+      ? ATMOSPHERE_LIGHTING_PALETTES[
+          atmosphere as keyof typeof ATMOSPHERE_LIGHTING_PALETTES
+        ]
+      : undefined) ?? ATMOSPHERE_LIGHTING_PALETTES.forest
+  return {
+    groundColor: new Color(config.groundColor),
+    intensity: config.intensity,
+    skyColor: new Color(config.skyColor),
   }
 }
 

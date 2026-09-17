@@ -25,7 +25,7 @@
     "test": "vitest",
     "test:review": "playwright test --config playwright.review.config.ts",
     "validate:content": "tsx scripts/validate-content.ts",
-    "check:content": "npm run validate:content",
+    "check:content": "npm run validate:content && tsx tools/audit-animal-integration.ts",
     "validate:production-boundary": "tsx scripts/validate-production-boundary.ts",
     "validate:model-previews": "tsx scripts/validate-model-previews.ts --target=production",
     "validate:review-model-previews": "tsx scripts/validate-model-previews.ts --target=review",

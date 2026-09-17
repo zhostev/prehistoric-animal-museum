@@ -25,7 +25,7 @@ export default defineConfig({
       'scripts/readme-screenshot-capture/**',
       '**/node_modules/**',
       '**/dist/**',
-      ...(process.env.CI ? localReviewOnlyTests : []),
+      ...(!process.env.REVIEW_TESTS ? localReviewOnlyTests : []),
     ],
     globals: true,
     setupFiles: ['./tests/setup.ts'],

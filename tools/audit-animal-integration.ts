@@ -54,7 +54,19 @@ const reports = auditAnimals()
 const failing = reports.filter((r) => r.issues.length > 0)
 console.log(`Total audited: ${reports.length}, Failing: ${failing.length}`)
 if (failing.length > 0) {
-  console.table(failing.map((f) => ({ id: f.id, habitat: f.habitat, vOffset: f.vOffset, yaw: f.yaw, issues: f.issues.join('; ') })))
+  console.table(
+    failing.map((f) => ({
+      id: f.id,
+      habitat: f.habitat,
+      vOffset: f.vOffset,
+      yaw: f.yaw,
+      issues: f.issues.join('; '),
+    })),
+  )
+  process.exit(1)
 } else {
-  console.log(`All ${reports.length} animals passed integration audit with 0 issues!`)
+  console.log(
+    `All ${reports.length} animals passed integration audit with 0 issues!`,
+  )
+  process.exit(0)
 }
