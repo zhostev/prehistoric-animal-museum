@@ -6,6 +6,7 @@ import type { ViewerModelDescriptor } from './viewer-model-descriptor'
 
 interface ViewerAnimalSource {
   readonly animation?: AnimalAnimation
+  readonly atmosphere?: string
   readonly id: string
   readonly presentation: AnimalPresentation
 }
@@ -16,7 +17,7 @@ interface ViewerAnimalSource {
  * so a new animal needs presentation data rather than viewport-specific code.
  */
 export function createViewerModelDescriptor(
-  animal: ViewerAnimalSource,
+  animal: ViewerAnimalSource & { readonly atmosphere?: string },
   label: string,
   modelUrl: string,
   accessibilityLabel?: string,
@@ -27,6 +28,7 @@ export function createViewerModelDescriptor(
     label,
     modelUrl,
     presentation: {
+      ...(animal.atmosphere ? { atmosphere: animal.atmosphere } : {}),
       ...(animal.presentation.cameraLightScale === undefined
         ? {}
         : { cameraLightScale: animal.presentation.cameraLightScale }),

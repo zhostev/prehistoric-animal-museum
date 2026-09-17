@@ -273,6 +273,52 @@ export function computeModelTransitionFrame(
   }
 }
 
+export interface AtmosphereLightingPalette {
+  readonly groundColor: Color
+  readonly intensity: number
+  readonly skyColor: Color
+}
+
+export type AtmosphereLightingConfig = AtmosphereLightingPalette
+
+export function getAtmosphereLightingPalette(
+  atmosphere?: string,
+): AtmosphereLightingPalette {
+  switch (atmosphere) {
+    case 'underwater':
+      return {
+        groundColor: new Color('#1d3557'),
+        intensity: 1.45,
+        skyColor: new Color('#82c3ec'),
+      }
+    case 'ice':
+      return {
+        groundColor: new Color('#b0c4de'),
+        intensity: 1.25,
+        skyColor: new Color('#f0f8ff'),
+      }
+    case 'plains':
+      return {
+        groundColor: new Color('#a67c52'),
+        intensity: 1.35,
+        skyColor: new Color('#fff4e6'),
+      }
+    case 'air':
+      return {
+        groundColor: new Color('#7a8b99'),
+        intensity: 1.3,
+        skyColor: new Color('#ffffff'),
+      }
+    case 'forest':
+    default:
+      return {
+        groundColor: new Color('#5c6e46'),
+        intensity: 1.3,
+        skyColor: new Color('#eef5e5'),
+      }
+  }
+}
+
 export function createCameraRelativeLightingPose(): CameraRelativeLightingPose {
   return {
     fillPosition: new Vector3(),
@@ -451,6 +497,11 @@ export class ViewerController {
   private readonly scene = new Scene()
   private readonly renderer: WebGLRenderer
   private readonly controls: OrbitControls
+  private readonly hemisphereLight = new HemisphereLight(
+    '#fff8df',
+    '#71805e',
+    1.3,
+  )
   private readonly cameraKeyLight = new DirectionalLight(
     '#fff0ce',
     CAMERA_KEY_INTENSITY,
@@ -535,7 +586,7 @@ export class ViewerController {
     this.renderer.domElement.addEventListener('webglcontextlost', this.handleContextLost)
     this.container.append(this.renderer.domElement)
 
-    this.scene.add(new HemisphereLight('#fff8df', '#71805e', 1.3))
+    this.scene.add(this.hemisphereLight)
     this.cameraLightTarget.name = 'camera-light-target'
     this.cameraKeyLight.name = 'camera-relative-key'
     this.cameraFillLight.name = 'camera-relative-fill'
@@ -700,6 +751,11 @@ export class ViewerController {
       if (!preciseBounds) {
         prepareAnimation()
       }
+
+      const palette = getAtmosphereLightingPalette(descriptor.presentation.atmosphere)
+      this.hemisphereLight.color.copy(palette.skyColor)
+      this.hemisphereLight.groundColor.copy(palette.groundColor)
+      this.hemisphereLight.intensity = palette.intensity
 
       return {
         action,
@@ -1092,6 +1148,14 @@ export class ViewerController {
     this.renderer.toneMappingExposure =
       staged.descriptor.presentation.toneMappingExposure ??
       DEFAULT_TONE_MAPPING_EXPOSURE
+    this.updateAtmosphereLighting(staged.descriptor.presentation.atmosphere)
+  }
+
+  updateAtmosphereLighting(atmosphere?: string): void {
+    const palette = getAtmosphereLightingPalette(atmosphere)
+    this.hemisphereLight.color.copy(palette.skyColor)
+    this.hemisphereLight.groundColor.copy(palette.groundColor)
+    this.hemisphereLight.intensity = palette.intensity
   }
 
   private updateAutoRotation(now: number): void {
