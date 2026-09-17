@@ -823,7 +823,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Baryonyx habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
 - License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated Baryonyx landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
-- Runtime SHA-256: `45f79c4c4131a7be912181afc8e2a54f7c578a8ecf1d0f27e34810c3245544c2`
+- Runtime SHA-256: `72fe7603449462ff4715fda652c6382ac30c94c7afa9c91d8762af10dafd05bd`
 - Modifications:
   - Rendered the landscape pass deterministically from the project-authored habitat scene spec with EEVEE Next.
   - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
@@ -833,7 +833,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Baryonyx habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
 - License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated Baryonyx portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
-- Runtime SHA-256: `1b514d9ec7c0bf8b9a9400e5d227274eb66b2819483dea41f054dd236d466f3a`
+- Runtime SHA-256: `7191a1178db89dd6886aa5116f3bc51e7a84bd51310f7d5b14bd069785fbd999`
 - Modifications:
   - Rendered the portrait pass deterministically from the project-authored habitat scene spec with EEVEE Next.
   - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
@@ -995,7 +995,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Carcharodontosaurus habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
 - License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated Carcharodontosaurus landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
-- Runtime SHA-256: `1cf4c34c431bf63947bed7fad1bb8b4fde36106aebf72f6829046a83d99bff3e`
+- Runtime SHA-256: `6085aab5c6fc94b88337083a3c286131ee94f0f7cc669af972bb03e616a21765`
 - Modifications:
   - Rendered the landscape pass deterministically from the project-authored habitat scene spec with EEVEE Next.
   - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
@@ -1005,7 +1005,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Carcharodontosaurus habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
 - License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated Carcharodontosaurus portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
-- Runtime SHA-256: `2f07c878995bdcb5ec18bb54469425b8f8e1418ddbe6b2d7c0441a3a4a5c7a52`
+- Runtime SHA-256: `39d6c28af963ae8591b14c064915540bdc8af240a8a800194b1f0c4e467cc347`
 - Modifications:
   - Rendered the portrait pass deterministically from the project-authored habitat scene spec with EEVEE Next.
   - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
@@ -1339,7 +1339,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Corythosaurus habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-18
 - License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated Corythosaurus landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
-- Runtime SHA-256: `e52872d35b93cf9ced0e3fc8b346c69933c7ba564bcab40873536b54d77698ef`
+- Runtime SHA-256: `63f3d0a2c4b8d5e744a7b65b721118349be816dc8a8639f748e0e003f50e5467`
 - Modifications:
   - Rendered the landscape pass deterministically from the project-authored habitat scene spec with EEVEE Next.
   - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
@@ -1349,7 +1349,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Corythosaurus habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-18
 - License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated Corythosaurus portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
-- Runtime SHA-256: `8a8314bb8411f51073190ce856e55b1c24999b09ee870229013bab51466ddecc`
+- Runtime SHA-256: `015c6f0e97a2eedca17cb4da9c9f9fa6fb2b38e07ee01635bc35f7e977c12b30`
 - Modifications:
   - Rendered the portrait pass deterministically from the project-authored habitat scene spec with EEVEE Next.
   - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
@@ -1598,7 +1598,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Dimetrodon habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
 - License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated Dimetrodon landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
-- Runtime SHA-256: `e0cf3a3da0074fdc0de364d6f68e20ba8509332f5599aef6365659b77118c25f`
+- Runtime SHA-256: `66a973837f1abed4a2ee50b30c5ff5229e244b8092753d4a7923ffdf2877c07d`
 - Modifications:
   - Rendered the landscape pass deterministically from the project-authored habitat scene spec with EEVEE Next.
   - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
@@ -1608,7 +1608,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Dimetrodon habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
 - License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated Dimetrodon portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
-- Runtime SHA-256: `e27458f60436e596c98ac96cb4a98cfd84e5718c51c5e0c05342018fe8a8d9a8`
+- Runtime SHA-256: `8157f01ae403522490a95d412e8345c66f677f8fcf55b665e63e2b48626e6df3`
 - Modifications:
   - Rendered the portrait pass deterministically from the project-authored habitat scene spec with EEVEE Next.
   - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
@@ -2116,7 +2116,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Glyptodon habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
 - License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated Glyptodon landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
-- Runtime SHA-256: `e0bf14aef8eb2dd8fb6c4037a48de659489469d2a0387096c89a6b3c5f8498e6`
+- Runtime SHA-256: `68738d4b93de13fa36836d848c8baea7b741da17ad5bb6a8f8f0fdf126b9fb6f`
 - Modifications:
   - Rendered the landscape pass deterministically from the project-authored habitat scene spec with EEVEE Next.
   - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
@@ -2126,7 +2126,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Glyptodon habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
 - License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated Glyptodon portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
-- Runtime SHA-256: `e30460e0fb5761b838ba031ff71d59fe70577c35ea63b4f4779a9d0bd42b5217`
+- Runtime SHA-256: `2b7d8dc4d1c9219964a7a7bbbb1b18027a2f96882483982541e9292eebb54e48`
 - Modifications:
   - Rendered the portrait pass deterministically from the project-authored habitat scene spec with EEVEE Next.
   - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
@@ -2202,7 +2202,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Herrerasaurus habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
 - License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated Herrerasaurus landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
-- Runtime SHA-256: `fe6594a50713f0531dec18c1d625128b4c311b4b7cc422c71f3a58d2a5262baa`
+- Runtime SHA-256: `860bd88144ff13e715758aea0b92dd7eb3b4ebcfa140351d6fa1207baa2b90e3`
 - Modifications:
   - Rendered the landscape pass deterministically from the project-authored habitat scene spec with EEVEE Next.
   - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
@@ -2212,7 +2212,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Herrerasaurus habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
 - License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated Herrerasaurus portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
-- Runtime SHA-256: `3462946b05b8e41bf1d9543bfe210816e2981eb3f77c56ec428e77af08071998`
+- Runtime SHA-256: `c12cdf42397ac21f83bdee6df799db9454582bc5742915cab2acdf1fc05e65e7`
 - Modifications:
   - Rendered the portrait pass deterministically from the project-authored habitat scene spec with EEVEE Next.
   - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
@@ -2374,7 +2374,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Jaekelopterus habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-13
 - License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated Jaekelopterus landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
-- Runtime SHA-256: `e2431d545371f7e1fd663b4852655e7e5303348373e442dcd8fcb43228ed3efd`
+- Runtime SHA-256: `f4f0f7c56844cc8089ac42f947a0ef610804028924d1ad0c8d81e9016df0dbed`
 - Modifications:
   - Rendered the landscape pass deterministically from the project-authored habitat scene spec with EEVEE Next.
   - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
@@ -2384,7 +2384,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Jaekelopterus habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-13
 - License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated Jaekelopterus portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
-- Runtime SHA-256: `6c16c2aa16f133214e966c828198ccc96e71f6e8344b9d156eac14cae335d169`
+- Runtime SHA-256: `135d2b64f06bbdf9bbfe607d5432d1bef9ece51d7ff2f2e2326ae16fee767471`
 - Modifications:
   - Rendered the portrait pass deterministically from the project-authored habitat scene spec with EEVEE Next.
   - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
@@ -2634,7 +2634,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Megaloceros habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
 - License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated Megaloceros landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
-- Runtime SHA-256: `5d32e34f6e9cd7b8c991e10c4fec2a1f16f83465d8d4f6c87a734fb6fccc8154`
+- Runtime SHA-256: `7d59d176f9a8a9e49c7ff4dfad47b7013a3b2e09aa2677bb40ccb99dc0946b86`
 - Modifications:
   - Rendered the landscape pass deterministically from the project-authored habitat scene spec with EEVEE Next.
   - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
@@ -2644,7 +2644,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Megaloceros habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
 - License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated Megaloceros portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
-- Runtime SHA-256: `953c12cbe242b157b5a6ad756df5370254b5a3547fe7590b0b85b9e958aaa6f0`
+- Runtime SHA-256: `63dc89957d8798ae9be4a749218c1d540d3b91936a3a7ced95dfe7efc5c11ded`
 - Modifications:
   - Rendered the portrait pass deterministically from the project-authored habitat scene spec with EEVEE Next.
   - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
@@ -2890,7 +2890,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Microraptor habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
 - License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated Microraptor landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
-- Runtime SHA-256: `316c38a17ca97553fe20985beaf8ce320fd7997e57107f32dd5cafdb49c1652c`
+- Runtime SHA-256: `fcb1945003859210cff061a31eb07a2462dccf4be60d0b3dbe23f58614f3fdf5`
 - Modifications:
   - Rendered the landscape pass deterministically from the project-authored habitat scene spec with EEVEE Next.
   - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
@@ -2900,7 +2900,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Microraptor habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
 - License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated Microraptor portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
-- Runtime SHA-256: `fb9127477118cb327e901c10b26ab4c3200d4647db74276d0458a4083a9a0a7f`
+- Runtime SHA-256: `7849d3056e56ee064312871b924a8b6ea2e28d2d13b6d25baa952f68d5484e0f`
 - Modifications:
   - Rendered the portrait pass deterministically from the project-authored habitat scene spec with EEVEE Next.
   - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
@@ -3317,7 +3317,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Plesiosaur Jurassic shallow sea — landscape, generated with OpenAI built-in image_gen on 2026-07-30
 - License: [CC BY-NC-SA 4.0 project-owned ImageGen output](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated 蛇颈龙类 landscape created with OpenAI ImageGen.
-- Runtime SHA-256: `4c21f7b51fc107505c3a732798b399bddbc9a7f990c6540200f308547836f205`
+- Runtime SHA-256: `556815270fafa5a18c4b42a5f47d02a4ec4f1777e704665405db5ffdf9f796d1`
 - Modifications:
   - Converted the reviewed PNG to lossy WebP at quality 82.
   - Removed ancillary metadata without applying a runtime tint or filter.
@@ -3327,7 +3327,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Plesiosaur Jurassic shallow sea — portrait, generated with OpenAI built-in image_gen on 2026-07-30
 - License: [CC BY-NC-SA 4.0 project-owned ImageGen output](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated 蛇颈龙类 portrait created with OpenAI ImageGen.
-- Runtime SHA-256: `942580a4195be0f806d69a1bc52fca8fdb8af1caf579929aab4df1375aad96f2`
+- Runtime SHA-256: `c3a236e1d38c89de345f73582da29173ce88f7aed8c0947c623ee6d2720b99a0`
 - Modifications:
   - Converted the separately composed reviewed PNG to lossy WebP at quality 82.
   - Removed ancillary metadata without applying a runtime tint or filter.
@@ -3831,7 +3831,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Spinosaurus habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-13
 - License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated Spinosaurus landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
-- Runtime SHA-256: `df82d9cbf3dcc7acc68c29fe87a4fec70cff07a966a2f7e96edb53e367382592`
+- Runtime SHA-256: `e3a7a5ec0ffbc0c4b033d698bca93a69f3df17d5e0420e47337c548d416de3c1`
 - Modifications:
   - Rendered the landscape pass deterministically from the project-authored habitat scene spec with EEVEE Next.
   - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
@@ -3841,7 +3841,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Spinosaurus habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-13
 - License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated Spinosaurus portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
-- Runtime SHA-256: `769f66a4748ed4a85611baae34050b370be7cbec0e8e35c785d70183787f3bfa`
+- Runtime SHA-256: `43d3ba2adfa76fe6ac273ca1d5902b2d94f2bdaa8aed4d909d8edba123f2b220`
 - Modifications:
   - Rendered the portrait pass deterministically from the project-authored habitat scene spec with EEVEE Next.
   - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
@@ -4266,7 +4266,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Raptor Pack (Standing pose) habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-13
 - License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated Raptor Pack (Standing pose) landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
-- Runtime SHA-256: `cb7f468d6c3af543dcd6d8edec7fd2958af25b5c5c2127cf396ce7009a505c39`
+- Runtime SHA-256: `ae664b48ae39fcd8e86a33d9c6d2f87e4da7e85df0526ea7437d3e7b60235715`
 - Modifications:
   - Rendered the landscape pass deterministically from the project-authored habitat scene spec with EEVEE Next.
   - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
@@ -4276,7 +4276,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Raptor Pack (Standing pose) habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-13
 - License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated Raptor Pack (Standing pose) portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
-- Runtime SHA-256: `a23b0e347c0e4017d9389ef8ca082fd17f9e4c3b443424c066df9f4c2329d1f9`
+- Runtime SHA-256: `846a8c1fcc08eb40793e6b639b90732da96927b5fe5653e5380885a0bd90988c`
 - Modifications:
   - Rendered the portrait pass deterministically from the project-authored habitat scene spec with EEVEE Next.
   - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
