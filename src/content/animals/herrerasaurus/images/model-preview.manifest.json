@@ -1,49 +1,49 @@
 {
   "animalId": "herrerasaurus",
   "contractVersion": 2,
-  "generatedAt": "2026-09-16T08:57:35.000Z",
-  "presentationSignature": "{\"contractVersion\":2,\"renderer\":{\"cameraFieldOfViewDegrees\":34,\"maxPixelRatio\":2},\"layout\":{\"coordinateSystem\":\"fixed-fullscreen-canvas+composition-frame-v1\",\"previewObjectFit\":\"contain\",\"referenceViewports\":[{\"key\":\"landscapeCompact\",\"width\":844,\"height\":390},{\"key\":\"desktopWide\",\"width\":1280,\"height\":720},{\"key\":\"phonePortraitCompact\",\"width\":360,\"height\":640},{\"key\":\"phonePortraitTall\",\"width\":390,\"height\":844},{\"key\":\"tabletPortrait\",\"width\":768,\"height\":1024},{\"key\":\"desktopStandard\",\"width\":1440,\"height\":900}]},\"animation\":{\"clip\":\"Idle\",\"loop\":\"repeat\",\"speed\":0.8},\"presentation\":{\"cameraLightScale\":1,\"horizontalOffset\":{\"landscape\":0,\"portrait\":0},\"initialYawDegrees\":90,\"preciseBounds\":true,\"safeAreaPadding\":{\"landscape\":0.12,\"portrait\":0.12},\"shadow\":{\"depthOffset\":0,\"depthScale\":1,\"horizontalOffset\":0,\"opacity\":0.5,\"scale\":0.5,\"yOffset\":0},\"toneMappingExposure\":1,\"verticalOffset\":{\"landscape\":0,\"portrait\":0}}}",
+  "generatedAt": "2026-09-17T03:39:10.481Z",
+  "presentationSignature": "{\"contractVersion\":2,\"renderer\":{\"cameraFieldOfViewDegrees\":34,\"maxPixelRatio\":2},\"layout\":{\"coordinateSystem\":\"fixed-fullscreen-canvas+composition-frame-v1\",\"previewObjectFit\":\"contain\",\"referenceViewports\":[{\"key\":\"landscapeCompact\",\"width\":844,\"height\":390},{\"key\":\"desktopWide\",\"width\":1280,\"height\":720},{\"key\":\"phonePortraitCompact\",\"width\":360,\"height\":640},{\"key\":\"phonePortraitTall\",\"width\":390,\"height\":844},{\"key\":\"tabletPortrait\",\"width\":768,\"height\":1024},{\"key\":\"desktopStandard\",\"width\":1440,\"height\":900}]},\"animation\":{\"clip\":\"Idle\",\"loop\":\"repeat\",\"speed\":0.8},\"presentation\":{\"cameraLightScale\":1,\"horizontalOffset\":{\"landscape\":0,\"portrait\":0},\"initialYawDegrees\":-70,\"preciseBounds\":true,\"safeAreaPadding\":{\"landscape\":0.12,\"portrait\":0.12},\"shadow\":{\"depthOffset\":0,\"depthScale\":1,\"horizontalOffset\":0,\"opacity\":0.5,\"scale\":0.68,\"yOffset\":0},\"toneMappingExposure\":1,\"verticalOffset\":{\"landscape\":-0.09,\"portrait\":-0.06}}}",
   "profiles": {
     "landscapeCompact": {
-      "bytes": 137316,
+      "bytes": 139818,
       "fileName": "preview-landscape-compact.webp",
       "height": 650,
-      "sha256": "70ff93d9b345dd1167a104d688504d2fe3fe01360395ff842a4f1706da739729",
+      "sha256": "664689dbaffd2ec380922bddd35c8c5744a8e90df777895489047d6bbfe0eeac",
       "width": 1250
     },
     "desktopWide": {
-      "bytes": 147350,
+      "bytes": 153664,
       "fileName": "preview-desktop-wide.webp",
       "height": 800,
-      "sha256": "9c24117fbc6b21ebaf684bc4462eebc2a9519c6648729743c3414789ff11b3a4",
+      "sha256": "433b1d22a531db5741a32b79274c8dfa7ba8aac57758e8e73ea945646b6ea138",
       "width": 1200
     },
     "phonePortraitCompact": {
-      "bytes": 79928,
+      "bytes": 87266,
       "fileName": "preview-phone-compact.webp",
       "height": 1000,
-      "sha256": "1b84359167d9023c02f052ba84afbc90f6da4e1c02677091cf5f74c4c1d10e8f",
+      "sha256": "6d6f893653f47900a47ad6a907fbde400ed3738e3ec856fe7e8c064414dc47dc",
       "width": 875
     },
     "phonePortraitTall": {
-      "bytes": 56752,
+      "bytes": 61744,
       "fileName": "preview-phone-tall.webp",
       "height": 1000,
-      "sha256": "971854059f795c19a88237ba0c887556ed37e991223ead17ba657633b61932e9",
+      "sha256": "8bcda10f5e43cb1473bce9cc995afdfde0c6db4a1571646d98fb95a9bf5319f2",
       "width": 640
     },
     "tabletPortrait": {
-      "bytes": 95528,
+      "bytes": 102192,
       "fileName": "preview-tablet-portrait.webp",
       "height": 960,
-      "sha256": "15ebf733bd74d41b01149653e1166768674e5cee12a640a1dbbb2d3003857814",
+      "sha256": "a41ea8bcaec227cdd45519d66921c37ad7ad449c8cf15cb63f3a60ea483c8d60",
       "width": 900
     },
     "desktopStandard": {
-      "bytes": 151782,
+      "bytes": 158356,
       "fileName": "preview-desktop-standard.webp",
       "height": 960,
-      "sha256": "0eaabbfae194b28bed768a9e518ab2cd01c098c9047f89075d240ef21543c770",
+      "sha256": "57533618489d7ea3a4be898494fd06160ced845568d7620522f1fabc40e69195",
       "width": 1200
     }
   },
