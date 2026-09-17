@@ -183,9 +183,9 @@ describe('viewer presentation pose', () => {
       MathUtils.degToRad(stegosaurusDescriptor.presentation.initialYawDegrees),
     )
 
-    expect(stegosaurusDescriptor.presentation.initialYawDegrees).toBe(-90)
-    expect(headDirection.x).toBeLessThan(-0.999)
-    expect(Math.abs(headDirection.z)).toBeLessThan(1e-12)
+    expect(stegosaurusDescriptor.presentation.initialYawDegrees).toBe(-70)
+    expect(headDirection.x).toBeLessThan(-0.9)
+    expect(headDirection.z).toBeGreaterThan(0)
   })
 
   it('restores yaw and the exact start of Idle on every reset', () => {
@@ -208,7 +208,9 @@ describe('viewer presentation pose', () => {
       modelRoot,
     })
 
-    expect(modelRoot.rotation.y).toBeCloseTo(-Math.PI / 2)
+    expect(modelRoot.rotation.y).toBeCloseTo(
+      MathUtils.degToRad(stegosaurusDescriptor.presentation.initialYawDegrees),
+    )
     expect(modelRoot.rotation.z).toBeCloseTo(0)
     expect(action.time).toBe(0)
     expect(mixer.time).toBe(0)

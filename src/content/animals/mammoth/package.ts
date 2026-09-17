@@ -12,9 +12,14 @@ export const animalDefinition = definePublishedAnimal({
   content: { 'zh-CN': zhCN, en },
   presentation: {
     cameraLightScale: 2.2,
-    initialYawDegrees: -35,
+    initialYawDegrees: -70,
+    landscapeVerticalOffset: -0.11,
+    portraitVerticalOffset: -0.08,
     safeAreaPadding: 0.12,
     shadow: 'ground',
+    shadowOpacity: 0.52,
+    shadowScale: 0.8,
+    shadowYOffset: 0,
     toneMappingExposure: 1.75,
   },
   animation: {

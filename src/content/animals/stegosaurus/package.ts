@@ -14,13 +14,14 @@ export const animalDefinition = definePublishedAnimal({
     en,
   },
   presentation: {
-    initialYawDegrees: -90,
-    landscapeVerticalOffset: 0.02,
-    portraitVerticalOffset: 0.035,
+    initialYawDegrees: -70,
+    landscapeVerticalOffset: -0.1,
+    portraitVerticalOffset: -0.07,
     safeAreaPadding: 0.08,
     shadow: 'ground',
     shadowOpacity: 0.56,
-    shadowScale: 0.7,
+    shadowScale: 0.78,
+    shadowYOffset: 0,
   },
   animation: {
     clip: 'Idle',

@@ -11,12 +11,15 @@ export const animalDefinition = definePublishedAnimal({
   atmosphere: 'plains',
   content: { 'zh-CN': zhCN, en },
   presentation: {
-    initialYawDegrees: 90,
+    initialYawDegrees: -70,
+    landscapeVerticalOffset: -0.09,
+    portraitVerticalOffset: -0.07,
     safeAreaPadding: 0.12,
     preciseBounds: true,
     shadow: 'ground',
-    shadowOpacity: 0.5,
-    shadowScale: 0.5,
+    shadowOpacity: 0.52,
+    shadowScale: 0.78,
+    shadowYOffset: 0,
   },
   animation: {
     clip: 'Idle',
