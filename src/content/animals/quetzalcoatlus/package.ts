@@ -11,7 +11,8 @@ export const animalDefinition = definePublishedAnimal({
   atmosphere: 'air',
   content: { 'zh-CN': zhCN, en },
   presentation: {
-    initialYawDegrees: 90,
+    initialYawDegrees: -70,
+    landscapeVerticalOffset: 0.16,
     safeAreaPadding: 0.12,
     preciseBounds: true,
     shadow: 'none',

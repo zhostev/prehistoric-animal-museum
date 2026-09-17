@@ -11,13 +11,14 @@ export const animalDefinition = definePublishedAnimal({
   atmosphere: "air",
   content: { 'zh-CN': zhCN, en },
   presentation: {
-    "cameraLightScale": 1.15,
-    "initialYawDegrees": -18,
-    "portraitSafeAreaPadding": 0.18,
-    "preciseBounds": true,
-    "safeAreaPadding": 0.1,
-    "shadow": "none",
-    "toneMappingExposure": 0.9
+    cameraLightScale: 1.15,
+    initialYawDegrees: -65,
+    landscapeVerticalOffset: 0.12,
+    portraitSafeAreaPadding: 0.18,
+    preciseBounds: true,
+    safeAreaPadding: 0.1,
+    shadow: 'none',
+    toneMappingExposure: 0.9,
   },
   animation: {
     "clip": "Idle",

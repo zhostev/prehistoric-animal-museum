@@ -11,12 +11,13 @@ export const animalDefinition = definePublishedAnimal({
   atmosphere: "underwater",
   content: { 'zh-CN': zhCN, en },
   presentation: {
-    "initialYawDegrees": 0,
-    "portraitSafeAreaPadding": 0.14,
-    "safeAreaPadding": 0.1,
-    "preciseBounds": true,
-    "shadow": "none",
-    "toneMappingExposure": 1.16
+    initialYawDegrees: -70,
+    landscapeVerticalOffset: 0.04,
+    portraitSafeAreaPadding: 0.14,
+    preciseBounds: true,
+    safeAreaPadding: 0.1,
+    shadow: 'none',
+    toneMappingExposure: 1.16,
   },
   animation: {
     "clip": "Idle",

@@ -12,7 +12,8 @@ export const animalDefinition = definePublishedAnimal({
   content: { 'zh-CN': zhCN, en },
   presentation: {
     cameraLightScale: 1.5,
-    initialYawDegrees: -20,
+    initialYawDegrees: -70,
+    landscapeVerticalOffset: 0.14,
     safeAreaPadding: 0.05,
     shadow: 'none',
     toneMappingExposure: 1.35,
