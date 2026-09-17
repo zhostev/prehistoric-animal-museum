@@ -53,7 +53,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Acrocanthosaurus habitat scene — landscape, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
 - License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated Acrocanthosaurus landscape habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
-- Runtime SHA-256: `ab6a5a3cfd305dcaa56d0458c00d6659e6a6dcc060524fa61dfcbf0f155ae3a8`
+- Runtime SHA-256: `41452f1ac2bc67aab5af7fad6203a58a7a09ed82496d68e61389729a87b8b0e7`
 - Modifications:
   - Rendered the landscape pass deterministically from the project-authored habitat scene spec with EEVEE Next.
   - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
@@ -63,7 +63,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Acrocanthosaurus habitat scene — portrait, generated with Blender 4.5.12 (project-authored habitat scene, deterministic seed) on 2026-08-17
 - License: [CC BY-NC-SA 4.0 project-owned Blender habitat render](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - Attribution: Project-generated Acrocanthosaurus portrait habitat background rendered by the Prehistoric Animal Museum Blender pipeline.
-- Runtime SHA-256: `ee2d6f1ca012ebf1fbf1dcc1039887ad624b025a5eb68a803b022c02d35db638`
+- Runtime SHA-256: `26cadb17d6d893215c7f1e71c83257a38a7778b46ceac17c1d427eb201c31fee`
 - Modifications:
   - Rendered the portrait pass deterministically from the project-authored habitat scene spec with EEVEE Next.
   - Encoded as lossy WebP at quality 82 without text, logos, UI, or watermarks.
@@ -2940,12 +2940,12 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Microraptor deterministic procedural model source, generated with Blender Python generator authored by the Prehistoric Animal Museum on 2026-08-17
 - License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - Attribution: “Microraptor” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `a435c5f6f92525a909ebdb12d9582c8db5c13773735e33fdc19624ab7a221ec7`
+- Runtime SHA-256: `a4b625356da506c31cd0bf4926a42c676090d2a406d54eb369786de2e0a2c32a`
 - Modifications:
-  - pipeline: project-authored expansion GLB (feathered, feature=four-wings) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
+  - pipeline: project-authored expansion GLB (feathered, feature=four-wings) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Flight
   - scale: source body length 7.9101 Blender units -> 0.8 m; uniform factor 0.101137 applied to mesh data
   - armature synthesized: 3 bones ['Body', 'Head', 'Tail']
-  - Idle synthesized: frames 0..192 at 24 fps = 8.0 s, two-cycle body breathing, Head +/-5.0 deg, Tail +/-7.5 deg; habitat=air, vertical drift +/-0.0150 m; frame 192 repeats frame 0 exactly (seamless loop)
+  - Flight synthesized: frames 0..192 at 24 fps = 8.0 s, two-cycle body banking/lift, Head +/-5.0 deg, Tail +/-7.5 deg; habitat=air, vertical drift +/-0.0150 m; frame 192 repeats frame 0 exactly (seamless loop). The source has no wing bones, so this is body-level flight motion rather than a wing-flap rig.
   - mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
 ## 沧龙 (`mosasaurus`)
 

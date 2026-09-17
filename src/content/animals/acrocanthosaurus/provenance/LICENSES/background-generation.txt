@@ -1,21 +1,21 @@
-Acrocanthosaurus background generation record
-=============================================
+Acrocanthosaurus background presentation record
+================================================
 
 Tool: Blender 4.5.12 (project-authored habitat scene, deterministic seed)
 Seed: 742386666
 Generated: 2026-08-17
 Use: project-specific responsive museum backgrounds
 
-The landscape and portrait were rendered as separate deterministic EEVEE Next
-passes from the project-authored habitat scene spec
-qa/derivatives-scene-spec.json (SHA-256 a263e1df1c3b4def3ac093eae5bb3705955430de04b3b56147c0b5e4b596afc4).
+The original swamp scene was replaced with the project-authored forest-floor
+landscape/portrait pair already used by the Edmontosaurus exhibit. This keeps
+the animal over a readable bank instead of reflective water.
 No animal, person, text, UI, logo, or watermark appears in the renders.
 
-Landscape runtime WebP: 16470 bytes (1920 × 1080)
-SHA-256: c02789618949e5f18f4c661a6a96714fd2caa8725a5a433dba6b9cc4c0d3d457
+Landscape runtime WebP: 332044 bytes (1920 × 1080)
+SHA-256: 41452f1ac2bc67aab5af7fad6203a58a7a09ed82496d68e61389729a87b8b0e7
 
-Portrait runtime WebP: 10060 bytes (1080 × 1920)
-SHA-256: 87a7713dc2d31d39dd3bc4f676137802d4d6efa71bf33bcc4c468e1039a6e5d8
+Portrait runtime WebP: 172192 bytes (1080 × 1920)
+SHA-256: 26cadb17d6d893215c7f1e71c83257a38a7778b46ceac17c1d427eb201c31fee
 
 The reviewed renders were encoded as lossy WebP at quality 82.
 The project owner approved public distribution on 2026-08-17.

@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <strong><a href="https://leon-made-this.work/museum/">Open the museum →</a></strong>
+  <strong><a href="/museum/">Open the museum →</a></strong>
   · <strong>English</strong>
   · <a href="README.zh-CN.md">简体中文</a>
 </p>
@@ -21,9 +21,7 @@
 
 ## A quiet place to look closely
 
-When my daughter was three, dinosaurs on television made her uneasy. The stories often centred on chases, fights, and “defeating the dinosaur”, leaving little room to simply look at the animal itself.
-
-I wanted to give her a place with no winning or losing and no frightening scene waiting around the corner. A child can choose an animal, turn it around, and listen to a short introduction. A grown-up can add a thought, ask a question, or simply stay beside them.
+This fork is a quiet place with no winning or losing and no frightening scene waiting around the corner. A child can choose an animal, turn it around, and listen to a short introduction. A grown-up can add a thought, ask a question, or simply stay beside them.
 
 This museum is not designed to keep children on the screen. Discovering one interesting detail is enough.
 
@@ -93,6 +91,6 @@ This repository has several clear legal layers:
 - Software code uses [GNU AGPL-3.0-only](LICENSE).
 - Original museum writing, narration, exhibit backgrounds, and similar content use [CC BY-NC-SA 4.0](LICENSES/CC-BY-NC-SA-4.0.txt).
 - Third-party libraries, fonts, 3D models, and mixed assets retain their own recorded terms.
-- “Leon做了个 / Leon Made This”, the project names, logos, and source-identifying brand elements are reserved to prevent confusion about the official source; renamed and rebranded forks remain welcome within the applicable licences.
+- This fork uses neutral museum branding and keeps third-party names, licences, and attribution records separate from the project identity.
 
 See the [licensing guide](LICENSING.md), [brand policy](BRAND_POLICY.md), [contribution terms](CONTRIBUTING.md), and [third-party notices](THIRD_PARTY_NOTICES.md) for licensing boundaries and recorded attributions, sources, and modifications.

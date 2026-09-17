@@ -1846,20 +1846,6 @@ function MuseumApp({
                   ) : null}
                 </h1>
               )}
-              <button
-                aria-label={messages.creatorAboutLabel}
-                className="creator-signature-button"
-                onClick={() => {
-                  setDrawerOpen(false)
-                  setCollectionOpen(false)
-                  setAboutOpen(true)
-                }}
-                ref={aboutTriggerRef}
-                type="button"
-              >
-                <Info aria-hidden="true" size={16} strokeWidth={2.1} />
-                <span>{messages.creatorBrand}</span>
-              </button>
             </div>
             <div className="title-lockup" key={`title-${activeAnimal.id}`}>
               <div className="animal-copy">

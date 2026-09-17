@@ -11,12 +11,12 @@ Original SHA-256:
 467f4c7fda45c3dd87e2d21e8987e1fa47bb3d5bbe06436ac00738e957f67ed0
 
 Modifications for the Prehistoric Animal Museum:
-- pipeline: project-authored expansion GLB (feathered, feature=four-wings) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
+- pipeline: project-authored expansion GLB (feathered, feature=four-wings) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Flight
 - scale: source body length 7.9101 Blender units -> 0.8 m; uniform factor 0.101137 applied to mesh data
 - armature synthesized: 3 bones ['Body', 'Head', 'Tail']
-- Idle synthesized: frames 0..192 at 24 fps = 8.0 s, two-cycle body breathing, Head +/-5.0 deg, Tail +/-7.5 deg; habitat=air, vertical drift +/-0.0150 m; frame 192 repeats frame 0 exactly (seamless loop)
+- Flight synthesized: frames 0..192 at 24 fps = 8.0 s, two-cycle body banking/lift, Head +/-5.0 deg, Tail +/-7.5 deg; habitat=air, vertical drift +/-0.0150 m; frame 192 repeats frame 0 exactly (seamless loop). The source has no wing bones, so this is body-level flight motion rather than a wing-flap rig.
 - mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only
 
-Published runtime GLB: 160600 bytes
+Published runtime GLB: 163796 bytes
 Published SHA-256:
-b40c87dff46d26292927dc8fd202f99bd913c23b744bc994dbc6b7f0940bb29d
+a4b625356da506c31cd0bf4926a42c676090d2a406d54eb369786de2e0a2c32a
