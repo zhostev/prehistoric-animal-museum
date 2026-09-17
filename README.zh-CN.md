@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-  <strong><a href="https://leon-made-this.work/museum/">进入在线博物馆 →</a></strong>
+  <strong><a href="/museum/">进入在线博物馆 →</a></strong>
   · <a href="README.md">English</a>
   · <strong>简体中文</strong>
 </p>
@@ -93,6 +93,6 @@ npm run test:e2e
 - 软件代码采用 [GNU AGPL-3.0-only](LICENSE)。
 - 原创博物馆文案、旁白、展厅背景和类似内容采用 [CC BY-NC-SA 4.0](LICENSES/CC-BY-NC-SA-4.0.txt)。
 - 第三方库、字体、3D 模型和混合素材继续遵守各自记录的许可。
-- “Leon做了个 / Leon Made This”、项目名称、标志及用于识别官方来源的品牌元素仅保留防止冒充官方所需的权利；在适用许可范围内，改名和替换品牌后的 Fork 仍然受到欢迎。
+- 本 Fork 使用中性的博物馆品牌，并将第三方名称、许可和署名记录与项目身份分开。
 
 许可边界以及已记录的署名、来源和修改信息见[许可说明](LICENSING.md)、[品牌政策](BRAND_POLICY.md)、[贡献指南](CONTRIBUTING.md)与[第三方素材说明](THIRD_PARTY_NOTICES.md)。

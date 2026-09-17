@@ -126,7 +126,7 @@ interface SeoPageCopy {
 }
 
 const defaultOptions = {
-  siteOrigin: 'https://leon-made-this.work',
+  siteOrigin: 'https://prehistoric-animal-museum.pages.dev',
   museumPath: '/museum/',
   notFoundReturnPath: '/prehistoric-animal-museum/',
 } satisfies Required<MultilingualSeoOptions>
@@ -280,7 +280,7 @@ const pageCopy = {
   'x-default': {
     locale: 'x-default',
     htmlLang: 'en',
-    brand: 'Leon Made This | Leon做了个',
+    brand: 'Prehistoric Animal Museum',
     title: 'Prehistoric Animal Museum | 史前动物博物馆',
     description: `Choose Simplified Chinese or English for a family-friendly 3D museum featuring ${catalogueAnimalCount} prehistoric animals. 选择简体中文或 English，和孩子一起探索 ${catalogueAnimalCount} 位史前动物朋友。`,
     heading: 'Prehistoric Animal Museum | 史前动物博物馆',
@@ -297,7 +297,7 @@ const pageCopy = {
   'zh-CN': {
     locale: 'zh-CN',
     htmlLang: 'zh-CN',
-    brand: 'Leon做了个',
+    brand: '史前动物博物馆',
     title: '史前动物博物馆 | 亲子 3D 史前动物展',
     description: `和孩子一起走进 3D 史前动物博物馆，观察 ${catalogueAnimalCount} 位来自陆地、天空与水中的史前朋友。`,
     heading: '史前动物博物馆',
@@ -313,7 +313,7 @@ const pageCopy = {
   en: {
     locale: 'en',
     htmlLang: 'en',
-    brand: 'Leon Made This',
+    brand: 'Prehistoric Animal Museum',
     title: 'Prehistoric Animal Museum | A 3D Family Adventure',
     description: `Explore ${catalogueAnimalCount} prehistoric animals from land, sky and sea in a gentle 3D museum made for young children and their grown-ups.`,
     heading: 'Prehistoric Animal Museum',
@@ -324,8 +324,7 @@ const pageCopy = {
     languageLabel: 'Choose a language',
     systemLanguageLabel: 'Follow system',
     socialImageFileName: 'social/museum.en.png',
-    socialImageAlt:
-      'Prehistoric Animal Museum, a 3D family adventure by Leon Made This',
+    socialImageAlt: 'Prehistoric Animal Museum, a gentle 3D family exhibit',
   },
 } as const satisfies Record<SeoPageLocale, SeoPageCopy>
 

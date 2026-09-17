@@ -11,9 +11,12 @@ export const animalDefinition = definePublishedAnimal({
   atmosphere: 'plains',
   content: { 'zh-CN': zhCN, en },
   presentation: {
-    initialYawDegrees: -70,
-    landscapeVerticalOffset: -0.14,
-    portraitVerticalOffset: -0.08,
+    // The source mesh contains a second rear limb pair in the single skinned
+    // surface. A slightly more oblique view overlaps the duplicate silhouette;
+    // this is a presentation mitigation, not a mesh cure.
+    initialYawDegrees: -58,
+    landscapeVerticalOffset: -0.2,
+    portraitVerticalOffset: -0.12,
     safeAreaPadding: 0.12,
     preciseBounds: true,
     shadow: 'ground',

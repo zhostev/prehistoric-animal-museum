@@ -1,16 +1,16 @@
-# Brand policy
+# Museum brand policy
 
-“Leon做了个”, “Leon Made This”, “史前动物博物馆”, “Prehistoric Animal
-Museum”, their logo lockups, distinctive marks, account avatars, and other
-visual elements used to identify the official creator or project are
-collectively the **Brand Assets**.
+This fork uses the neutral name “Prehistoric Animal Museum / 史前动物博物馆”.
+Do not present the fork as an official project maintained by another person or
+organisation, and do not use third-party names, logos, or source identities as
+the fork’s own branding.
 
 All rights in the Brand Assets are reserved. The software and content licenses
 do not grant permission to:
 
 - present a modified or redistributed version as the official project;
-- imply endorsement, sponsorship, partnership, or authorship by Leon Made
-  This;
+- imply endorsement, sponsorship, partnership, or authorship by another person
+  or organisation;
 - use the Brand Assets as the name, logo, avatar, domain identity, or store
   identity of another product or service.
 

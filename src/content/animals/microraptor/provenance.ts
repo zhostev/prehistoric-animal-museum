@@ -19,14 +19,14 @@ export const provenance = [
       url: 'https://creativecommons.org/publicdomain/zero/1.0/',
     },
     runtime: {
-      sha256: 'a435c5f6f92525a909ebdb12d9582c8db5c13773735e33fdc19624ab7a221ec7',
-      bytes: 1847520,
+      sha256: 'a4b625356da506c31cd0bf4926a42c676090d2a406d54eb369786de2e0a2c32a',
+      bytes: 163796,
     },
     modifications: [
-      'pipeline: project-authored expansion GLB (feathered, feature=four-wings) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle',
+      'pipeline: project-authored expansion GLB (feathered, feature=four-wings) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Flight',
       'scale: source body length 7.9101 Blender units -> 0.8 m; uniform factor 0.101137 applied to mesh data',
       'armature synthesized: 3 bones [\'Body\', \'Head\', \'Tail\']',
-      'Idle synthesized: frames 0..192 at 24 fps = 8.0 s, two-cycle body breathing, Head +/-5.0 deg, Tail +/-7.5 deg; habitat=air, vertical drift +/-0.0150 m; frame 192 repeats frame 0 exactly (seamless loop)',
+      'Flight synthesized: frames 0..192 at 24 fps = 8.0 s, two-cycle body banking/lift, Head +/-5.0 deg, Tail +/-7.5 deg; habitat=air, vertical drift +/-0.0150 m; frame 192 repeats frame 0 exactly (seamless loop). The source has no wing bones, so this is body-level flight motion rather than a wing-flap rig.',
       'mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only',
     ],
     attribution: '“Microraptor” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.',

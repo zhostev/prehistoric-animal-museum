@@ -27,7 +27,7 @@ const rootIndex = `<!doctype html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="refresh" content="0; url=/museum/" />
     <meta name="robots" content="noindex, follow" />
-    <link rel="canonical" href="https://leon-made-this.work/museum/" />
+    <link rel="canonical" href="https://prehistoric-animal-museum.pages.dev/museum/" />
     <title>Opening the Prehistoric Animal Museum</title>
   </head>
   <body>

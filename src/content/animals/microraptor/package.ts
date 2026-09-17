@@ -12,13 +12,15 @@ export const animalDefinition = definePublishedAnimal({
   content: { 'zh-CN': zhCN, en },
   presentation: {
     initialYawDegrees: -70,
-    landscapeVerticalOffset: 0.12,
+    // Airborne presentation: no ground offset or shadow; the Flight clip
+    // adds restrained banking/lift using the available body rig.
+    landscapeVerticalOffset: 0.04,
     safeAreaPadding: 0.12,
     preciseBounds: true,
     shadow: 'none',
   },
   animation: {
-    clip: 'Idle',
+    clip: 'Flight',
     loop: 'repeat',
     speed: 0.8,
   },

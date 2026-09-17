@@ -3,8 +3,8 @@ import type { Locale } from './locale'
 
 const zhCN = {
   museumName: '史前动物博物馆',
-  creatorBrand: 'Leon做了个',
-  creatorAboutLabel: '了解Leon做了个和这座博物馆',
+  creatorBrand: '博物馆项目',
+  creatorAboutLabel: '了解这座博物馆',
   todayMeet: '今天认识',
   localReview: '本地评审',
   documentTitle: '史前动物博物馆 | 亲子 3D 史前动物展',
@@ -106,13 +106,13 @@ const zhCN = {
     downloading: (percent: number) => `下载中 ${percent}%`,
   },
   about: {
-    eyebrow: 'Leon做了个',
+    eyebrow: '博物馆项目',
     title: '关于这座博物馆',
     close: '关闭关于这座博物馆',
-    heading: '一个程序员爸爸，为女儿做的小博物馆',
+    heading: '一座可以安静探索的史前动物博物馆',
     paragraphs: [
-      '我是 Leon，一个程序员爸爸。女儿三岁时会害怕电视里的恐龙追逐，所以我给她做了这座可以安静观察、想听再听的 3D 史前动物博物馆。',
-      '这里免费访问，不用注册，没有广告，也不做访问统计。一次发现一个有趣的细节，就已经足够。',
+      '这是一个面向亲子探索的 3D 史前动物博物馆：可以转动模型、观察细节，并在准备好时听一段简短介绍。',
+      '项目由本 Fork 独立维护，免费访问，不用注册，没有广告，也不做访问统计。一次发现一个有趣的细节，就已经足够。',
     ],
     source: '在 GitHub 查看源码',
     licensing: '查看许可与素材说明',
@@ -160,16 +160,15 @@ export type MuseumMessages = WidenMessages<typeof zhCN>
 
 const en = {
   museumName: 'Prehistoric Animal Museum',
-  creatorBrand: 'Leon Made This',
-  creatorAboutLabel: 'About Leon Made This and this museum',
+  creatorBrand: 'Museum project',
+  creatorAboutLabel: 'About this museum',
   todayMeet: 'Meet today’s friend',
   localReview: 'Local review',
   documentTitle: 'Prehistoric Animal Museum | A 3D Family Adventure',
   seo: {
     description: (count) =>
       `Explore ${count} prehistoric animals from land, sky and sea in a gentle 3D museum made for young children and their grown-ups.`,
-    socialImageAlt:
-      'Prehistoric Animal Museum, a 3D family adventure by Leon Made This',
+    socialImageAlt: 'Prehistoric Animal Museum, a gentle 3D family exhibit',
   },
   stageLabel: (animal) => `${animal} 3D exhibit`,
   navigationLabel: 'Choose an animal',
@@ -266,12 +265,12 @@ const en = {
     downloading: (percent) => `Downloading ${percent}%`,
   },
   about: {
-    eyebrow: 'Leon Made This',
+    eyebrow: 'Museum project',
     title: 'About this museum',
     close: 'Close About this museum',
-    heading: 'A little museum made by a developer dad for his daughter',
+    heading: 'A quiet 3D museum for curious families',
     paragraphs: [
-      'I’m Leon, a developer and a dad. When my daughter was three, dinosaur chases on television frightened her, so I made a 3D prehistoric animal museum where she could look quietly and listen only when she wanted to.',
+      'This fork is an independently maintained 3D prehistoric animal museum for families: turn models, inspect details and listen when you choose.',
       'The museum is free, with no sign-up, adverts or visitor tracking. Finding one interesting detail at a time is plenty.',
     ],
     source: 'View the source on GitHub',
