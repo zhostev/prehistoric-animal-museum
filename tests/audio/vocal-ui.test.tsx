@@ -1,11 +1,25 @@
 import { fireEvent, render, screen } from '@testing-library/react'
 import { describe, expect, it } from 'vitest'
 import { App } from '../../src/App'
-import { initialAppState } from '../../src/app-bootstrap'
+import type { InitialAppState } from '../../src/app-bootstrap'
+
+const zhState: InitialAppState = {
+  animalId: 'stegosaurus',
+  locale: 'zh-CN',
+  pageKind: 'museum',
+  preference: 'zh-CN',
+}
+
+const enState: InitialAppState = {
+  animalId: 'stegosaurus',
+  locale: 'en',
+  pageKind: 'museum',
+  preference: 'en',
+}
 
 describe('Vocal UI interactions', () => {
   it('renders roar button and toggles vocal playback state in zh-CN', async () => {
-    render(<App initialState={{ ...initialAppState, locale: 'zh-CN' }} />)
+    render(<App initialState={zhState} />)
 
     const roarButton = await screen.findByRole('button', { name: /听.*的叫声/ })
     expect(roarButton).toBeInTheDocument()
@@ -24,7 +38,7 @@ describe('Vocal UI interactions', () => {
   })
 
   it('renders roar button in English when locale is en', async () => {
-    render(<App initialState={{ ...initialAppState, locale: 'en' }} />)
+    render(<App initialState={enState} />)
 
     const roarButton = await screen.findByRole('button', { name: /Hear .* call/ })
     expect(roarButton).toBeInTheDocument()
