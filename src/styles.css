@@ -944,6 +944,21 @@ a:focus-visible {
   letter-spacing: 0;
 }
 
+.period-chip {
+  display: inline-flex;
+  min-height: 24px;
+  align-items: center;
+  padding: 0 9px;
+  border-radius: 999px;
+  color: color-mix(in srgb, var(--animal-accent) 90%, #152824);
+  background: color-mix(in srgb, var(--animal-accent-soft) 38%, rgb(255 255 255 / 82%));
+  border: 1px solid color-mix(in srgb, var(--animal-accent) 24%, transparent);
+  letter-spacing: 0.01em;
+  font-size: 0.76rem;
+  font-weight: 750;
+  white-space: nowrap;
+}
+
 .review-state-chip {
   display: inline-flex;
   min-height: 24px;
@@ -3714,6 +3729,66 @@ a:focus-visible {
   font-size: 0.9rem;
 }
 
+.collection-sort-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+
+.collection-sort-group {
+  display: inline-flex;
+  padding: 3px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--ink-muted) 14%, white);
+  border: 1px solid color-mix(in srgb, var(--ink-muted) 20%, transparent);
+}
+
+.collection-sort-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px 14px;
+  border: none;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 750;
+  color: var(--ink-muted);
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.16s ease, color 0.16s ease, box-shadow 0.16s ease;
+}
+
+.collection-sort-btn:hover {
+  color: var(--ink);
+}
+
+.collection-sort-btn[data-active="true"] {
+  color: #173830;
+  background: white;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 12%);
+}
+
+.collection-sort-direction-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 12px;
+  border: 1px solid color-mix(in srgb, var(--ink-muted) 24%, transparent);
+  border-radius: 999px;
+  font-size: 0.74rem;
+  font-weight: 720;
+  color: #1d3d34;
+  background: white;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 6%);
+}
+
+.collection-sort-direction-btn:hover {
+  background: color-mix(in srgb, var(--animal-accent-soft) 25%, white);
+}
+
 .collection-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -3810,6 +3885,22 @@ a:focus-visible {
   line-height: 1.35;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.collection-card__period {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.62rem;
+  font-weight: 750;
+  color: #2c4c42;
+  background: color-mix(in srgb, #2c4c42 9%, white);
+  border: 1px solid color-mix(in srgb, #2c4c42 16%, transparent);
+  padding: 1px 6px;
+  border-radius: 6px;
+  width: fit-content;
+  max-width: 100%;
 }
 
 .collection-card__state {

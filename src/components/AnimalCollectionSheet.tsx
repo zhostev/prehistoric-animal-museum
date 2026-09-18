@@ -1,7 +1,8 @@
 import { createPortal } from 'react-dom'
-import { useEffect, useId, useRef } from 'react'
-import { Check, Footprints, X } from 'lucide-react'
+import { useEffect, useId, useMemo, useRef, useState } from 'react'
+import { ArrowUpDown, Check, Footprints, X } from 'lucide-react'
 import { useI18n } from '../i18n/I18nProvider'
+import { sortAnimalsByTimeline } from '../content/chronology'
 import { IconButton } from './IconButton'
 import { LanguageMenu } from './LanguageMenu'
 
@@ -10,6 +11,8 @@ export interface CollectionAnimal {
   readonly id: string
   readonly name: string
   readonly thumbnail: string
+  readonly chronologyBadge?: string
+  readonly mya?: number
 }
 
 interface AnimalCollectionSheetProps {
@@ -45,6 +48,15 @@ export function AnimalCollectionSheet({
   const closeButtonRef = useRef<HTMLButtonElement>(null)
   const dialogRef = useRef<HTMLElement>(null)
   const titleId = useId()
+  const [sortMode, setSortMode] = useState<'featured' | 'timeline'>('featured')
+  const [timelineDirection, setTimelineDirection] = useState<'oldest-first' | 'newest-first'>('oldest-first')
+
+  const displayedAnimals = useMemo(() => {
+    if (sortMode === 'featured') {
+      return animals
+    }
+    return sortAnimalsByTimeline(animals, timelineDirection)
+  }, [animals, sortMode, timelineDirection])
 
   useEffect(() => {
     if (!open) {
@@ -114,6 +126,53 @@ export function AnimalCollectionSheet({
             </p>
             <h2 id={titleId}>{messages.collection.title}</h2>
             <p>{messages.collection.intro}</p>
+            <div className="collection-sort-bar" role="toolbar" aria-label={messages.collection.title}>
+              <div className="collection-sort-group" role="radiogroup">
+                <button
+                  type="button"
+                  role="radio"
+                  aria-checked={sortMode === 'featured'}
+                  className="collection-sort-btn"
+                  data-active={sortMode === 'featured'}
+                  onClick={() => setSortMode('featured')}
+                >
+                  {messages.collection.sortFeatured}
+                </button>
+                <button
+                  type="button"
+                  role="radio"
+                  aria-checked={sortMode === 'timeline'}
+                  className="collection-sort-btn"
+                  data-active={sortMode === 'timeline'}
+                  onClick={() => setSortMode('timeline')}
+                >
+                  {messages.collection.sortTimeline}
+                </button>
+              </div>
+              {sortMode === 'timeline' ? (
+                <button
+                  type="button"
+                  className="collection-sort-direction-btn"
+                  onClick={() =>
+                    setTimelineDirection((prev) =>
+                      prev === 'oldest-first' ? 'newest-first' : 'oldest-first',
+                    )
+                  }
+                  title={
+                    timelineDirection === 'oldest-first'
+                      ? messages.collection.sortOldestFirst
+                      : messages.collection.sortNewestFirst
+                  }
+                >
+                  <ArrowUpDown aria-hidden="true" size={13} strokeWidth={2.4} />
+                  <span>
+                    {timelineDirection === 'oldest-first'
+                      ? messages.collection.sortOldestFirst
+                      : messages.collection.sortNewestFirst}
+                  </span>
+                </button>
+              ) : null}
+            </div>
           </div>
           <div className="collection-sheet__actions">
             <LanguageMenu />
@@ -127,7 +186,7 @@ export function AnimalCollectionSheet({
           </div>
         </header>
         <div className="collection-grid" role="list">
-          {animals.map((animal, index) => {
+          {displayedAnimals.map((animal, index) => {
             const current = animal.id === currentAnimalId
             const loading = animal.id === loadingAnimalId
             return (
@@ -156,6 +215,11 @@ export function AnimalCollectionSheet({
                   <span className="collection-card__copy">
                     <strong>{animal.name}</strong>
                     <small>{animal.classification}</small>
+                    {animal.chronologyBadge ? (
+                      <span className="collection-card__period">
+                        {animal.chronologyBadge}
+                      </span>
+                    ) : null}
                   </span>
                   {current ? (
                     <span className="collection-card__state">

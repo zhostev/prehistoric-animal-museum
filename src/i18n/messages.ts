@@ -104,6 +104,10 @@ const zhCN = {
     opening: '正在打开',
     preparing: '准备中',
     downloading: (percent: number) => `下载中 ${percent}%`,
+    sortFeatured: '精选推荐',
+    sortTimeline: '生命时间轴',
+    sortOldestFirst: '从古至今',
+    sortNewestFirst: '由近及远',
   },
   about: {
     eyebrow: '博物馆项目',
@@ -263,6 +267,10 @@ const en = {
     opening: 'Opening',
     preparing: 'Preparing',
     downloading: (percent) => `Downloading ${percent}%`,
+    sortFeatured: 'Featured',
+    sortTimeline: 'Timeline',
+    sortOldestFirst: 'Oldest first',
+    sortNewestFirst: 'Newest first',
   },
   about: {
     eyebrow: 'Museum project',

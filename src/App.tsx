@@ -48,6 +48,7 @@ import { SceneAtmosphere } from './components/SceneAtmosphere'
 import { ViewerStage } from './components/ViewerStage'
 import { mainAnimals } from './content/catalog'
 import { animalSeoDescription } from './content/animal-seo'
+import { getAnimalChronology } from './content/chronology'
 import { credits } from './content/credits.generated'
 import { staticAnimalDetailIds } from './content/static-animal-details'
 import type { PublishedAnimalPackage } from './content/types'
@@ -864,13 +865,18 @@ function MuseumApp({
   const overlayOpen = drawerOpen || collectionOpen || aboutOpen
   const collectionAnimals = useMemo<CollectionAnimal[]>(
     () =>
-      animals.map((animal) => ({
-        classification: animal.classification,
-        id: animal.id,
-        name: animal.name,
-        thumbnail: animal.assets.thumbnail,
-      })),
-    [animals],
+      animals.map((animal) => {
+        const chrono = getAnimalChronology(animal.id)
+        return {
+          classification: animal.classification,
+          id: animal.id,
+          name: animal.name,
+          thumbnail: animal.assets.thumbnail,
+          chronologyBadge: chrono.badge[locale],
+          mya: chrono.mya,
+        }
+      }),
+    [animals, locale],
   )
 
   useEffect(() => {
@@ -1852,6 +1858,9 @@ function MuseumApp({
                   <span>{messages.todayMeet}</span>
                   <span className="classification-chip">
                     {activeAnimal.classification}
+                  </span>
+                  <span className="period-chip">
+                    {getAnimalChronology(activeAnimal.id).badge[locale]}
                   </span>
                   {localReviewMode && activeAnimal.review ? (
                     <span
