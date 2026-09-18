@@ -7,6 +7,7 @@ import type { ViewerModelDescriptor } from './viewer-model-descriptor'
 interface ViewerAnimalSource {
   readonly animation?: AnimalAnimation
   readonly atmosphere?: string
+  readonly habitat?: 'land' | 'water' | 'air'
   readonly id: string
   readonly presentation: AnimalPresentation
 }
@@ -38,8 +39,12 @@ export function createViewerModelDescriptor(
         portrait: animal.presentation.portraitHorizontalOffset ?? 0,
       },
       verticalOffset: {
-        landscape: animal.presentation.landscapeVerticalOffset ?? 0,
-        portrait: animal.presentation.portraitVerticalOffset ?? 0,
+        landscape:
+          animal.presentation.landscapeVerticalOffset ??
+          (animal.habitat === 'land' ? 0.14 : 0),
+        portrait:
+          animal.presentation.portraitVerticalOffset ??
+          (animal.habitat === 'land' ? 0.10 : 0),
       },
       safeAreaPadding: {
         landscape: animal.presentation.safeAreaPadding,
