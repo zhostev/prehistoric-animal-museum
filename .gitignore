@@ -36,6 +36,7 @@ tools/*
 !tools/animal-onboarding/
 !tools/animal-onboarding/**
 !tools/audit-animal-integration.ts
+!tools/create_smilodon_diorama.py
 tools/animal-onboarding/**/__pycache__/
 tools/animal-onboarding/**/*.py[cod]
 

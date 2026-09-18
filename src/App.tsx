@@ -3,7 +3,6 @@ import {
   ChevronLeft,
   ChevronRight,
   Eye,
-  Info,
   Leaf,
   LayoutGrid,
   Maximize2,
