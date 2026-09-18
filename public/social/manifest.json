@@ -5,15 +5,15 @@
   "cards": {
     "x-default": {
       "fileName": "museum.png",
-      "sourceSha256": "70b0fd0e53572c3f5f0d55530a72b9913cb4783f57f29fde16d7bb8c8b03ebee"
+      "sourceSha256": "17c794a4f3fb3a221619dd92c5770a3399401aa1f763a0265d38a105d4a47fe3"
     },
     "zh-CN": {
       "fileName": "museum.zh-CN.png",
-      "sourceSha256": "1432aad0df48ddd4fb834a08ef94267ea45978af576d4dd3a43968ba39bd7cfd"
+      "sourceSha256": "cf8fae53077f417aa1c87595156af56ea33a470546ec698ec061f12289914965"
     },
     "en": {
       "fileName": "museum.en.png",
-      "sourceSha256": "b76d210c5ba398dd4e3d84451b5c91374e04b797f7ec1e3f84f99f9b9f05916e"
+      "sourceSha256": "661eee291655c8254ac23bd8cf033db5c33ab3c7944875cb54988b954cd14c38"
     }
   }
 }
