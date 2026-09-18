@@ -18,6 +18,7 @@ export interface NarrationTrack {
 
 export interface NarrationMedia {
   currentTime: number
+  volume?: number
   readonly error?: unknown
   play(): Promise<void>
   pause(): void
@@ -131,6 +132,7 @@ export class NarrationController {
   private generation = 0
   private operation = 0
   private destroyed = false
+  private ducked = false
 
   constructor(options: NarrationControllerOptions = {}) {
     this.createMedia = options.createMedia ?? createBrowserMedia
@@ -308,6 +310,21 @@ export class NarrationController {
     return this.play()
   }
 
+  setDucked(ducked: boolean): void {
+    if (this.ducked === ducked) {
+      return
+    }
+    this.ducked = ducked
+    const media = this.mediaListeners?.media
+    if (media && typeof media.volume === 'number') {
+      media.volume = ducked ? 0.2 : 1.0
+    }
+  }
+
+  isDucked(): boolean {
+    return this.ducked
+  }
+
   destroy(): void {
     if (this.destroyed) {
       return
@@ -346,6 +363,9 @@ export class NarrationController {
     let media: NarrationMedia
     try {
       media = this.createMedia(source, animalId)
+      if (typeof media.volume === 'number') {
+        media.volume = this.ducked ? 0.2 : 1.0
+      }
     } catch (error: unknown) {
       this.setSnapshot({
         ...this.snapshot,

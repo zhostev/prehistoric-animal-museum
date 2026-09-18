@@ -6,6 +6,7 @@ import {
   Leaf,
   LayoutGrid,
   Maximize2,
+  Megaphone,
   Minimize2,
   Pause,
   RotateCcw,
@@ -24,7 +25,11 @@ import {
   useState,
   useSyncExternalStore,
 } from 'react'
-import { NarrationController, getNarrationControlLabel } from './audio'
+import {
+  NarrationController,
+  VocalController,
+  getNarrationControlLabel,
+} from './audio'
 import {
   animalDetailIdFromPath,
   type AppPageKind,
@@ -778,6 +783,7 @@ function MuseumApp({
     useRef<ModelDataNotice['kind'] | null>(null)
   const modelDataNoticeLifecycleRef = useRef(0)
   const narrationLifecycleRef = useRef(0)
+  const vocalLifecycleRef = useRef(0)
   const lastReportedModelProgressRef = useRef('')
   const requestTokenRef = useRef(0)
   const viewerRequiresRemountRef = useRef(false)
@@ -825,6 +831,12 @@ function MuseumApp({
     narration.subscribe,
     narration.getSnapshot,
     narration.getServerSnapshot,
+  )
+  const vocal = useMemo(() => new VocalController(), [])
+  const vocalSnapshot = useSyncExternalStore(
+    vocal.subscribe,
+    vocal.getSnapshot,
+    vocal.getServerSnapshot,
   )
   const activeAnimal = animalIndex.get(activeAnimalId) ?? initialAnimal
   useEffect(() => {
@@ -989,6 +1001,18 @@ function MuseumApp({
   }, [narration])
 
   useEffect(() => {
+    const lifecycle = ++vocalLifecycleRef.current
+    return () => {
+      queueMicrotask(() => {
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+        if (vocalLifecycleRef.current === lifecycle) {
+          vocal.destroy()
+        }
+      })
+    }
+  }, [vocal])
+
+  useEffect(() => {
     const lifecycle = ++modelDataNoticeLifecycleRef.current
     return () => {
       queueMicrotask(() => {
@@ -1086,7 +1110,8 @@ function MuseumApp({
       animalId: activeAnimal.id,
       source: activeAnimal.assets.narration,
     })
-  }, [activeAnimal.assets.narration, activeAnimal.id, narration])
+    vocal.stop(narration)
+  }, [activeAnimal.assets.narration, activeAnimal.id, narration, vocal])
 
   useEffect(() => {
     if (
@@ -1714,7 +1739,6 @@ function MuseumApp({
     event: ReactPointerEvent<HTMLElement>,
   ) => {
     if (
-      !focusMode ||
       !event.isPrimary ||
       (event.target instanceof Element &&
         event.target.closest('button, a') !== null)
@@ -1734,7 +1758,6 @@ function MuseumApp({
     const start = focusPointerRef.current
     focusPointerRef.current = null
     if (
-      !focusMode ||
       !start ||
       start.pointerId !== event.pointerId ||
       performance.now() - start.startedAt > 500
@@ -1746,7 +1769,11 @@ function MuseumApp({
       event.clientY - start.y,
     )
     if (distance <= 10) {
-      exitFocusMode()
+      if (focusMode) {
+        exitFocusMode()
+      } else if (modelReady) {
+        void vocal.play(activeAnimalRef.current.id, narration)
+      }
     }
   }
 
@@ -1924,6 +1951,30 @@ function MuseumApp({
                 {activeAnimal.narrationScript.join(locale === 'zh-CN' ? '' : ' ')}
               </span>
             </div>
+            <button
+              aria-label={messages.roarLabel(activeAnimal.name)}
+              className={`narration-button roar-button${vocalSnapshot.isRoaring ? ' is-roaring' : ''}`}
+              data-roaring={vocalSnapshot.isRoaring}
+              onClick={() => {
+                if (vocalSnapshot.isRoaring) {
+                  vocal.stop(narration)
+                } else {
+                  void vocal.play(activeAnimal.id, narration)
+                }
+              }}
+              type="button"
+            >
+              <Megaphone aria-hidden="true" size={21} strokeWidth={2.2} />
+              <span>{vocalSnapshot.isRoaring ? messages.roaring : messages.roar}</span>
+              {vocalSnapshot.isRoaring ? (
+                <span aria-hidden="true" className="narration-wave">
+                  <span />
+                  <span />
+                  <span />
+                  <span />
+                </span>
+              ) : null}
+            </button>
             <button
               aria-label={messages.parentInfo}
               className="parent-info-button"

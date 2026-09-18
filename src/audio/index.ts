@@ -14,3 +14,20 @@ export type {
   NarrationSnapshot,
   NarrationTrack,
 } from './narration-controller'
+
+export {
+  VocalController,
+} from './vocal-controller'
+export type {
+  VocalSnapshot,
+  VocalControllerOptions,
+} from './vocal-controller'
+
+export {
+  ANIMAL_VOCAL_ARCHETYPES,
+  getAnimalVocalArchetype,
+  synthesizeAnimalVocal,
+} from './vocal-synthesizer'
+export type {
+  VocalArchetype,
+} from './vocal-synthesizer'

@@ -1106,6 +1106,39 @@ a:focus-visible {
   display: none;
 }
 
+.roar-button {
+  padding: 0 18px;
+  background: var(--animal-accent, #c96a32);
+  color: #fffdf7;
+  box-shadow: 0 10px 24px rgb(160 70 20 / 22%);
+}
+
+.roar-button:hover:not(:disabled) {
+  box-shadow: 0 13px 28px rgb(160 70 20 / 28%);
+  transform: translateY(-1px);
+}
+
+.roar-button.is-roaring {
+  animation: roar-pulse 900ms ease-in-out infinite;
+  box-shadow: 0 0 0 4px rgb(255 180 80 / 40%), 0 12px 28px rgb(160 70 20 / 30%);
+}
+
+.roar-button.is-roaring .narration-wave > span {
+  animation: narration-wave 600ms ease-in-out infinite alternate;
+}
+
+@keyframes roar-pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .narration-script-popover {
   position: absolute;
   z-index: 40;
