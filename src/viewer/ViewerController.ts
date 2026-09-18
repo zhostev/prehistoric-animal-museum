@@ -443,7 +443,7 @@ export function computeContactShadowLayout(
   }
 }
 
-function makeContactShadow(
+export function makeContactShadow(
   opacity: number,
   size: Vector3,
   scale: number,
@@ -453,46 +453,86 @@ function makeContactShadow(
     horizontalOffset?: number
     yOffset?: number
   } = {},
-): Mesh {
-  const canvas = document.createElement('canvas')
-  canvas.width = 128
-  canvas.height = 128
-  const context = canvas.getContext('2d')
+): Group {
+  const compound = new Group()
+  compound.name = 'contact-shadow-compound'
 
-  if (context) {
-    context.fillStyle = '#000'
-    context.fillRect(0, 0, 128, 128)
-    const gradient = context.createRadialGradient(64, 64, 0, 64, 64, 64)
-    // Three.js reads the green channel of alphaMap, not its alpha channel.
-    // A white-to-black mask therefore produces a genuinely dark, tight core
-    // while keeping the edge feathered and directionless.
+  const layout = computeContactShadowLayout(size, scale, options)
+
+  // 1. Core Contact AO layer (tight, dark core under feet)
+  const coreCanvas = document.createElement('canvas')
+  coreCanvas.width = 128
+  coreCanvas.height = 128
+  const coreCtx = coreCanvas.getContext('2d')
+  if (coreCtx) {
+    coreCtx.fillStyle = '#000'
+    coreCtx.fillRect(0, 0, 128, 128)
+    const gradient = coreCtx.createRadialGradient(64, 64, 0, 64, 64, 64)
     gradient.addColorStop(0, '#fff')
-    gradient.addColorStop(0.18, '#f2f2f2')
-    gradient.addColorStop(0.46, '#9a9a9a')
-    gradient.addColorStop(0.74, '#333')
+    gradient.addColorStop(0.35, '#dadada')
+    gradient.addColorStop(0.65, '#555')
     gradient.addColorStop(1, '#000')
-    context.fillStyle = gradient
-    context.fillRect(0, 0, 128, 128)
+    coreCtx.fillStyle = gradient
+    coreCtx.fillRect(0, 0, 128, 128)
   }
 
-  const alphaMap = new CanvasTexture(canvas)
-  const material = new MeshBasicMaterial({
-    alphaMap,
-    color: new Color('#182319'),
+  const coreAlphaMap = new CanvasTexture(coreCanvas)
+  const coreMaterial = new MeshBasicMaterial({
+    alphaMap: coreAlphaMap,
+    color: new Color('#0f1511'),
     depthWrite: false,
-    opacity,
+    opacity: Math.min(opacity * 1.5, 0.85),
     side: DoubleSide,
     transparent: true,
   })
-  const geometry = new CircleGeometry(0.5, 48)
-  const shadow = new Mesh(geometry, material)
-  const layout = computeContactShadowLayout(size, scale, options)
-  shadow.name = 'contact-shadow'
-  shadow.rotation.x = -Math.PI / 2
-  shadow.position.copy(layout.position)
-  shadow.scale.copy(layout.scale)
-  shadow.renderOrder = -1
-  return shadow
+  const coreGeometry = new CircleGeometry(0.5, 48)
+  const coreMesh = new Mesh(coreGeometry, coreMaterial)
+  coreMesh.name = 'contact-shadow-core-ao'
+  coreMesh.rotation.x = -Math.PI / 2
+  coreMesh.position.copy(layout.position)
+  coreMesh.position.y += 0.0005
+  coreMesh.scale.set(layout.scale.x * 0.45, layout.scale.y * 0.45, 1)
+  coreMesh.renderOrder = -1
+
+  // 2. Ambient Diffuse Shadow layer (broader, soft gradient)
+  const diffuseCanvas = document.createElement('canvas')
+  diffuseCanvas.width = 128
+  diffuseCanvas.height = 128
+  const diffuseCtx = diffuseCanvas.getContext('2d')
+  if (diffuseCtx) {
+    diffuseCtx.fillStyle = '#000'
+    diffuseCtx.fillRect(0, 0, 128, 128)
+    const gradient = diffuseCtx.createRadialGradient(64, 64, 0, 64, 64, 64)
+    gradient.addColorStop(0, '#fff')
+    gradient.addColorStop(0.2, '#f0f0f0')
+    gradient.addColorStop(0.45, '#888')
+    gradient.addColorStop(0.75, '#222')
+    gradient.addColorStop(1, '#000')
+    diffuseCtx.fillStyle = gradient
+    diffuseCtx.fillRect(0, 0, 128, 128)
+  }
+
+  const diffuseAlphaMap = new CanvasTexture(diffuseCanvas)
+  const diffuseMaterial = new MeshBasicMaterial({
+    alphaMap: diffuseAlphaMap,
+    color: new Color('#182319'),
+    depthWrite: false,
+    opacity: opacity * 0.8,
+    side: DoubleSide,
+    transparent: true,
+  })
+  const diffuseGeometry = new CircleGeometry(0.5, 48)
+  const diffuseMesh = new Mesh(diffuseGeometry, diffuseMaterial)
+  diffuseMesh.name = 'contact-shadow-diffuse'
+  diffuseMesh.rotation.x = -Math.PI / 2
+  diffuseMesh.position.copy(layout.position)
+  diffuseMesh.scale.set(layout.scale.x * 1.15, layout.scale.y * 1.15, 1)
+  diffuseMesh.renderOrder = -2
+
+  compound.add(diffuseMesh)
+  compound.add(coreMesh)
+
+  return compound
 }
 
 function findClip(clips: AnimationClip[], name: string): AnimationClip | undefined {
