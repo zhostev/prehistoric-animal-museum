@@ -5469,8 +5469,7 @@ export const credits = [
       "grounding (land): shifted z by +0.52114 m so the lowest vertex rests at z=0",
       "armature synthesized: 2 bones ['Body', 'Head']",
       "Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys; grounded Body breathes for two cycles at +/-1.8% width, +/-1.2% height and +/-0.4% length about a z=0 bone origin while Head combines a slow +/-5.5 deg look with a two-cycle +/-2.0 deg nod; frame 192 repeats frame 0 exactly",
-      "mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only",
-      "diorama: synthesized organic late-Pleistocene tundra rock plinth (1.5k tris) firmly fitted to 4 paw contact points with baked contact AO; preserved 8.0 s Idle animation and Armature rigging with 0 weight on plinth; compressed via Meshopt to 1.46 MB"
+      "mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only"
     ]
   },
   {

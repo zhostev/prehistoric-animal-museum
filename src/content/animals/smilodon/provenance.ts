@@ -19,8 +19,8 @@ export const provenance = [
       url: 'https://creativecommons.org/licenses/by/4.0/',
     },
     runtime: {
-      sha256: 'b5b91452e12cce9f0c32cdb53ea3e55e294475fc1e62e20c968242755dc86eb4',
-      bytes: 1461344,
+      sha256: 'fdf0fabe75e1457e49d30557dce5fae79ea321a84f90f7ec8e48f5fa6cd54406',
+      bytes: 1418864,
     },
     modifications: [
       'pipeline: unrigged Smilodon STL -> exact pedestal/component check, decimate to the web target, grounded two-bone deformation rig, 8 s breathing + head-sway Idle',
@@ -31,7 +31,6 @@ export const provenance = [
       'armature synthesized: 2 bones [\'Body\', \'Head\']',
       'Idle synthesized: frames 0..192 at 24 fps = 8.0 s, LINEAR per-frame keys; grounded Body breathes for two cycles at +/-1.8% width, +/-1.2% height and +/-0.4% length about a z=0 bone origin while Head combines a slow +/-5.5 deg look with a two-cycle +/-2.0 deg nod; frame 192 repeats frame 0 exactly',
       'mouth motion stays DISABLED (profile declares mode=disabled); inspection recorded as evidence only',
-      'diorama: synthesized organic late-Pleistocene tundra rock plinth (1.5k tris) firmly fitted to 4 paw contact points with baked contact AO; preserved 8.0 s Idle animation and Armature rigging with 0 weight on plinth; compressed via Meshopt to 1.46 MB',
     ],
     attribution: '“Smilodon” by Eric (Tepuitrouble), CC-BY-4.0; modified for the Prehistoric Animal Museum.',
     redistributionAllowed: true,
