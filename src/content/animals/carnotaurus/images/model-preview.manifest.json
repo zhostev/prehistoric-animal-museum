@@ -1,55 +1,55 @@
 {
   "animalId": "carnotaurus",
   "contractVersion": 2,
-  "generatedAt": "2026-09-17T03:30:35.886Z",
+  "generatedAt": "2026-10-19T02:11:44.935Z",
   "presentationSignature": "{\"contractVersion\":2,\"renderer\":{\"cameraFieldOfViewDegrees\":34,\"maxPixelRatio\":2},\"layout\":{\"coordinateSystem\":\"fixed-fullscreen-canvas+composition-frame-v1\",\"previewObjectFit\":\"contain\",\"referenceViewports\":[{\"key\":\"landscapeCompact\",\"width\":844,\"height\":390},{\"key\":\"desktopWide\",\"width\":1280,\"height\":720},{\"key\":\"phonePortraitCompact\",\"width\":360,\"height\":640},{\"key\":\"phonePortraitTall\",\"width\":390,\"height\":844},{\"key\":\"tabletPortrait\",\"width\":768,\"height\":1024},{\"key\":\"desktopStandard\",\"width\":1440,\"height\":900}]},\"animation\":{\"clip\":\"Idle\",\"loop\":\"repeat\",\"speed\":0.8},\"presentation\":{\"cameraLightScale\":1,\"horizontalOffset\":{\"landscape\":0,\"portrait\":0},\"initialYawDegrees\":-70,\"preciseBounds\":true,\"safeAreaPadding\":{\"landscape\":0.12,\"portrait\":0.12},\"shadow\":{\"depthOffset\":0,\"depthScale\":1,\"horizontalOffset\":0,\"opacity\":0.5,\"scale\":0.75,\"yOffset\":0},\"toneMappingExposure\":1,\"verticalOffset\":{\"landscape\":-0.1,\"portrait\":-0.07}}}",
   "profiles": {
     "landscapeCompact": {
-      "bytes": 153830,
+      "bytes": 155682,
       "fileName": "preview-landscape-compact.webp",
       "height": 650,
-      "sha256": "70e98d5d78778b8ff7adcf07cb0de7d1268f4065131b17016a8cb26f848ff973",
+      "sha256": "cefd4962b2b1ea06255ca1ba400f5524eecb41f86dd07233b42d514a703fcac5",
       "width": 1250
     },
     "desktopWide": {
-      "bytes": 182416,
+      "bytes": 181200,
       "fileName": "preview-desktop-wide.webp",
       "height": 800,
-      "sha256": "82ae51be75675697926ae5295ecda577f946e68505722d415b91fe9f547052e1",
+      "sha256": "654b7d37dbebde3b19f0f7dfc8da742172f8ccf03fce9eab31fcc0a4a59cedfd",
       "width": 1200
     },
     "phonePortraitCompact": {
-      "bytes": 112138,
+      "bytes": 109616,
       "fileName": "preview-phone-compact.webp",
       "height": 1000,
-      "sha256": "e62982659c4ef02d239c4c7d63f96094110ccf0a3d14d18160736f0957f2f5f1",
+      "sha256": "c8282e1710157ae288f31baf3f4f595c63d2c0e25548037ed88326530012b2fc",
       "width": 875
     },
     "phonePortraitTall": {
-      "bytes": 77664,
+      "bytes": 68730,
       "fileName": "preview-phone-tall.webp",
       "height": 1000,
-      "sha256": "3d0c18b414f7af6eae0f71e47d132e4c03035424b16308f5a6d886b460362167",
+      "sha256": "23ca02235630ab73a0004dce293b2682e2e98db42340f379bea78323857783e9",
       "width": 640
     },
     "tabletPortrait": {
-      "bytes": 125954,
+      "bytes": 125456,
       "fileName": "preview-tablet-portrait.webp",
       "height": 960,
-      "sha256": "3bf70682f82f4ec1266ebb7e7ef83250c96a0506d8c1bf3cc35d553c96280ecb",
+      "sha256": "134151b774e601f27cfd72526717a0de17e62035e0405dc1a69d0227b5fa8ea1",
       "width": 900
     },
     "desktopStandard": {
-      "bytes": 190332,
+      "bytes": 188750,
       "fileName": "preview-desktop-standard.webp",
       "height": 960,
-      "sha256": "f0f5619c499cc0550e4f0c3c5985b7d0f28312d3d17f5bd9f3e335173ef26bc0",
+      "sha256": "2a9a322b0a9277027cc08562925c828480362ad6121653898569fd454c9d2034",
       "width": 1200
     }
   },
   "sourceModel": {
-    "bytes": 1561124,
-    "sha256": "5062aa930c52831fc7d00df98552e58d8e73479044893930a5b2e6e5c2d523e4"
+    "bytes": 1477392,
+    "sha256": "d61e8c2fbeb417b8f5138b19500c295a496ae40842cce9ef5859f07a0f7ddd54"
   },
   "target": "production"
 }
