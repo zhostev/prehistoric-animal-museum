@@ -19,8 +19,8 @@ export const provenance = [
       url: 'https://creativecommons.org/publicdomain/zero/1.0/',
     },
     runtime: {
-      sha256: '5719bc1ea656e89c9821f861c4c6fdc07e70cbed89caecbf05bbc056ede49518',
-      bytes: 2228360,
+      sha256: '4d5785eb5a9b0202aba6257694c3a73697f8636c3c8e77c3ed9239575e4fe57c',
+      bytes: 1701088,
     },
     modifications: [
       'pipeline: project-authored expansion GLB (mammal, feature=giant-antlers) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle',

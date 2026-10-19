@@ -530,7 +530,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Ankylosaurus deterministic procedural model source, generated with Blender Python generator authored by the Prehistoric Animal Museum on 2026-08-17
 - License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - Attribution: “Ankylosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `604b4e092efd5f77652cd3ca941ee570b22f6181e0b7b0c332c677cfb0d475c4`
+- Runtime SHA-256: `f640e400b8cdb54b6e2b8310d589645ab46ae22720c654925f27a822abcc481c`
 - Modifications:
   - pipeline: project-authored expansion GLB (armored, feature=tail-club) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
   - scale: source body length 6.7420 Blender units -> 8.0 m; uniform factor 1.186593 applied to mesh data
@@ -787,7 +787,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Argentinosaurus deterministic procedural model source, generated with Blender Python generator authored by the Prehistoric Animal Museum on 2026-08-17
 - License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - Attribution: “Argentinosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `b87abaabd68100868c7c3903a29e7dc57f7a9b5b1831264ebc2d166edd5cd1c6`
+- Runtime SHA-256: `07169848dc042d5719bef5c885f79597056eaed7a7744d3902d11588619b2865`
 - Modifications:
   - pipeline: project-authored expansion GLB (sauropod, feature=giant-body) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
   - scale: source body length 9.9082 Blender units -> 30.0 m; uniform factor 3.027787 applied to mesh data
@@ -1734,7 +1734,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Diplodocus deterministic procedural model source, generated with Blender Python generator authored by the Prehistoric Animal Museum on 2026-08-17
 - License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - Attribution: “Diplodocus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `3afa9399c763515d7f8ad0252e9dbf2d26de4225977a9db991ba610e5ecfbfb5`
+- Runtime SHA-256: `cb177265f56fea08478bcacb8f27b7a0695199dfef89151673dc9a64267cf421`
 - Modifications:
   - pipeline: project-authored expansion GLB (sauropod, feature=whip-tail) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
   - scale: source body length 11.0773 Blender units -> 25.0 m; uniform factor 2.256861 applied to mesh data
@@ -2166,7 +2166,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Glyptodon deterministic procedural model source, generated with Blender Python generator authored by the Prehistoric Animal Museum on 2026-08-17
 - License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - Attribution: “Glyptodon” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `b7ca70c16e833e241f0a20df35dcc4b673aff1b7901b787122ca9d1f1c79d959`
+- Runtime SHA-256: `281b21b156f8a8b4aad51123792a2245a56fca79c797add14df7928157882623`
 - Modifications:
   - pipeline: project-authored expansion GLB (armored-mammal, feature=domed-shell) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
   - scale: source body length 5.9621 Blender units -> 3.0 m; uniform factor 0.503178 applied to mesh data
@@ -2684,7 +2684,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Megaloceros deterministic procedural model source, generated with Blender Python generator authored by the Prehistoric Animal Museum on 2026-08-17
 - License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - Attribution: “Megaloceros” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `5719bc1ea656e89c9821f861c4c6fdc07e70cbed89caecbf05bbc056ede49518`
+- Runtime SHA-256: `4d5785eb5a9b0202aba6257694c3a73697f8636c3c8e77c3ed9239575e4fe57c`
 - Modifications:
   - pipeline: project-authored expansion GLB (mammal, feature=giant-antlers) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
   - scale: source body length 5.9621 Blender units -> 3.0 m; uniform factor 0.503178 applied to mesh data
