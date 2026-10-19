@@ -787,7 +787,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Argentinosaurus deterministic procedural model source, generated with Blender Python generator authored by the Prehistoric Animal Museum on 2026-08-17
 - License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - Attribution: “Argentinosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `07169848dc042d5719bef5c885f79597056eaed7a7744d3902d11588619b2865`
+- Runtime SHA-256: `84ef9e06a42b60f9d5afbef9513eaef1b546f9a5156ae4ae5871365d66f1c02d`
 - Modifications:
   - pipeline: project-authored expansion GLB (sauropod, feature=giant-body) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
   - scale: source body length 9.9082 Blender units -> 30.0 m; uniform factor 3.027787 applied to mesh data
@@ -2940,7 +2940,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Microraptor deterministic procedural model source, generated with Blender Python generator authored by the Prehistoric Animal Museum on 2026-08-17
 - License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - Attribution: “Microraptor” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `a4b625356da506c31cd0bf4926a42c676090d2a406d54eb369786de2e0a2c32a`
+- Runtime SHA-256: `8ff4127c452ccc8e29c826adb72c2ff1cb85eeabdc727da1fbe825f0c6da8467`
 - Modifications:
   - pipeline: project-authored expansion GLB (feathered, feature=four-wings) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Flight
   - scale: source body length 7.9101 Blender units -> 0.8 m; uniform factor 0.101137 applied to mesh data
