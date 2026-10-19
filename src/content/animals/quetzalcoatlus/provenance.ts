@@ -19,8 +19,8 @@ export const provenance = [
       url: 'https://creativecommons.org/publicdomain/zero/1.0/',
     },
     runtime: {
-      sha256: '04218c9b53376dfe39003de7c42b4ecd98bc3e0974381ce0bd9f5cddfa6f37bf',
-      bytes: 2102316,
+      sha256: '1df3bc290d49c9a0b4dedd2e18373f088a856542958d3fb30db1da9967b7f647',
+      bytes: 1795012,
     },
     modifications: [
       'pipeline: project-authored expansion GLB (pterosaur, feature=giant-wings) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle',

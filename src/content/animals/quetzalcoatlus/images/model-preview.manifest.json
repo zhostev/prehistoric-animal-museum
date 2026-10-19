@@ -1,55 +1,55 @@
 {
   "animalId": "quetzalcoatlus",
   "contractVersion": 2,
-  "generatedAt": "2026-09-17T03:47:20.248Z",
+  "generatedAt": "2026-10-19T03:00:52.993Z",
   "presentationSignature": "{\"contractVersion\":2,\"renderer\":{\"cameraFieldOfViewDegrees\":34,\"maxPixelRatio\":2},\"layout\":{\"coordinateSystem\":\"fixed-fullscreen-canvas+composition-frame-v1\",\"previewObjectFit\":\"contain\",\"referenceViewports\":[{\"key\":\"landscapeCompact\",\"width\":844,\"height\":390},{\"key\":\"desktopWide\",\"width\":1280,\"height\":720},{\"key\":\"phonePortraitCompact\",\"width\":360,\"height\":640},{\"key\":\"phonePortraitTall\",\"width\":390,\"height\":844},{\"key\":\"tabletPortrait\",\"width\":768,\"height\":1024},{\"key\":\"desktopStandard\",\"width\":1440,\"height\":900}]},\"animation\":{\"clip\":\"Idle\",\"loop\":\"repeat\",\"speed\":0.8},\"presentation\":{\"cameraLightScale\":1,\"horizontalOffset\":{\"landscape\":0,\"portrait\":0},\"initialYawDegrees\":-70,\"preciseBounds\":true,\"safeAreaPadding\":{\"landscape\":0.12,\"portrait\":0.12},\"shadow\":{\"depthOffset\":0,\"depthScale\":1,\"horizontalOffset\":0,\"opacity\":0,\"scale\":0.62,\"yOffset\":0},\"toneMappingExposure\":1,\"verticalOffset\":{\"landscape\":0.16,\"portrait\":0}}}",
   "profiles": {
     "landscapeCompact": {
-      "bytes": 47910,
+      "bytes": 47742,
       "fileName": "preview-landscape-compact.webp",
       "height": 650,
-      "sha256": "e6890c474c614f6cd339137cc6533459fe67beca47f72271718b8ab34d5454d1",
+      "sha256": "b48a08ee8fa06c9f2785829ee011d82ddd08c3825fec5e9a908750f1899b65b8",
       "width": 1250
     },
     "desktopWide": {
-      "bytes": 76856,
+      "bytes": 76618,
       "fileName": "preview-desktop-wide.webp",
       "height": 800,
-      "sha256": "8a64e466bc9b1f250fffb486ece11c0e2e05b3675b5cc5605a58d18338118f26",
+      "sha256": "ff9bd56efe257dd1fd3c8b90132d75ac8658f473545c38b617a3232cf4d7672d",
       "width": 1200
     },
     "phonePortraitCompact": {
-      "bytes": 100892,
+      "bytes": 104030,
       "fileName": "preview-phone-compact.webp",
       "height": 1000,
-      "sha256": "81614d918a94995369dc5cc5f48772e25b3bb991871ac12d56f028e055df3030",
+      "sha256": "0cad15b33a747578e1901260107e285d4f8ee20af1b63a5b5713c73c78bced22",
       "width": 875
     },
     "phonePortraitTall": {
-      "bytes": 70152,
+      "bytes": 64126,
       "fileName": "preview-phone-tall.webp",
       "height": 1000,
-      "sha256": "01f01e0e1a3e933f6fd6828006c079b3eb5423a2e41e5ba94e3702c4e26275d5",
+      "sha256": "9e00934f5c5d11611e3c54810ea9177069fda4aa105b87f8d12fd50205469f6b",
       "width": 640
     },
     "tabletPortrait": {
-      "bytes": 107118,
+      "bytes": 107326,
       "fileName": "preview-tablet-portrait.webp",
       "height": 960,
-      "sha256": "0ce3a13d3230c720e6ea51d1ba9d034a859c2c5f6d8bbad6b3c3755f9e2c1237",
+      "sha256": "0fd89f0f0036f43c7a25f7a4a24fe3df886ab6f0e7aea99f81c9e9c1a6fb7867",
       "width": 900
     },
     "desktopStandard": {
-      "bytes": 103914,
+      "bytes": 102958,
       "fileName": "preview-desktop-standard.webp",
       "height": 960,
-      "sha256": "94936e43b21ca06ec70843bd7947c75f71cb010bc4d1d4d7664a3bb6021f28a5",
+      "sha256": "7995bb0cc56c4ec9fd44f81e43391f9c470939fd834af315a495648d144963a8",
       "width": 1200
     }
   },
   "sourceModel": {
-    "bytes": 2102316,
-    "sha256": "04218c9b53376dfe39003de7c42b4ecd98bc3e0974381ce0bd9f5cddfa6f37bf"
+    "bytes": 1795012,
+    "sha256": "1df3bc290d49c9a0b4dedd2e18373f088a856542958d3fb30db1da9967b7f647"
   },
   "target": "production"
 }

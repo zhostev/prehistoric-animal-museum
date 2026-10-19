@@ -445,7 +445,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Anhanguera deterministic procedural model source, generated with Blender Python generator authored by the Prehistoric Animal Museum on 2026-08-17
 - License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - Attribution: “Anhanguera” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `0d9eccfdc8f908c506c4db5cf199df3c4912e53017f2052941e3c04329556f1a`
+- Runtime SHA-256: `879f917b2909c8ca135933844202041ba04d99fb389f32583d1d84991d57f893`
 - Modifications:
   - pipeline: project-authored expansion GLB (pterosaur, feature=jaw-crests) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
   - scale: source body length 4.9748 Blender units -> 4.5 m; uniform factor 0.904553 applied to mesh data
@@ -1820,7 +1820,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: [Dunkleosteus](https://commons.wikimedia.org/wiki/File:Dunkliferecon.stl) by EvolutionIncarnate
 - License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - Attribution: “Dunkleosteus” by EvolutionIncarnate, CC0-1.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `2b34967652defc1aa57047a0b308a5ae4f5e543c939f0b44050b92a92c54434a`
+- Runtime SHA-256: `6622b68557fe06105a501347b9790ba6aae525cffa788f939ec88461c3af8568`
 - Modifications:
   - pipeline: unrigged static STL (dunkleosteus) -> topology-budget check/decimate, author materials, synthesize 5-bone articulated spine chain + 8 s swim Idle
   - dunkleosteus: source faces Blender -Y; rotated 180 deg about Z, applied to mesh data -> head now toward +Y (glTF -Z)
@@ -1995,7 +1995,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Elasmosaurus deterministic procedural model source, generated with Blender Python generator authored by the Prehistoric Animal Museum on 2026-08-17
 - License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - Attribution: “Elasmosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `78efe0cced9414c09c7a4fab99ea375ca3eeaffb540e7d77df93993af1742498`
+- Runtime SHA-256: `09dcd7aeac8ce78da103ada9203643ddaa47874d067d1a9f94cd547524cbde75`
 - Modifications:
   - pipeline: project-authored expansion GLB (marine-longneck, feature=very-long-neck) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
   - scale: source body length 9.0614 Blender units -> 10.5 m; uniform factor 1.158755 applied to mesh data
@@ -3111,7 +3111,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Ophthalmosaurus deterministic procedural model source, generated with Blender Python generator authored by the Prehistoric Animal Museum on 2026-08-17
 - License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - Attribution: “Ophthalmosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `2802a8362075c90ebf1b00ca659d87948ad63e6f158c5cce46ec889bdce4a9fb`
+- Runtime SHA-256: `4adcc58f356650f0f44756d281f6f322dc22e2b36114df00f8c42efd77af0df1`
 - Modifications:
   - pipeline: project-authored expansion GLB (marine-fish, feature=giant-eyes) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
   - scale: source body length 7.7133 Blender units -> 4.0 m; uniform factor 0.518588 applied to mesh data
@@ -3538,7 +3538,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Quetzalcoatlus deterministic procedural model source, generated with Blender Python generator authored by the Prehistoric Animal Museum on 2026-08-17
 - License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - Attribution: “Quetzalcoatlus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `04218c9b53376dfe39003de7c42b4ecd98bc3e0974381ce0bd9f5cddfa6f37bf`
+- Runtime SHA-256: `1df3bc290d49c9a0b4dedd2e18373f088a856542958d3fb30db1da9967b7f647`
 - Modifications:
   - pipeline: project-authored expansion GLB (pterosaur, feature=giant-wings) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
   - scale: source body length 4.9748 Blender units -> 5.5 m; uniform factor 1.105565 applied to mesh data

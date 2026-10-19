@@ -19,8 +19,8 @@ export const provenance = [
       url: 'https://creativecommons.org/publicdomain/zero/1.0/',
     },
     runtime: {
-      sha256: '2802a8362075c90ebf1b00ca659d87948ad63e6f158c5cce46ec889bdce4a9fb',
-      bytes: 1039096,
+      sha256: '4adcc58f356650f0f44756d281f6f322dc22e2b36114df00f8c42efd77af0df1',
+      bytes: 1029312,
     },
     modifications: [
       'pipeline: project-authored expansion GLB (marine-fish, feature=giant-eyes) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle',
