@@ -361,7 +361,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: [Ammonite](https://archive.org/details/thingiverse-2246008) by Steph Piper (sjpiper145)
 - License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - Attribution: “Ammonite” by Steph Piper (sjpiper145), CC0-1.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `c08fb452e4d41670ba47326791037fa36e6f92148996210d255578a2ca374966`
+- Runtime SHA-256: `d8dbb2a4a4f4c187833ca30b8a381cb62dc109dc8949b066a420c8957b1d92a6`
 - Modifications:
   - pipeline: one-piece fossil-shell PLY scan (not a living-animal reconstruction) -> topology check, stone material, single-bone floating display Idle
   - armature synthesized: 1 bones ['Shell']
@@ -616,7 +616,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Anomalocaris deterministic procedural model source, generated with Blender Python generator authored by the Prehistoric Animal Museum on 2026-08-17
 - License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - Attribution: “Anomalocaris” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `c6c5635cbd164486b54f57011d2c5c5d92d05ed911404a4273d6850a13b11a5d`
+- Runtime SHA-256: `e1e199a025f41471601eaa8ff1d12519f6b93a23aaf1769c56247e63fec267ca`
 - Modifications:
   - pipeline: project-authored expansion GLB (arthropod, feature=grasping-appendages) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
   - scale: source body length 4.8059 Blender units -> 1.0 m; uniform factor 0.208077 applied to mesh data
@@ -2424,7 +2424,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: [Jaekelopterus](https://archive.org/details/thingiverse-4702654) by chris mckenzie (dinoking27)
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 - Attribution: “Jaekelopterus” by chris mckenzie (dinoking27), CC-BY-4.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `9cf9e3831f50309554eeda4aa87dda05bebcf92f1e3d34931aa4214c2e70ee82`
+- Runtime SHA-256: `6380a565ed0e4b3554ca0a82d80df199ea57319dc84cfb8e3ba7a1f4303247f3`
 - Modifications:
   - pipeline: unrigged static STL (jaekelopterus) -> topology-budget check/decimate, author materials, synthesize 5-bone articulated spine chain + 8 s swim Idle
   - jaekelopterus: source faces Blender -Y; rotated 180 deg about Z, applied to mesh data -> head now toward +Y (glTF -Z)
@@ -2855,7 +2855,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: [Meganeura Dinoraul but it is a bit accurate](https://sketchfab.com/3d-models/meganeura-dinoraul-but-it-is-a-bit-accurate-1aaab4a72fbc42b4901d5f1dde12a281) by Nobilis the Palaeovespa (@nobilishornet)
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 - Attribution: “Meganeura Dinoraul but it is a bit accurate” by Nobilis the Palaeovespa (@nobilishornet), CC-BY-4.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `4e388ade5b32132cc60054fa51dc7ac0fe48372efafaf4c57732697b3874589b`
+- Runtime SHA-256: `3445d45d4dd3f5519a12bf0117b9250a751e6001f8f897e279d80c09ad25f308`
 - Modifications:
   - Compressed geometry and animation with high-precision Meshopt and converted embedded PNG textures to lossless WebP for browser delivery.
   - Freeze the reviewed source pose and, when eligible, a source-rig partial mouth-close target before making morph animation deterministic. Operation: bake-and-join.
@@ -3453,7 +3453,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: [Pteranodon (Animated)](https://sketchfab.com/3d-models/pteranodon-animated-7d7683df41d1405283f160e81a5dff1b) by Chistodrako._. / Oscar López Riviello
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 - Attribution: “Pteranodon (Animated)” by Chistodrako._. / Oscar López Riviello, CC BY 4.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `abcde65b2ea29c6ae86d8232a5e1a604b05099deb34cebfb30495aff53f61af1`
+- Runtime SHA-256: `656372434f52229527e0f0c3a30b0afad3a74d52aa0bd42417c4fa3edcfd454f`
 - Modifications:
   - Compressed geometry and animation with high-precision Meshopt and converted embedded PNG textures to lossless WebP for browser delivery.
   - Converted legacy material data and cleared zero-weight joint indices.
@@ -3623,7 +3623,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: [Low-poly Rhamphorhynchus idle](https://sketchfab.com/3d-models/low-poly-rhamphorhynchus-idle-c1e35c7ac4374c778f78025717694675) by Robear (@xiaorobear)
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 - Attribution: “Low-poly Rhamphorhynchus idle” by Robear (@xiaorobear), CC-BY-4.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `16b5ab37ac44e177c3e12c229e6f0b27fab669c3d6e74e5b5bdf54ed3a68a935`
+- Runtime SHA-256: `238c8c6241526c4aab6a004badb4ea2fdc5209d081cff01c006f803ce716a2b1`
 - Modifications:
   - Compressed geometry and animation with high-precision Meshopt and converted embedded PNG textures to lossless WebP for browser delivery.
   - Freeze the reviewed source pose and, when eligible, a source-rig partial mouth-close target before making morph animation deterministic. Operation: bake-and-join.
@@ -4140,7 +4140,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: [Tupandactylus](https://sketchfab.com/3d-models/tupandactylus-4ea8f4466c2c4e61bc57c12af296d43a) by Paleo Modelist (@victory_)
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 - Attribution: “Tupandactylus” by Paleo Modelist (@victory_), CC-BY-4.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `e2c232534c909899d266fb75e1787117d7e17396d677a82e1a63a0872f2f385e`
+- Runtime SHA-256: `c208347a6280f1c8a0318c666092532dfc1b805ad386df45ab98254d1db6e831`
 - Modifications:
   - Compressed geometry and animation with high-precision Meshopt and converted embedded PNG textures to lossless WebP for browser delivery.
   - Freeze the reviewed source pose and, when eligible, a source-rig partial mouth-close target before making morph animation deterministic. Operation: bake-and-join.

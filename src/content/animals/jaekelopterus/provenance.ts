@@ -19,8 +19,8 @@ export const provenance = [
       url: 'https://creativecommons.org/licenses/by/4.0/',
     },
     runtime: {
-      sha256: '9cf9e3831f50309554eeda4aa87dda05bebcf92f1e3d34931aa4214c2e70ee82',
-      bytes: 1467948,
+      sha256: '6380a565ed0e4b3554ca0a82d80df199ea57319dc84cfb8e3ba7a1f4303247f3',
+      bytes: 1623548,
     },
     modifications: [
       'pipeline: unrigged static STL (jaekelopterus) -> topology-budget check/decimate, author materials, synthesize 5-bone articulated spine chain + 8 s swim Idle',

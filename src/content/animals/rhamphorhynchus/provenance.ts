@@ -21,8 +21,8 @@ export const provenance = [
       "url": "https://creativecommons.org/licenses/by/4.0/"
     },
     "runtime": {
-      "bytes": 2398216,
-      "sha256": "16b5ab37ac44e177c3e12c229e6f0b27fab669c3d6e74e5b5bdf54ed3a68a935"
+      "bytes": 420344,
+      "sha256": "238c8c6241526c4aab6a004badb4ea2fdc5209d081cff01c006f803ce716a2b1"
     },
     "modifications": [
       "Compressed geometry and animation with high-precision Meshopt and converted embedded PNG textures to lossless WebP for browser delivery.",
