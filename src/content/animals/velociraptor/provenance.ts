@@ -19,8 +19,8 @@ export const provenance = [
       url: 'https://creativecommons.org/licenses/by/4.0/',
     },
     runtime: {
-      sha256: '9221412578f075bb21a10aaa4c6eb66e1c80a13a769799d346cd6bf3432213ab',
-      bytes: 2193588,
+      sha256: '44f8d5ff72d6986a069bdcca61b4cedcd5ec3b08410a4759ce3a539f02cb58ce',
+      bytes: 2224532,
     },
     modifications: [
       'pipeline: static sculpt (velociraptor) -> keep configured meshes, author materials, optional normal bake, synthesize Body/Head/Tail rig + 8 s Idle',

@@ -37,8 +37,8 @@ export const provenance = [
     license: modelLicense,
     runtime: {
       sha256:
-        '2f1564c1f3f07e41ddb21b1f190621baba2ea5ea9c97c36cd89256ff60bddcea',
-      bytes: 3_884_968,
+        '127ed9d725d79ca397271b949a376c9d2e5410bf0e81eaed0e7b811ff17cc3dc',
+      bytes: 539816,
     },
     modifications: [
       'Compressed geometry and animation with high-precision Meshopt and converted embedded PNG textures to lossless WebP for browser delivery.',

@@ -959,7 +959,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Brachiosaurus deterministic procedural model source, generated with Blender Python generator authored by the Prehistoric Animal Museum on 2026-08-17
 - License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - Attribution: “Brachiosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `08c03ebb07af96a98c756bf28a332b3d40c316084accfad7ae6069e1201d07dd`
+- Runtime SHA-256: `a0ccf405d347c7ba01e1f9613f4eedde4bdf7cdd81caac76e88ecdd08ba0ccd7`
 - Modifications:
   - pipeline: project-authored expansion GLB (sauropod, feature=high-shoulders) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
   - scale: source body length 9.9161 Blender units -> 22.0 m; uniform factor 2.218611 applied to mesh data
@@ -2597,7 +2597,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: [3D High-poly Baby Woolly Mammoth](https://sketchfab.com/3d-models/3d-high-poly-baby-woolly-mammoth-fce1c86ccedf47a5b9627098be6719d5) by SDPM Esare
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 - Attribution: “3D High-poly Baby Woolly Mammoth” by SDPM Esare, CC BY 4.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `623a62621f1c6f2955fd3fe6442be8dfd34cdc94064e1bbb0c5e43e8970a1ece`
+- Runtime SHA-256: `4d10d231f9a0e601aec92dc239cdd29d705f7ba8475c36e132db3f13ed469abb`
 - Modifications:
   - Compressed geometry and animation with high-precision Meshopt and converted embedded PNG textures to lossless WebP for browser delivery.
   - Used the original creator’s CC BY 4.0 source rather than the submitted CC BY-NC-SA derivative.
@@ -3881,7 +3881,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: [Spinosaurus](https://sketchfab.com/3d-models/spinosaurus-4f2332ee93874d59a55fb60ed2873ec2) by Julian Johnson-Mortimer (@FreddyFoxFreddy)
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 - Attribution: “Spinosaurus” by Julian Johnson-Mortimer (@FreddyFoxFreddy), CC-BY-4.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `f990685b92ce0540147c00ce257d312d6200caaccdb2b84cc4e6f1fe45a87083`
+- Runtime SHA-256: `2bc56b8e496b308a5168bbcfb18b0c0ce3eda75b27a307967963781c63f9245e`
 - Modifications:
   - pipeline: static sculpt (spinosaurus) -> keep configured meshes, author materials, optional normal bake, synthesize Body/Head/Tail rig + 8 s Idle
   - spinosaurus: source faces Blender -Y; rotated 180 deg about Z, applied to mesh data -> head now toward +Y (glTF -Z)
@@ -3968,7 +3968,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: [PBR Stegasaurus (Animated)](https://sketchfab.com/3d-models/pbr-stegasaurus-animated-ec254ea1554941fe8a131f62db0faf3d) by Ferocious Industries
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 - Attribution: “PBR Stegasaurus (Animated)” by Ferocious Industries, CC BY 4.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `2f1564c1f3f07e41ddb21b1f190621baba2ea5ea9c97c36cd89256ff60bddcea`
+- Runtime SHA-256: `127ed9d725d79ca397271b949a376c9d2e5410bf0e81eaed0e7b811ff17cc3dc`
 - Modifications:
   - Compressed geometry and animation with high-precision Meshopt and converted embedded PNG textures to lossless WebP for browser delivery.
   - Downloaded as the converted GLB with 1K textures.
@@ -4316,7 +4316,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: [Raptor Pack (Standing pose)](https://archive.org/details/thingiverse-3784576) by Greg Criddle (Noximous)
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 - Attribution: “Raptor Pack (Standing pose)” by Greg Criddle (Noximous), CC-BY-4.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `9221412578f075bb21a10aaa4c6eb66e1c80a13a769799d346cd6bf3432213ab`
+- Runtime SHA-256: `44f8d5ff72d6986a069bdcca61b4cedcd5ec3b08410a4759ce3a539f02cb58ce`
 - Modifications:
   - pipeline: static sculpt (velociraptor) -> keep configured meshes, author materials, optional normal bake, synthesize Body/Head/Tail rig + 8 s Idle
   - velociraptor: source faces Blender -Y; rotated 180 deg about Z, applied to mesh data -> head now toward +Y (glTF -Z)

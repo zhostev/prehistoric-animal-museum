@@ -19,9 +19,9 @@ const baseProvenance = createPublishedAssetProvenance({
         '8f46db6e2ba44c109fdc115506e1048212a876b51060930d0e20a8bd9f472aea',
     },
     runtime: {
-      bytes: 1_198_456,
+      bytes: 295628,
       sha256:
-        '623a62621f1c6f2955fd3fe6442be8dfd34cdc94064e1bbb0c5e43e8970a1ece',
+        '4d10d231f9a0e601aec92dc239cdd29d705f7ba8475c36e132db3f13ed469abb',
     },
     modifications: [
       'Compressed geometry and animation with high-precision Meshopt and converted embedded PNG textures to lossless WebP for browser delivery.',
