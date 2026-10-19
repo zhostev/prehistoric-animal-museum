@@ -19,9 +19,9 @@ const baseProvenance = createPublishedAssetProvenance({
         'cfeb3db3b31e36180249cffd9e435b3c6a01ad0075d31b7efb2bc1b9025368dc',
     },
     runtime: {
-      bytes: 5_648_348,
+      bytes: 922476,
       sha256:
-        '8f3a80ad11713d5dee3ccf29395655af8c7c0dd8f2d7ccba94bda57189fa6cb7',
+        '64af8819668289b485e3b7294972d7af1d605254c84b8c3ca270d149120c7b2e',
     },
     modifications: [
       'Made neighbouring quaternion keys hemisphere-continuous, then resampled the authored CUBICSPLINE bone rotations to 24 fps LINEAR tracks before high-precision Meshopt compression; this removes opposite-sign half-turn spikes and prevents the compression filter from treating spline tangents as normalized rotations. Converted embedded PNG textures to lossless WebP for browser delivery.',

@@ -701,7 +701,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: [Apatosaurus](https://sketchfab.com/3d-models/apatosaurus-fecabec8e4ef42ef98b5480dbf50c57d) by toro ardido modelos 3d
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 - Attribution: “Apatosaurus” by toro ardido modelos 3d, CC BY 4.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `9d9f151933a33ae5824eb7532e16a7416b012b9ffff154aca2957ad37a2a540a`
+- Runtime SHA-256: `598356d3aa9e801b8a777b85dfc146f1df7fce8171500b03cfec76a8baf7f6c5`
 - Modifications:
   - Compressed geometry and animation with high-precision Meshopt and converted embedded PNG textures to lossless WebP for browser delivery.
   - Removed the source 127-bone rig and its inert animation, then welded 792 exactly coincident vertices at a 1e-7 threshold while preserving the UV corner data.
@@ -1562,7 +1562,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: [Dilophosaurus](https://sketchfab.com/3d-models/dilophosaurus-d09b3aa874db4e1cbf29a14797ca351f) by Marcel Schanz
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 - Attribution: “Dilophosaurus” by Marcel Schanz, CC-BY-4.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `51b895d460d1fc73103e92a632c4aea22e025ee468ab2a011474711711f965f6`
+- Runtime SHA-256: `d521a508c37c40c01981ce3adbf572658a9003b1a95b15774c1855b60efa4c0a`
 - Modifications:
   - Compressed geometry and animation with high-precision Meshopt and converted embedded PNG textures to lossless WebP for browser delivery.
   - Freeze the reviewed source pose and, when eligible, a source-rig partial mouth-close target before making morph animation deterministic. Operation: bake-and-join.
@@ -2080,7 +2080,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: [Gigantoraptor](https://sketchfab.com/3d-models/gigantoraptor-e51509d66d464104aef1b72c298a40cf) by seth the yutyrannus
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 - Attribution: “Gigantoraptor” by seth the yutyrannus, CC BY 4.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `26b137edc63f38defdf04d85903a30ad7817c83c5b3d5f5626a1fb2e6f216c0e`
+- Runtime SHA-256: `61855ab91699dc8cd2ef8a308032eed3a7d48df9dc4104a7b4b7a9e86785d818`
 - Modifications:
   - Compressed geometry and animation with high-precision Meshopt and converted embedded PNG textures to lossless WebP for browser delivery.
   - Cleared zero-weight joint indices, deduplicated, pruned, and repacked the GLB.
@@ -2338,7 +2338,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: [ichthyosaurus](https://sketchfab.com/3d-models/ichthyosaurus-ef8609f5efa84984bc1800bdb36aac3c) by Julian Johnson-Mortimer / FreddyFoxFreddy
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 - Attribution: “ichthyosaurus” by Julian Johnson-Mortimer / FreddyFoxFreddy, CC BY 4.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `8f3a80ad11713d5dee3ccf29395655af8c7c0dd8f2d7ccba94bda57189fa6cb7`
+- Runtime SHA-256: `64af8819668289b485e3b7294972d7af1d605254c84b8c3ca270d149120c7b2e`
 - Modifications:
   - Made neighbouring quaternion keys hemisphere-continuous, then resampled the authored CUBICSPLINE bone rotations to 24 fps LINEAR tracks before high-precision Meshopt compression; this removes opposite-sign half-turn spikes and prevents the compression filter from treating spline tangents as normalized rotations. Converted embedded PNG textures to lossless WebP for browser delivery.
   - Welded the source head and body, closed twelve residual boundary loops, softened the pink wound-like marks and ring-shaped head artifact, and preserved a complete mouth interior.
@@ -3196,7 +3196,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: [PBR Pachycephalasaurus Animated](https://sketchfab.com/3d-models/pbr-pachycephalasaurus-animated-6eea5cee4afa4730bf75c6329a43e56d) by Ferocious Industries
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 - Attribution: “PBR Pachycephalasaurus Animated” by Ferocious Industries, CC BY 4.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `ac3539e1119aed28af89296f92f1bae02f0f5a796323bd1738f91c6b069dda48`
+- Runtime SHA-256: `a33125e099fe10b1571cf0429419ecedb2f787570bf80ac082ec5a6259cd43d4`
 - Modifications:
   - Compressed geometry and animation with high-precision Meshopt and converted embedded PNG textures to lossless WebP for browser delivery.
   - Converted legacy material data to metallic/roughness.
@@ -3708,7 +3708,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: [Animated Sauropelta (Free)](https://sketchfab.com/3d-models/animated-sauropelta-free-c6373f12f3954facb8d5fe48055c9161) by Anees Animates
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 - Attribution: “Animated Sauropelta (Free)” by Anees Animates, CC-BY-4.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `ef283def4b17e92122442c8cfb617dce7abecf0bdc1962dc2ff1f18835e7a58c`
+- Runtime SHA-256: `9c0d5f38e61ae1f328eacbe98044e8713a062bdb08bbcd08126bb8d01e2c4b67`
 - Modifications:
   - Compressed geometry and animation with high-precision Meshopt and converted embedded PNG textures to lossless WebP for browser delivery.
   - Freeze the reviewed source pose and, when eligible, a source-rig partial mouth-close target before making morph animation deterministic. Operation: bake-and-join.

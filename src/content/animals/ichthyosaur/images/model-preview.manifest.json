@@ -1,55 +1,55 @@
 {
   "animalId": "ichthyosaur",
   "contractVersion": 2,
-  "generatedAt": "2026-09-17T03:39:45.351Z",
+  "generatedAt": "2026-10-19T03:12:24.122Z",
   "presentationSignature": "{\"contractVersion\":2,\"renderer\":{\"cameraFieldOfViewDegrees\":34,\"maxPixelRatio\":2},\"layout\":{\"coordinateSystem\":\"fixed-fullscreen-canvas+composition-frame-v1\",\"previewObjectFit\":\"contain\",\"referenceViewports\":[{\"key\":\"landscapeCompact\",\"width\":844,\"height\":390},{\"key\":\"desktopWide\",\"width\":1280,\"height\":720},{\"key\":\"phonePortraitCompact\",\"width\":360,\"height\":640},{\"key\":\"phonePortraitTall\",\"width\":390,\"height\":844},{\"key\":\"tabletPortrait\",\"width\":768,\"height\":1024},{\"key\":\"desktopStandard\",\"width\":1440,\"height\":900}]},\"animation\":{\"clip\":\"Idle\",\"loop\":\"repeat\",\"speed\":0.95},\"presentation\":{\"cameraLightScale\":1,\"horizontalOffset\":{\"landscape\":0,\"portrait\":0},\"initialYawDegrees\":-70,\"preciseBounds\":true,\"safeAreaPadding\":{\"landscape\":0.1,\"portrait\":0.1},\"shadow\":{\"depthOffset\":0,\"depthScale\":1,\"horizontalOffset\":0,\"opacity\":0,\"scale\":0.62,\"yOffset\":0},\"toneMappingExposure\":1,\"verticalOffset\":{\"landscape\":0.04,\"portrait\":0}}}",
   "profiles": {
     "landscapeCompact": {
-      "bytes": 38266,
+      "bytes": 42298,
       "fileName": "preview-landscape-compact.webp",
       "height": 650,
-      "sha256": "45f9c62cf605aad2ffd2bc5e873cd7cb3780af0e54c478f002ee492746c6302c",
+      "sha256": "bf1a0debe16e20a45ce38c14c6c832d9cd2f8a5171c17562ccf0207dabd3913f",
       "width": 1250
     },
     "desktopWide": {
-      "bytes": 64648,
+      "bytes": 70608,
       "fileName": "preview-desktop-wide.webp",
       "height": 800,
-      "sha256": "ca1cb220e5c9b77417a9d1ea816e3396bd7ae1441a0d934e3576a8e341178301",
+      "sha256": "7b6671f8225b1473dd3ac966a5a4dd92556e4076d0683f2634efe90021be31be",
       "width": 1200
     },
     "phonePortraitCompact": {
-      "bytes": 69748,
+      "bytes": 73146,
       "fileName": "preview-phone-compact.webp",
       "height": 1000,
-      "sha256": "a825cceb4e85e297f3e951a2ba6d92392ca3f6d5b36ea9c4d5efce1f286abcc8",
+      "sha256": "6f470051293648af770502e3e526b4c325366098e224a0fc9b24d5402374e012",
       "width": 875
     },
     "phonePortraitTall": {
-      "bytes": 52404,
+      "bytes": 45956,
       "fileName": "preview-phone-tall.webp",
       "height": 1000,
-      "sha256": "50a9a4f7cc3916076c98dd333c5a18f808093a1069d8e5a94c73087e4e91b65f",
+      "sha256": "11f020ffe6010a913c50c2860283d79899fbcb1de5a9830602161db8683cf43b",
       "width": 640
     },
     "tabletPortrait": {
-      "bytes": 81896,
+      "bytes": 81788,
       "fileName": "preview-tablet-portrait.webp",
       "height": 960,
-      "sha256": "44fc7aa1a63f498f149c0381a93d9c95e034504727e58ac219a477f6a15b53db",
+      "sha256": "4a3d164403325eea13b5bbf42cbb1083ab9c04204aacde919a1e04e1832c62e1",
       "width": 900
     },
     "desktopStandard": {
-      "bytes": 87154,
+      "bytes": 94410,
       "fileName": "preview-desktop-standard.webp",
       "height": 960,
-      "sha256": "8db7a1e8be8e1a4ad93c02c5968ff4fdcfb0aed54a66ddb7ad90ba31333509d8",
+      "sha256": "88023428c40db1f40b7147a991bddd4754d2c2cf0ea7d3da19a9553be8307a67",
       "width": 1200
     }
   },
   "sourceModel": {
-    "bytes": 5648348,
-    "sha256": "8f3a80ad11713d5dee3ccf29395655af8c7c0dd8f2d7ccba94bda57189fa6cb7"
+    "bytes": 922476,
+    "sha256": "64af8819668289b485e3b7294972d7af1d605254c84b8c3ca270d149120c7b2e"
   },
   "target": "production"
 }
