@@ -1389,7 +1389,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: [Corythosaurus](https://commons.wikimedia.org/wiki/File:Corythosaurus_TD.png) by TotalDino
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 - Attribution: “Corythosaurus” by TotalDino, CC-BY-4.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `a80d8b3c303912d83e8c1f8e883cf32412a3ea7fc21bf56e2a641a30de0ac8a7`
+- Runtime SHA-256: `251d65cb6f0d5f17bbc22ef0e40b70b98fd278a8f098c1a0c0c6db739210ab75`
 - Modifications:
   - pipeline: static sculpt (corythosaurus) -> keep configured meshes, author materials, optional normal bake, synthesize Body/Head/Tail rig + 8 s Idle
   - decimate: ratio 0.322995 (278642 -> 90000 tris, 44998 verts); <= 90000 target
@@ -1648,7 +1648,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Dimetrodon deterministic procedural model source, generated with Blender Python generator authored by the Prehistoric Animal Museum on 2026-08-17
 - License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - Attribution: “Dimetrodon” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `1a3903054ee86ffe055243a04f68bcec7ae2ae5ab0d12993ef19280b0e537eda`
+- Runtime SHA-256: `599ecb08e0d1aeecf3248aa337270f97f94947fc529acc2d4ac19bd37b12f736`
 - Modifications:
   - pipeline: project-authored expansion GLB (synapsid, feature=back-sail) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
   - scale: source body length 5.9621 Blender units -> 3.5 m; uniform factor 0.587041 applied to mesh data
@@ -1909,7 +1909,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Edmontosaurus deterministic procedural model source, generated with Blender Python generator authored by the Prehistoric Animal Museum on 2026-08-17
 - License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - Attribution: “Edmontosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `2e4b6353f249766da22cca0b02c71e0087c7c79c2aedf33ee8b4b2b3f01c4266`
+- Runtime SHA-256: `787cee68ea6d892562748fb4af4b94c75494dc5435b51e3dd1cb79f0c90f1cce`
 - Modifications:
   - pipeline: project-authored expansion GLB (ornithopod, feature=duck-bill) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
   - scale: source body length 5.9621 Blender units -> 12.0 m; uniform factor 2.012713 applied to mesh data
@@ -3280,7 +3280,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: [Parasaurolophus](https://quaternius.com/packs/animateddinosaurs.html) by Quaternius
 - License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - Attribution: “Parasaurolophus” by Quaternius, CC0-1.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `c81d7043cc513c40e5633917321e018d212249416003168d7ac13a2f1b20132b`
+- Runtime SHA-256: `b0d37773ceb8a89bfaafcdf51245e608a77a4355852668c76723176ea5ef2b3b`
 - Modifications:
   - pipeline: rigged .blend source, keeping only 'Parasaurolophus_Idle' retimed to 8 s
   - action 'Parasaurolophus_Idle' (0..60 f, BEZIER) resampled to 'Idle': frames 0..192 at 24 fps = 8.0 s with 3 source cycle(s), one LINEAR key per frame, 102 fcurves; frame 192 resamples frame 0 exactly (seamless loop); pose location channels scaled by 1.000000 (1.0 = armature-space units kept, metres come from the object node scale)
