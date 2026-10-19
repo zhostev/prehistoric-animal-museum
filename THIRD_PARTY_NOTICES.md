@@ -103,7 +103,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Acrocanthosaurus deterministic procedural model source, generated with Blender Python generator authored by the Prehistoric Animal Museum on 2026-08-17
 - License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - Attribution: “Acrocanthosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `fbdb939e4c9b3988c61eb545cce038d2c2f63620cf6d9df2e0cd6dedd81ed845`
+- Runtime SHA-256: `d87aff462dd9d05545f343ae3b9a13121090c8f0deda1b00bc8470c62f30ac00`
 - Modifications:
   - pipeline: project-authored expansion GLB (theropod, feature=back-ridge) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
   - scale: source body length 7.9101 Blender units -> 11.5 m; uniform factor 1.453845 applied to mesh data
@@ -189,7 +189,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Albertosaurus deterministic procedural model source, generated with Blender Python generator authored by the Prehistoric Animal Museum on 2026-08-17
 - License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - Attribution: “Albertosaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `6bf7e25ede858a69705c34c235d9996b4b68119c89a3c8f7d37250a3842629bf`
+- Runtime SHA-256: `1fa225b1b0eaa8dadc35c19188f815fb38133dda3e23d8d0eff4cef3f40e3e9d`
 - Modifications:
   - pipeline: project-authored expansion GLB (theropod, feature=small-brow-crests) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
   - scale: source body length 7.9101 Blender units -> 9.0 m; uniform factor 1.137792 applied to mesh data
@@ -1303,7 +1303,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Compsognathus deterministic procedural model source, generated with Blender Python generator authored by the Prehistoric Animal Museum on 2026-08-17
 - License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - Attribution: “Compsognathus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `cf436583995d67512cac83e484be1a606dc9a15d9da84c5dd03c2261549814f1`
+- Runtime SHA-256: `d6bc03d51d33ea55a85df1945ace7a33a4cbeba5b22409ecf96ddef29f974210`
 - Modifications:
   - pipeline: project-authored expansion GLB (theropod, feature=tiny-slender) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
   - scale: source body length 7.9101 Blender units -> 1.25 m; uniform factor 0.158027 applied to mesh data
@@ -1476,7 +1476,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Deinonychus deterministic procedural model source, generated with Blender Python generator authored by the Prehistoric Animal Museum on 2026-08-17
 - License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - Attribution: “Deinonychus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `62bb201ba0fa48eb396e2e7c4e1147a1bcd5ec74b61629514260a9e59ae1ec62`
+- Runtime SHA-256: `25bd9116144d3fbaad4b5c6857502880332973d0470dda531455ddf9bc918d70`
 - Modifications:
   - pipeline: project-authored expansion GLB (theropod, feature=sickle-claw) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
   - scale: source body length 7.9101 Blender units -> 3.4 m; uniform factor 0.429832 applied to mesh data
@@ -2252,7 +2252,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: Herrerasaurus deterministic procedural model source, generated with Blender Python generator authored by the Prehistoric Animal Museum on 2026-08-17
 - License: [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/)
 - Attribution: “Herrerasaurus” by Prehistoric Animal Museum (project-authored), CC0-1.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `f1c7a2d2d2bc0348f611c95a2ae287941a8779fc7fb8c48aef662a58f37ffffd`
+- Runtime SHA-256: `c2b67a984c3398ada12c71845c76a433c94a63c4aec42eda86b3716d9c643aa8`
 - Modifications:
   - pipeline: project-authored expansion GLB (theropod, feature=primitive-slender) -> joined web mesh, Body/Head/Tail deformation rig, archetype-specific 8 s Idle
   - scale: source body length 7.9101 Blender units -> 4.5 m; uniform factor 0.568896 applied to mesh data
