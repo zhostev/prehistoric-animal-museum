@@ -3025,7 +3025,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: [Mosasaurus](https://sketchfab.com/3d-models/mosasaurus-fe0c25c4ed4e4d4aa05312121e2f68df) by Lukiethewesly13
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 - Attribution: “Mosasaurus” by Lukiethewesly13, CC-BY-4.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `5071da06a8a12bf0e3396d84bd3bfd86a3f9f378f322cda53bd69cc3541aa47d`
+- Runtime SHA-256: `b2f4626795be1202faf0a707226f8875545d4af1fefc629c38686fda750c9165`
 - Modifications:
   - Compressed geometry and animation with high-precision Meshopt and converted embedded PNG textures to lossless WebP for browser delivery.
   - Freeze the reviewed source pose and, when eligible, a source-rig partial mouth-close target before making morph animation deterministic. Operation: bake-and-join.
@@ -3793,7 +3793,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: [Smilodon](https://archive.org/details/thingiverse-4759291) by Eric (Tepuitrouble)
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 - Attribution: “Smilodon” by Eric (Tepuitrouble), CC-BY-4.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `fdf0fabe75e1457e49d30557dce5fae79ea321a84f90f7ec8e48f5fa6cd54406`
+- Runtime SHA-256: `27a30678c0f7889c2ccdce9b5c68cd9a1a42ebe601381e43507c70c50b43fa56`
 - Modifications:
   - pipeline: unrigged Smilodon STL -> exact pedestal/component check, decimate to the web target, grounded two-bone deformation rig, 8 s breathing + head-sway Idle
   - smilodon: source faces Blender -Y; rotated 180 deg about Z, applied to mesh data -> head now toward +Y (glTF -Z)
@@ -4054,7 +4054,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: [Triceratops dinosaur](https://sketchfab.com/3d-models/triceratops-dinosaur-87527079bad44917ab1b98a456b46c7e) by wojciechmiedziocha
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 - Attribution: “Triceratops dinosaur” by wojciechmiedziocha, CC BY 4.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `e51eeb1c3b9c890cdef1f78c65a74179f2da6d4ed899b32e8833b87d2777cf33`
+- Runtime SHA-256: `e0c8804349af51dcf768a1773bcb8597b432f61eb483ef487185e8954436b7b5`
 - Modifications:
   - Compressed geometry and animation with high-precision Meshopt and converted embedded PNG textures to lossless WebP for browser delivery.
   - Normalized and repacked the self-contained 1K-texture GLB.
@@ -4226,7 +4226,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: [Tyrant King - Tyrannosaurus](https://sketchfab.com/3d-models/tyrant-king-tyrannosaurus-6465a297fa784598adc49f6e0042d449) by Marcel Schanz
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 - Attribution: “Tyrant King - Tyrannosaurus” by Marcel Schanz, CC BY 4.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `ea15319ca1fa3724f1a961515c36b4834446f5ac30a9b0de49b62881877efa54`
+- Runtime SHA-256: `a2a430cd0978f0d82a56e5190857818fa84b6ddb7897c7f12866ecf39fb47629`
 - Modifications:
   - Compressed geometry and animation with high-precision Meshopt and converted embedded PNG textures to lossless WebP for browser delivery.
   - Normalized and repacked the self-contained 1K-texture GLB.

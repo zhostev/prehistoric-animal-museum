@@ -20,9 +20,9 @@ export const animalDefinition = definePublishedAnimal({
     toneMappingExposure: 1.16,
   },
   animation: {
-    "clip": "Idle",
-    "loop": "repeat",
-    "speed": 1
+    clip: 'Idle',
+    loop: 'repeat',
+    speed: 0.8,
   },
   narration: {
     'zh-CN': {
