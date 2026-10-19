@@ -3968,7 +3968,7 @@ content, contributions, and Brand Assets follow the separate scopes in
 - Source: [PBR Stegasaurus (Animated)](https://sketchfab.com/3d-models/pbr-stegasaurus-animated-ec254ea1554941fe8a131f62db0faf3d) by Ferocious Industries
 - License: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/)
 - Attribution: “PBR Stegasaurus (Animated)” by Ferocious Industries, CC BY 4.0; modified for the Prehistoric Animal Museum.
-- Runtime SHA-256: `127ed9d725d79ca397271b949a376c9d2e5410bf0e81eaed0e7b811ff17cc3dc`
+- Runtime SHA-256: `2f1564c1f3f07e41ddb21b1f190621baba2ea5ea9c97c36cd89256ff60bddcea`
 - Modifications:
   - Compressed geometry and animation with high-precision Meshopt and converted embedded PNG textures to lossless WebP for browser delivery.
   - Downloaded as the converted GLB with 1K textures.
